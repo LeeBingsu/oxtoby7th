@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8 - Bonding in Transition Metal Compounds and Coordination Complexes</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 8 - Bonding in Transition Metal Compounds and Coordination Complexes</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Chemistry of the Transition Metals</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Of the compounds PtF<sub>4</sub> and PtF<sub>6</sub>, predict (a) which is more soluble in water and (b) which is more volatile.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                The melting point of TiCl<sub>4</sub> (−24°C) lies below those of TiF<sub>4</sub> (284°C) and TiBr<sub>4</sub> (38°C). Explain why by considering the covalent-ionic nature of these compounds and the intermolecular forces in each case.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                The decavanadate ion is a complex species with chemical formula V<sub>10</sub>O<sub>28</sub><sup>6−</sup>. It reacts with an excess of acid to form the dioxovanadium ion, VO<sub>2</sub><sup>+</sup>, and water. Write a balanced chemical equation for this reaction. In what oxidation state is vanadium before and after this reaction? What vanadium oxide has the same oxidation state?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                What is the chemical formula of vanadium(III) oxide? Do you predict this compound to be more basic or more acidic than the vanadium oxide of Problem 3? Write a balanced chemical equation for the reaction of vanadium(III) oxide with a strong acid.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                Titanium(III) oxide is prepared by reaction of titanium(IV) oxide with hydrogen at high temperature. Write a balanced chemical equation for this reaction. Which oxide do you expect to have stronger basic properties?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                Treatment of cobalt(II) oxide with oxygen at high temperatures gives Co<sub>3</sub>O<sub>4</sub>. Write a balanced chemical equation for this reaction. What is the oxidation state of cobalt in Co<sub>3</sub>O<sub>4</sub>?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Introduction to Coordination Chemistry</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                What are the oxidation states of manganese in the following series of oxides? MnO, MnO<sub>2</sub>, Mn<sub>2</sub>O<sub>3</sub>, Mn<sub>2</sub>O<sub>7</sub>, Mn<sub>3</sub>O<sub>4</sub>, and [MnO<sub>4</sub>]<sup>−</sup>? Recall that you must include the total charge on the ion for ionic species.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                What are the oxidation states of the transition metals in the following series of compounds? Nb<sub>2</sub>O<sub>5</sub>, MoS<sub>2</sub>, RuCl<sub>3</sub>, RhO<sub>2</sub>, PdF<sub>2</sub>, and Ag<sub>2</sub>O.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Why is the highest oxidation state observed for CrCl<sub>4</sub> only the +4 oxidation state, in contrast to the +6 state observed in CrF<sub>6</sub>?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                OH<sup>−</sup> tends to stabilize intermediate oxidation states. Why is this?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Nickel and copper ores are generally sulfides, whereas aluminum ore is an oxide. Explain this observation on the basis of the hard/soft acid/base concept.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Would you expect the following reaction to proceed in aqueous solution as written?<br><br>
+                CuCl<sub>2</sub>(aq) + S<sup>2−</sup>(aq) → CuS(s) + 2Cl<sup>−</sup>(aq)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                What experimental evidence would allow you to determine whether TiCl<sub>4</sub> is an ionic compound or a covalent compound? What would you predict based upon oxidation state?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                Which of the two common oxides of chromium, CrO<sub>2</sub> or Cr<sub>2</sub>O<sub>3</sub>, would you predict to have the higher melting point and why?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                Will methylamine (CH<sub>3</sub>NH<sub>2</sub>) be a monodentate or a bidentate ligand? With which of its atoms will it bind to a metal ion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                Show how the glycinate ion (H<sub>2</sub>N–CH<sub>2</sub>–COO<sup>−</sup>) can act as a bidentate ligand. (Draw a Lewis diagram if necessary.) Which atoms in the glycinate ion will bind to a metal ion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                Determine the oxidation state of the metal in each of the following coordination complexes: [V(NH<sub>3</sub>)<sub>4</sub>Cl<sub>2</sub>], [Mo<sub>2</sub>Cl<sub>8</sub>]<sup>4−</sup>, [Co(OH<sub>2</sub>)<sub>2</sub>(NH<sub>3</sub>)Cl<sub>3</sub>]<sup>−</sup>, [Ni(CO)<sub>4</sub>].
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                Determine the oxidation state of the metal in each of the following coordination complexes: Mn<sub>2</sub>(CO)<sub>10</sub>, [Re<sub>3</sub>Br<sub>12</sub>]<sup>3−</sup>, [Fe(OH<sub>2</sub>)<sub>4</sub>(OH)<sub>2</sub>]<sup>+</sup>, [Co(NH<sub>3</sub>)<sub>4</sub>Cl<sub>2</sub>]<sup>+</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                Give the chemical formula that corresponds to each of the following compounds:<br>
+                (a) Sodium tetrahydroxozincate(II)<br>
+                (b) Dichlorobis(ethylenediamine)cobalt(III) nitrate<br>
+                (c) Triaquabromoplatinum(II) chloride<br>
+                (d) Tetra-amminedinitroplatinum(IV) bromide
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                Give the chemical formula of each of the following compounds:<br>
+                (a) Silver hexacyanoferrate(II)<br>
+                (b) Potassium tetraisothiocyanatocobaltate(II)<br>
+                (c) Sodium hexafluorovanadate(III)<br>
+                (d) Potassium trioxalatochromate(III)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                Assign a systematic name to each of the following chemical compounds:<br>
+                (a) NH<sub>4</sub>[Cr(NH<sub>3</sub>)<sub>2</sub>(NCS)<sub>4</sub>]<br>
+                (b) [Tc(CO)<sub>5</sub>]I<br>
+                (c) K[Mn(CN)<sub>5</sub>]<br>
+                (d) [Co(NH<sub>3</sub>)<sub>4</sub>(OH<sub>2</sub>)Cl]Br<sub>2</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                Give the systematic name for each of the following chemical compounds:<br>
+                (a) [Ni(OH<sub>2</sub>)<sub>4</sub>(OH)<sub>2</sub>]<br>
+                (b) [HgClI]<br>
+                (c) K<sub>4</sub>[Os(CN)<sub>6</sub>]<br>
+                (d) [FeBrCl(en)<sub>2</sub>]Cl
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Structures of Coordination Complexes</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                Suppose 0.010 mol of each of the following compounds is dissolved (separately) in 1.0 L water: KNO<sub>3</sub>, [Co(NH<sub>3</sub>)<sub>6</sub>]Cl<sub>3</sub>, Na<sub>2</sub>[PtCl<sub>6</sub>], [Cu(NH<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>]. Rank the resulting four solutions in order of conductivity, from lowest to highest.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                Suppose 0.010 mol of each of the following compounds is dissolved (separately) in 1.0 L water: BaCl<sub>2</sub>, K<sub>4</sub>[Fe(CN)<sub>6</sub>], [Cr(NH<sub>3</sub>)<sub>4</sub>Cl<sub>2</sub>]Cl, [Fe(NH<sub>3</sub>)<sub>3</sub>Cl<sub>3</sub>]. Rank the resulting four solutions in order of conductivity, from lowest to highest.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                Draw the structures of all possible isomers for the following complexes. Indicate which isomers are enantiomer pairs.<br>
+                (a) Diamminebromochloroplatinum(II) (square-planar)<br>
+                (b) Diaquachlorotricyanocobaltate(III) ion (octahedral)<br>
+                (c) Trioxalatovanadate(III) ion (octahedral)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                Draw the structures of all possible isomers for the following complexes. Indicate which isomers are enantiomer pairs.<br>
+                (a) Bromochloro(ethylenediamine)platinum(II) (square-planar)<br>
+                (b) Tetra-amminedichloroiron(III) ion (octahedral)<br>
+                (c) Amminechlorobis(ethylenediamine)iron(III) ion (octahedral)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                Iron(III) forms octahedral complexes. Sketch the structures of all the distinct isomers of [Fe(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup>, indicating which pairs of structures are mirror images of each other.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                Platinum(IV) forms octahedral complexes. Sketch the structures of all the distinct isomers of [Pt(NH<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>F<sub>2</sub>], indicating which pairs of structures are mirror images of each other.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Crystal Field Theory: Optical and Magnetic Properties</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                For each of the following ions, draw diagrams like those in Figure 8.18 to show orbital occupancies in both weak and strong octahedral fields. Indicate the total number of unpaired electrons in each case.<br>
+                (a) Mn<sup>2+</sup><br>
+                (b) Zn<sup>2+</sup><br>
+                (c) Cr<sup>3+</sup><br>
+                (d) Mn<sup>3+</sup><br>
+                (e) Fe<sup>2+</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                Repeat the work of the preceding problem for the following ions:<br>
+                (a) Cr<sup>2+</sup><br>
+                (b) V<sup>3+</sup><br>
+                (c) Ni<sup>2+</sup><br>
+                (d) Pt<sup>4+</sup><br>
+                (e) Co<sup>2+</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Experiments can measure not only whether a compound is paramagnetic, but also the number of unpaired electrons. It is found that the octahedral complex ion [Fe(CN)<sub>6</sub>]<sup>3−</sup> has fewer unpaired electrons than the octahedral complex ion [Fe(OH<sub>2</sub>)<sub>6</sub>]<sup>3+</sup>. How many unpaired electrons are present in each species? Explain. In each case, express the CFSE in terms of Δ<sub>o</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                The octahedral complex ion [MnCl<sub>6</sub>]<sup>3−</sup> has more unpaired spins than the octahedral complex ion [Mn(CN)<sub>6</sub>]<sup>3−</sup>. How many unpaired electrons are present in each species? Explain. In each case, express the CFSE in terms of Δ<sub>o</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                Explain why octahedral coordination complexes with three and eight d electrons on the central metal atom are particularly stable. Under what circumstances would you expect complexes with five or six d electrons on the central metal atom to be particularly stable?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                Mn, Fe, and Co in the +2 and +3 oxidation states all form hexaaquacomplexes in acidic aqueous solution. The reduction reactions of the three species are represented schematically below, where the water ligands are not shown for simplicity. It is an experimental fact from electrochemistry that Mn<sup>2+</sup> and Co<sup>2+</sup> are more easily reduced than Fe<sup>3+</sup>; that is, they will more readily accept an electron. Based on the electron configurations of the ions involved, explain why Fe<sup>3+</sup> is harder to reduce than Mn<sup>2+</sup> and Co<sup>2+</sup>.<br><br>
+                Mn<sup>3+</sup> + e<sup>−</sup> → Mn<sup>2+</sup><br>
+                Fe<sup>3+</sup> + e<sup>−</sup> → Fe<sup>2+</sup><br>
+                Co<sup>3+</sup> + e<sup>−</sup> → Co<sup>2+</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Optical Properties and the Spectrochemical Series</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                An aqueous solution of zinc nitrate contains the [Zn(OH<sub>2</sub>)<sub>6</sub>]<sup>2+</sup> ion and is colorless. What conclusions can be drawn about the absorption spectrum of the [Zn(OH<sub>2</sub>)<sub>6</sub>]<sup>2+</sup> complex ion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                An aqueous solution of sodium hexaiodoplatinate(IV) is black. What conclusions can be drawn about the absorption spectrum of the [PtI<sub>6</sub>]<sup>2−</sup> complex ion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                Estimate the wavelength of maximum absorption for the octahedral ion hexacyanoferrate(III) from the fact that light transmitted by a solution of it is red. Estimate the crystal field splitting energy Δ<sub>o</sub> (in kJ mol<sup>−1</sup>).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                Estimate the wavelength of maximum absorption for the octahedral ion hexa-aquanickel(II) from the fact that its solutions are colored green by transmitted light. Estimate the crystal field splitting energy Δ<sub>o</sub> (in kJ mol<sup>−1</sup>).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                Estimate the CFSE for the complex in Problem 29. (Note: This is a high-field (low-spin) complex.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                Estimate the CFSE for the complex in Problem 30.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                The chromium(III) ion in aqueous solution is blue–violet.<br>
+                (a) What is the complementary color to blue–violet?<br>
+                (b) Estimate the wavelength of maximum absorption for a Cr(NO<sub>3</sub>)<sub>3</sub> solution.<br>
+                (c) Will the wavelength of maximum absorption increase or decrease if cyano ligands are substituted for the coordinated water? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                An aqueous solution containing the hexa-amminecobalt(III) ion is yellow.<br>
+                (a) What is the complementary color to yellow?<br>
+                (b) Estimate this solution's wavelength of maximum absorption in the visible spectrum.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                (a) An aqueous solution of Fe(NO<sub>3</sub>)<sub>3</sub> has only a pale color, but an aqueous solution of K<sub>3</sub>[Fe(CN)<sub>6</sub>] is bright red. Do you expect a solution of K<sub>3</sub>[FeF<sub>6</sub>] to be brightly colored or pale? Explain your reasoning.<br>
+                (b) Would you predict a solution of K<sub>2</sub>[HgI<sub>4</sub>] to be colored or colorless? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                (a) An aqueous solution of Mn(NO<sub>3</sub>)<sub>2</sub> is very pale pink, but an aqueous solution of K<sub>4</sub>[Mn(CN)<sub>6</sub>] is deep blue. Explain why the two differ so much in the intensities of their colors.<br>
+                (b) Predict which of the following compounds would be colorless in aqueous solution: K<sub>2</sub>[Co(NCS)<sub>4</sub>], Zn(NO<sub>3</sub>)<sub>2</sub>, [Cu(NH<sub>3</sub>)<sub>4</sub>]Cl<sub>2</sub>, CdSO<sub>4</sub>, AgClO<sub>3</sub>, Cr(NO<sub>3</sub>)<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                Predict the geometry and number of unpaired spins in the following four-coordinate complexes: [AuBr<sub>4</sub>]<sup>−</sup>, [NiBr<sub>4</sub>]<sup>2−</sup>. Explain your reasoning.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                Predict the geometry and number of unpaired spins in the following four-coordinate complexes: [Ni(CN)<sub>4</sub>]<sup>2−</sup>, [NiCl<sub>4</sub>]<sup>2−</sup>. Explain your reasoning.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                Of the ten fourth-period transition metal elements in Table 8.1, which one has particularly low melting and boiling points? How can you explain this in terms of the electronic configuration of this element?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                Although copper lies between nickel and zinc in the periodic table, the reduction potential of Cu<sup>2+</sup> is above that for both Ni<sup>2+</sup> and Zn<sup>2+</sup> (see Table 8.3). Use other data from Table 8.3 to account for this observation. (Hint: Think of a multistep process to convert a metal atom in the solid to a metal ion in solution. For each step, compare the relevant energy or enthalpy changes for Cu with those for Ni or Zn.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                A reference book lists five different values for the electronegativity of molybdenum, a different value for each oxidation state from +2 through +6. Predict which electronegativity is highest and which is lowest.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                If trans-[Cr(en)<sub>2</sub>(NCS)<sub>2</sub>]SCN is heated, it forms gaseous ethylenediamine and solid [Cr(en)<sub>2</sub>(NCS)<sub>2</sub>][Cr(en)(NCS)<sub>4</sub>]. Write a balanced chemical equation for this reaction. What are the oxidation states of the Cr ions in the reactant and in the two complex ions in the product?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                A coordination complex has the molecular formula [Ru<sub>2</sub>(NH<sub>3</sub>)<sub>6</sub>Br<sub>3</sub>](ClO<sub>4</sub>)<sub>2</sub>. Determine the oxidation state of ruthenium in this complex.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                Heating 2.0 mol of a coordination compound gives 1.0 mol NH<sub>3</sub>, 2.0 mol H<sub>2</sub>O, 1.0 mol HCl, and 1.0 mol (NH<sub>4</sub>)<sub>3</sub>[Ir<sub>2</sub>Cl<sub>9</sub>]. Write the formula of the original (six-coordinate) coordination compound and name it.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                Explain why ligands are usually negative or neutral in charge and only rarely positive.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                Match each compound in the group on the left with the compound on the right that is most likely to have the same electrical conductivity per mole in aqueous solution.<br><br>
+                (a) [Fe(OH<sub>2</sub>)<sub>5</sub>Cl]CO<sub>3</sub> — HCN<br>
+                (b) [Mn(OH<sub>2</sub>)<sub>6</sub>]Cl<sub>3</sub> — Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub><br>
+                (c) [Zn(OH<sub>2</sub>)<sub>3</sub>(OH)]Cl — NaCl<br>
+                (d) [Fe(NH<sub>3</sub>)<sub>6</sub>]<sub>2</sub>(CO<sub>3</sub>)<sub>3</sub> — MgSO<sub>4</sub><br>
+                (e) [Cr(NH<sub>3</sub>)<sub>3</sub>Br<sub>3</sub>] — Na<sub>3</sub>PO<sub>4</sub><br>
+                (f) K<sub>3</sub>[Fe(CN)<sub>6</sub>] — GaCl<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                Three different compounds are known to have the empirical formula CrCl<sub>3</sub>·6H<sub>2</sub>O. When exposed to a dehydrating agent, compound 1 (which is dark green) loses 2 mol water per mole of compound, compound 2 (light green) loses 1 mol water, and compound 3 (violet) loses no water. What are the probable structures of these compounds? If an excess of silver nitrate solution is added to 100.0 g of each of these compounds, what mass of silver chloride will precipitate in each case?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                The octahedral structure is not the only possible six-coordinate structure. Other possibilities include a planar hexagonal structure and a triangular prism structure. In the latter, the ligands are arranged in two parallel triangles, one lying above the metal atom and the other below the metal atom with its corners directly in line with the corners of the first triangle. Show that the existence of two and only two isomers of [Co(NH<sub>3</sub>)<sub>4</sub>Cl<sub>2</sub>]<sup>+</sup> is evidence against both of these possible structures.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                Cobalt(II) forms more tetrahedral complexes than any other ion except zinc(II). Draw the structure(s) of the tetrahedral complex [CoCl<sub>2</sub>(en)]. Could this complex exhibit geometric or optical isomerism? If one of the Cl<sup>−</sup> ligands is replaced by Br<sup>−</sup>, what kinds of isomerism, if any, are possible in the resulting compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                Is the coordination compound [Co(NH<sub>3</sub>)<sub>6</sub>]Cl<sub>2</sub> diamagnetic or paramagnetic?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                A coordination compound has the empirical formula PtBr(en)(SCN)<sub>2</sub> and is diamagnetic.<br>
+                (a) Examine the d-electron configurations on the metal atoms, and explain why the formulation [Pt(en)<sub>2</sub>(SCN)<sub>2</sub>][PtBr<sub>2</sub>(SCN)<sub>2</sub>] is preferred for this substance.<br>
+                (b) Name this compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                We used crystal field theory to order the energy-level splittings induced in the five d orbitals. The same procedure could be applied to p orbitals. Predict the level splittings (if any) induced in the three p orbitals by octahedral and square-planar crystal fields.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">
+                The three complex ions [Mn(CN)<sub>6</sub>]<sup>5−</sup>, [Mn(CN)<sub>6</sub>]<sup>4−</sup>, and [Mn(CN)<sub>6</sub>]<sup>3−</sup> have all been synthesized and all are low-spin octahedral complexes. For each complex, determine the oxidation number of Mn, the configuration of the d electrons (how many t<sub>2g</sub> and how many e<sub>g</sub>), and the number of unpaired electrons present.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">
+                On the basis of the examples presented in Problem 61, can you tell whether Mn<sup>2+</sup>(aq) is more easily oxidized or more easily reduced? What can you conclude about the stability of Mn<sup>2+</sup>(aq)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">
+                The following ionic radii (in angstroms) are estimated for the +2 ions of selected elements of the first transition-metal series, based on the structures of their oxides: Ca<sup>2+</sup>(0.99), Ti<sup>2+</sup>(0.71), V<sup>2+</sup>(0.64), Mn<sup>2+</sup>(0.80), Fe<sup>2+</sup>(0.75), Co<sup>2+</sup>(0.72), Ni<sup>2+</sup>(0.69), Cu<sup>2+</sup>(0.71), Zn<sup>2+</sup>(0.74). Draw a graph of ionic radius versus atomic number in this series, and account for its shape. The oxides take the rock salt structure. Are these solids better described as high- or low-spin transition-metal complexes?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">
+                The coordination geometries of [Mn(NCS)<sub>4</sub>]<sup>2−</sup> and [Mn(NCS)<sub>6</sub>]<sup>4−</sup> are tetrahedral and octahedral, respectively. Explain why the two have the same room-temperature molar magnetic susceptibility.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">
+                The complex ion CoCl<sub>4</sub><sup>2−</sup> has a tetrahedral structure. How many d electrons are on the Co? What is its electronic configuration? Why is the tetrahedral structure stable in this case?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">
+                In the coordination compound (NH<sub>4</sub>)<sub>2</sub>[Fe(OH<sub>2</sub>)F<sub>5</sub>], the Fe is octahedrally coordinated.<br>
+                (a) Based on the fact that F<sup>−</sup> is a weak-field ligand, predict whether this compound is diamagnetic or paramagnetic. If it is paramagnetic, tell how many unpaired electrons it has.<br>
+                (b) By comparison with other complexes reviewed in this chapter, discuss the likely color of this compound.<br>
+                (c) Determine the d-electron configuration of the iron in this compound.<br>
+                (d) Name this compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">
+                The compound Cs<sub>2</sub>[CuF<sub>6</sub>] is bright orange and paramagnetic. Determine the oxidation number of copper in this compound, the most likely geometry of the coordination around the copper, and the possible configurations of the d electrons of the copper.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">
+                In what directions do you expect the bond length and vibrational frequency of a free CO molecule to change when it becomes a CO ligand in a Ni(CO)<sub>4</sub> molecule? Explain your reasoning.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">
+                Give the number of valence electrons surrounding the central transition-metal ion in each of the following known organometallic compounds or complex ions: [Co(C<sub>5</sub>H<sub>5</sub>)<sub>2</sub>]<sup>+</sup>, [Fe(C<sub>5</sub>H<sub>5</sub>)(CO)<sub>2</sub>Cl], [Mo(C<sub>5</sub>H<sub>5</sub>)<sub>2</sub>Cl<sub>2</sub>], [Mn(C<sub>5</sub>H<sub>5</sub>)(C<sub>6</sub>H<sub>6</sub>)].
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">
+                Molecular nitrogen (N<sub>2</sub>) can act as a ligand in certain coordination complexes. Predict the structure of [V(N<sub>2</sub>)<sub>6</sub>], which is isolated by condensing V with N<sub>2</sub> at 25 K. Is this compound diamagnetic or paramagnetic? What is the formula of the carbonyl compound of vanadium that has the same number of electrons?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">
+                What energy levels are occupied in a complex such as hexacarbonylchromium(0)? Are any electrons placed into antibonding orbitals that are derived from the chromium d orbitals?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">
+                The compound WH<sub>2</sub>(C<sub>5</sub>H<sub>5</sub>)<sub>2</sub> acts as a base, but TaH<sub>3</sub>(C<sub>5</sub>H<sub>5</sub>)<sub>2</sub> does not. Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">
+                Discuss the role of transition-metal complexes in biology. Consider such aspects as their absorption of light, the existence of many different structures, and the possibility of multiple oxidation states.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Cumulative Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 74</div>
+            <div class="problem-text">
+                Predict the volume of hydrogen generated at 1.00 atm and 25°C by the reaction of 4.53 g scandium with excess aqueous hydrochloric acid.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 75</div>
+            <div class="problem-text">
+                Mendeleev's early periodic table placed manganese and chlorine in the same group. Discuss the chemical evidence for these placements, focusing on the oxides of the two elements and their acid–base and redox properties. Is there a connection between the electronic structures of their atoms? In what ways are the elements different?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 76</div>
+            <div class="problem-text">
+                An orange–yellow osmium carbonyl compound is heated to release CO and leave elemental osmium behind. Treatment of 6.79 g of the compound releases 1.18 L CO(g) at 25°C and 2.00 atm pressure. What is the empirical formula of this compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>

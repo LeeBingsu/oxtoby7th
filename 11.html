@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11 - Problems</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 11 - Solutions</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Composition of Solutions</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                A patient has a "cholesterol count" of 214. Like many blood-chemistry measurements, this result is measured in units of milligrams per deciliter (mg dL<sup>−1</sup>).<br>
+                (a) Determine the molar concentration of cholesterol in this patient's blood, taking the molar mass of cholesterol to be 386.64 g mol<sup>−1</sup>.<br>
+                (b) Estimate the molality of cholesterol in the patient's blood.<br>
+                (c) If 214 is a typical cholesterol reading among men in the United States, determine the volume of such blood required to furnish 8.10 g of cholesterol.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                In many states, a person is legally intoxicated if his or her blood has a concentration of 0.10 g (or more) of ethyl alcohol (C<sub>2</sub>H<sub>5</sub>OH) per deciliter. Express this "threshold concentration" in mol L<sup>−1</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                A solution of hydrochloric acid in water is 38.00% hydrochloric acid by mass. Its density is 1.1886 g cm<sup>−3</sup> at 20°C. Compute its molarity, mole fraction, and molality at this temperature.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                A solution of acetic acid and water contains 205.0 g L<sup>−1</sup> of acetic acid and 820.0 g L<sup>−1</sup> of water.<br>
+                (a) Compute the density of the solution.<br>
+                (b) Compute the molarity, molality, mole fraction, and mass percentage of acetic acid in this solution.<br>
+                (c) Take the acetic acid as the solvent, and do the same for water as the solute.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                A 6.0835 m aqueous solution of acetic acid (C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>) has a density of 1.0438 g cm<sup>−3</sup>. Compute its molality.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                A 1.241 m aqueous solution of AgNO<sub>3</sub> (used to prepare silver chloride photographic emulsions) has a density of 1.171 g cm<sup>−3</sup>. Compute its molality.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                Water is slightly soluble in liquid nitrogen. At −196°C (the boiling point of liquid nitrogen), the mole fraction of water in a saturated solution is 1.00 × 10<sup>−5</sup>. Compute the mass of water that can dissolve in 1.00 kg of boiling liquid nitrogen.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                Some water dissolves in liquid methane at −161°C to give a solution in which the mole fraction of water is 6.0 × 10<sup>−5</sup>. Determine the mass of water dissolved in 1.00 L of this solution if the density of the solution is 0.78 g cm<sup>−3</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Concentrated phosphoric acid as sold for use in the laboratory is usually 90% H<sub>3</sub>PO<sub>4</sub> by mass (the rest is water). Such a solution contains 12.2 mol of H<sub>3</sub>PO<sub>4</sub> per liter of solution at 25°C.<br>
+                (a) Compute the density of this solution.<br>
+                (b) What volume of this solution should be used in mixing 2.00 L of a 1.00 m phosphoric acid solution?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                A perchloric acid solution is 60.0% HClO<sub>4</sub> by mass. It is simultaneously 9.20 m at 25°C.<br>
+                (a) Compute the density of this solution.<br>
+                (b) What volume of this solution should be used in mixing 1.00 L of a 1.00 m perchloric acid solution?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Suppose 25.0 g of solid NaOH is added to 1.50 L of an aqueous solution that is already 2.40 m in NaOH. Then water is added until the final volume is 4.00 L. Determine the concentration of the NaOH in the resulting solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Suppose 0.400 L of a solution of 0.0700 m nitric acid is added to 0.800 L of a solution of 0.0300 m nitric acid, giving a total volume of 1.200 L. Calculate the concentration (molarity) of nitric acid in the resulting solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Nature of Dissolved Species</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                Rewrite the following balanced equations as net ionic equations.<br>
+                (a) NaCl(aq) + AgNO<sub>3</sub>(aq) → AgCl(s) + NaNO<sub>3</sub>(aq)<br>
+                (b) K<sub>2</sub>CO<sub>3</sub>(s) + 2 HCl(aq) → 2 KCl(aq) + CO<sub>2</sub>(g) + H<sub>2</sub>O(ℓ)<br>
+                (c) 2 Cs(s) + 2 H<sub>2</sub>O(ℓ) → 2 CsOH(aq) + H<sub>2</sub>(g)<br>
+                (d) 2 KMnO<sub>4</sub>(aq) + 16 HCl(aq) → 5 Cl<sub>2</sub>(g) + 2 MnCl<sub>2</sub>(aq) + 2 KCl(aq) + 8 H<sub>2</sub>O(ℓ)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                Rewrite the following balanced equations as net ionic equations.<br>
+                (a) Na<sub>2</sub>SO<sub>4</sub>(aq) + BaCl<sub>2</sub>(aq) → BaSO<sub>4</sub>(s) + 2 NaCl(aq)<br>
+                (b) 6 NaOH(aq) + 3 Cl<sub>2</sub>(g) → NaClO<sub>3</sub>(aq) + 5 NaCl(aq) + 3 H<sub>2</sub>O(ℓ)<br>
+                (c) Hg<sub>2</sub>(NO<sub>3</sub>)<sub>2</sub>(aq) + 2 KI(aq) → Hg<sub>2</sub>I<sub>2</sub>(s) + 2 KNO<sub>3</sub>(aq)<br>
+                (d) 3 NaOCl(aq) + KI(aq) → NaIO<sub>3</sub>(aq) + 2 NaCl(aq) + KCl(aq)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Acid-Base Titrations</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                When treated with acid, lead(IV) oxide is reduced to a lead(II) salt, with the liberation of oxygen:<br><br>
+                2 PbO<sub>2</sub>(s) + 4 HNO<sub>3</sub>(aq) → 2 Pb(NO<sub>3</sub>)<sub>2</sub>(aq) + 2 H<sub>2</sub>O(ℓ) + O<sub>2</sub>(g)<br><br>
+                What volume of a 7.91 m solution of nitric acid is just sufficient to react with 15.9 g of lead(IV) oxide, according to this equation?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                Phosphoric acid is made industrially by the reaction of fluorapatite, Ca<sub>5</sub>(PO<sub>4</sub>)<sub>3</sub>F, in phosphate rock with sulfuric acid:<br><br>
+                Ca<sub>5</sub>(PO<sub>4</sub>)<sub>3</sub>F(s) + 5 H<sub>2</sub>SO<sub>4</sub>(aq) + 10 H<sub>2</sub>O(ℓ) → 3 H<sub>3</sub>PO<sub>4</sub>(aq) + 5 (CaSO<sub>4</sub>·2H<sub>2</sub>O)(s) + HF(aq)<br><br>
+                What volume of 6.3 m phosphoric acid is generated by the reaction of 2.2 metric tons (2200 kg) of fluorapatite?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                The carbon dioxide produced (together with hydrogen) from the industrial-scale oxidation of methane in the presence of nickel is removed from the gas mixture in a scrubber containing an aqueous solution of potassium carbonate:<br><br>
+                CO<sub>2</sub>(g) + H<sub>2</sub>O(ℓ) + K<sub>2</sub>CO<sub>3</sub>(aq) → 2 KHCO<sub>3</sub>(aq)<br><br>
+                Calculate the volume of carbon dioxide (at 50°C and 1.00 atm pressure) that will react with 187 L of a 1.36 m potassium carbonate solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                Nitrogen oxide can be generated on a laboratory scale by the reaction of dilute sulfuric acid with aqueous sodium nitrite:<br><br>
+                6 NaNO<sub>2</sub>(aq) + 3 H<sub>2</sub>SO<sub>4</sub>(aq) → 4 NO(g) + 2 HNO<sub>3</sub>(aq) + 2 H<sub>2</sub>O(ℓ) + 3 Na<sub>2</sub>SO<sub>4</sub>(aq)<br><br>
+                What volume of 0.646 m aqueous NaNO<sub>2</sub> should be used in this reaction to generate 5.00 L of nitrogen oxide at a temperature of 20°C and a pressure of 0.970 atm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                Write a balanced equation for the acid–base reaction that leads to the production of each of the following salts. Name the acid, base, and salt.<br>
+                (a) CaF<sub>2</sub><br>
+                (b) Rb<sub>2</sub>SO<sub>4</sub><br>
+                (c) Zn(NO<sub>3</sub>)<sub>2</sub><br>
+                (d) KCH<sub>3</sub>COO
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                Write a balanced equation for the acid–base reaction that leads to the production of each of the following salts. Name the acid, base, and salt.<br>
+                (a) Na<sub>2</sub>SO<sub>3</sub><br>
+                (b) Ca(C<sub>6</sub>H<sub>5</sub>COO)<sub>2</sub><br>
+                (c) PbSO<sub>4</sub><br>
+                (d) CuCl<sub>2</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                Hydrogen sulfide can be removed from natural gas by reaction with excess sodium hydroxide. Name the salt that is produced in this reaction. (Note: Hydrogen sulfide loses both its hydrogen atoms in the course of this reaction.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                During the preparation of viscose rayon, cellulose is dissolved in a bath containing sodium hydroxide and later reprecipitated as rayon using a solution of sulfuric acid. Name the salt that is a by-product of this process. Rayon production is, in fact, a significant commercial source for this salt.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                Phosphorus trifluoride is a highly toxic gas that reacts slowly with water to give a mixture of phosphorous acid and hydrofluoric acid.<br>
+                (a) Write a balanced chemical equation for this reaction.<br>
+                (b) Determine the concentration (in moles per liter) of each of the acids that result from the reaction of 1.94 L of phosphorus trifluoride (measured at 25°C and 0.970 atm pressure) with water to give a solution volume of 872 mL.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                Phosphorus pentachloride reacts violently with water to give a mixture of phosphoric acid and hydrochloric acid.<br>
+                (a) Write a balanced chemical equation for this reaction.<br>
+                (b) Determine the concentration (in moles per liter) of each of the acids that result from the complete reaction of 1.22 L of phosphorus pentachloride (measured at 215°C and 0.962 atm pressure) with enough water to give a solution volume of 697 mL.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                To determine the concentration of a solution of nitric acid, a 100.0-mL sample is placed in a flask and titrated with a 0.1279 m solution of potassium hydroxide. A volume of 37.85 mL is required to reach the phenolphthalein end point. Calculate the concentration of nitric acid in the original sample.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                The concentration of aqueous ammonia in a cleaning solution is determined by titration with hydrochloric acid. A volume of 23.18 mL of 0.8381 m HCl is needed to titrate a 50.0-mL sample of the ammonia solution to a methyl red end point. Calculate the concentration of ammonia in the cleaning solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Oxidation-Reduction Reactions</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                For each of the following balanced equations, write the oxidation number above the symbol of each atom that changes oxidation state in the course of the reactions.<br>
+                (a) 2 PF<sub>2</sub>I(ℓ) + 2 Hg(ℓ) → P<sub>2</sub>F<sub>4</sub>(g) + Hg<sub>2</sub>I<sub>2</sub>(s)<br>
+                (b) 2 KClO<sub>3</sub>(s) → 2 KCl(s) + 3 O<sub>2</sub>(g)<br>
+                (c) 4 NH<sub>3</sub>(g) + 5 O<sub>2</sub>(g) → 4 NO(g) + 6 H<sub>2</sub>O(g)<br>
+                (d) 2 As(s) + 6 NaOH(ℓ) → 2 Na<sub>3</sub>AsO<sub>3</sub>(s) + 3 H<sub>2</sub>(g)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                For each of the following balanced equations, write the oxidation number above the symbol of each atom that changes oxidation state in the course of the reaction.<br>
+                (a) N<sub>2</sub>O<sub>4</sub>(g) + KCl(s) → NOCl(g) + KNO<sub>3</sub>(s)<br>
+                (b) H<sub>2</sub>S(g) + 4 O<sub>2</sub>F<sub>2</sub>(s) → SF<sub>6</sub>(g) + 2 HF(g) + 4 O<sub>2</sub>(g)<br>
+                (c) 2 POBr<sub>3</sub>(s) + 3 Mg(s) → 2 PO(s) + 3 MgBr<sub>2</sub>(s)<br>
+                (d) 4 BCl<sub>3</sub>(g) + 3 SF<sub>4</sub>(g) → 4 BF<sub>3</sub>(g) + 3 SCl<sub>2</sub>(ℓ) + 3 Cl<sub>2</sub>(g)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                Selenic acid (H<sub>2</sub>SeO<sub>4</sub>) is a powerful oxidizing acid that dissolves not only silver (as does the related acid H<sub>2</sub>SO<sub>4</sub>) but gold, through the following reaction:<br><br>
+                2 Au(s) + 6 H<sub>2</sub>SeO<sub>4</sub>(aq) → Au<sub>2</sub>(SeO<sub>4</sub>)<sub>3</sub>(aq) + 3 H<sub>2</sub>SeO<sub>3</sub>(aq) + 3 H<sub>2</sub>O(ℓ)<br><br>
+                Determine the oxidation numbers of the atoms in this equation. Which species is oxidized and which is reduced?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                Diiodine pentaoxide oxidizes carbon monoxide to carbon dioxide under room conditions, yielding iodine as the second product:<br><br>
+                I<sub>2</sub>O<sub>5</sub>(s) + 5 CO(g) → I<sub>2</sub>(s) + 5 CO<sub>2</sub>(g)<br><br>
+                This can be used in an analytical method to measure the amount of carbon monoxide in a sample of air. Determine the oxidation numbers of the atoms in this equation. Which species is oxidized and which is reduced?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Complete and balance the following equations for reactions taking place in acidic solution.<br>
+                (a) VO<sub>2</sub><sup>+</sup>(aq) + SO<sub>2</sub>(g) → VO<sup>2+</sup>(aq) + SO<sub>4</sub><sup>2−</sup>(aq)<br>
+                (b) Br<sub>2</sub>(ℓ) + SO<sub>2</sub>(g) → Br<sup>−</sup>(aq) + SO<sub>4</sub><sup>2−</sup>(aq)<br>
+                (c) Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>(aq) + Np<sup>3+</sup>(aq) → Cr<sup>3+</sup>(aq) + NpO<sub>2</sub><sup>2+</sup>(aq)<br>
+                (d) HCOOH(aq) + MnO<sub>4</sub><sup>−</sup>(aq) → CO<sub>2</sub>(g) + Mn<sup>2+</sup>(aq)<br>
+                (e) Hg<sub>2</sub>(HPO<sub>4</sub>)(s) + Au(s) + Cl<sup>−</sup>(aq) → Hg<sup>2+</sup>(aq) + H<sub>3</sub>PO<sub>4</sub>(aq) + AuCl<sub>4</sub><sup>−</sup>(aq)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                Complete and balance the following equations for reactions taking place in acidic solution.<br>
+                (a) MnO<sub>4</sub><sup>−</sup>(aq) + H<sub>2</sub>S(aq) → Mn<sup>2+</sup>(aq) + SO<sub>4</sub><sup>2−</sup>(aq)<br>
+                (b) Zn(s) + NO<sub>3</sub><sup>−</sup>(aq) → Zn<sup>2+</sup>(aq) + NH<sub>4</sub><sup>+</sup>(aq)<br>
+                (c) H<sub>2</sub>O<sub>2</sub>(aq) + MnO<sub>4</sub><sup>−</sup>(aq) → O<sub>2</sub>(g) + Mn<sup>2+</sup>(aq)<br>
+                (d) Sn(s) + NO<sub>3</sub><sup>−</sup>(aq) → Sn<sup>4+</sup>(aq) + N<sub>2</sub>O(g)<br>
+                (e) UO<sub>2</sub><sup>2+</sup>(aq) + Te(s) → U<sup>4+</sup>(aq) + TeO<sub>4</sub><sup>2−</sup>(aq)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                Complete and balance the following equations for reactions taking place in basic solution.<br>
+                (a) Cr(OH)<sub>3</sub>(s) + Br<sub>2</sub>(aq) → CrO<sub>4</sub><sup>2−</sup>(aq) + Br<sup>−</sup>(aq)<br>
+                (b) ZrO(OH)<sub>2</sub>(s) + SO<sub>3</sub><sup>2−</sup>(aq) → Zr(s) + SO<sub>4</sub><sup>2−</sup>(aq)<br>
+                (c) HPbO<sub>2</sub><sup>−</sup>(aq) + Re(s) → Pb(s) + ReO<sub>4</sub><sup>−</sup>(aq)<br>
+                (d) HXeO<sub>4</sub><sup>−</sup>(aq) → XeO<sub>6</sub><sup>4−</sup>(aq) + Xe(g)<br>
+                (e) N<sub>2</sub>H<sub>4</sub>(aq) + CO<sub>3</sub><sup>2−</sup>(aq) → N<sub>2</sub>(g) + CO(g)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                Complete and balance the following equations for reactions taking place in basic solution.<br>
+                (a) OCl<sup>−</sup>(aq) + I<sup>−</sup>(aq) → IO<sub>3</sub><sup>−</sup>(aq) + Cl<sup>−</sup>(aq)<br>
+                (b) SO<sub>3</sub><sup>2−</sup>(aq) + Be(s) → S<sub>2</sub>O<sub>3</sub><sup>2−</sup>(aq) + Be<sub>2</sub>O<sub>3</sub><sup>2−</sup>(aq)<br>
+                (c) H<sub>2</sub>BO<sub>3</sub><sup>−</sup>(aq) + Al(s) → BH<sub>4</sub><sup>−</sup>(aq) + H<sub>2</sub>AlO<sub>3</sub><sup>−</sup>(aq)<br>
+                (d) O<sub>2</sub>(g) + Sb(s) + H<sub>2</sub>O(ℓ) → H<sub>2</sub>O<sub>2</sub>(aq) + SbO<sub>2</sub><sup>−</sup>(aq)<br>
+                (e) Sn(OH)<sub>6</sub><sup>2−</sup>(aq) + Si(s) → HSnO<sub>2</sub><sup>−</sup>(aq) + SiO<sub>3</sub><sup>2−</sup>(aq)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                The following balanced equations represent reactions that occur in aqueous acid. Break them down into balanced oxidation and reduction half-equations.<br>
+                (a) 2 H<sub>3</sub>O<sup>+</sup>(aq) + H<sub>2</sub>O<sub>2</sub>(aq) + 2 Fe<sup>2+</sup>(aq) → 2 Fe<sup>3+</sup>(aq) + 4 H<sub>2</sub>O(ℓ)<br>
+                (b) 5 H<sub>3</sub>O<sup>+</sup>(aq) + 5 H<sub>2</sub>O<sub>2</sub>(aq) + 2 MnO<sub>4</sub><sup>−</sup>(aq) → 2 Mn<sup>2+</sup>(aq) + 5 O<sub>2</sub>(g) + 13 H<sub>2</sub>O(ℓ)<br>
+                (c) 5 ClO<sub>3</sub><sup>−</sup>(aq) + 24 H<sub>3</sub>O<sup>+</sup>(aq) → 4 ClO<sub>4</sub><sup>−</sup>(aq) + Cl<sub>2</sub>(g) + 36 H<sub>2</sub>O(ℓ)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                The following balanced equations represent reactions that occur in aqueous base. Break them down into balanced oxidation and reduction half-equations.<br>
+                (a) 4 PH<sub>3</sub>(g) + 4 H<sub>2</sub>O(ℓ) + 4 CrO<sub>4</sub><sup>2−</sup>(aq) → 4 P<sub>4</sub>(s) + 4 Cr(OH)<sub>4</sub><sup>−</sup>(aq) + 4 OH<sup>−</sup>(aq)<br>
+                (b) NiO<sub>2</sub>(s) + H<sub>2</sub>O(ℓ) + Fe(s) → Ni(OH)<sub>2</sub>(s) + Fe(OH)<sub>2</sub>(s)<br>
+                (c) CO(g) + NH<sub>2</sub>OH(aq) → CO<sub>2</sub>(g) + N<sub>2</sub>(g) + H<sub>2</sub>O(g)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                Nitrous acid (HNO<sub>2</sub>) disproportionates in acidic solution to nitrate ion (NO<sub>3</sub><sup>−</sup>) and nitrogen oxide (NO). Write a balanced equation for this reaction.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                Thiosulfate ion (S<sub>2</sub>O<sub>3</sub><sup>2−</sup>) disproportionates in acidic solution to give solid sulfur and aqueous hydrogen sulfite ion (HSO<sub>3</sub><sup>−</sup>). Write a balanced equation for this reaction.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                Potassium dichromate in acidic solution is used to titrate a solution of iron(II) ions, with which it reacts according to<br><br>
+                Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>(aq) + 6 Fe<sup>2+</sup>(aq) + 14 H<sub>3</sub>O<sup>+</sup>(aq) → 2 Cr<sup>3+</sup>(aq) + 6 Fe<sup>3+</sup>(aq) + 21 H<sub>2</sub>O(ℓ)<br><br>
+                A potassium dichromate solution is prepared by dissolving 5.134 g of K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> in water and diluting to a total volume of 1.000 L. A total of 34.26 mL of this solution is required to reach the end point in a titration of a 500.0-mL sample containing Fe<sup>2+</sup>(aq). Determine the concentration of Fe<sup>2+</sup> in the original solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                Cerium(IV) ions are strong oxidizing agents in acidic solution, oxidizing arsenious acid to arsenic acid according to the following equation:<br><br>
+                2 Ce<sup>4+</sup>(aq) + H<sub>3</sub>AsO<sub>3</sub>(aq) + H<sub>2</sub>O(ℓ) → 2 Ce<sup>3+</sup>(aq) + H<sub>3</sub>AsO<sub>4</sub>(aq) + 2 H<sup>+</sup>(aq)<br><br>
+                A sample of As<sub>2</sub>O<sub>3</sub> weighing 0.217 g is dissolved in basic solution and then acidified to make H<sub>3</sub>AsO<sub>3</sub>. Its titration with a solution of acidic cerium(IV) sulfate requires 21.47 mL. Determine the original concentration of Ce<sup>4+</sup>(aq) in the titrating solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Phase Equilibrium: Nonvolatile Solutes</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                The vapor pressure of pure acetone (CH<sub>3</sub>COCH<sub>3</sub>) at 30°C is 0.3270 atm. Suppose 15.0 g of benzophenone, C<sub>13</sub>H<sub>10</sub>O, is dissolved in 50.0 g of acetone. Calculate the vapor pressure of acetone above the resulting solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                The vapor pressure of diethyl ether (molar mass, 74.12 g mol<sup>−1</sup>) at 30°C is 0.8517 atm. Suppose 1.800 g of maleic acid, C<sub>4</sub>H<sub>4</sub>O<sub>4</sub>, is dissolved in 100.0 g of diethyl ether at 30°C. Calculate the vapor pressure of diethyl ether above the resulting solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                Pure toluene (C<sub>7</sub>H<sub>8</sub>) has a normal boiling point of 110.60°C. A solution of 7.80 g of anthracene (C<sub>14</sub>H<sub>10</sub>) in 100.0 g of toluene has a boiling point of 112.06°C. Calculate K<sub>b</sub> for toluene.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                When 2.62 g of the nonvolatile solid anthracene, C<sub>14</sub>H<sub>10</sub>, is dissolved in 100.0 g of cyclohexane, C<sub>6</sub>H<sub>12</sub>, the boiling point of the cyclohexane is raised by 0.41°C. Calculate K<sub>b</sub> for cyclohexane.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                When 39.8 g of a nondissociating, nonvolatile sugar is dissolved in 200.0 g of water, the boiling point of the water is raised by 0.30°C. Estimate the molar mass of the sugar.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                When 2.60 g of a substance that contains only indium and chlorine is dissolved in 50.0 g of tin(IV) chloride, the normal boiling point of the tin(IV) chloride is raised from 114.1°C to 116.3°C. If K<sub>b</sub> = 9.43 K kg mol<sup>−1</sup> for SnCl<sub>4</sub>, what are the approximate molar mass and the probable molecular formula of the solute?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                The Rast method for determining molar masses uses camphor as the solvent. Camphor melts at 178.4°C, and its large K<sub>f</sub> (37.7 K kg mol<sup>−1</sup>) makes it especially useful for accurate work. A sample of an unknown substance that weighs 0.840 g reduces the freezing point of 25.0 g of camphor to 170.8°C. What is its molar mass?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                Barium chloride has a freezing point of 962°C and a freezing-point depression constant of 108 K kg mol<sup>−1</sup>. If 12 g of an unknown substance dissolved in 562 g of barium chloride gives a solution with a freezing point of 937°C, compute the molar mass of the unknown, assuming no dissociation takes place.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                Ice cream is made by freezing a liquid mixture that, as a first approximation, can be considered a solution of sucrose (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>) in water. Estimate the temperature at which the first ice crystals begin to appear in a mix that consists of 34% (by mass) sucrose in water. As ice crystallizes out, the remaining solution becomes more concentrated. What happens to its freezing point?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                The solution to Problem 49 shows that to make homemade ice cream, temperatures ranging downward from −3°C are needed. Ice cubes from a freezer have a temperature of about −12°C (−10°F), which is cold enough, but contact with the warmer ice cream mixture causes them to melt to liquid at 0°C, which is too warm. To obtain a liquid that is cold enough, salt (NaCl) is dissolved in water, and ice is added to the saltwater. The salt lowers the freezing point of the water enough so that it can freeze the liquid inside the ice cream maker. The instructions for an ice cream maker say to add one part salt to eight parts water (by mass). What is the freezing point of this solution (in degrees Celsius and degrees Fahrenheit)? Assume that the NaCl dissociates fully into ions, and that the solution is ideal.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                An aqueous solution is 0.8402 molal in Na<sub>2</sub>SO<sub>4</sub>. It has a freezing point of −4.218°C. Determine the effective number of particles arising from each Na<sub>2</sub>SO<sub>4</sub> formula unit in this solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                The freezing-point depression constant of pure H<sub>2</sub>SO<sub>4</sub> is 6.12 K kg mol<sup>−1</sup>. When 2.3 g of ethanol (C<sub>2</sub>H<sub>5</sub>OH) is dissolved in 1.00 kg of pure sulfuric acid, the freezing point of the solution is 0.92 K lower than the freezing point of pure sulfuric acid. Determine how many particles are formed as 1 molecule of ethanol goes into solution in sulfuric acid.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                A 200-mg sample of a purified compound of unknown molar mass is dissolved in benzene and diluted with that solvent to a volume of 25.0 cm<sup>3</sup>. The resulting solution is found to have an osmotic pressure of 0.0105 atm at 300 K. What is the molar mass of the unknown compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                Suppose 2.37 g of a protein is dissolved in water and diluted to a total volume of 100.0 mL. The osmotic pressure of the resulting solution is 0.0319 atm at 20°C. What is the molar mass of the protein?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                A polymer of large molar mass is dissolved in water at 15°C, and the resulting solution rises to a final height of 15.2 cm above the level of the pure water, as water molecules pass through a semipermeable membrane into the solution. If the solution contains 4.64 g polymer per liter, calculate the molar mass of the polymer.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                Suppose 0.125 g of a protein is dissolved in 10.0 cm<sup>3</sup> of ethyl alcohol (C<sub>2</sub>H<sub>5</sub>OH), whose density at 20°C is 0.789 g cm<sup>−3</sup>. The solution rises to a height of 26.3 cm in an osmometer (an apparatus for measuring osmotic pressure). What is the approximate molar mass of the protein?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Phase Equilibrium: Volatile Solutes</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                The Henry's law constant at 25°C for carbon dioxide dissolved in water is 1.65 × 10<sup>3</sup> atm. If a carbonated beverage is bottled under a CO<sub>2</sub> pressure of 5.0 atm:<br>
+                (a) Calculate the number of moles of carbon dioxide dissolved per liter of water under these conditions, using 1.00 g cm<sup>−3</sup> as the density of water.<br>
+                (b) Explain what happens on a microscopic level after the bottle cap is removed.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                The Henry's law constant at 25°C for nitrogen dissolved in water is 8.57 × 10<sup>4</sup> atm, that for oxygen is 4.34 × 10<sup>4</sup> atm, and that for helium is 1.7 × 10<sup>5</sup> atm.<br>
+                (a) Calculate the number of moles of nitrogen and oxygen dissolved per liter of water in equilibrium with air at 25°C. Use Table 9.1.<br>
+                (b) Air is dissolved in blood and other bodily fluids. As a deep-sea diver descends, the pressure increases and the concentration of dissolved air in the blood increases. If the diver returns to the surface too quickly, gas bubbles out of solution within the body so rapidly that it can cause a dangerous condition called "the bends." Use Henry's law to show why divers sometimes use a combination of helium and oxygen in their breathing tanks in place of compressed air.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                At 25°C, some water is added to a sample of gaseous methane (CH<sub>4</sub>) at 1.00 atm pressure in a closed vessel, and the vessel is shaken until as much methane as possible dissolves. Then 1.00 kg of the solution is removed and boiled to expel the methane, yielding a volume of 3.01 L of CH<sub>4</sub>(g) at 0°C and 1.00 atm. Determine the Henry's law constant for methane in water.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                When exactly the procedure of Problem 59 is conducted using benzene (C<sub>6</sub>H<sub>6</sub>) in place of water, the volume of methane that results is 0.510 L at 0°C and 1.00 atm. Determine the Henry's law constant for methane in benzene.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">
+                At 20°C, the vapor pressure of toluene is 0.0289 atm and the vapor pressure of benzene is 0.0987 atm. Equal numbers of moles of toluene and benzene are mixed and form an ideal solution. Compute the mole fraction of benzene in the vapor in equilibrium with this solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">
+                At 90°C, the vapor pressure of toluene is 0.534 atm and the vapor pressure of benzene is 1.34 atm. Benzene (0.400 mol) is mixed with toluene (0.900 mol) to form an ideal solution. Compute the mole fraction of benzene in the vapor in equilibrium with this solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">
+                At 40°C, the vapor pressure of pure carbon tetrachloride (CCl<sub>4</sub>) is 0.293 atm and the vapor pressure of pure dichloroethane (C<sub>2</sub>H<sub>4</sub>Cl<sub>2</sub>) is 0.209 atm. A nearly ideal solution is prepared by mixing 30.0 g of carbon tetrachloride with 20.0 g of dichloroethane.<br>
+                (a) Calculate the mole fraction of CCl<sub>4</sub> in the solution.<br>
+                (b) Calculate the total vapor pressure of the solution at 40°C.<br>
+                (c) Calculate the mole fraction of CCl<sub>4</sub> in the vapor in equilibrium with the solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">
+                At 300 K, the vapor pressure of pure benzene (C<sub>6</sub>H<sub>6</sub>) is 0.1355 atm and the vapor pressure of pure n-hexane (C<sub>6</sub>H<sub>14</sub>) is 0.2128 atm. Mixing 50.0 g of benzene with 50.0 g of n-hexane gives a solution that is nearly ideal.<br>
+                (a) Calculate the mole fraction of benzene in the solution.<br>
+                (b) Calculate the total vapor pressure of the solution at 300 K.<br>
+                (c) Calculate the mole fraction of benzene in the vapor in equilibrium with the solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">
+                Veterinarians use Donovan's solution to treat skin diseases in animals. The solution is prepared by mixing 1.00 g of AsI<sub>3</sub>(s), 1.00 g of HgI<sub>2</sub>(s), and 0.900 g of NaHCO<sub>3</sub>(s) in enough water to make a total volume of 100.0 mL.<br>
+                (a) Compute the total mass of iodine per liter of Donovan's solution, in grams per liter.<br>
+                (b) You need a lot of Donovan's solution to treat an outbreak of rash in an elephant herd. You have plenty of mercury(II) iodide and sodium hydrogen carbonate, but the only arsenic(III) iodide you can find is 1.50 L of a 0.100 m aqueous solution. Explain how to prepare 3.50 L of Donovan's solution starting with these materials.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">
+                Relative solubilities of salts in liquid ammonia can differ significantly from those in water. Thus, silver bromide is soluble in ammonia, but barium bromide is not (the reverse of the situation in water).<br>
+                (a) Write a balanced equation for the reaction of an ammonia solution of barium nitrate with an ammonia solution of silver bromide. Silver nitrate is soluble in liquid ammonia.<br>
+                (b) What volume of a 0.50 m solution of silver bromide will react completely with 0.215 L of a 0.076 m solution of barium nitrate in ammonia?<br>
+                (c) What mass of barium bromide will precipitate from the reaction in part (b)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">
+                A 5.0-L flask contains a mixture of ammonia and nitrogen at 27°C and a total pressure of 3.00 atm. The sample of gas is allowed to flow from the flask until the pressure in the flask has fallen to 1.00 atm. The gas that escapes is passed through 1.50 L of 0.200 m acetic acid. All the ammonia in the gas that escapes is absorbed by the solution and turns out to be just sufficient to neutralize the acetic acid present. The volume of the solution does not change significantly.<br>
+                (a) Will the electrical conductivity of the aqueous solution change significantly as the gas is absorbed? Give equations for any reactions, and calculate the final concentrations of the principal ions present (if any) at the end.<br>
+                (b) Calculate the percentage by mass of ammonia in the flask initially.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">
+                It was desired to neutralize a certain solution X that had been prepared by mixing solutions of potassium chloride and hydrobromic acid. Titration of 10.0 mL X with 0.100 m silver nitrate required 50.0 mL of the latter. The resulting precipitate, containing a mixture of AgCl and AgBr, was dried and found to weigh 0.762 g. How much 0.100 m sodium hydroxide should be used to neutralize 10.0 mL solution X?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">
+                Vanadic ion, V<sup>3+</sup>, forms green salts and is a good reducing agent, being itself changed in neutral solutions to the nearly colorless ion V(OH)<sub>4</sub><sup>+</sup>. Suppose that 15.0 mL of a 0.200-m solution of vanadic sulfate, V<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>, was needed to reduce completely a 0.540-g sample of an unknown substance X. If each molecule of X accepted just one electron, what is the molecular weight of X? Suppose that each molecule of X accepted three electrons; what would be the molecular weight of X then?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">
+                A new antibiotic, A, which is an acid, can readily be oxidized by hot aqueous permanganate; the latter is reduced to manganous ion, Mn<sup>2+</sup>. The following experiments have been performed with A: (a) 0.293 g A consumes just 18.3 mL of 0.080 m KMnO<sub>4</sub>; (b) 0.385 g A is just neutralized by 15.7 mL of 0.490 m NaOH. What can you conclude about the molecular weight of A from (a), from (b), and from both considered together?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">
+                Suppose 150 mL of a 10.00% by mass solution of sodium chloride (density = 1.0726 g cm<sup>−3</sup>) is acidified with sulfuric acid and then treated with an excess of MnO<sub>2</sub>(s). Under these conditions, all the chlorine is liberated as Cl<sub>2</sub>(g). The chlorine is collected without loss and reacts with excess H<sub>2</sub>(g) to form HCl(g). The HCl(g) is dissolved in enough water to make 250 mL of solution. Compute the molarity of this solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">
+                The amount of ozone in a mixture of gases can be determined by passing the mixture through an acidic aqueous solution of potassium iodide, where the ozone reacts according to<br><br>
+                O<sub>3</sub>(g) + 2 I<sup>−</sup>(aq) + H<sub>2</sub>O(ℓ) → O<sub>2</sub>(g) + I<sub>3</sub><sup>−</sup>(aq) + 2 OH<sup>−</sup>(aq)<br><br>
+                to form the triiodide ion I<sub>3</sub><sup>−</sup>. The amount of triiodide produced is then determined by titrating with thiosulfate solution:<br><br>
+                I<sub>3</sub><sup>−</sup>(aq) + 2 S<sub>2</sub>O<sub>3</sub><sup>2−</sup>(aq) → 3 I<sup>−</sup>(aq) + S<sub>4</sub>O<sub>6</sub><sup>2−</sup>(aq)<br><br>
+                A small amount of starch solution is added as an indicator because it forms a deep-blue complex with the triiodide solution. Disappearance of the blue color thus signals the completion of the titration. Suppose 53.2 L of a gas mixture at a temperature of 18°C and a total pressure of 0.993 atm is passed through a solution of potassium iodide until the ozone in the mixture has reacted completely. The solution requires 26.2 mL of a 0.1359-m solution of thiosulfate ion to titrate to the endpoint. Calculate the mole fraction of ozone in the original gas sample.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">
+                The vapor pressure of pure liquid CS<sub>2</sub> is 0.3914 atm at 20°C. When 40.0 g of rhombic sulfur is dissolved in 1.00 kg of CS<sub>2</sub>, the vapor pressure of CS<sub>2</sub> decreases to 0.3868 atm. Determine the molecular formula for the sulfur molecules dissolved in CS<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 74</div>
+            <div class="problem-text">
+                The expressions for boiling-point elevation and freezing-point depression apply accurately to dilute solutions only. A saturated aqueous solution of NaI (sodium iodide) in water has a boiling point of 144°C. The mole fraction of NaI in the solution is 0.390. Compute the molality of this solution. Compare the boiling-point elevation predicted by the expression in this chapter with the elevation actually observed.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 75</div>
+            <div class="problem-text">
+                You take a bottle of soft drink out of your refrigerator. The contents are liquid and stay liquid, even when you shake them. Presently, you remove the cap and the liquid freezes solid. Offer a possible explanation for this observation.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 76</div>
+            <div class="problem-text">
+                Mercury(II) chloride (HgCl<sub>2</sub>) freezes at 276.1°C and has a freezing-point depression constant K<sub>f</sub> of 34.3 K kg mol<sup>−1</sup>. When 1.36 g of solid mercury(I) chloride (empirical formula HgCl) is dissolved in 100 g of HgCl<sub>2</sub>, the freezing point is reduced by 0.99°C. Calculate the molar mass of the dissolved solute species and give its molecular formula.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 77</div>
+            <div class="problem-text">
+                The vapor pressure of an aqueous solution of CaCl<sub>2</sub> at 25°C is 0.02970 atm. The vapor pressure of pure water at the same temperature is 0.03126 atm. Estimate the freezing point of the solution.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 78</div>
+            <div class="problem-text">
+                Ethylene glycol (CH<sub>2</sub>OHCH<sub>2</sub>OH) is used in antifreeze because, when mixed with water, it lowers the freezing point below 0°C. What mass percentage of ethylene glycol in water must be used to reduce the freezing point of the mixture to −5.0°C, assuming ideal solution behavior?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 79</div>
+            <div class="problem-text">
+                A new compound has the empirical formula GaCl<sub>2</sub>. This surprises some chemists who, based on the position of gallium in the periodic table, expect a chloride of gallium to have the formula GaCl<sub>3</sub> or possibly GaCl. They suggest that the "GaCl<sub>2</sub>" is really Ga[GaCl<sub>4</sub>], in which the bracketed group behaves as a unit with a −1 charge. Suggest experiments to test this hypothesis.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 80</div>
+            <div class="problem-text">
+                Suppose two beakers are placed in a small closed container at 25°C. One contains 400 mL of a 0.100-m aqueous solution of NaCl; the second contains 200 mL of a 0.250-m aqueous solution of NaCl. Small amounts of water evaporate from both solutions. As time passes, the volume of solution in the second beaker gradually increases, and that in the first gradually decreases. Why? If we wait long enough, what will the final volumes and concentrations be?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 81</div>
+            <div class="problem-text">
+                The walls of erythrocytes (red blood cells) are permeable to water. In a salt solution, they shrivel (lose water) when the outside salt concentration is high and swell (take up water) when the outside salt concentration is low. In an experiment at 25°C, an aqueous solution of NaCl that has a freezing point of −0.046°C causes erythrocytes neither to swell nor to shrink, indicating that the osmotic pressure of their contents is equal to that of the NaCl solution. Calculate the osmotic pressure of the solution inside the erythrocytes under these conditions, assuming that its molarity and molality are equal.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 82</div>
+            <div class="problem-text">
+                Silver dissolves in molten lead. Compute the osmotic pressure of a 0.010 m solution of silver in lead at 423°C. Compute the height of a column of molten lead (ρ = 11.4 g cm<sup>−3</sup>) to which this pressure corresponds.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 83</div>
+            <div class="problem-text">
+                Henry's law is important in environmental chemistry, where it predicts the distribution of pollutants between water and the atmosphere. Benzene (C<sub>6</sub>H<sub>6</sub>) emitted in wastewater streams, for example, can pass into the air, where it is degraded by processes induced by light from the sun. The Henry's law constant for benzene in water at 25°C is 301 atm. Calculate the partial pressure of benzene vapor in equilibrium with a solution of 2.0 g of benzene per 1000 L of water. How many benzene molecules are present in each cubic centimeter?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 84</div>
+            <div class="problem-text">
+                Refer to the data of Problem 62. Calculate the mole fraction of toluene in a mixture of benzene and toluene that boils at 90°C under atmospheric pressure.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 85</div>
+            <div class="problem-text">
+                What is the difference between a solution and a colloidal suspension? Give examples of each, and show how, in some cases, it may be difficult to classify a mixture as one or the other.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Cumulative Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 86</div>
+            <div class="problem-text">
+                A student prepares a solution by dissolving 1.000 mol of Na<sub>2</sub>SO<sub>4</sub> in water. She accidentally leaves the container uncovered and comes back the next week to find only a white, solid residue. The mass of the residue is 322.2 g. Determine the chemical formula of this residue.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 87</div>
+            <div class="problem-text">
+                Complete combustion of 2.40 g of a compound of carbon, hydrogen, and oxygen yielded 5.46 g CO<sub>2</sub> and 2.23 g H<sub>2</sub>O. When 8.69 g of the compound was dissolved in 281 g of water, the freezing point of the solution was found to be −0.97°C. What is the molecular formula of the compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 88</div>
+            <div class="problem-text">
+                Imagine that two 1-L beakers, A and B, each containing an aqueous solution of fructose (a nonvolatile sugar with molecular weight = 180) are placed together in a box, which is then sealed. (The concentrations of the solutions are not necessarily the same.) The temperature remains constant at 26°C. Initially, there is 600 mL of solution in A and 100 mL of solution in B. As the solutions stand in the sealed box, their volumes change slowly for a while. When they stop changing, beaker A contains 400 mL and beaker B contains 300 mL. It is then determined that the solution in A is 1.5 m in fructose and has a density of 1.10 g mL<sup>−1</sup>.<br>
+                (a) What is the molar concentration of fructose in the solution in beaker B at the end? Explain.<br>
+                (b) Calculate the concentration of fructose in the solution in A at the start.<br>
+                (c) Calculate the concentration of the fructose in the solution in B at the start.<br>
+                (d) The vapor pressure of pure water at 26°C is 25.2 torr. What is the pressure of water vapor in the box at the end, after the volumes have stopped changing?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>
+

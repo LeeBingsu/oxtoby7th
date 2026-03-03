@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10 - Solids, Liquids, and Phase Transitions</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 10 - Solids, Liquids, and Phase Transitions</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Bulk Properties of Gases, Liquids, and Solids: Molecular Interpretation</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                A substance is nearly nonviscous and quite compressible, and it has a large coefficient of thermal expansion. Is it most likely to be a solid, a liquid, or a gas?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                A substance is viscous, nearly incompressible, and not elastic. Is it most likely to be a solid, a liquid, or a gas?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                A sample of volume 258 cm<sup>3</sup> has a mass of 2.71 kg.<br>
+                (a) Is the material gaseous or condensed?<br>
+                (b) If the molar mass of the material is 108 g mol<sup>−1</sup>, calculate its molar volume.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                A sample of volume 18.3 L has a mass of 57.9 g.<br>
+                (a) Is the material gaseous or condensed?<br>
+                (b) If the molar mass of the material is 123 g mol<sup>−1</sup>, calculate its molar volume.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                Heating a sample of matter from 20°C to 40°C at constant pressure causes its volume to increase from 546.0 to 547.6 cm<sup>3</sup>. Classify the material as a nearly ideal gas, a nonideal gas, or condensed.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                Cooling a sample of matter from 70°C to 10°C at constant pressure causes its volume to decrease from 873.6 to 712.6 cm<sup>3</sup>. Classify the material as a nearly ideal gas, a nonideal gas, or condensed.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                At 1.00 atm pressure and a temperature of 25°C, the volume of 1.0 g water is 1.0 mL. At the same pressure and a temperature of 101°C, the volume of 1.0 g water is nearly 1700 times larger. Give the reason for this large change in volume.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                Doubling the absolute temperature of a gas essentially doubles its volume at constant pressure. Doubling the temperature of many metals, however, often increases their volumes by only a few percent. Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Will solid sodium chloride be harder (that is, more resistant to indentation) or softer than solid carbon tetrachloride? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                Will the surface tension of molten sodium chloride be higher than or lower than that of carbon tetrachloride? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Do you expect that the diffusion constant will increase or decrease as the density of a liquid is increased (by compressing it) at constant temperature? Explain. What will happen to the diffusion constant of a gas and a solid as the density increases?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Do you anticipate that the diffusion constant will increase as the temperature of a liquid increases at constant pressure? Why or why not? Will the diffusion constant increase with temperature for a gas and a solid? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Intermolecular Forces: Origins in Molecular Structure</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                Compare ion–dipole forces with induced dipole forces. In what ways are they similar and different? Give an example of each.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                Compare dipole–dipole forces with dispersion forces. In what ways are they similar and different? Give an example of each.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                Name the types of attractive forces that will contribute to the interactions among atoms, molecules, or ions in the following substances. Indicate the one(s) you expect to predominate.<br>
+                (a) KF<br>
+                (b) HI<br>
+                (c) Rn<br>
+                (d) N<sub>2</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                Name the types of attractive forces that will contribute to the interactions among atoms, molecules, or ions in the following substances. Indicate the one(s) you expect to predominate.<br>
+                (a) Ne<br>
+                (b) ClF<br>
+                (c) F<sub>2</sub><br>
+                (d) BaCl<sub>2</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                Predict whether a sodium ion will be most strongly attracted to a bromide ion, a molecule of hydrogen bromide, or an atom of krypton.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                Predict whether an atom of argon will be most strongly attracted to another atom of argon, an atom of neon, or an atom of krypton.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                (a) Use Figure 10.9 to estimate the length of the covalent bond in Cl<sub>2</sub> and the length of the ionic bond in K<sup>+</sup>Cl<sup>−</sup>. Note: The latter corresponds to the distance between the atoms in an isolated single molecule of K<sup>+</sup>Cl<sup>−</sup>, not in KCl(s) (solid potassium chloride).<br>
+                (b) A book states, "The shorter the bond, the stronger the bond." What features of Figure 10.9 show that this is not always true?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                True or false: Any two atoms held together by nonbonded attractions must be farther apart than any two atoms held together by a chemical bond. Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Intermolecular Forces in Liquids</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                Under room conditions, fluorine and chlorine are gases, bromine is a liquid, and iodine is a solid. Explain the origin of this trend in the physical state of the halogens.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                The later halogens form pentafluorides: ClF<sub>5</sub>, BrF<sub>5</sub>, and IF<sub>5</sub>. At 0°C, one of these is a solid, one a liquid, and one a gas. Specify which is which, and explain your reasoning.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                List the following substances in order of increasing normal boiling points, T<sub>b</sub>, and explain your reasoning: NO, NH<sub>3</sub>, Ne, RbCl.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                List the following substances in order of increasing normal boiling points, T<sub>b</sub>, and explain your reasoning: SO<sub>2</sub>, He, HF, CaF<sub>2</sub>, Ar.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                As a vapor, methanol exists to an extent as a tetramer, (CH<sub>3</sub>OH)<sub>4</sub>, in which four CH<sub>3</sub>OH molecules are held together by hydrogen bonds. Propose a reasonable structure for this tetramer.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                Hypofluorous acid (HOF) is the simplest possible compound that allows comparison between fluorine and oxygen in their abilities to form hydrogen bonds. Although F attracts electrons more strongly than O, solid HOF unexpectedly contains no H···F hydrogen bonds! Draw a proposed structure for chains of HOF molecules in the crystalline state. The bond angle in HOF is 101 degrees.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                Hydrazine (N<sub>2</sub>H<sub>4</sub>) is used as a reducing agent and in the manufacture of rocket fuels. How do you expect its boiling point to compare with that of ethylene (C<sub>2</sub>H<sub>4</sub>)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                Hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>) is a major industrial chemical that is produced on a scale approaching 10<sup>9</sup> kg per year. It is widely used as a bleach and in chemical manufacturing processes. How do you expect its boiling point to compare with those of fluorine (F<sub>2</sub>) and hydrogen sulfide (H<sub>2</sub>S), two substances with molar masses comparable with that of hydrogen peroxide?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                A flask contains 1.0 L (1.0 kg) of room-temperature water. Calculate the number of possible hydrogen bonds among the water molecules present in this sample. Each water molecule can accept two hydrogen bonds and also furnish the H atoms for two hydrogen bonds.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                What is the maximum number of hydrogen bonds that can be formed in a sample containing 1.0 mol (N<sub>A</sub> molecules) liquid HF? Compare with the maximum number that can form in 1.0 mol liquid water.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Phase Equilibrium</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Hydrogen at a pressure of 1 atm condenses to a liquid at 20.3 K and solidifies at 14.0 K. The vapor pressure of liquid hydrogen is 0.213 atm at 16.0 K. Calculate the volume of 1.00 mol H<sub>2</sub> vapor under these conditions and compare it with the volume of 1.00 mol H<sub>2</sub> at standard temperature and pressure.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                Helium condenses to a liquid at 4.224 K under atmospheric pressure and remains a liquid down to the absolute zero of temperature. (It is used as a coolant to reach very low temperatures.) The vapor pressure of liquid helium at 2.20 K is 0.05256 atm. Calculate the volume occupied by 1.000 mol helium vapor under these conditions and compare it with the volume of the same amount of helium at standard temperature and pressure.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                The vapor pressure of liquid mercury at 27°C is 2.87 × 10<sup>−6</sup> atm. Calculate the number of Hg atoms per cubic centimeter in the "empty" space above the top of the column of mercury in a barometer at 27°C.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                The tungsten filament in an incandescent lightbulb ordinarily operates at a temperature of about 2500°C. At this temperature, the vapor pressure of solid tungsten is 7.0 × 10<sup>−9</sup> atm. Estimate the number of gaseous tungsten atoms per cubic centimeter under these conditions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                Calcium carbide reacts with water to produce acetylene (C<sub>2</sub>H<sub>2</sub>) and calcium hydroxide. The acetylene is collected over water at 40.0°C under a total pressure of 0.9950 atm. The vapor pressure of water at this temperature is 0.0728 atm. Calculate the mass of acetylene per liter of "wet" acetylene collected in this way, assuming ideal gas behavior.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                A metal reacts with aqueous hydrochloric acid to produce hydrogen. The hydrogen (H<sub>2</sub>) is collected over water at 25°C under a total pressure of 0.9900 atm. The vapor pressure of water at this temperature is 0.0313 atm. Calculate the mass of hydrogen per liter of "wet" hydrogen above the water, assuming ideal gas behavior.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                Carbon dioxide is liberated by the reaction of aqueous hydrochloric acid with calcium carbonate:<br><br>
+                CaCO<sub>3</sub>(s) + 2 H<sup>+</sup>(aq) → Ca<sup>2+</sup>(aq) + CO<sub>2</sub>(g) + H<sub>2</sub>O(ℓ)<br><br>
+                A volume of 722 mL CO<sub>2</sub>(g) is collected over water at 20°C and a total pressure of 0.9963 atm. At this temperature, water has a vapor pressure of 0.0231 atm. Calculate the mass of calcium carbonate that has reacted, assuming no losses of carbon dioxide.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                When an excess of sodium hydroxide is added to an aqueous solution of ammonium chloride, gaseous ammonia is produced:<br><br>
+                NaOH(aq) + NH<sub>4</sub>Cl(aq) → NaCl(aq) + NH<sub>3</sub>(g) + H<sub>2</sub>O(ℓ)<br><br>
+                Suppose 3.68 g ammonium chloride reacts in this way at 30°C and a total pressure of 0.9884 atm. At this temperature, the vapor pressure of water is 0.0419 atm. Calculate the volume of ammonia saturated with water vapor that will be produced under these conditions, assuming no leaks or other losses of gas.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Phase Transitions</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                High in the Andes, an explorer notes that the water for tea is boiling vigorously at a temperature of 90°C. Use Figure 10.17 to estimate the atmospheric pressure at the altitude of the camp. What fraction of the earth's atmosphere lies below the level of the explorer's camp?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                The total pressure in a pressure cooker filled with water increases to 4.0 atm when it is heated, and this pressure is maintained by the periodic operation of a relief valve. Use Figure 10.23c to estimate the temperature of the water in the pressure cooker.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                Iridium melts at a temperature of 2410°C and boils at 4130°C, whereas sodium melts at a temperature of 97.8°C and boils at 904°C. Predict which of the two molten metals has the larger surface tension at its melting point. Explain your prediction.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                Aluminum melts at a temperature of 660°C and boils at 2470°C, whereas thallium melts at a temperature of 304°C and boils at 1460°C. Which metal will be more volatile at room temperature?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Phase Diagrams</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                At its melting point (624°C), the density of solid plutonium is 16.24 g cm<sup>−3</sup>. The density of liquid plutonium is 16.66 g cm<sup>−3</sup>. A small sample of liquid plutonium at 625°C is strongly compressed. Predict what phase changes, if any, will occur.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                Phase changes occur between different solid forms, as well as from solid to liquid, liquid to gas, and solid to gas. When white tin at 1.00 atm is cooled below 13.2°C, it spontaneously changes (over a period of weeks) to gray tin. The density of gray tin is less than the density of white tin (5.75 g cm<sup>−3</sup> vs 7.31 g cm<sup>−3</sup>). Some white tin is compressed to a pressure of 2.00 atm. At this pressure, should the temperature be higher or lower than 13.2°C for the conversion to gray tin to occur? Explain your reasoning.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                The following table gives several important points on the pressure–temperature diagram of ammonia:<br><br>
+                <table style="margin: 10px 0; border-collapse: collapse;">
+                    <tr style="background: var(--color-bg-secondary);">
+                        <th style="border: 1px solid var(--color-border); padding: 8px;"></th>
+                        <th style="border: 1px solid var(--color-border); padding: 8px;">P (atm)</th>
+                        <th style="border: 1px solid var(--color-border); padding: 8px;">T (K)</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">Triple point</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">0.05997</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">195.42</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">Critical point</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">111.5</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">405.38</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">Normal boiling point</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">1.0</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">239.8</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">Normal melting point</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">1.0</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">195.45</td>
+                    </tr>
+                </table>
+                Use this information to sketch the phase diagram of ammonia.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                The following table gives several important points on the pressure–temperature diagram of nitrogen:<br><br>
+                <table style="margin: 10px 0; border-collapse: collapse;">
+                    <tr style="background: var(--color-bg-secondary);">
+                        <th style="border: 1px solid var(--color-border); padding: 8px;"></th>
+                        <th style="border: 1px solid var(--color-border); padding: 8px;">P (atm)</th>
+                        <th style="border: 1px solid var(--color-border); padding: 8px;">T (K)</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">Triple point</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">0.123</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">63.15</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">Critical point</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">33.3978</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">126.19</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">Normal boiling point</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">1.0</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">77.35</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">Normal melting point</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">1.0</td>
+                        <td style="border: 1px solid var(--color-border); padding: 8px;">195.45</td>
+                    </tr>
+                </table>
+                Use this information to sketch the phase diagram of nitrogen. The density of N<sub>2</sub>(s) is 1.03 g cm<sup>−3</sup> and that of N<sub>2</sub>(ℓ) is 0.808 g cm<sup>−3</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                Determine whether argon is a solid, a liquid, or a gas at each of the following combinations of temperature and pressure (use Fig. 10.23).<br>
+                (a) 50 atm and 100 K<br>
+                (b) 8 atm and 150 K<br>
+                (c) 1.5 atm and 25 K<br>
+                (d) 0.25 atm and 120 K
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                Some water starts out at a temperature of 298 K and a pressure of 1 atm. It is compressed to 500 atm at constant temperature, and then heated to 750 K at constant pressure. Next, it is decompressed at 750 K back to 1 atm and finally cooled to 400 K at constant pressure.<br>
+                (a) What was the state (solid, liquid, or gas) of the water at the start of the experiment?<br>
+                (b) What is the state (solid, liquid, or gas) of the water at the end of the experiment?<br>
+                (c) Did any phase transitions occur during the four steps described? If so, at what temperature and pressure did they occur? (Hint: Trace out the various changes on the phase diagram of water [see Fig. 10.23].)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                The vapor pressure of solid acetylene at −84.0°C is 760 torr.<br>
+                (a) Does the triple-point temperature lie above or below −84.0°C? Explain.<br>
+                (b) Suppose a sample of solid acetylene is held under an external pressure of 0.80 atm and heated from 10 to 300 K. What phase change(s), if any, will occur?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                The triple point of hydrogen occurs at a temperature of 13.8 K and a pressure of 0.069 atm.<br>
+                (a) What is the vapor pressure of solid hydrogen at 13.8 K?<br>
+                (b) Suppose a sample of solid hydrogen is held under an external pressure of 0.030 atm and heated from 5 to 300 K. What phase change(s), if any, will occur?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                The density of nitrogen at its critical point is 0.3131 g cm<sup>−3</sup>. At a very low temperature, 0.3131 g solid nitrogen is sealed into a thick-walled glass tube with a volume of 1.000 cm<sup>3</sup>. Describe what happens inside the tube as the tube is warmed past the critical temperature, 126.19 K.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                At its critical point, ammonia has a density of 0.235 g cm<sup>−3</sup>. You have a special thick-walled glass tube that has a 10.0-mm outside diameter, a wall thickness of 4.20 mm, and a length of 155 mm. How much ammonia must you seal into the tube if you wish to observe the disappearance of the meniscus as you heat the tube and its contents to a temperature higher than 132.23°C, the critical temperature?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                Would you classify candle wax as a solid or a liquid? What about rubber? Discuss.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                When a particle diffuses, its mean-square displacement in a time interval Δt is 6DΔt, where D is the diffusion constant. Its root-mean-square displacement is the square root of this (recall the analogous root-mean-square speed from Section 9.5). Calculate the root-mean-square displacement at 25°C after 1.00 hour of (a) an oxygen molecule in air (D = 2.1 × 10<sup>−5</sup> m<sup>2</sup> s<sup>−1</sup>), (b) a molecule in liquid water (D = 2.26 × 10<sup>−9</sup> m<sup>2</sup> s<sup>−1</sup>), and (c) an atom in solid sodium (D = 5.8 × 10<sup>−13</sup> m<sup>2</sup> s<sup>−1</sup>). Note that for solids with melting points higher than sodium, the diffusion constant can be many orders of magnitude smaller.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                Liquid hydrogen chloride will dissolve many ionic compounds. Diagram how molecules of hydrogen chloride tend to distribute themselves about a negative ion and about a positive ion in such solutions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                Section 9.6 explains that the van der Waals constant b (with units of L mol<sup>−1</sup>) is related to the volume per molecule in the liquid, and thus to the sizes of the molecules. The combination of van der Waals constants a/b has units of L atm mol<sup>−1</sup>. Because the liter atmosphere is a unit of energy (1 L atm = 101.325 J), a/b is proportional to the energy per mole for interacting molecules, and thus to the strength of the attractive forces between molecules, as shown in Figure 10.9. By using the van der Waals constants in Table 9.3, rank the following attractive forces from strongest to weakest: N<sub>2</sub>, H<sub>2</sub>, SO<sub>2</sub>, and HCl.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                Describe how the average kinetic and potential energies per mole change as a sample of water is heated from 10 to 1000 K at a constant pressure of 1 atm.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                As a sample of water is heated from 0.0°C to 4.0°C, its density increases from 0.99987 to 1.00000 g cm<sup>−3</sup>. What can you conclude about the coefficient of thermal expansion of water in this temperature range? Is water unusual in its behavior? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                At 25°C, the equilibrium vapor pressure of water is 0.03126 atm. A humidifier is placed in a room of volume 110 m<sup>3</sup> and is operated until the air becomes saturated with water vapor. Assuming that no water vapor leaks out of the room and that initially there was no water vapor in the air, calculate the number of grams of water that have passed into the air.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                The text states that at 1000°C, the vapor pressure of tungsten is 2 × 10<sup>−25</sup> atm. Calculate the volume occupied per tungsten atom in the vapor under these conditions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">
+                You boil a small quantity of water inside a 5.0-L metal can. When the can is filled with water vapor (and all air has been expelled), you quickly seal the can with a screw-on cap and remove it from the source of heat. It cools to 60°C and most of the steam condenses to liquid water. Determine the pressure inside the can. (Hint: Refer to Fig. 10.17.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">
+                The air over an unknown liquid is saturated with the vapor of that liquid at 25°C and a total pressure of 0.980 atm. Suppose that a sample of 6.00 L of the saturated air is collected and the vapor of the unknown liquid is removed from that sample by cooling and condensation. The pure air remaining occupies a volume of 3.75 L at −50°C and 1.000 atm. Calculate the vapor pressure of the unknown liquid at 25°C.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">
+                If it is true that all solids and liquids have vapor pressures, then at sufficiently low external pressures, every substance should start to boil. In space, there is effectively zero external pressure. Explain why spacecraft do not just boil away as vapors when placed in orbit.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">
+                Butane-fueled cigarette lighters, which give hundreds of lights each, typically contain 4 to 5 g butane (C<sub>4</sub>H<sub>10</sub>), which is confined in a 10-mL plastic container and exerts a pressure of 3.0 atm at room temperature (25°C). The butane boils at −0.5°C under normal pressure. Butane lighters have been known to explode during use, inflicting serious injury. A person hoping to end such accidents suggests that there be less butane placed in the lighters so that the pressure inside them does not exceed 1.0 atm. Estimate how many grams of butane would be contained in such a lighter.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">
+                A cooling bath is prepared in a laboratory by mixing chunks of solid CO<sub>2</sub> with ethanol. CO<sub>2</sub>(s) sublimes at −78.5°C to CO<sub>2</sub>(g). Ethanol freezes at −114.5°C and boils at −78.4°C. State the temperature of this cooling bath and describe what will be seen when it is prepared under ordinary laboratory conditions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">
+                Oxygen melts at 54.8 K and boils at 90.2 K at atmospheric pressure. At the normal boiling point, the density of the liquid is 1.14 g cm<sup>−3</sup> and the vapor can be approximated as an ideal gas. The critical point is defined by T<sub>c</sub> = 154.6 K, P<sub>c</sub> = 49.8 atm, and (density) d<sub>c</sub> = 0.436 g cm<sup>−3</sup>. The triple point is defined by T<sub>t</sub> = 54.4 K, P<sub>t</sub> = 0.0015 atm, a liquid density equal to 1.31 g cm<sup>−3</sup>, and a solid density of 1.36 g cm<sup>−3</sup>. At 130 K, the vapor pressure of the liquid is 17.25 atm. Use this information to construct a phase diagram showing P versus T for oxygen. You need not draw the diagram to scale, but you should give numeric labels to as many points as possible on both axes.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">
+                It can be shown that if a gas obeys the van der Waals equation, its critical temperature, its critical pressure, and its molar volume at the critical point are given by the equations<br><br>
+                T<sub>c</sub> = 8a/(27Rb), P<sub>c</sub> = a/(27b<sup>2</sup>), V<sub>c</sub>/n = 3b<br><br>
+                where a and b are the van der Waals constants of the gas. Use the van der Waals constants for oxygen, carbon dioxide, and water (from Table 9.3) to estimate the critical-point properties of these substances. Compare with the observed values given in Figure 10.23 and in Problem 66.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">
+                Each increase in pressure of 100 atm decreases the melting point of ice by about 1.0°C.<br>
+                (a) Estimate the temperature at which liquid water freezes under a pressure of 400 atm.<br>
+                (b) One possible explanation of why a skate moves smoothly over ice is that the pressure exerted by the skater on the ice lowers its freezing point and causes it to melt. The pressure exerted by an object is the force (its mass × the acceleration of gravity, 9.8 m s<sup>−2</sup>) divided by the area of contact. Calculate the change in freezing point of ice when a skater with a mass of 75 kg stands on a blade of area 8.0 × 10<sup>−5</sup> m<sup>2</sup> in contact with the ice. Is this sufficient to explain the ease of skating at a temperature of, for example, −5°C (23°F)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">
+                (a) Sketch the phase diagram of temperature versus molar volume for carbon dioxide, indicating the region of each of the phases (gas, liquid, and solid) and the coexistence regions for two phases.<br>
+                (b) Liquid water has a maximum at 4°C in its curve of density against temperature at P = 1 atm, and the solid is less dense than the liquid. What happens if you try to draw a phase diagram of T versus molar volume for water?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">
+                The critical temperature of HCl is 51°C, lower than that of HF, 188°C, and HBr, 90°C. Explain this by analyzing the nature of the intermolecular forces in each case.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">
+                The normal boiling points of the fluorides of the second-period elements are as follows: LiF, 1676°C; BeF<sub>2</sub>, 1175°C; BF<sub>3</sub>, −100°C; CF<sub>4</sub>, −128°C; NF<sub>3</sub>, −129°C; OF<sub>2</sub>, −145°C; F<sub>2</sub>, −188°C. Describe the nature of the intermolecular forces in this series of liquids, and account for the trends in boiling point.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Cumulative Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">
+                At 20°C and a pressure of 1 atm, 1 mol argon gas occupies a volume of 24.0 L. Estimate the van der Waals radius for argon from the onset of the repulsive part of the argon intermolecular potential curve in Figure 9.17, and calculate the fraction of the gas volume that consists of argon atoms.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">
+                Other things being equal, ionic character in compounds of metals decreases with increasing oxidation number. Rank the following compounds from lowest to highest normal boiling points: AsF<sub>5</sub>, SbF<sub>3</sub>, SbF<sub>5</sub>, F<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>

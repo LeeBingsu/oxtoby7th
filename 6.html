@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 - Quantum Mechanics and Molecular Structure</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 6 - Quantum Mechanics and Molecular Structure</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Quantum Picture of the Chemical Bond</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Determine the number of nodes along the internuclear axis for each of the σ molecular orbitals for H<sub>2</sub><sup>+</sup> shown in Figure 6.5.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                Determine the number of nodes along the internuclear axis and the number of nodal planes for each of the π molecular orbitals for H<sub>2</sub><sup>+</sup> shown in Figure 6.5.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                Sketch the shape of each of the σ molecular orbitals for H<sub>2</sub><sup>+</sup> shown in Figure 6.5 in a plane perpendicular to the internuclear axis located at the midpoint between the two nuclei. Repeat the sketches for a plane perpendicular to the internuclear axis located at a point one quarter of the distance between the two nuclei.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                Sketch the shape of each of the π molecular orbitals for H<sub>2</sub><sup>+</sup> shown in Figure 6.5 in a plane perpendicular to the internuclear axis located at the midpoint between the two nuclei. Repeat the sketches for a plane perpendicular to the internuclear axis located at a point one quarter of the distance between the two nuclei.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                Compare the electron density in the 1σ<sub>g</sub> and 1σ<sub>u</sub>* molecular orbitals for H<sub>2</sub><sup>+</sup> shown in Figure 6.5 with the classical model for bonding for H<sub>2</sub><sup>+</sup> summarized in Figures 3.11 and 3.12. Which of these molecular orbitals describes the bond in H<sub>2</sub><sup>+</sup>?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                Explain why 1σ<sub>g</sub> is the ground state for H<sub>2</sub><sup>+</sup>. By combining your answer with the answer to Problem 5, what conclusions can you draw about the molecular orbital description of the bond in H<sub>2</sub><sup>+</sup>?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>De-localized Bonds: Molecular Orbital Theory and the Linear Combination of Atomic Orbitals Approximation</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                The ground state of H<sub>2</sub> has the electron configuration (1σ<sub>g</sub>)<sup>2</sup>. There are excited states that have the following configurations:<br>
+                (a) (1σ<sub>g</sub>)<sup>1</sup>(1σ<sub>u</sub>*)<sup>1</sup><br>
+                (b) (1σ<sub>u</sub>*)<sup>2</sup><br><br>
+                Which state do you predict to have higher energy?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                Predict the ground electronic state of the He<sub>2</sub><sup>2+</sup> ion. What is the bond order? Will it be stable in the ground state?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Without consulting tables of data, predict which species has the larger bond energy, H<sub>2</sub> or He<sub>2</sub><sup>+</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                Without consulting tables of data, predict which species has the larger bond energy, H<sub>2</sub><sup>+</sup> or H<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Without consulting tables of data, predict which species has the greater bond length, H<sub>2</sub> or He<sub>2</sub><sup>+</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Without consulting tables of data, predict which species has the greater bond length, H<sub>2</sub><sup>+</sup> or H<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                Without consulting tables of data, on the same graph sketch the effective potential energy curves for H<sub>2</sub> and He<sub>2</sub><sup>+</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                Without consulting tables of data, on the same graph sketch the effective potential energy curves for H<sub>2</sub><sup>+</sup> and H<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                Suppose we supply enough energy to H<sub>2</sub> to remove one of its electrons. Is the bond energy of the resulting ion larger or smaller than that of H<sub>2</sub>? Is the bond length of the resulting ion larger or smaller than that of H<sub>2</sub>?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                Suppose we supply enough energy to He<sub>2</sub><sup>+</sup> to remove its most weakly bound electron. Is the bond energy of the resulting ion larger or smaller than that of He<sub>2</sub><sup>+</sup>? Is the bond length of the resulting ion larger or smaller than that of He<sub>2</sub><sup>+</sup>?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                If an electron is removed from a fluorine molecule, an F<sub>2</sub><sup>+</sup> molecular ion forms.<br>
+                (a) Give the molecular electron configurations for F<sub>2</sub> and F<sub>2</sub><sup>+</sup>.<br>
+                (b) Give the bond order of each species.<br>
+                (c) Predict which species should be paramagnetic.<br>
+                (d) Predict which species has the greater bond dissociation energy.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                When one electron is added to an oxygen molecule, a superoxide ion (O<sub>2</sub><sup>−</sup>) is formed. The addition of two electrons gives a peroxide ion (O<sub>2</sub><sup>2−</sup>). Removal of an electron from O<sub>2</sub> leads to O<sub>2</sub><sup>+</sup>.<br>
+                (a) Construct the correlation diagram for O<sub>2</sub><sup>−</sup>.<br>
+                (b) Give the valence electron configuration for each of the following species: O<sub>2</sub><sup>+</sup>, O<sub>2</sub>, O<sub>2</sub><sup>−</sup>, O<sub>2</sub><sup>2−</sup>.<br>
+                (c) Give the bond order of each species.<br>
+                (d) Predict which species are paramagnetic.<br>
+                (e) Predict the order of increasing bond dissociation energy among the species.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                Predict the valence electron configuration and the total bond order for the molecule S<sub>2</sub>, which forms in the gas phase when sulfur is heated to a high temperature. Will S<sub>2</sub> be paramagnetic or diamagnetic?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                Predict the valence electron configuration and the total bond order for the molecule I<sub>2</sub>. Will I<sub>2</sub> be paramagnetic or diamagnetic?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                For each of the following valence electron configurations of a homonuclear diatomic molecule or molecular ion, identify the element X, Q, or Z and determine the total bond order.<br>
+                (a) X<sub>2</sub>: (σ<sub>g</sub>2s)<sup>2</sup>(σ<sub>u</sub>*2s)<sup>2</sup>(σ<sub>g</sub>2p<sub>z</sub>)<sup>2</sup>(π<sub>u</sub>2p)<sup>4</sup>(π<sub>g</sub>*2p)<sup>2</sup><br>
+                (b) Q<sub>2</sub><sup>+</sup>: (σ<sub>g</sub>2s)<sup>2</sup>(σ<sub>u</sub>*2s)<sup>2</sup>(π<sub>u</sub>2p)<sup>4</sup>(σ<sub>g</sub>2p<sub>z</sub>)<sup>1</sup><br>
+                (c) Z<sub>2</sub><sup>−</sup>: (σ<sub>g</sub>2s)<sup>2</sup>(σ<sub>u</sub>*2s)<sup>2</sup>(σ<sub>g</sub>2p<sub>z</sub>)<sup>2</sup>(π<sub>u</sub>2p)<sup>4</sup>(π<sub>g</sub>*2p)<sup>3</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                For each of the following valence electron configurations of a homonuclear diatomic molecule or molecular ion, identify the element X, Q, or Z and determine the total bond order.<br>
+                (a) X<sub>2</sub>: (σ<sub>g</sub>2s)<sup>2</sup>(σ<sub>u</sub>*2s)<sup>2</sup>(σ<sub>g</sub>2p<sub>z</sub>)<sup>2</sup>(π<sub>u</sub>2p)<sup>4</sup>(π<sub>g</sub>*2p)<sup>2</sup><br>
+                (b) Q<sub>2</sub><sup>−</sup>: (σ<sub>g</sub>2s)<sup>2</sup>(σ<sub>u</sub>*2s)<sup>2</sup>(π<sub>u</sub>2p)<sup>3</sup><br>
+                (c) Z<sub>2</sub><sup>+</sup>: (σ<sub>g</sub>2s)<sup>2</sup>(σ<sub>u</sub>*2s)<sup>2</sup>(π<sub>u</sub>2p)<sup>4</sup>(σ<sub>g</sub>2p<sub>z</sub>)<sup>2</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                For each of the electron configurations in Problem 21, determine whether the molecule or molecular ion is paramagnetic or diamagnetic.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                For each of the electron configurations in Problem 22, determine whether the molecule or molecular ion is paramagnetic or diamagnetic.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                Following the pattern of Figure 6.20, work out the correlation diagram for the CN molecule, showing the relative energy levels of the atoms and the bonding and antibonding orbitals of the molecule. Indicate the occupation of the MOs with arrows. State the order of the bond and comment on the magnetic properties of CN.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                Following the pattern of Figure 6.20, work out the correlation diagram for the BeN molecule, showing the relative energy levels of the atoms and the bonding and antibonding orbitals of the molecule. Indicate the occupation of the MOs with arrows. State the order of the bond and comment on the magnetic properties of BeN.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                The bond length of the transient diatomic molecule CF is 1.291 Å; that of the molecular ion CF<sup>+</sup> is 1.173 Å. Explain why the CF bond shortens with the loss of an electron. Refer to the proper MO correlation diagram.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                The compound nitrogen oxide (NO) forms when the nitrogen and oxygen in air are heated. Predict whether the nitrosyl ion (NO<sup>+</sup>) will have a shorter or a longer bond than the NO molecule. Will NO<sup>+</sup> be paramagnetic like NO or diamagnetic?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                What would be the electron configuration for a HeH<sup>+</sup> molecular ion? What bond order would you predict? How stable should such a species be?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                The molecular ion HeH<sup>+</sup> has an equilibrium bond length of 0.774 Å. Draw an electron correlation diagram for this ion, indicating the occupied MOs. Is HeH<sup>+</sup> paramagnetic? When HeH<sup>+</sup> dissociates, is a lower energy state reached by forming He + H<sup>+</sup> or He<sup>+</sup> + H?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Predict the ground state electronic configurations of CF, CH, CH<sup>+</sup>, and CN<sup>−</sup>. Do any of them have unpaired electrons?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                Predict the ground state electronic configuration of HeBe. What is the bond order?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                The bond dissociation energies for the species NO, CF<sup>+</sup>, and CF<sup>−</sup> are ordered as CF<sup>+</sup> &gt; NO &gt; CF<sup>−</sup>. Use MO theory to explain this ordering.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                The ionization energy of CO is greater than that of NO. Explain this difference based on the electron configurations of these two molecules.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Photoelectron Spectroscopy for Molecules</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                Photoelectron spectra were acquired from a sample of gaseous N<sub>2</sub> using He(I) light with energy 21.22 eV as the ionization source. Photoelectrons were detected with kinetic energy values 5.63 eV and also with 4.53 eV. Calculate the ionization energy for each group of electrons. Identify the MOs that were most likely the sources of these two groups of electrons.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                Photoelectron spectra were acquired from a sample of gaseous O<sub>2</sub> using X-ray radiation with wavelength 0.99 nm and energy 1253.6 eV. The spectrum contained a large peak for photoelectrons with speed of 1.57 × 10<sup>7</sup> m s<sup>−1</sup>. Calculate the ionization energy of these electrons. Identify the orbital from which they were most likely emitted.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                From the n = 0 peaks in the photoelectron spectrum for N<sub>2</sub> shown in the figure in Connections box, prepare a quantitative energy level diagram for the molecular orbitals of N<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                From the n = 0 peaks in the photoelectron spectrum for O<sub>2</sub> shown in the figure in Connections box, prepare a quantitative energy level diagram for the molecular orbitals of O<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                The photoelectron spectrum of HBr has two main groups of peaks. The first has ionization energy 11.88 eV. The next peak has ionization energy 15.2 eV, and it is followed by a long progression of peaks with higher ionization energies. Identify the molecular orbitals corresponding to these two groups of peaks.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                The photoelectron spectrum of CO has four major peaks with ionization energies of 14.5, 17.2, 20.1, and 38.3 eV. Assign these peaks of molecular orbitals of CO, and prepare a quantitative energy level correlation diagram for CO. The ionization energy of carbon atoms is 11.26 eV, and the ionization energy of oxygen atoms is 13.62 eV.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Localized Bonds: The Valence Bond Model</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                Write simple valence bond wave functions for the diatomic molecules Li<sub>2</sub> and C<sub>2</sub>. State the bond order predicted by the simple VB model and compare with the LCAO predictions in Table 6.3.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                Write simple valence bond wave functions for the diatomic molecules B<sub>2</sub> and O<sub>2</sub>. State the bond order predicted by the simple VB model and compare with the LCAO predictions in Table 6.3.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                Both the simple VB model and the LCAO method predict that the bond order of Be<sub>2</sub> is 0. Explain how each arrives at that conclusion.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                Both the simple VB model and the LCAO method predict that the bond order of Ne<sub>2</sub> is 0. Explain how each arrives at that conclusion.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                Write simple valence bond wave functions for formation of bonds between B atoms and H atoms. What B–H compound does the VB model predict? What geometry does it predict for the molecules?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                Write simple valence bond wave functions for formation of bonds between C and H atoms. What C–H compound does the VB model predict? What geometry does it predict for the molecules?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                Write simple valence bond wave functions for the bonds in NH<sub>3</sub>. What geometry does the VB model predict for NH<sub>3</sub>?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                Write simple valence bond wave functions for the bonds in H<sub>2</sub>O. What geometry does the VB model predict for H<sub>2</sub>O?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Orbital Hybridization and Molecular Shape</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                Formulate a localized bond picture for the amide ion (NH<sub>2</sub><sup>−</sup>). What hybridization do you expect the central nitrogen atom to have, and what geometry do you predict for the molecular ion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                Formulate a localized bond picture for the hydronium ion (H<sub>3</sub>O<sup>+</sup>). What hybridization do you expect the central oxygen atom to have, and what geometry do you predict for the molecular ion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                Draw a Lewis electron dot diagram for each of the following molecules and ions. Formulate the hybridization for the central atom in each case and give the molecular geometry.<br>
+                (a) CCl<sub>4</sub><br>
+                (b) CO<sub>2</sub><br>
+                (c) OF<sub>2</sub><br>
+                (d) CH<sub>3</sub><sup>−</sup><br>
+                (e) BeH<sub>2</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                Draw a Lewis electron dot diagram for each of the following molecules and ions. Formulate the hybridization for the central atom in each case and give the molecular geometry.<br>
+                (a) BF<sub>3</sub><br>
+                (b) BH<sub>4</sub><sup>−</sup><br>
+                (c) PH<sub>3</sub><br>
+                (d) CS<sub>2</sub><br>
+                (e) CH<sub>3</sub><sup>+</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                Describe the hybrid orbitals on the chlorine atom in the ClO<sub>3</sub><sup>+</sup> and ClO<sub>2</sub><sup>+</sup> molecular ions. Sketch the expected geometries of these ions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                Describe the hybrid orbitals on the chlorine atom in the ClO<sub>4</sub><sup>−</sup> and ClO<sub>3</sub><sup>−</sup> molecular ions. Sketch the expected geometries of these ions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                The sodium salt of the unfamiliar orthonitrate ion (NO<sub>4</sub><sup>3−</sup>) has been prepared. What hybridization is expected on the nitrogen atom at the center of this ion? Predict the geometry of the NO<sub>4</sub><sup>3−</sup> ion.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                Describe the hybrid orbitals used by the carbon atom in N≡C–Cl. Predict the geometry of the molecule.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Using the Linear Combination of Atomic Orbitals and Valence Bond Methods Together</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                Describe the bonding in the bent molecule NF<sub>2</sub>. Predict its energy level diagram and electron configuration.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                Describe the bonding in the bent molecule OF<sub>2</sub>. Predict its energy level diagram and electron configuration.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                The azide ion (N<sub>3</sub><sup>−</sup>) is a weakly bound molecular ion. Formulate its MO structure for localized σ bonds and de-localized π bonds. Do you expect N<sub>3</sub> and N<sub>3</sub><sup>+</sup> to be bound as well? Which of the three species do you expect to be paramagnetic?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                Formulate the MO structure of NO<sub>2</sub><sup>+</sup> for localized σ bonds and de-localized π bonds. Is it linear or nonlinear? Do you expect it to be paramagnetic? Repeat the analysis for NO<sub>2</sub> and for NO<sub>2</sub><sup>−</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">
+                Discuss the nature of the bonding in the nitrite ion (NO<sub>2</sub><sup>−</sup>). Draw the possible Lewis resonance diagrams for this ion. Use the VSEPR theory to determine the steric number, the hybridization of the central nitrogen atom, and the geometry of the ion. Show how the use of resonance structures can be avoided by introducing a de-localized π MO. What bond order does the MO model predict for the N–O bonds in the nitrite ion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">
+                Discuss the nature of the bonding in the nitrate ion (NO<sub>3</sub><sup>−</sup>). Draw the possible Lewis resonance diagrams for this ion. Use the VSEPR theory to determine the steric number, the hybridization of the central N atom, and the geometry of the ion. Show how the use of resonance structures can be avoided by introducing a de-localized π MO. What bond order is predicted by the MO model for the N–O bonds in the nitrate ion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">
+                (a) Sketch the occupied MOs of the valence shell for the N<sub>2</sub> molecule. Label the orbitals as σ or π orbitals, and specify which are bonding and which are antibonding.<br>
+                (b) If one electron is removed from the highest occupied orbital of N<sub>2</sub>, will the equilibrium N≡N distance become longer or shorter? Explain briefly.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">
+                Calcium carbide (CaC<sub>2</sub>) is an intermediate in the manufacturing of acetylene (C<sub>2</sub>H<sub>2</sub>). It is the calcium salt of the carbide (also called acetylide) ion (C<sub>2</sub><sup>2−</sup>). What is the electron configuration of this molecular ion? What is its bond order?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">
+                The B<sub>2</sub> molecule is paramagnetic; show how this indicates that the energy ordering of the orbitals in this molecule is given by Figure 6.17a rather than 6.17b.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">
+                The Be<sub>2</sub> molecule has been detected experimentally. It has a bond length of 2.45 Å and a bond dissociation energy of 9.46 kJ mol<sup>−1</sup>. Write the ground-state electron configuration of Be<sub>2</sub> and predict its bond order using the theory developed in the text. Compare the experimental bonding data on Be<sub>2</sub> with those recorded for B<sub>2</sub>, C<sub>2</sub>, N<sub>2</sub>, and O<sub>2</sub> in Table 6.3. Is the prediction that stems from the simple theory significantly incorrect?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">
+                (a) The ionization energy of molecular hydrogen (H<sub>2</sub>) is greater than that of atomic hydrogen (H), but that of molecular oxygen (O<sub>2</sub>) is lower than that of atomic oxygen (O). Explain. (Hint: Think about the stability of the molecular ion that forms in relation to bonding and antibonding electrons.)<br>
+                (b) What prediction would you make for the relative ionization energies of atomic and molecular fluorine (F and F<sub>2</sub>)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">
+                The molecular ion HeH<sup>+</sup> has an equilibrium bond length of 0.774 Å. Draw an electron correlation diagram for this molecule, indicating the occupied MOs. If the lowest energy MO has the form C<sub>1</sub>σ<sub>1s,H</sub> + C<sub>2</sub>σ<sub>1s,He</sub>, do you expect C<sub>2</sub> to be larger or smaller than C<sub>1</sub>?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">
+                The MO of the ground state of a heteronuclear diatomic molecule AB is ψ<sub>mol</sub> = C<sub>A</sub>ψ<sub>A</sub> + C<sub>B</sub>ψ<sub>B</sub>. If a bonding electron spends 90% of its time in an orbital ψ<sub>A</sub> on atom A and 10% of its time in ψ<sub>B</sub> on atom B, what are the values of C<sub>A</sub> and C<sub>B</sub>? (Neglect the overlap of the two orbitals.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">
+                The stable molecular ion H<sub>3</sub><sup>+</sup> is triangular, with H–H distances of 0.87 Å. Sketch the molecule and indicate the region of greatest electron density of the lowest energy MO.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">
+                According to recent spectroscopic results, nitramide (H<sub>2</sub>N–NO<sub>2</sub>) is a nonplanar molecule. It was previously thought to be planar.<br>
+                (a) Predict the bond order of the N–N bond in the nonplanar structure.<br>
+                (b) If the molecule really were planar after all, what would be the bond order of the N–N bond?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">
+                trans-tetrazene (N<sub>4</sub>H<sub>4</sub>) consists of a chain of four nitrogen atoms with each of the two end atoms bonded to two hydrogen atoms. Use the concepts of steric number and hybridization to predict the overall geometry of the molecule. Give the expected structure of cis-tetrazene.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>
+

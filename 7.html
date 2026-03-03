@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 - Bonding in Organic Molecules</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 7 - Bonding in Organic Molecules</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Petroleum Refining and the Hydrocarbons</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Is it possible for a gasoline to have an octane number exceeding 100? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                Is it possible for a motor fuel to have a negative octane rating? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                A gaseous alkane is burned completely in oxygen. The volume of the carbon dioxide that forms equals twice the volume of the alkane burned (the volumes are measured at the same temperature and pressure). Name the alkane and write a balanced equation for its combustion.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                A gaseous alkyne is burned completely in oxygen. The volume of the water vapor that forms equals the volume of the alkyne burned (the volumes are measured at the same temperature and pressure). Name the alkyne and write a balanced equation for its combustion.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                (a) Write a chemical equation involving structural formulas for the catalytic cracking of decane into an alkane and an alkene that contain equal numbers of carbon atoms. Assume that both products have straight chains of carbon atoms.<br>
+                (b) Draw and name one other isomer of the alkene.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                (a) Write an equation involving structural formulas for the catalytic cracking of 2,2,3,4,5,5-hexamethylhexane. Assume that the cracking occurs between carbon atoms 3 and 4.<br>
+                (b) Draw and name one other isomer of the alkene.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                Write structural formulas for the following:<br>
+                (a) 2,3-Dimethylpentane<br>
+                (b) 3-Ethyl-2-pentene<br>
+                (c) Methylcyclopropane<br>
+                (d) 2,2-Dimethylbutane<br>
+                (e) 3-Propyl-2-hexene<br>
+                (f) 3-Methyl-1-hexene<br>
+                (g) 4-Ethyl-2-methylheptane<br>
+                (h) 4-Ethyl-2-heptyne
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                Write structural formulas for the following:<br>
+                (a) 2,3-Dimethyl-1-cyclobutene<br>
+                (b) 2-Methyl-2-butene<br>
+                (c) 2-Methyl-1,3-butadiene<br>
+                (d) 2,3-Dimethyl-3-ethylhexane<br>
+                (e) 4,5-Diethyloctane<br>
+                (f) Cyclooctene<br>
+                (g) Propadiene<br>
+                (h) 2-Pentyne
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Write structural formulas for trans-3-heptene and cis-3-heptene.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                Write structural formulas for cis-4-octene and trans-4-octene.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Name the following hydrocarbons (refer to structural diagrams in textbook):<br>
+                (a) Branched alkene structure<br>
+                (b) Cyclic structure with double bond<br>
+                (c) Methylated cyclic structure<br>
+                (d) CH<sub>3</sub>–CH<sub>2</sub>–C≡C–CH<sub>2</sub>–CH<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Name the following hydrocarbons (refer to structural diagrams in textbook):<br>
+                (a) Dimethyl cyclopentene structure<br>
+                (b) Methylated alkene structure<br>
+                (c) Trimethyl cyclopropane structure<br>
+                (d) Propyl group structure
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                State the hybridization of each of the carbon atoms in the hydrocarbon structures in Problem 11.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                State the hybridization of each of the carbon atoms in the hydrocarbon structures in Problem 12.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Fullerenes</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                To satisfy the octet rule, fullerenes must have double bonds. How many? Give a simple rule for one way of placing them in the structure shown in Figure 7.18a.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                It has been suggested that a compound of formula C<sub>12</sub>B<sub>24</sub>N<sub>24</sub> might exist and have a structure similar to that of C<sub>60</sub> (buckminsterfullerene).<br>
+                (a) Explain the logic of this suggestion by comparing the number of valence electrons in C<sub>60</sub> and C<sub>12</sub>B<sub>24</sub>N<sub>24</sub>.<br>
+                (b) Propose the most symmetric pattern of carbon, boron, and nitrogen atoms in C<sub>12</sub>B<sub>24</sub>N<sub>24</sub> to occupy the 60 atom sites in the buckminsterfullerene structure. Where could the double bonds be placed in such a structure?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Functional Groups and Organic Reactions</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                In a recent year, the United States produced 6.26 × 10<sup>9</sup> kg ethylene dichloride (1,2-dichloroethane) and 15.87 × 10<sup>9</sup> kg ethylene. Assuming that all significant quantities of ethylene dichloride were produced from ethylene, what fraction of the ethylene production went into making ethylene dichloride? What mass of chlorine was required for this conversion?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                In a recent year, the United States produced 6.26 × 10<sup>9</sup> kg ethylene dichloride (1,2-dichloroethane) and 3.73 × 10<sup>9</sup> kg vinyl chloride. Assuming that all significant quantities of vinyl chloride were produced from ethylene dichloride, what fraction of the ethylene dichloride production went into making vinyl chloride? What mass of hydrogen chloride was generated as a by-product?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                Write balanced equations for the following reactions. Use structural formulas to represent the organic compounds.<br>
+                (a) The production of butyl acetate from butanol and acetic acid<br>
+                (b) The conversion of ammonium acetate to acetamide and water<br>
+                (c) The dehydrogenation of 1-propanol<br>
+                (d) The complete combustion (to CO<sub>2</sub> and H<sub>2</sub>O) of heptane
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                Write balanced equations for the following reactions. Use structural formulas to represent the organic compounds.<br>
+                (a) The complete combustion (to CO<sub>2</sub> and H<sub>2</sub>O) of cyclopropanol<br>
+                (b) The reaction of isopropyl acetate with water to give acetic acid and isopropanol<br>
+                (c) The dehydration of ethanol to give ethylene<br>
+                (d) The reaction of 1-iodobutane with water to give 1-butanol
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                Outline, using chemical equations, the synthesis of the following from easily available petrochemicals and inorganic starting materials.<br>
+                (a) Vinyl bromide (CH<sub>2</sub>=CHBr)<br>
+                (b) 2-Butanol<br>
+                (c) Acetone (CH<sub>3</sub>COCH<sub>3</sub>)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                Outline, using chemical equations, the synthesis of the following from easily available petrochemicals and inorganic starting materials.<br>
+                (a) Vinyl acetate (CH<sub>3</sub>COOCH=CH<sub>2</sub>)<br>
+                (b) Formamide (HCONH<sub>2</sub>)<br>
+                (c) 1,2-Difluoroethane
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                Write a general equation (using R to represent a general alkyl group) for the formation of an ester by the condensation of a tertiary alcohol with a carboxylic acid.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                Explain why it is impossible to form an amide by the condensation of a tertiary amine with a carboxylic acid.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                Calculate the volume of hydrogen at 0°C and 1.00 atm that is required to convert 500.0 g linoleic acid (C<sub>18</sub>H<sub>32</sub>O<sub>2</sub>) to stearic acid (C<sub>18</sub>H<sub>36</sub>O<sub>2</sub>).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                A chemist determines that 4.20 L hydrogen at 298 K and a pressure of 1.00 atm is required to completely hydrogenate 48.5 g of the unsaturated compound oleic acid to stearic acid (C<sub>18</sub>H<sub>36</sub>O<sub>2</sub>). How many units of unsaturation (where a unit of unsaturation is one double bond) are in a molecule of oleic acid?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                Acetic acid can be made by the oxidation of acetaldehyde (CH<sub>3</sub>CHO). Molecules of acetaldehyde have a –CH<sub>3</sub> group, an oxygen atom, and a hydrogen atom attached to a carbon atom. Draw the Lewis diagram for this molecule, give the hybridization of each carbon atom, and describe the π orbitals and the number of electrons that occupy each one. Draw the three-dimensional structure of the molecule, showing all angles.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                Acrylic fibers are polymers made from a starting material called acrylonitrile, H<sub>2</sub>C(CH)CN. In acrylonitrile, a –C≡N group replaces a hydrogen atom on ethylene. Draw the Lewis diagram for this molecule, give the hybridization of each carbon atom, and describe the π orbitals and the number of electrons that occupy each one. Draw the three-dimensional structure of the molecule, showing all angles.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                Compare the bonding in formic acid (HCOOH) with that in its conjugate base formate ion (HCOO<sup>−</sup>). Each molecule has a central carbon atom bonded to the two oxygen atoms and to a hydrogen atom. Draw Lewis diagrams, determine the steric numbers and hybridization of the central carbon atom, and give the molecular geometries. How do the π orbitals differ in formic acid and the formate molecular ion? The bond lengths of the C–O bonds in HCOOH are 1.23 Å (for the bond to the lone oxygen) and 1.36 Å (for the bond to the oxygen with a hydrogen atom attached). In what range of lengths do you predict the C–O bond length in the formate ion to lie?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                Section 7.3 shows that the compound 2-butene exists in two isomeric forms, which can be interconverted only by breaking a bond (in that case, the central double bond). How many possible isomers correspond to each of the following chemical formulas? Remember that a simple rotation of an entire molecule does not give a different isomer. Each molecule contains a central C=C bond.<br>
+                (a) C<sub>2</sub>H<sub>2</sub>Br<sub>2</sub><br>
+                (b) C<sub>2</sub>H<sub>2</sub>BrCl<br>
+                (c) C<sub>2</sub>HBrClF
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Pesticides and Pharmaceuticals</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                (a) The insecticide methoprene (see Fig. 7.27d) is an ester. Write the structural formulas for the alcohol and the carboxylic acid that react to form it. Name the alcohol.<br>
+                (b) Suppose that the carboxylic acid from part (a) is changed chemically so that the OCH<sub>3</sub> group is replaced by a hydrogen atom and the COOH group is replaced by a CH<sub>3</sub> group. Name the hydrocarbon that would result.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                (a) The herbicide 2,4-D (see Fig. 7.28a) is an ether. Write the structural formulas of the two alcohol or phenol compounds that, on condensation, would form this ether. (The usual method of synthesis does not follow this plan.)<br>
+                (b) Suppose that hydrogen atoms replace the chlorine atoms and a –CH<sub>3</sub> group replaces the carboxylic acid group in the two compounds in part (a). Name the resulting compounds.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                (a) Write the molecular formula of acetylsalicylic acid (see Fig. 7.29a).<br>
+                (b) An aspirin tablet contains 325 mg acetylsalicylic acid. Calculate the number of moles of that compound in the tablet.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                (a) Write the molecular formula of acetaminophen (see Fig. 7.29b).<br>
+                (b) A tablet of Extra Strength Tylenol contains 500 mg acetaminophen. Calculate the chemical amount (in moles) of that compound in the tablet.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                Describe the changes in hydrocarbon structure and functional groups that are needed to make cortisone from cholesterol (see Fig. 7.33).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                Describe the changes in hydrocarbon structure and functional groups that are needed to make testosterone from cortisone (see Fig. 7.33).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                trans-Cyclodecene boils at 193°C, but cis-cyclodecene boils at 195.6°C. Write structural formulas for these two compounds.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                A compound C<sub>4</sub>H<sub>11</sub>N is known from its reactivity and spectroscopic properties to have no hydrogen atoms attached directly to the nitrogen atom. Write all structural formulas consistent with this information.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                A compound C<sub>3</sub>H<sub>6</sub>O has a hydroxyl group but no double bonds. Write a structural formula consistent with this information.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                Consider the following proposed structures for benzene, each of which is consistent with the molecular formula C<sub>6</sub>H<sub>6</sub> (refer to structural diagrams in textbook).<br>
+                (a) When benzene reacts with chlorine to give C<sub>6</sub>H<sub>5</sub>Cl, only one isomer of that compound forms. Which of the five proposed structures for benzene are consistent with this observation?<br>
+                (b) When C<sub>6</sub>H<sub>5</sub>Cl reacts further with chlorine to give C<sub>6</sub>H<sub>4</sub>Cl<sub>2</sub>, exactly three isomers of the latter compound form. Which of the five proposed structures for benzene are consistent with this observation?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                Acetyl chloride, CH<sub>3</sub>COCl, reacts with the hydroxyl groups of alcohols to form ester groups with the elimination of HCl. When an unknown compound X with formula C<sub>4</sub>H<sub>8</sub>O<sub>3</sub> reacted with acetyl chloride, a new compound Y with formula C<sub>8</sub>H<sub>12</sub>O<sub>5</sub> was formed.<br>
+                (a) How many hydroxyl groups were there in X?<br>
+                (b) Assume that X is an aldehyde. Write a possible structure for X and a possible structure for Y consistent with your structure for X.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                When an ester forms from an alcohol and a carboxylic acid, an oxygen atom links the two parts of each ester molecule. This atom could have come originally from the alcohol, from the carboxylic acid, or randomly from either. Propose an experiment using isotopes to determine which is the case.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                Hydrogen can be added to a certain unsaturated hydrocarbon in the presence of a platinum catalyst to form hexane. When the same hydrocarbon is oxidized with KMnO<sub>4</sub>, it yields acetic acid and butanoic acid. Identify the hydrocarbon and write balanced chemical equations for the reactions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                (a) It is reported that ethylene is released when pure ethanol is passed over alumina (Al<sub>2</sub>O<sub>3</sub>) that is heated to 400°C, but diethyl ether is obtained at a temperature of 230°C. Write balanced equations for both of these dehydration reactions.<br>
+                (b) If the temperature is increased well above 400°C, an aldehyde forms. Write a chemical equation for this reaction.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                The pyridine molecule (C<sub>5</sub>H<sub>5</sub>N) is obtained by replacing one C–H group in benzene with a nitrogen atom. Because nitrogen is more electronegative than the C–H group, orbitals with electron density on nitrogen are lower in energy. How do you expect the π MOs and energy levels of pyridine to differ from those of benzene?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                For each of the following molecules, construct the π MOs from the 2p<sub>z</sub> atomic orbitals perpendicular to the plane of the carbon atoms.<br>
+                (a) Cyclobutadiene<br>
+                (b) Allyl radical<br><br>
+                Indicate which, if any, of these orbitals have identical energies from symmetry considerations. Show the number of electrons occupying each π MO in the ground state, and indicate whether either or both of the molecules are paramagnetic.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                In what ways do the systematic developments of pesticides and of pharmaceuticals resemble each other, and in what ways do they differ? Consider such aspects as "deceptor" molecules, which are mistaken by living organisms for other molecules; side effects; and the relative advantages of a broad versus a narrow spectrum of activity.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                The steroid stanolone is an androgenic steroid (a steroid that develops or maintains certain male sexual characteristics). It is derived from testosterone by adding a molecule of hydrogen across the C=C bond in testosterone.<br>
+                (a) Using Figure 7.33c as a guide, draw the molecular structure of stanolone.<br>
+                (b) What is the molecular formula of stanolone?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                The structure of the molecule cyclohexene is shown in the textbook. Does the absorption of ultraviolet light by cyclohexene occur at longer or at shorter wavelengths than the absorption by benzene? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                The naphthalene molecule has a structure that corresponds to two benzene molecules fused together (see textbook diagram). The π electrons in this molecule are delocalized over the entire molecule. The wavelength of maximum absorption in benzene is 255 nm. Will the corresponding wavelength in naphthalene be shorter or longer than 255 nm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3 - Chemical Bonding: The Classical Description</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .data-table th,
+        .data-table td {
+            border: 1px solid var(--color-border);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .data-table th {
+            background: var(--color-bg-primary);
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 3 - Chemical Bonding: The Classical Description</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>The Periodic Table</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Before the element scandium was discovered in 1879, it was known as "eka-boron." Predict the properties of scandium from averages of the corresponding properties of its neighboring elements in the periodic table. Compare your predictions with the observed values in Appendix F.<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Element</th>
+                        <th>Symbol</th>
+                        <th>Melting Point (°C)</th>
+                        <th>Boiling Point (°C)</th>
+                        <th>Density (g cm<sup>-3</sup>)</th>
+                    </tr>
+                    <tr>
+                        <td>Calcium</td>
+                        <td>Ca</td>
+                        <td>839</td>
+                        <td>1484</td>
+                        <td>1.55</td>
+                    </tr>
+                    <tr>
+                        <td>Titanium</td>
+                        <td>Ti</td>
+                        <td>1660</td>
+                        <td>3287</td>
+                        <td>4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Scandium</td>
+                        <td>Sc</td>
+                        <td>?</td>
+                        <td>?</td>
+                        <td>?</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                The element technetium (Tc) is not found in nature but has been produced artificially through nuclear reactions. Use the data for several neighboring elements in the table below to estimate the melting point, boiling point, and density of technetium. Compare your predictions with the observed values in Appendix F.<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Element</th>
+                        <th>Symbol</th>
+                        <th>Melting Point (°C)</th>
+                        <th>Boiling Point (°C)</th>
+                        <th>Density (g cm<sup>-3</sup>)</th>
+                    </tr>
+                    <tr>
+                        <td>Manganese</td>
+                        <td>Mn</td>
+                        <td>1244</td>
+                        <td>1962</td>
+                        <td>7.2</td>
+                    </tr>
+                    <tr>
+                        <td>Molybdenum</td>
+                        <td>Mo</td>
+                        <td>2610</td>
+                        <td>5560</td>
+                        <td>10.2</td>
+                    </tr>
+                    <tr>
+                        <td>Rhenium</td>
+                        <td>Re</td>
+                        <td>3180</td>
+                        <td>5627</td>
+                        <td>20.5</td>
+                    </tr>
+                    <tr>
+                        <td>Ruthenium</td>
+                        <td>Ru</td>
+                        <td>2310</td>
+                        <td>3900</td>
+                        <td>12.3</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                Use the group structure of the periodic table to predict the empirical formulas for the binary compounds that hydrogen forms with the elements antimony, bromine, tin, and selenium.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                Use the group structure of the periodic table to predict the empirical formulas for the binary compounds that hydrogen forms with the elements germanium, fluorine, tellurium, and bismuth.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Forces and Potential Energy in Atoms</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                An electron is located at the origin of the coordinates, and a second electron is brought to a position 2 Å from the origin.<br>
+                (a) Calculate the force between the two electrons.<br>
+                (b) Calculate the potential energy of the two electrons.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                A gold nucleus is located at the origin of coordinates, and an electron is brought to a position 2 Å from the origin.<br>
+                (a) Calculate the force between the gold nucleus and the electron.<br>
+                (b) Calculate the potential energy of the gold nucleus and the electron.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                The electron in a hydrogen atom is initially at a distance 2.12 Å from the proton, and then moves to a distance 0.529 Å from the proton.<br>
+                (a) Calculate the change in the force between the proton and the electron.<br>
+                (b) Calculate the change in the potential energy between the proton and the electron.<br>
+                (c) Calculate the change in the velocity of the electron.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                A gold nucleus is located at the origin of coordinates, and a helium nucleus initially 2 Å from the origin moves to a new position 1 Å from the origin.<br>
+                (a) Calculate the change in the force between the two nuclei.<br>
+                (b) Calculate the change in the potential energy of the two nuclei.<br>
+                (c) Calculate the change in the kinetic energy of the helium nucleus assuming its value at 2 Å is 2.0 MeV.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Ionization Energies and the Shell Model of the Atom</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                For each of the following pairs of atoms, state which you expect to have the higher first ionization energy:<br>
+                (a) Rb or Sr<br>
+                (b) Po or Rn<br>
+                (c) Xe or Cs<br>
+                (d) Ba or Sr
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                For each of the following pairs of atoms, state which you expect to have the higher first ionization energy:<br>
+                (a) Bi or Xe<br>
+                (b) Se or Te<br>
+                (c) Rb or Y<br>
+                (d) K or Ne
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Use the data in Table 3.1 to plot the logarithm of ionization energy versus the number of electrons removed for Be. Describe the electronic structure of the Be atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Use the data in Table 3.1 to plot the logarithm of ionization energy versus the number of electrons removed for Ne. Describe the electronic structure of the Ne atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Electron Affinity and Electronegativity</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                For each of the following pairs of atoms, state which you expect to have the greater electron affinity:<br>
+                (a) Xe or Cs<br>
+                (b) Pm or F<br>
+                (c) Ca or K<br>
+                (d) Po or At
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                For each of the following pairs of atoms, state which you expect to have the higher electron affinity:<br>
+                (a) Rb or Sr<br>
+                (b) I or Rn<br>
+                (c) Ba or Te<br>
+                (d) Bi or Cl
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                Ignoring tables of electronegativity values and guided only by the periodic table, arrange these atoms in order of increasing electronegativity: O, F, S, Si, K. Briefly explain your reasoning.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                Ignoring tables of electronegativity values and guided only by the periodic table, arrange these atoms in order of increasing electronegativity: S, Cl, Sb, Se, In. Briefly explain your reasoning.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Forces and Potential Energy in Molecules</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                We will see later that H<sub>2</sub> has equilibrium bond length of 0.751 Å and bond dissociation energy of 433 kJ mol<sup>-1</sup>, whereas F<sub>2</sub> has equilibrium bond length of 1.417 Å and bond dissociation energy of 155 kJ mol<sup>-1</sup>. On the same graph show qualitative sketches of the effective potential energy curve V<sub>eff</sub> for H<sub>2</sub> and F<sub>2</sub>. (Hint: Convert the bond energy to electron volts (eV) before preparing your graphs.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                We will see later that N<sub>2</sub> has equilibrium bond length of 1.100 Å and bond dissociation energy of 942 kJ mol<sup>-1</sup>, whereas O<sub>2</sub> has equilibrium bond length of 1.211 Å and bond dissociation energy of 495 kJ mol<sup>-1</sup>. On the same graph show qualitative sketches of the effective potential energy curve V<sub>eff</sub> for N<sub>2</sub> and O<sub>2</sub>. (Hint: Convert the bond energy to electron volts (eV) before preparing your graphs.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                We will see later that HF has equilibrium bond length of 0.926 Å and bond dissociation energy of 565 kJ mol<sup>-1</sup>. Compare the effective potential curve for HF with those for H<sub>2</sub> and F<sub>2</sub> in Problem 17.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                We will see later that NO has equilibrium bond length of 1.154 Å and bond dissociation energy of 629 kJ mol<sup>-1</sup>. Compare the effective potential curve for NO with those for N<sub>2</sub> and O<sub>2</sub> in Problem 18.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Ionic Bonding</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                For each of the following atoms or ions, state the total number of electrons, the number of valence electrons, and the number of core electrons.<br>
+                (a) Rn<br>
+                (b) Sr<sup>+</sup><br>
+                (c) Se<sup>2-</sup><br>
+                (d) Sb<sup>+</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                For each of the following atoms or ions, state the total number of electrons, the number of valence electrons, and the number of core electrons.<br>
+                (a) Ra<sup>2+</sup><br>
+                (b) Br<br>
+                (c) Bi<sup>2+</sup><br>
+                (d) Ga<sup>+</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                Use the data in Figure 3.7 and Table 3.2 to calculate the energy changes (ΔE) for the following pairs of reactions:<br>
+                (a) K(g) + Cl(g) → K<sup>+</sup>(g) + Cl<sup>-</sup>(g) and K(g) + Cl(g) → K<sup>-</sup>(g) + Cl<sup>+</sup>(g)<br>
+                (b) Na(g) + Cl(g) → Na<sup>+</sup>(g) + Cl<sup>-</sup>(g) and Na(g) + Cl(g) → Na<sup>-</sup>(g) + Cl<sup>+</sup>(g)<br><br>
+                Explain why K<sup>+</sup>Cl<sup>-</sup> and Na<sup>+</sup>Cl<sup>-</sup> form in preference to K<sup>-</sup>Cl<sup>+</sup> and Na<sup>-</sup>Cl<sup>+</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                Use the data in Figure 3.7 and Table 3.2 to calculate the energy changes (ΔE) for the following pairs of reactions:<br>
+                (a) Na(g) + I(g) → Na<sup>+</sup>(g) + I<sup>-</sup>(g) and Na(g) + I(g) → Na<sup>-</sup>(g) + I<sup>+</sup>(g)<br>
+                (b) Rb(g) + Br(g) → Rb<sup>+</sup>(g) + Br<sup>-</sup>(g) and Rb(g) + Br(g) → Rb<sup>-</sup>(g) + Br<sup>+</sup>(g)<br><br>
+                Explain why Na<sup>+</sup>I<sup>-</sup> and Rb<sup>+</sup>Br<sup>-</sup> form in preference to Na<sup>-</sup>I<sup>+</sup> and Rb<sup>-</sup>Br<sup>+</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                In a gaseous KCl molecule, the internuclear distance is 2.67 × 10<sup>-10</sup> m. Using data from Appendix F and neglecting the small, short-range repulsion between the ion cores of K<sup>+</sup> and Cl<sup>-</sup>, estimate the dissociation energy of gaseous KCl into K and Cl atoms (in kJ mol<sup>-1</sup>).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                In a gaseous RbF molecule, the bond length is 2.274 × 10<sup>-10</sup> m. Using data from Appendix F and neglecting the small, short-range repulsion between the ion cores of Rb<sup>+</sup> and F<sup>-</sup>, estimate the dissociation energy of gaseous RbF into Rb and F atoms (in kJ mol<sup>-1</sup>).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Covalent and Polar Covalent Bonding</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                The bond lengths of the X–H bonds in NH<sub>3</sub>, PH<sub>3</sub>, and SbH<sub>3</sub> are 1.02, 1.42, and 1.71 Å, respectively. Estimate the length of the As–H bond in AsH<sub>3</sub>, the gaseous compound that decomposes on a heated glass surface in Marsh's test for arsenic. Which of these four hydrides has the weakest X–H bond?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                Arrange the following covalent diatomic molecules in order of the lengths of the bonds: BrCl, ClF, IBr. Which of the three has the weakest bond (the smallest bond energy)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                The bond length in H–I (1.62 Å) is close to the sum of the atomic radii of H (0.37 Å) and I (1.33 Å). What does this fact indicate about the polarity of the bond?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                The bond length in F<sub>2</sub> is 1.417 Å, instead of twice the atomic radius of F, which is 1.28 Å. What can account for the unexpected length of the F–F bond?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Use electronegativity values to arrange the following bonds in order of decreasing polarity: N–O, N–N, N–P, and C–N.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                Use electronegativity values to rank the bonds in the following compounds from least ionic to most ionic in character: IF, ICl, ClF, BrCl, and Cl<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                Ionic compounds tend to have higher melting and boiling points and to be less volatile (that is, have lower vapor pressures) than covalent compounds. For each of the following pairs, use electronegativity differences to predict which compound has the higher vapor pressure at room temperature.<br>
+                (a) CI<sub>4</sub> or KI<br>
+                (b) BaF<sub>2</sub> or OF<sub>2</sub><br>
+                (c) SiH<sub>4</sub> or NaH
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                For each of the following pairs, use electronegativity differences to predict which compound has the higher boiling point.<br>
+                (a) MgBr<sub>2</sub> or PBr<sub>3</sub><br>
+                (b) OsO<sub>4</sub> or SrO<br>
+                (c) Cl<sub>2</sub>O or Al<sub>2</sub>O<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                Estimate the percent ionic character of the bond in each of the following diatomic molecules, based on the dipole moment.<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Molecule</th>
+                        <th>Bond Length (Å)</th>
+                        <th>Dipole Moment (D)</th>
+                    </tr>
+                    <tr>
+                        <td>ClO</td>
+                        <td>1.573</td>
+                        <td>1.239</td>
+                    </tr>
+                    <tr>
+                        <td>KI</td>
+                        <td>3.051</td>
+                        <td>10.82</td>
+                    </tr>
+                    <tr>
+                        <td>TlCl</td>
+                        <td>2.488</td>
+                        <td>4.543</td>
+                    </tr>
+                    <tr>
+                        <td>InCl</td>
+                        <td>2.404</td>
+                        <td>3.79</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                Estimate the percent ionic character of the bond in each of the following species. All the species are unstable or reactive under ordinary laboratory conditions, but they can be observed in interstellar space.<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Species</th>
+                        <th>Bond Length (Å)</th>
+                        <th>Dipole Moment (D)</th>
+                    </tr>
+                    <tr>
+                        <td>OH</td>
+                        <td>0.980</td>
+                        <td>1.66</td>
+                    </tr>
+                    <tr>
+                        <td>CH</td>
+                        <td>1.131</td>
+                        <td>1.46</td>
+                    </tr>
+                    <tr>
+                        <td>CN</td>
+                        <td>1.175</td>
+                        <td>1.45</td>
+                    </tr>
+                    <tr>
+                        <td>C<sub>2</sub></td>
+                        <td>1.246</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                The percent ionic character of a bond can be approximated by the formula 16Δ + 3.5Δ<sup>2</sup>, where Δ is the magnitude of the difference in the electronegativities of the atoms (see Fig. 3.10). Calculate the percent ionic character of HF, HCl, HBr, HI, and CsF, and compare the results with those in Table 3.7.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                The percent ionic character of the bonds in several interhalogen molecules (as estimated from their measured dipole moments and bond lengths) are ClF (11%), BrF (15%), BrCl (5.6%), ICl (5.8%), and IBr (10%). Estimate the percent ionic characters for each of these molecules, using the equation in Problem 37, and compare them with the given values.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Lewis Diagrams for Molecules</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                Assign formal charges to all atoms in the following Lewis diagrams.<br>
+                (a) SO<sub>4</sub><sup>2-</sup><br>
+                (b) S<sub>2</sub>O<sub>3</sub><sup>2-</sup><br>
+                (c) SbF<sub>3</sub><br>
+                (d) SCN<sup>-</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                Assign formal charges to all atoms in the following Lewis diagrams.<br>
+                (a) ClO<sub>4</sub><sup>-</sup><br>
+                (b) SO<sub>2</sub><br>
+                (c) BrO<sub>2</sub><sup>-</sup><br>
+                (d) NO<sub>3</sub><sup>-</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                Determine the formal charges on all the atoms in the following Lewis diagrams.<br>
+                H–N=O and H–O–N<br><br>
+                Which one would best represent bonding in the molecule HNO?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                Determine the formal charges on all the atoms in the following Lewis diagrams.<br>
+                Cl–Cl–O and Cl–O–Cl<br><br>
+                Which one would best represent bonding in the molecule Cl<sub>2</sub>O?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                In each of the following Lewis diagrams, Z represents a main-group element. Name the group to which Z belongs in each case and give an example of such a compound or ion that actually exists.<br>
+                (a) O=Z=O<br>
+                (b) [O–Z–O]<sup>2-</sup> (with two additional O atoms bonded to Z)<br>
+                (c) [O=Z]<sup>-</sup><br>
+                (d) [O–Z–O–H]<sup>-</sup> (with one additional O atom bonded to Z)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                In each of the following Lewis diagrams, Z represents a main-group element. Name the group to which Z belongs in each case and give an example of such a compound or ion that actually exists.<br>
+                (a) [C≡Z]<sup>-</sup><br>
+                (b) [O–Z–O]<sup>2-</sup> (with two additional O atoms bonded to Z)<br>
+                (c) [O=Z=O]<sup>2-</sup><br>
+                (d) H–Z–H (with two additional H atoms bonded to Z)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                Draw Lewis electron dot diagrams for the following species:<br>
+                (a) AsH<sub>3</sub><br>
+                (b) HOCl<br>
+                (c) KrF<sup>+</sup><br>
+                (d) POCl<sub>2</sub><sup>-</sup> (central P atom)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                Draw Lewis electron dot diagrams for the following species:<br>
+                (a) Methane<br>
+                (b) Carbon dioxide<br>
+                (c) Phosphorus trichloride<br>
+                (d) Perchlorate ion
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                Urea is an important chemical fertilizer with the chemical formula (H<sub>2</sub>N)CO(NH<sub>2</sub>). The carbon atom is bonded to both nitrogen atoms and the oxygen atom. Draw a Lewis diagram for urea and use Table 3.6 to estimate its bond lengths.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                Acetic acid is the active ingredient of vinegar. Its chemical formula is CH<sub>3</sub>COOH, and the second carbon atom is bonded to the first carbon atom and to both oxygen atoms. Draw a Lewis diagram for acetic acid and use Table 3.6 to estimate its bond lengths.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                Under certain conditions, the stable form of sulfur consists of rings of eight sulfur atoms. Draw the Lewis diagram for such a ring.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                White phosphorus (P<sub>4</sub>) consists of four phosphorus atoms arranged at the corners of a tetrahedron. Draw the valence electrons on this structure to give a Lewis diagram that satisfies the octet rule.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                Draw Lewis electron dot diagrams for the following species, indicating formal charges and resonance diagrams where applicable.<br>
+                (a) H<sub>3</sub>NBF<sub>3</sub><br>
+                (b) CH<sub>3</sub>COO<sup>-</sup> (acetate ion)<br>
+                (c) HCO<sub>3</sub><sup>-</sup> (hydrogen carbonate ion)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                Draw Lewis electron dot diagrams for the following species, indicating formal charges and resonance diagrams where applicable.<br>
+                (a) HNC (central N atom)<br>
+                (b) SCN<sup>-</sup> (thiocyanate ion)<br>
+                (c) H<sub>2</sub>CNN (the first N atom is bonded to the carbon and the second N)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                Draw Lewis diagrams for the two resonance forms of the nitrite ion, NO<sub>2</sub><sup>-</sup>. In what range do you expect the nitrogen–oxygen bond length to fall? (Hint: Use Table 3.6.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                Draw Lewis diagrams for the three resonance forms of the carbonate ion, CO<sub>3</sub><sup>2-</sup>. In what range do you expect the carbon–oxygen bond length to fall? (Hint: Use Table 3.6.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                Methyl isocyanate, which was involved in the disaster in Bhopal, India, in 1984, has the chemical formula CH<sub>3</sub>NCO. Draw its Lewis diagram, including resonance forms. (Note: The N atom is bonded to the two C atoms.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                Peroxyacetyl nitrate (PAN) is one of the prime irritants in photochemical smog. It has the formula CH<sub>3</sub>COOONO<sub>2</sub>, with the structure H<sub>3</sub>C–C(=O)–O–O–NO<sub>2</sub>. Draw its Lewis diagram, including resonance forms.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                Draw Lewis diagrams for the following compounds. In the formula the symbol of the central atom is given first. (Hint: The valence octet may be expanded for the central atom.)<br>
+                (a) PF<sub>5</sub><br>
+                (b) SF<sub>4</sub><br>
+                (c) XeO<sub>2</sub>F<sub>2</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                Draw Lewis diagrams for the following ions. In the formula the symbol of the central atom is given first. (Hint: The valence octet may be expanded for the central atom.)<br>
+                (a) BrO<sub>4</sub><sup>-</sup><br>
+                (b) PCl<sub>6</sub><sup>-</sup><br>
+                (c) XeF<sub>6</sub><sup>+</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>The Shapes of Molecules: VSEPR Theory</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                For each of the following molecules, give the steric number and sketch and name the approximate molecular geometry. In each case, the central atom is listed first and the other atoms are all bonded directly to it.<br>
+                (a) CBr<sub>4</sub><br>
+                (b) SO<sub>3</sub><br>
+                (c) SeF<sub>6</sub><br>
+                (d) SOCl<sub>2</sub><br>
+                (e) ICl<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                For each of the following molecules or molecular ions, give the steric number and sketch and name the approximate molecular geometry. In each case, the central atom is listed first and the other atoms are all bonded directly to it.<br>
+                (a) PF<sub>3</sub><br>
+                (b) SO<sub>2</sub>Cl<sub>2</sub><br>
+                (c) PF<sub>6</sub><sup>-</sup><br>
+                (d) ClO<sub>2</sub><sup>-</sup><br>
+                (e) GeH<sub>4</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">
+                For each of the following molecules or molecular ions, give the steric number, sketch and name the approximate molecular geometry, and describe the directions of any distortions from the approximate geometry due to lone pairs. In each case, the central atom is listed first and the other atoms are all bonded directly to it.<br>
+                (a) ICl<sub>4</sub><sup>-</sup><br>
+                (b) OF<sub>2</sub><br>
+                (c) BrO<sub>3</sub><sup>-</sup><br>
+                (d) CS<sub>2</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">
+                For each of the following molecules or molecular ions, give the steric number, sketch and name the approximate molecular geometry, and describe the direction of any distortions from the approximate geometry due to lone pairs. In each case, the central atom is listed first and the other atoms are all bonded directly to it.<br>
+                (a) TeH<sub>2</sub><br>
+                (b) AsF<sub>3</sub><br>
+                (c) PCl<sub>4</sub><sup>+</sup><br>
+                (d) XeF<sub>5</sub><sup>+</sup>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">
+                Give an example of a molecule or ion having a formula of each of the following types and structures.<br>
+                (a) AB<sub>3</sub> (planar)<br>
+                (b) AB<sub>3</sub> (pyramidal)<br>
+                (c) AB<sub>2</sub><sup>-</sup> (bent)<br>
+                (d) AB<sub>3</sub><sup>-</sup> (planar)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">
+                Give an example of a molecule or ion having a formula of each of the following types and structures.<br>
+                (a) AB<sub>4</sub><sup>-</sup> (tetrahedral)<br>
+                (b) AB<sub>2</sub> (linear)<br>
+                (c) AB<sub>6</sub><sup>-</sup> (octahedral)<br>
+                (d) AB<sub>3</sub><sup>-</sup> (pyramidal)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">
+                For each of the answers in Problem 59, state whether the species is polar or nonpolar.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">
+                For each of the answers in Problem 60, state whether the species is polar or nonpolar.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">
+                The molecules of a certain compound contain one atom each of nitrogen, fluorine, and oxygen. Two possible structures are NOF (O as central atom) and ONF (N as central atom). Does the information that the molecule is bent limit the choice to one of these two possibilities? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">
+                Mixing SbCl<sub>3</sub> and GaCl<sub>3</sub> in a 1:1 molar ratio (using liquid sulfur dioxide as a solvent) gives a solid ionic compound of empirical formula GaSbCl<sub>6</sub>. A controversy arises over whether this compound is (SbCl<sub>2</sub>)<sup>+</sup>(GaCl<sub>4</sub>)<sup>-</sup> or (GaCl<sub>2</sub>)<sup>+</sup>(SbCl<sub>4</sub>)<sup>-</sup>.<br>
+                (a) Predict the molecular structures of the two anions.<br>
+                (b) It is learned that the cation in the compound has a bent structure. Based on this fact, which formulation is more likely to be correct?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">
+                (a) Use the VSEPR theory to predict the structure of the NNO molecule.<br>
+                (b) The substance NNO has a small dipole moment. Which end of the molecule is more likely to be the positive end, based only on electronegativity?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">
+                Ozone (O<sub>3</sub>) has a nonzero dipole moment. In the molecule of O<sub>3</sub>, one of the oxygen atoms is directly bonded to the other two, which are not bonded to each other.<br>
+                (a) Based on this information, state which of the following structures are possible for the ozone molecule: symmetric linear, nonsymmetric linear (for example, different O–O bond lengths), and bent. (Note: Even an O–O bond can have a bond dipole if the two oxygen atoms are bonded to different atoms or if only one of the oxygen atoms is bonded to a third atom.)<br>
+                (b) Use the VSEPR theory to predict which of the structures of part (a) is observed.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Oxidation Numbers</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">
+                Assign oxidation numbers to the atoms in each of the following species: SrBr<sub>2</sub>, Zn(OH)<sub>4</sub><sup>2-</sup>, SiH<sub>4</sub>, CaSiO<sub>3</sub>, Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>, Ca<sub>5</sub>(PO<sub>4</sub>)<sub>3</sub>F, KO<sub>2</sub>, CsH.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">
+                Assign oxidation numbers to the atoms in each of the following species: NH<sub>4</sub>NO<sub>3</sub>, CaMgSiO<sub>4</sub>, Fe(CN)<sub>6</sub><sup>4-</sup>, B<sub>2</sub>H<sub>6</sub>, BaH<sub>2</sub>, PbCl<sub>2</sub>, Cu<sub>2</sub>O(SO<sub>4</sub>), S<sub>4</sub>O<sub>6</sub><sup>2-</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Inorganic Nomenclature</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">
+                Give the name and formula of an ionic compound involving only the elements in each pair that follows. Write Lewis symbols for the elements both before and after chemical combination.<br>
+                (a) Chlorine and cesium<br>
+                (b) Calcium and astatine<br>
+                (c) Aluminum and sulfur<br>
+                (d) Potassium and tellurium
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 74</div>
+            <div class="problem-text">
+                Give the name and formula of an ionic compound involving only the elements in each pair that follows. Write Lewis symbols for the elements both before and after chemical combination.<br>
+                (a) Gallium and bromine<br>
+                (b) Strontium and polonium<br>
+                (c) Magnesium and iodine<br>
+                (d) Lithium and selenium
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 75</div>
+            <div class="problem-text">
+                Give systematic names to the following compounds:<br>
+                (a) Al<sub>2</sub>O<sub>3</sub><br>
+                (b) Rb<sub>2</sub>Se<br>
+                (c) (NH<sub>4</sub>)<sub>2</sub>S<br>
+                (d) Ca(NO<sub>3</sub>)<sub>2</sub><br>
+                (e) Cs<sub>2</sub>SO<sub>4</sub><br>
+                (f) KHCO<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 76</div>
+            <div class="problem-text">
+                Give systematic names to the following compounds:<br>
+                (a) KNO<sub>2</sub><br>
+                (b) Sr(MnO<sub>4</sub>)<sub>2</sub><br>
+                (c) MgCr<sub>2</sub>O<sub>7</sub><br>
+                (d) NaH<sub>2</sub>PO<sub>4</sub><br>
+                (e) BaCl<sub>2</sub><br>
+                (f) NaClO<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 77</div>
+            <div class="problem-text">
+                Write the chemical formulas for the following compounds:<br>
+                (a) Silver cyanide<br>
+                (b) Calcium hypochlorite<br>
+                (c) Potassium chromate<br>
+                (d) Gallium oxide<br>
+                (e) Potassium superoxide<br>
+                (f) Barium hydrogen carbonate
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 78</div>
+            <div class="problem-text">
+                Write the chemical formulas for the following compounds:<br>
+                (a) Cesium sulfite<br>
+                (b) Strontium thiocyanate<br>
+                (c) Lithium hydride<br>
+                (d) Sodium peroxide<br>
+                (e) Ammonium dichromate<br>
+                (f) Rubidium hydrogen sulfate
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 79</div>
+            <div class="problem-text">
+                Trisodium phosphate (TSP) is a heavy-duty cleaning agent. Write its chemical formula. What would be the systematic name for this ionic compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 80</div>
+            <div class="problem-text">
+                Monoammonium phosphate is the common name for a compound made up of NH<sub>4</sub><sup>+</sup> and H<sub>2</sub>PO<sub>4</sub><sup>-</sup>; it is used as a flame retardant. (Its use for this purpose was first suggested by Gay-Lussac in 1821.) Write its chemical formula. What is the systematic chemical name of this compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 81</div>
+            <div class="problem-text">
+                Write the chemical formula for each of the following compounds:<br>
+                (a) Silicon dioxide<br>
+                (b) Ammonium carbonate<br>
+                (c) Lead(IV) oxide<br>
+                (d) Diphosphorus pentaoxide<br>
+                (e) Calcium iodide<br>
+                (f) Iron(III) nitrate
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 82</div>
+            <div class="problem-text">
+                Write the chemical formula for each of the following compounds:<br>
+                (a) Lanthanum(III) sulfide<br>
+                (b) Cesium sulfate<br>
+                (c) Dinitrogen trioxide<br>
+                (d) Iodine pentafluoride<br>
+                (e) Chromium(III) sulfate<br>
+                (f) Potassium permanganate
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 83</div>
+            <div class="problem-text">
+                Give the systematic name for each of the following compounds:<br>
+                (a) Cu<sub>2</sub>S and CuS<br>
+                (b) Na<sub>2</sub>SO<sub>4</sub><br>
+                (c) As<sub>4</sub>O<sub>6</sub><br>
+                (d) ZrCl<sub>4</sub><br>
+                (e) Cl<sub>2</sub>O<sub>7</sub><br>
+                (f) Ga<sub>2</sub>O
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 84</div>
+            <div class="problem-text">
+                Give the systematic name for each of the following compounds:<br>
+                (a) Mg<sub>2</sub>SiO<sub>4</sub><br>
+                (b) Fe(OH)<sub>2</sub> and Fe(OH)<sub>3</sub><br>
+                (c) As<sub>2</sub>O<sub>5</sub><br>
+                (d) (NH<sub>4</sub>)<sub>2</sub>HPO<sub>4</sub><br>
+                (e) SeF<sub>6</sub><br>
+                (f) Hg<sub>2</sub>SO<sub>4</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 85</div>
+            <div class="problem-text">
+                Refer to Figure 3.10 and compute the difference in electronegativity between the atoms in LiCl and those in HF. Based on their physical properties (see below), are the two similar or different in terms of bonding?<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Property</th>
+                        <th>LiCl</th>
+                        <th>HF</th>
+                    </tr>
+                    <tr>
+                        <td>Melting point</td>
+                        <td>605°C</td>
+                        <td>83.1°C</td>
+                    </tr>
+                    <tr>
+                        <td>Boiling point</td>
+                        <td>1350°C</td>
+                        <td>19.5°C</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 86</div>
+            <div class="problem-text">
+                Ordinarily, two metals, when mixed, form alloys that show metallic character. If the two metals differ sufficiently in electronegativity, they can form compounds with significant ionic character. Consider the solid produced by mixing equal chemical amounts of Cs and Rb, compared with that produced by mixing Cs and Au. Compute the electronegativity difference in each case, and determine whether either mixture has significant ionic character. If either compound is ionic or partially ionic, which atom carries the net negative charge? Are there alkali halides with similar or smaller electronegativity differences?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 87</div>
+            <div class="problem-text">
+                At large interatomic separations, an alkali halide molecule MX has a lower energy as two neutral atoms, M + X; at short separations, the ionic form (M<sup>+</sup>)(X<sup>-</sup>) has a lower energy. At a certain distance, R<sub>c</sub>, the energies of the two forms become equal, and it is near this distance that the electron will jump from the metal to the halogen atom during a collision. Because the forces between neutral atoms are weak at large distances, a reasonably good approximation can be made by ignoring any variation in potential V(R) for the neutral atoms between R<sub>c</sub> and R = ∞. For the ions in this distance range, V(R) is dominated by their Coulomb attraction.<br>
+                (a) Express R<sub>c</sub> for the first ionization energy of the metal M and the electron affinity of the halogen X.<br>
+                (b) Calculate R<sub>c</sub> for LiF, KBr, and NaCl using data from Appendix F.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 88</div>
+            <div class="problem-text">
+                Use the data in Appendix F to compute the energy changes (ΔE) of the following pairs of reactions:<br>
+                (a) Na(g) + I(g) → Na<sup>+</sup>(g) + I<sup>-</sup>(g) and Na(g) + I(g) → Na<sup>-</sup>(g) + I<sup>+</sup>(g)<br>
+                (b) K(g) + Cl(g) → K<sup>+</sup>(g) + Cl<sup>-</sup>(g) and K(g) + Cl(g) → K<sup>-</sup>(g) + Cl<sup>+</sup>(g)<br><br>
+                Explain why Na<sup>+</sup>I<sup>-</sup> and K<sup>+</sup>Cl<sup>-</sup> form in preference to Na<sup>-</sup>I<sup>+</sup> and K<sup>-</sup>Cl<sup>+</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 89</div>
+            <div class="problem-text">
+                The carbon–carbon bond length in C<sub>2</sub>H<sub>2</sub> is 1.20 Å, that in C<sub>2</sub>H<sub>4</sub> is 1.34 Å, and that in C<sub>2</sub>H<sub>6</sub> is 1.53 Å. Near which of these values would you predict the bond length of C<sub>2</sub> to lie? Is the experimentally observed value, 1.31 Å, consistent with your prediction?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 90</div>
+            <div class="problem-text">
+                Two possible Lewis diagrams for sulfine (H<sub>2</sub>CSO) are H<sub>2</sub>C=S=O and H<sub>2</sub>C–S≡O.<br>
+                (a) Compute the formal charges on all atoms.<br>
+                (b) Draw a Lewis diagram for which all the atoms in sulfine have formal charges of zero.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 91</div>
+            <div class="problem-text">
+                There is persuasive evidence for the brief existence of the unstable molecule OPCl.<br>
+                (a) Draw a Lewis diagram for this molecule in which the octet rule is satisfied on all atoms and the formal charges on all atoms are zero.<br>
+                (b) The compound OPCl reacts with oxygen to give O<sub>2</sub>PCl. Draw a Lewis diagram of O<sub>2</sub>PCl for which all formal charges are equal to zero. Draw a Lewis diagram in which the octet rule is satisfied on all atoms.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 92</div>
+            <div class="problem-text">
+                The compound SF<sub>3</sub>N has been synthesized.<br>
+                (a) Draw the Lewis diagram of this molecule, supposing that the three fluoride atoms and the nitrogen atom surround the sulfur atom. Indicate the formal charges. Repeat, but assume that the three fluorine atoms and the sulfur atom surround the nitrogen atom.<br>
+                (b) From the results in part (a), speculate about which arrangement is more likely to correspond to the actual molecular structure.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 93</div>
+            <div class="problem-text">
+                In nitryl chloride (NO<sub>2</sub>Cl), the chlorine atom and the two oxygen atoms are bonded to a central nitrogen atom, and all the atoms lie in a plane. Draw the two electron dot resonance forms that satisfy the octet rule and that together are consistent with the fact that the two nitrogen–oxygen bonds are equivalent.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 94</div>
+            <div class="problem-text">
+                The molecular ion S<sub>3</sub>N<sub>3</sub><sup>-</sup> has the cyclic structure with alternating S and N atoms. All S–N bonds are equivalent.<br>
+                (a) Give six equivalent resonance hybrid Lewis diagrams for this molecular ion.<br>
+                (b) Compute the formal charges on all atoms in the molecular ion in each of the six Lewis diagrams.<br>
+                (c) Determine the charge on each atom in the polyatomic ion, assuming that the true distribution of electrons is the average of the six Lewis diagrams arrived at in parts (a) and (b).<br>
+                (d) An advanced calculation suggests that the actual charge resident on each N atom is -0.375 and on each S atom is -0.041. Show that this result is consistent with the overall -1 charge on the molecular ion.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 95</div>
+            <div class="problem-text">
+                The two compounds nitrogen dioxide and dinitrogen tetraoxide are introduced in Section 3.13.<br>
+                (a) NO<sub>2</sub> is an odd-electron compound. Draw the best Lewis diagrams possible for it, recognizing that one atom cannot achieve an octet configuration. Use formal charges to decide whether that should be the (central) nitrogen atom or one of the oxygen atoms.<br>
+                (b) Draw resonance forms for N<sub>2</sub>O<sub>4</sub> that obey the octet rule. The two N atoms are bonded in this molecule.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 96</div>
+            <div class="problem-text">
+                Although magnesium and the alkaline-earth metals situated below it in the periodic table form ionic chlorides, beryllium chloride (BeCl<sub>2</sub>) is a covalent compound.<br>
+                (a) Follow the usual rules to write a Lewis diagram for BeCl<sub>2</sub> in which each atom attains an octet configuration. Indicate formal charges.<br>
+                (b) The Lewis diagram that results from part (a) is an extremely unlikely one because of the double bonds and formal charges it shows. By relaxing the requirement of placing an octet on the beryllium atom, show how a Lewis diagram without formal charges can be written.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 97</div>
+            <div class="problem-text">
+                (a) The first noble-gas compound, prepared by Neil Bartlett in 1962, was an orange-yellow ionic solid that consisted of XeF<sup>+</sup> and PtF<sub>11</sub><sup>-</sup>. Draw a Lewis diagram for XeF<sup>+</sup>.<br>
+                (b) Shortly after the preparation of the ionic compound discussed in part (a), it was found that the irradiation of mixtures of xenon and fluorine with sunlight produced white crystalline XeF<sub>2</sub>. Draw a Lewis diagram for this molecule, allowing valence expansion on the central xenon atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 98</div>
+            <div class="problem-text">
+                Represent the bonding in SF<sub>2</sub> (F–S–F) with Lewis diagrams. Include the formal charges on all atoms. The dimer of this compound has the formula S<sub>2</sub>F<sub>4</sub>. It was isolated in 1980 and shown to have the structure F<sub>3</sub>S–SF. Draw a possible Lewis diagram to represent the bonding in the dimer, indicating the formal charges on all atoms. Is it possible to draw a Lewis diagram for S<sub>2</sub>F<sub>4</sub> in which all atoms have valence octets? Explain why or why not.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 99</div>
+            <div class="problem-text">
+                A stable triatomic molecule can be formed that contains one atom each of nitrogen, sulfur, and fluorine. Three bonding structures are possible, depending on which is the central atom: NSF, SNF, and SFN.<br>
+                (a) Write a Lewis diagram for each of these molecules, indicating the formal charge on each atom.<br>
+                (b) Often, the structure with the least separation of formal charge is the most stable. Is this statement consistent with the observed structure for this molecule—namely, NSF, which has a central sulfur atom?<br>
+                (c) Does consideration of the electronegativities of N, S, and F from Figure 3.10 help rationalize this observed structure? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 100</div>
+            <div class="problem-text">
+                The gaseous potassium chloride molecule has a measured dipole moment of 10.3 D, which indicates that it is a very polar molecule. The separation between the nuclei in this molecule is 2.67 Å. What would the dipole moment of a KCl molecule be if there were opposite charges of one fundamental unit (1.60 × 10<sup>-19</sup> C) at the nuclei?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 101</div>
+            <div class="problem-text">
+                (a) Predict the geometry of the SbCl<sub>5</sub><sup>2-</sup> ion, using the VSEPR method.<br>
+                (b) The ion SbCl<sub>6</sub><sup>3-</sup> is prepared from SbCl<sub>5</sub><sup>2-</sup> by treatment with Cl<sup>-</sup>. Determine the steric number of the central antimony atom in this ion, and discuss the extension of the VSEPR theory that would be needed for the prediction of its molecular geometry.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 102</div>
+            <div class="problem-text">
+                The element xenon (Xe) is by no means chemically inert; it forms a number of chemical compounds with electronegative elements such as fluorine and oxygen. The reaction of xenon with varying amounts of fluorine produces XeF<sub>2</sub> and XeF<sub>4</sub>. Subsequent reaction of one or the other of these compounds with water produces (depending on conditions) XeO<sub>3</sub>, XeO<sub>4</sub>, and H<sub>4</sub>XeO<sub>6</sub>, as well as mixed compounds such as XeOF<sub>4</sub>. Predict the structures of these six xenon compounds, using the VSEPR theory.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 103</div>
+            <div class="problem-text">
+                Predict the arrangement of the atoms about the sulfur atom in F<sub>4</sub>SPO, assuming that double-bonded atoms require more space than single-bonded atoms.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 104</div>
+            <div class="problem-text">
+                Draw Lewis diagrams and predict the geometries of the following molecules. State which are polar and which are nonpolar.<br>
+                (a) ONCl<br>
+                (b) O<sub>2</sub>NCl<br>
+                (c) XeF<sub>2</sub><br>
+                (d) SCl<sub>4</sub><br>
+                (e) CHF<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 105</div>
+            <div class="problem-text">
+                Suppose that any given kind of bond, such as O–H, has a characteristic electric dipole. That is, suppose that electric dipole moments can be assigned to bonds just as bond energies can be. Both are usefully accurate approximations. Consider the water molecule. Show that if μ<sub>OH</sub> is the dipole moment of the OH bond, then the dipole moment of water is μ(H<sub>2</sub>O) = 2μ<sub>OH</sub> cos (θ/2). What is the dipole moment μ<sub>OH</sub> if μ(H<sub>2</sub>O) is 1.86 D?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 106</div>
+            <div class="problem-text">
+                A good method of preparing pure oxygen on a small scale is the decomposition of KMnO<sub>4</sub> in a vacuum above 215°C:<br>
+                2 KMnO<sub>4</sub>(s) → K<sub>2</sub>MnO<sub>4</sub>(s) + MnO<sub>2</sub>(s) + O<sub>2</sub>(g)<br><br>
+                Assign an oxidation number to each atom and verify that the total number of electrons lost is equal to the total number gained.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 107</div>
+            <div class="problem-text">
+                Bismuth forms an ion with the formula Bi<sub>5</sub><sup>3+</sup>. Arsenic and fluorine form a complex ion [AsF<sub>6</sub>]<sup>-</sup>, with fluorine atoms arranged around a central arsenic atom. Assign oxidation numbers to each of the atoms in the bright yellow crystalline solid with the formula Bi<sub>5</sub>(AsF<sub>6</sub>)<sub>3</sub>·2SO<sub>2</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 108</div>
+            <div class="problem-text">
+                In some forms of the periodic table, hydrogen is placed in Group I; in others, it is placed in Group VII. Give arguments in favor of each location.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 109</div>
+            <div class="problem-text">
+                (a) Determine the oxidation number of lead in each of the following oxides: PbO, PbO<sub>2</sub>, Pb<sub>2</sub>O<sub>3</sub>, Pb<sub>3</sub>O<sub>4</sub>.<br>
+                (b) The only known lead ions are Pb<sup>2+</sup> and Pb<sup>4+</sup>. How can you reconcile this statement with your answer to part (a)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 110</div>
+            <div class="problem-text">
+                There have been some predictions that element 114 will be relatively stable in comparison with many other elements beyond uranium in the periodic table. Predict the maximum oxidation state of this element. Based on the trends in the oxidation states of other members of its group, is it likely that this oxidation state will be the dominant one?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 111</div>
+            <div class="problem-text">
+                A certain element, M, is a main-group metal that reacts with chlorine to give a compound with the chemical formula MCl<sub>2</sub> and with oxygen to give the compound MO.<br>
+                (a) To which group in the periodic table does element M belong?<br>
+                (b) The chloride contains 44.7% chlorine by mass. Name the element M.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 112</div>
+            <div class="problem-text">
+                An ionic compound used as a chemical fertilizer has the composition (by mass) 48.46% O, 23.45% P, 21.21% N, 6.87% H. Give the name and chemical formula of the compound and draw Lewis diagrams for the two types of ions that make it up.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 113</div>
+            <div class="problem-text">
+                A compound is being tested for use as a rocket propellant. Analysis shows that it contains 18.54% F, 34.61% Cl, and 46.85% O.<br>
+                (a) Determine the empirical formula for this compound.<br>
+                (b) Assuming that the molecular formula is the same as the empirical formula, draw a Lewis diagram for this molecule. Review examples elsewhere in this chapter to decide which atom is most likely to lie at the center.<br>
+                (c) Use the VSEPR theory to predict the structure of the molecule from part (b).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 114</div>
+            <div class="problem-text">
+                Many important fertilizers are ionic compounds that contain the elements nitrogen, phosphorus, and potassium because these are frequently the limiting plant-growth nutrients in soil.<br>
+                (a) Write the chemical formulas for the following chemical fertilizers: ammonium phosphate, potassium nitrate, ammonium sulfate.<br>
+                (b) Calculate the mass percentage of nitrogen, phosphorus, and potassium for each of the compounds in part (a).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>
+

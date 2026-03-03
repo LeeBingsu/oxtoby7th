@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9 - The Gaseous State</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 9 - The Gaseous State</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>The Chemistry of Gases</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Solid ammonium hydrosulfide (NH<sub>4</sub>HS) decomposes entirely to gases when it is heated. Write a chemical equation representing this change.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                Solid ammonium carbamate (NH<sub>4</sub>CO<sub>2</sub>NH<sub>2</sub>) decomposes entirely to gases when it is heated. Write a chemical equation representing this change.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                Ammonia (NH<sub>3</sub>) is an important and useful gas. Suggest a way to generate it from ammonium bromide (NH<sub>4</sub>Br). Include a balanced chemical equation.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                Hydrogen cyanide (HCN) is a poisonous gas. Explain why solutions of potassium cyanide (KCN) should never be acidified. Include a balanced chemical equation.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Pressure and Temperature of Gases</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                Suppose a barometer were designed using water (with a density of 1.00 g cm<sup>−3</sup>) rather than mercury as its fluid. What would be the height of the column of water balancing 1.00 atm pressure?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                A vessel that contains a gas has two pressure gauges attached to it. One contains liquid mercury, and the other an oil such as dibutyl phthalate. The difference in levels of mercury in the two arms of the mercury gauge is observed to be 9.50 cm. Given<br><br>
+                density of mercury = 13.60 g cm<sup>−3</sup><br>
+                density of oil = 1.045 g cm<sup>−3</sup><br>
+                acceleration due to gravity = 9.806 m s<sup>−2</sup><br><br>
+                (a) What is the pressure of the gas?<br>
+                (b) What is the difference in height of the oil in the two arms of the oil pressure gauge?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                Calcium dissolved in the ocean is used by marine organisms to form CaCO<sub>3</sub>(s) in skeletons and shells. When the organisms die, their remains fall to the bottom. The amount of calcium carbonate that can be dissolved in seawater depends on the pressure. At great depths, where the pressure exceeds about 414 atm, the shells slowly redissolve. This reaction prevents all the Earth's calcium from being tied up as insoluble CaCO<sub>3</sub>(s) at the bottom of the sea. Estimate the depth (in feet) of water that exerts a pressure great enough to dissolve seashells.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                Suppose that the atmosphere were perfectly uniform, with a density throughout equal to that of air at 0°C, 1.3 g L<sup>−1</sup>. Calculate the thickness of such an atmosphere that would cause a pressure of exactly 1 standard atm at the Earth's surface.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                The "critical pressure" of mercury is 172.00 MPa. Above this pressure mercury cannot be liquefied, no matter what the temperature. Express this pressure in atmospheres and in bars (1 bar = 10<sup>5</sup> Pa).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                Experimental studies of solid surfaces and the chemical reactions that occur on them require very low gas pressures to avoid surface contamination. High-vacuum apparatus for such experiments can routinely reach pressures of 5 × 10<sup>−10</sup> torr. Express this pressure in atmospheres and in pascals.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Some nitrogen is held in a 2.00-L tank at a pressure of 3.00 atm. The tank is connected to a 5.00-L tank that is completely empty (evacuated), and a valve is opened to connect the two tanks. No temperature change occurs in the process. Determine the total pressure in this two-tank system after the nitrogen stops flowing.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                The Stirling engine, a heat engine invented by a Scottish minister, has been considered for use in automobile engines because of its efficiency. In such an engine, a gas goes through a four-step cycle: (1) expansion at constant T, (2) cooling at constant V, (3) compression at constant T to its original volume, and (4) heating at constant V to its original temperature. Suppose the gas starts at a pressure of 1.23 atm and the volume of the gas changes from 0.350 to 1.31 L during its expansion at constant T. Calculate the pressure of the gas at the end of this step in the cycle.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                The absolute temperature of a 4.00-L sample of gas doubles at constant pressure. Determine the volume of the gas after this change.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                The Celsius temperature of a 4.00-L sample of gas doubles from 20.0°C to 40.0°C at constant pressure. Determine the volume of the gas after this change.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                The gill is an obscure unit of volume. If some H<sub>2</sub>(g) has a volume of 17.4 gills at 100°F, what volume would it have if the temperature were reduced to 0°F, assuming that its pressure stayed constant?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                A gas originally at a temperature of 26.5°C is cooled at constant pressure. Its volume decreases from 5.40 L to 5.26 L. Determine its new temperature in degrees Celsius.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                Calcium carbide (CaC<sub>2</sub>) reacts with water to produce acetylene (C<sub>2</sub>H<sub>2</sub>), according to the following equation:<br><br>
+                CaC<sub>2</sub>(s) + 2 H<sub>2</sub>O(ℓ) → Ca(OH)<sub>2</sub>(s) + C<sub>2</sub>H<sub>2</sub>(g)<br><br>
+                A certain mass of CaC<sub>2</sub> reacts completely with water to give 64.5 L C<sub>2</sub>H<sub>2</sub> at 50°C and P = 1.00 atm. If the same mass of CaC<sub>2</sub> reacts completely at 400°C and P = 1.00 atm, what volume of C<sub>2</sub>H<sub>2</sub> will be collected at the higher temperature?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                A convenient laboratory source for high purity oxygen is the decomposition of potassium permanganate at 230°C:<br><br>
+                2 KMnO<sub>4</sub>(s) → K<sub>2</sub>MnO<sub>4</sub>(s) + MnO<sub>2</sub>(s) + O<sub>2</sub>(g)<br><br>
+                Suppose 3.41 L oxygen is needed at atmospheric pressure and a temperature of 20°C. What volume of oxygen should be collected at 230°C and the same pressure to give this volume when cooled?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>The Ideal Gas Law</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                A bicycle tire is inflated to a gauge pressure of 30.0 psi at a temperature of t = 0°C. What will its gauge pressure be at 32°C if the tire is considered nonexpandable? (Note: The gauge pressure is the difference between the tire pressure and atmospheric pressure, 14.7 psi.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                The pressure of a poisonous gas inside a sealed container is 1.47 atm at 20°C. If the barometric pressure is 0.96 atm, to what temperature (in degrees Celsius) must the container and its contents be cooled so that the container can be opened with no risk for gas spurting out?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                A 20.6-L sample of "pure" air is collected in Greenland at a temperature of −20.0°C and a pressure of 1.01 atm and is forced into a 1.05-L bottle for shipment to Europe for analysis.<br>
+                (a) Compute the pressure inside the bottle just after it is filled.<br>
+                (b) Compute the pressure inside the bottle as it is opened in the 21.0°C comfort of the European laboratory.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                Iodine heptafluoride (IF<sub>7</sub>) can be made at elevated temperatures by the following reaction:<br><br>
+                I<sub>2</sub>(g) + 7 F<sub>2</sub>(g) → 2 IF<sub>7</sub>(g)<br><br>
+                Suppose 63.6 L gaseous IF<sub>7</sub> is made by this reaction at 300°C and a pressure of 0.459 atm. Calculate the volume this gas will occupy if heated to 400°C at a pressure of 0.980 atm.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                According to a reference handbook, "The weight of one liter of H<sub>2</sub>Te(g) is 6.234 g." Why is this information nearly valueless? Assume that H<sub>2</sub>Te(g) is an ideal gas, and calculate the temperature (in degrees Celsius) at which this statement is true if the pressure is 1.00 atm.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                A scuba diver's tank contains 0.30 kg oxygen (O<sub>2</sub>) compressed into a volume of 2.32 L.<br>
+                (a) Use the ideal gas law to estimate the gas pressure inside the tank at 5°C, and express it in atmospheres and in pounds per square inch.<br>
+                (b) What volume would this oxygen occupy at 30°C and a pressure of 0.98 atm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                Hydrogen is produced by the complete reaction of 6.24 g sodium with an excess of gaseous hydrogen chloride.<br>
+                (a) Write a balanced chemical equation for the reaction that occurs.<br>
+                (b) How many liters of hydrogen will be produced at a temperature of 50.0°C and a pressure of 0.850 atm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                Aluminum reacts with excess aqueous hydrochloric acid to produce hydrogen.<br>
+                (a) Write a balanced chemical equation for the reaction. (Hint: Water-soluble AlCl<sub>3</sub> is the stable chloride of aluminum.)<br>
+                (b) Calculate the mass of pure aluminum that will furnish 10.0 L hydrogen at a pressure of 0.750 atm and a temperature of 30.0°C.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                The classic method for manufacturing hydrogen chloride, which is still in use today to a small extent, is the reaction of sodium chloride with excess sulfuric acid at elevated temperatures. The overall equation for this process is<br><br>
+                NaCl(s) + H<sub>2</sub>SO<sub>4</sub>(ℓ) → NaHSO<sub>4</sub>(s) + HCl(g)<br><br>
+                What volume of hydrogen chloride is produced from 2500 kg sodium chloride at 550°C and a pressure of 0.97 atm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                In 1783, the French physicist Jacques Charles supervised and took part in the first human flight in a hydrogen balloon. Such balloons rely on the low density of hydrogen relative to air for their buoyancy. In Charles's balloon ascent, the hydrogen was produced (together with iron(II) sulfate) from the action of aqueous sulfuric acid on iron filings.<br>
+                (a) Write a balanced chemical equation for this reaction.<br>
+                (b) What volume of hydrogen is produced at 300 K and a pressure of 1.0 atm when 300 kg sulfuric acid is consumed in this reaction?<br>
+                (c) What would be the radius of a spherical balloon filled by the gas in part (b)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                Potassium chlorate decomposes when heated, giving oxygen and potassium chloride:<br><br>
+                2 KClO<sub>3</sub>(s) → 2 KCl(s) + 3 O<sub>2</sub>(g)<br><br>
+                A test tube holding 87.6 g KClO<sub>3</sub> is heated, and the reaction goes to completion. What volume of O<sub>2</sub> will be evolved if it is collected at a pressure of 1.04 atm and a temperature of 13.2°C?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                Elemental chlorine was first produced by Carl Wilhelm Scheele in 1774 using the reaction of pyrolusite (MnO<sub>2</sub>) with sulfuric acid and sodium chloride:<br><br>
+                4 NaCl(s) + 2 H<sub>2</sub>SO<sub>4</sub>(ℓ) + MnO<sub>2</sub>(s) → 2 Na<sub>2</sub>SO<sub>4</sub>(s) + MnCl<sub>2</sub>(s) + 2 H<sub>2</sub>O(ℓ) + Cl<sub>2</sub>(g)<br><br>
+                Calculate the minimum mass of MnO<sub>2</sub> required to generate 5.32 L gaseous chlorine, measured at a pressure of 0.953 atm and a temperature of 33°C.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Elemental sulfur can be recovered from gaseous hydrogen sulfide (H<sub>2</sub>S) through the following reaction:<br><br>
+                2 H<sub>2</sub>S(g) + SO<sub>2</sub>(g) → 3 S(s) + 2 H<sub>2</sub>O(ℓ)<br><br>
+                (a) What volume of H<sub>2</sub>S (in liters at 0°C and 1.00 atm) is required to produce 2.00 kg (2000 g) sulfur by this process?<br>
+                (b) What minimum mass and volume (at 0°C and 1.00 atm) of SO<sub>2</sub> are required to produce 2.00 kg sulfur by this reaction?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                When ozone (O<sub>3</sub>) is placed in contact with dry, powdered KOH at −15°C, the red-brown solid potassium ozonide (KO<sub>3</sub>) forms, according to the following balanced equation:<br><br>
+                5 O<sub>3</sub>(g) + 2 KOH(s) → 2 KO<sub>3</sub>(s) + 5 O<sub>2</sub>(g) + H<sub>2</sub>O(s)<br><br>
+                Calculate the volume of ozone needed (at a pressure of 0.134 atm and −15°C) to produce 4.69 g KO<sub>3</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Mixtures of Gases</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                Sulfur dioxide reacts with oxygen in the presence of platinum to give sulfur trioxide:<br><br>
+                2 SO<sub>2</sub>(g) + O<sub>2</sub>(g) → 2 SO<sub>3</sub>(g)<br><br>
+                Suppose that at one stage in the reaction, 26.0 mol SO<sub>2</sub>, 83.0 mol O<sub>2</sub>, and 17.0 mol SO<sub>3</sub> are present in the reaction vessel at a total pressure of 0.950 atm. Calculate the mole fraction of SO<sub>3</sub> and its partial pressure.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                The synthesis of ammonia from the elements is conducted at high pressures and temperatures:<br><br>
+                N<sub>2</sub>(g) + 3 H<sub>2</sub>(g) → 2 NH<sub>3</sub>(g)<br><br>
+                Suppose that at one stage in the reaction, 13 mol NH<sub>3</sub>, 31 mol N<sub>2</sub>, and 93 mol H<sub>2</sub> are present in the reaction vessel at a total pressure of 210 atm. Calculate the mole fraction of NH<sub>3</sub> and its partial pressure.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                The atmospheric pressure at the surface of Mars is 5.92 × 10<sup>−3</sup> atm. The Martian atmosphere is 95.3% CO<sub>2</sub> and 2.7% N<sub>2</sub> by volume, with small amounts of other gases also present. Compute the mole fraction and partial pressure of N<sub>2</sub> in the atmosphere of Mars.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                The atmospheric pressure at the surface of Venus is 90.8 atm. The Venusian atmosphere is 96.5% CO<sub>2</sub> and 3.5% N<sub>2</sub> by volume, with small amounts of other gases also present. Compute the mole fraction and partial pressure of N<sub>2</sub> in the atmosphere of Venus.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                A gas mixture at room temperature contains 10.0 mol CO and 12.5 mol O<sub>2</sub>.<br>
+                (a) Compute the mole fraction of CO in the mixture.<br>
+                (b) The mixture is then heated, and the CO starts to react with the O<sub>2</sub> to give CO<sub>2</sub>:<br><br>
+                CO(g) + ½ O<sub>2</sub>(g) → CO<sub>2</sub>(g)<br><br>
+                At a certain point in the heating, 3.0 mol CO<sub>2</sub> is present. Determine the mole fraction of CO in the new mixture.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                A gas mixture contains 4.5 mol Br<sub>2</sub> and 33.1 mol F<sub>2</sub>.<br>
+                (a) Compute the mole fraction of Br<sub>2</sub> in the mixture.<br>
+                (b) The mixture is heated above 150°C and starts to react to give BrF<sub>5</sub>:<br><br>
+                Br<sub>2</sub>(g) + 5 F<sub>2</sub>(g) → 2 BrF<sub>5</sub>(g)<br><br>
+                At a certain point in the reaction, 2.2 mol BrF<sub>5</sub> is present. Determine the mole fraction of Br<sub>2</sub> in the mixture at that point.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                The partial pressure of water vapor in saturated air at 20°C is 0.0230 atm.<br>
+                (a) How many molecules of water are in 1.00 cm<sup>3</sup> of saturated air at 20°C?<br>
+                (b) What volume of saturated air at 20°C contains 0.500 mol water?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                The partial pressure of oxygen in a mixture of oxygen and hydrogen is 0.200 atm, and that of hydrogen is 0.800 atm.<br>
+                (a) How many molecules of oxygen are in a 1.500-L container of this mixture at 40°C?<br>
+                (b) If a spark is introduced into the container, how many grams of water will be produced?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>The Kinetic Theory of Gases</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                (a) Compute the root-mean-square speed of H<sub>2</sub> molecules in hydrogen at a temperature of 300 K.<br>
+                (b) Repeat the calculation for SF<sub>6</sub> molecules in gaseous sulfur hexafluoride at 300 K.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                Researchers recently reported the first optical atomic trap. In this device, beams of laser light replace the physical walls of conventional containers. The laser beams are tightly focused. They briefly (for 0.5 s) exert enough pressure to confine 500 sodium atoms in a volume of 1.0 × 10<sup>−15</sup> m<sup>3</sup>. The temperature of this gas is 0.00024 K, the lowest temperature ever reached for a gas. Compute the root-mean-square speed of the atoms in this confinement.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                Compare the root-mean-square speed of helium atoms near the surface of the sun, where the temperature is approximately 6000 K, with that of helium atoms in an interstellar cloud, where the temperature is 100 K.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                The "escape velocity" necessary for objects to leave the gravitational field of the Earth is 11.2 km s<sup>−1</sup>. Calculate the ratio of the escape velocity to the root-mean-square speed of helium, argon, and xenon atoms at 2000 K. Does your result help explain the low abundance of the light gas helium in the atmosphere? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                Chlorine dioxide (ClO<sub>2</sub>) is used for bleaching wood pulp. In a gaseous sample held at thermal equilibrium at a particular temperature, 35.0% of the molecules have speeds exceeding 400 m s<sup>−1</sup>. If the sample is heated slightly, will the percentage of molecules with speeds in excess of 400 m s<sup>−1</sup> then be greater than or less than 35%? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                The ClO<sub>2</sub> described in Problem 45 is heated further until it explodes, yielding Cl<sub>2</sub>, O<sub>2</sub>, and other gaseous products. The mixture is then cooled until the original temperature is reached. Is the percentage of chlorine molecules with speeds in excess of 400 m s<sup>−1</sup> greater than or less than 35%? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Real Gases: Intermolecular Forces</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                Oxygen is supplied to hospitals and chemical laboratories under pressure in large steel cylinders. Typically, such cylinders have an internal volume of 28.0 L and contain 6.80 kg oxygen. Use the van der Waals equation to estimate the pressure inside such cylinders at 20°C in atmospheres and in pounds per square inch.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                Steam at high pressures and temperatures is used to generate electrical power in utility plants. A large utility boiler has a volume of 2500 m<sup>3</sup> and contains 140 metric tons (1 metric ton = 10<sup>3</sup> kg) of steam at a temperature of 540°C. Use the van der Waals equation to estimate the pressure of the steam under these conditions, in atmospheres and in pounds per square inch.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                Using (a) the ideal gas law and (b) the van der Waals equation, calculate the pressure exerted by 50.0 g carbon dioxide in a 1.00-L vessel at 25°C. Do attractive or repulsive forces dominate?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                When 60.0 g methane (CH<sub>4</sub>) is placed in a 1.00-L vessel, the pressure is measured to be 130 atm. Calculate the temperature of the gas using (a) the ideal gas law and (b) the van der Waals equation. Do attractive or repulsive forces dominate?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Molecular Collisions and Rate Processes</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                A spherical bulb with a volume of 500 cm<sup>3</sup> is evacuated to a negligibly small residual gas pressure and then closed off. One hour later, the pressure in the vessel is found to be 1.00 × 10<sup>−7</sup> atm because the bulb has a tiny hole in it. Assume that the surroundings are at atmospheric pressure, T = 300 K, and the average molar mass of molecules in the atmosphere is 28.8 g mol<sup>−1</sup>. Calculate the radius of the hole in the vessel wall, assuming it to be circular.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                A 200-cm<sup>3</sup> vessel contains hydrogen gas at a temperature of 25°C and a pressure of 0.990 atm. Unfortunately, the vessel has a tiny hole in its wall, and over a period of 1 hour, the pressure drops to 0.989 atm. What is the radius of the hole (assumed to be circular)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                Methane (CH<sub>4</sub>) effuses through a small opening in the side of a container at the rate of 1.30 × 10<sup>−8</sup> mol s<sup>−1</sup>. An unknown gas effuses through the same opening at the rate of 5.42 × 10<sup>−9</sup> mol s<sup>−1</sup> when maintained at the same temperature and pressure as the methane. Determine the molar mass of the unknown gas.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                Equal chemical amounts of two gases, fluorine and bromine pentafluoride, are mixed. Determine the ratio of the rates of effusion of the two gases through a small opening in their container.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                Calculate the theoretical number of stages that would be needed to enrich <sup>235</sup>U to 95% purity by means of the barrier diffusion process, using <sup>235</sup>UF<sub>6</sub> and <sup>238</sup>UF<sub>6</sub> as the gaseous compounds. The natural abundance of <sup>238</sup>U is 99.27%, and that of <sup>235</sup>U is 0.72%. Take the relative atomic masses of <sup>235</sup>U and <sup>238</sup>U to be 235.04 and 238.05, respectively.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                A mixture of H<sub>2</sub> and He at 300 K effuses from a tiny hole in the vessel that contains it. What is the mole fraction of H<sub>2</sub> in the original gas mixture if 3.00 times as many He atoms as H<sub>2</sub> molecules escape from the orifice in unit time? If the same mixture is to be separated by a barrier-diffusion process, how many stages are necessary to achieve H<sub>2</sub> of 99.9% purity?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                At what pressure does the mean free path of krypton (Kr) atoms (d = 3.16 × 10<sup>−10</sup> m) become comparable with the diameter of the 1-L spherical vessel that contains them at 300 K? Calculate the diffusion constant at this pressure.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                At what pressure does the mean free path of Kr atoms (d = 3.16 × 10<sup>−10</sup> m) become comparable with the diameter of a Kr atom if T = 300 K? Calculate the diffusion constant at this pressure. Assume that Kr obeys the ideal gas law even at these high pressures.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                The Earth is approximately a sphere of radius 6370 km. Taking the average barometric pressure on the Earth's surface to be 730 mm Hg, estimate the total mass of the Earth's atmosphere.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                After a flood fills a basement to a depth of 9.0 feet and completely saturates the surrounding earth, the owner buys an electric pump and quickly pumps the water out of the basement. Suddenly, a basement wall collapses, the structure is severely damaged, and mud oozes in. Explain this event by estimating the difference between the outside pressure at the base of the basement walls and the pressure inside the drained basement. Assume that the density of the mud is 4.9 g cm<sup>−3</sup>. Report the answer both in atmospheres and in pounds per square inch.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">
+                The density of mercury is 13.5955 g cm<sup>−3</sup> at 0.0°C, but only 13.5094 g cm<sup>−3</sup> at 35°C. Suppose that a mercury barometer is read on a hot summer day when the temperature is 35°C. The column of mercury is 760.0 mm long. Correct for the expansion of the mercury and compute the true pressure in atmospheres.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">
+                When a gas is cooled at constant pressure, the volume decreases according to the following equation:<br><br>
+                V = 209.4 L + (0.456 L/°F) × t<sub>F</sub><br><br>
+                where t<sub>F</sub> is the temperature in degrees Fahrenheit. From this relationship, estimate the absolute zero of temperature in degrees Fahrenheit.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">
+                Amonton's law relates pressure to absolute temperature. Consider the ideal gas law and then write a statement of Amonton's law in a form that is analogous to the statements of Charles's law and Boyle's law in the text.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">
+                The density of a certain gas is 2.94 g L<sup>−1</sup> at 50°C and P = 1.00 atm. What is its density at 150°C? Calculate the molar mass of the gas, assuming it obeys the ideal gas law.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">
+                A lighter-than-air balloon contains 1005 mol helium at 1.00 atm and 25.0°C.<br>
+                (a) Compute the difference between the mass of the helium it contains and the mass of the air it displaces, assuming the molar mass of air to be 29.0 g mol<sup>−1</sup>.<br>
+                (b) The balloon now ascends to an altitude of 10 miles, where the temperature is −80.0°C. The walls of the balloon are elastic enough that the pressure inside it equals the pressure outside. Repeat the calculation of part (a).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">
+                Baseball reporters say that long fly balls that would have carried for home runs in July "die" in the cool air of October and are caught. The idea behind this observation is that a baseball carries better when the air is less dense. Dry air is a mixture of gases with an effective molar mass of 29.0 g mol<sup>−1</sup>.<br>
+                (a) Compute the density of dry air on a July day when the temperature is 95.0°F and the pressure is 1.00 atm.<br>
+                (b) Compute the density of dry air on an October evening when the temperature is 50.0°F and the pressure is 1.00 atm.<br>
+                (c) Suppose that the humidity on the July day is 100%; thus, the air is saturated with water vapor. Is the density of this hot, moist air less than, equal to, or greater than the density of the hot, dry air computed in part (a)? In other terms, does high humidity favor the home run?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">
+                Sulfuric acid reacts with sodium chloride to produce gaseous hydrogen chloride according to the following reaction:<br><br>
+                NaCl(s) + H<sub>2</sub>SO<sub>4</sub>(ℓ) → NaHSO<sub>4</sub>(s) + HCl(g)<br><br>
+                A 10.0-kg mass of NaCl reacts completely with sulfuric acid to give a certain volume of HCl(g) at 50°C and P = 1.00 atm. If the same volume of hydrogen chloride is collected at 500°C and P = 1.00 atm, what mass of NaCl has reacted?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">
+                Exactly 1.0 lb Hydrone, an alloy of sodium with lead, yields (at 0.0°C and 1.00 atm) 2.6 ft<sup>3</sup> of hydrogen when it is treated with water. All the sodium reacts according to the following reaction:<br><br>
+                2 Na<sub>in alloy</sub> + 2 H<sub>2</sub>O(ℓ) → 2 NaOH(aq) + H<sub>2</sub>(g)<br><br>
+                and the lead does not react with water. Compute the percentage by mass of sodium in the alloy.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">
+                A sample of limestone (calcium carbonate, CaCO<sub>3</sub>) is heated at 950 K until it is completely converted to calcium oxide (CaO) and CO<sub>2</sub>. The CaO is then all converted to calcium hydroxide by addition of water, yielding 8.47 kg of solid Ca(OH)<sub>2</sub>. Calculate the volume of CO<sub>2</sub> produced in the first step, assuming it to be an ideal gas at 950 K and a pressure of 0.976 atm.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">
+                A gas exerts a pressure of 0.740 atm in a certain container. Suddenly, a chemical change occurs that consumes half of the molecules originally present and forms two new molecules for every three consumed. Determine the new pressure in the container if the volume of the container and the temperature are unchanged.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">
+                The following arrangement of flasks is set up. Assuming no temperature change, determine the final pressure inside the system after all stopcocks are opened. The connecting tube has zero volume.<br><br>
+                Flask 1: O<sub>2</sub>(g), V = 5.00 L, P = 2.51 atm<br>
+                Flask 2: N<sub>2</sub>(g), V = 4.00 L, P = 0.792 atm<br>
+                Flask 3: Ar(g), V = 3.00 L, P = 1.23 atm
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">
+                A mixture of CS<sub>2</sub>(g) and excess O<sub>2</sub>(g) in a 10.0-L reaction vessel at 100.0°C is under a pressure of 3.00 atm. When the mixture is ignited by a spark, it explodes. The vessel successfully contains the explosion, in which all of the CS<sub>2</sub>(g) reacts to give CO<sub>2</sub>(g) and SO<sub>2</sub>(g). The vessel is cooled back to its original temperature of 100.0°C, and the pressure of the mixture of the two product gases and the unreacted O<sub>2</sub>(g) is found to be 2.40 atm. Calculate the mass (in grams) of CS<sub>2</sub>(g) originally present.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">
+                Acetylene reacts with hydrogen in the presence of a catalyst to form ethane according to the following reaction:<br><br>
+                C<sub>2</sub>H<sub>2</sub>(g) + 2 H<sub>2</sub>(g) → C<sub>2</sub>H<sub>6</sub>(g)<br><br>
+                The pressure of a mixture of acetylene and an excess of hydrogen decreases from 0.100 to 0.042 atm in a vessel of a given volume after the catalyst is introduced, and the temperature is restored to its initial value after the reaction reaches completion. What was the mole fraction of acetylene in the original mixture?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 74</div>
+            <div class="problem-text">
+                Refer to the atomic trap described in Problem 42.<br>
+                (a) Assume ideal gas behavior to compute the pressure exerted on the "walls" of the optical bottle in this experiment.<br>
+                (b) In this gas, the mean free path (the average distance traveled by the sodium atoms between collisions) is 3.9 m. Compare this with the mean free path of the atoms in gaseous sodium at room conditions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 75</div>
+            <div class="problem-text">
+                Deuterium (<sup>2</sup>H), when heated to sufficiently high temperature, undergoes a nuclear fusion reaction that results in the production of helium. The reaction proceeds rapidly at a temperature, T, at which the average kinetic energy of the deuterium atoms is 8 × 10<sup>−16</sup> J. (At this temperature, deuterium molecules dissociate completely into deuterium atoms.)<br>
+                (a) Calculate T in kelvins (atomic mass of <sup>2</sup>H = 2.015).<br>
+                (b) For the fusion reaction to occur with ordinary H atoms, the average energy of the atoms must be about 32 × 10<sup>−16</sup> J. By what factor does the average speed of the <sup>1</sup>H atoms differ from that of the <sup>2</sup>H atoms of part (a)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 76</div>
+            <div class="problem-text">
+                Molecules of oxygen of the following isotopic composition are separated in an oxygen enrichment plant: <sup>16</sup>O<sup>16</sup>O, <sup>16</sup>O<sup>17</sup>O, <sup>16</sup>O<sup>18</sup>O, <sup>17</sup>O<sup>17</sup>O, <sup>17</sup>O<sup>18</sup>O, <sup>18</sup>O<sup>18</sup>O.<br>
+                (a) Compare the average translational kinetic energy of the lightest and heaviest molecular oxygen species at 200°C and at 400°C.<br>
+                (b) Compare the average speeds of the lightest and heaviest molecular oxygen species at the same two temperatures.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 77</div>
+            <div class="problem-text">
+                What is the probability that an O<sub>2</sub> molecule in a sample of oxygen at 300 K has a speed between 5.00 × 10<sup>2</sup> and 5.10 × 10<sup>2</sup> m s<sup>−1</sup>? (Hint: Try approximating the area under the Maxwell–Boltzmann distribution by small rectangles.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 78</div>
+            <div class="problem-text">
+                Molecules in a spherical container make wall collisions in a great circle plane of the sphere. All paths traveled between collisions are equal in length.<br>
+                (a) Relate the path length Δℓ to the angle θ and the sphere radius r.<br>
+                (b) Express the component of the molecular momentum transferred to the wall in a collision in terms of the molecular mass m, the speed u, and the angle θ.<br>
+                (c) Using parts (a) and (b), calculate the average force exerted on the wall by one molecule.<br>
+                (d) Derive the relation PV = ⅓Nmu<sup>2</sup> for a spherical container. This is the same relation found for a rectangular box in Section 9.5.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 79</div>
+            <div class="problem-text">
+                The van der Waals constant b is related to the volume excluded per mole of molecules, so it should be proportional to N<sub>A</sub>σ<sup>3</sup>, where σ is the distance parameter in the Lennard–Jones potential.<br>
+                (a) Make a plot of b against N<sub>A</sub>σ<sup>3</sup> for Ar, H<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>, and O<sub>2</sub>, using data from Tables 9.3 and 9.4. Do you see an overall correlation between the two?<br>
+                (b) The van der Waals constant a has dimensions of pressure times the square of the molar volume. Rewrite the units of a in terms of energy, length, and number of moles, and suggest a relation between a and some combination of the constants ε, σ, and N<sub>A</sub>. Make a plot of a against this combination of constants for the gases of part (a). Do you see an overall correlation in this case?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 80</div>
+            <div class="problem-text">
+                Take the derivative of the Lennard–Jones potential to express the force exerted on one atom by another for the distance R between them. Calculate the forces (in joules per meter) on a pair of interacting argon atoms at distances of 3.0, 3.4, 3.8, and 4.2 × 10<sup>−10</sup> m. Is the force attractive or repulsive at each of these distances?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 81</div>
+            <div class="problem-text">
+                A vessel with a small hole in its wall is filled with oxygen to a pressure of 1.00 atm at 25°C. In a 1.00-minute period, 3.25 g oxygen effuses out through the hole into a vacuum. The vessel is evacuated and filled with an unknown gas at the same pressure and volume. In this case, 5.39 g of the unknown gas effuses in 1.00 minute. Calculate the molar mass of the unknown gas.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 82</div>
+            <div class="problem-text">
+                A cylindrical storage tank for natural gas (mostly methane, CH<sub>4</sub>) with a 20-ft radius and a 50-ft height is filled to a pressure of 2000 psi at 20°C. A small leak of 1.0-mm<sup>2</sup> area develops at one of the welds. Calculate the mass of CH<sub>4</sub> (in grams) that leaks out of the tank in one day. What fraction of the total gas escapes per day?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 83</div>
+            <div class="problem-text">
+                A thermos bottle (Dewar vessel) has an evacuated space between its inner and outer walls to diminish the rate of transfer of thermal energy to or from the bottle's contents. For good insulation, the mean free path of the residual gas (air; average molecular mass = 29) should be at least 10 times the distance between the inner and outer walls, which is about 1.0 cm. What should be the maximum residual gas pressure in the evacuated space if T = 300 K? Take an average diameter of d = 3.1 × 10<sup>−10</sup> m for the molecules in the air.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 84</div>
+            <div class="problem-text">
+                A tanker truck carrying liquid ammonia overturns, releasing ammonia vapor into the air.<br>
+                (a) Approximating ammonia, oxygen, and nitrogen as spheres of equal diameter (3 × 10<sup>−10</sup> m), estimate the diffusion constant of ammonia in air at atmospheric pressure and 20°C.<br>
+                (b) Calculate the time required for a 100-m root-mean-square displacement of ammonia from the truck, and express this time in everyday units (seconds, minutes, hours, days, or years). The actual time for the ammonia to travel this distance is far shorter because of the existence of air currents (even when there is no wind).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 85</div>
+            <div class="problem-text">
+                Molecules of UF<sub>6</sub> are approximately 175 times more massive than H<sub>2</sub> molecules; however, Avogadro's number of H<sub>2</sub> molecules confined at a set temperature exert the same pressure on the walls of the container as the same number of UF<sub>6</sub> molecules. Explain how this is possible.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 86</div>
+            <div class="problem-text">
+                The number density of atoms (chiefly hydrogen) in interstellar space is about 10 per cubic centimeter, and the temperature is about 100 K.<br>
+                (a) Calculate the pressure of the gas in interstellar space, and express it in atmospheres.<br>
+                (b) Under these conditions, an atom of hydrogen collides with another atom once every 1 × 10<sup>9</sup> seconds (that is, once every 30 years). By using the root-mean-square speed, estimate the distance traveled by a H atom between collisions. Compare this distance with the distance from the Earth to the Sun (150 million km).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 87</div>
+            <div class="problem-text">
+                A sample of 2.00 mol argon is confined at low pressure in a volume at a temperature of 50°C. Describe quantitatively the effects of each of the following changes on the pressure, the average energy per atom in the gas, the root-mean-square speed, the rate of collisions with a given area of wall, the frequency of Ar–Ar collisions, and the mean free path:<br>
+                (a) The temperature is decreased to −50°C.<br>
+                (b) The volume is doubled.<br>
+                (c) The amount of argon is increased to 3.00 mol.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 88</div>
+            <div class="problem-text">
+                By assuming that the collision diameter of a CH<sub>4</sub> molecule is given by its Lennard–Jones σ parameter (see Table 9.4), estimate the rate at which methane molecules collide with one another at 25°C and a pressure of (a) 1.00 atm and (b) 1.0 × 10<sup>−7</sup> atm.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Cumulative Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 89</div>
+            <div class="problem-text">
+                A gaseous hydrocarbon, in a volume of 25.4 L at 400 K and a pressure of 3.40 atm, reacts in an excess of oxygen to give 47.4 g H<sub>2</sub>O and 231.6 g CO<sub>2</sub>. Determine the molecular formula of the hydrocarbon.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 90</div>
+            <div class="problem-text">
+                A sample of a gaseous binary compound of boron and chlorine weighing 2.842 g occupies 0.153 L at 0°C and 1.00 atm pressure. This sample is decomposed to give solid boron and gaseous chlorine (Cl<sub>2</sub>). The chlorine occupies 0.688 L at the same temperature and pressure. Determine the molecular formula of the compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 91</div>
+            <div class="problem-text">
+                A mixture of calcium carbonate, CaCO<sub>3</sub>, and barium carbonate, BaCO<sub>3</sub>, weighing 5.40 g reacts fully with hydrochloric acid, HCl(aq), to generate 1.39 L CO<sub>2</sub>(g), measured at 50°C and 0.904 atm pressure. Calculate the percentages by mass of CaCO<sub>3</sub> and BaCO<sub>3</sub> in the original mixture.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 92</div>
+            <div class="problem-text">
+                A solid sample of Rb<sub>2</sub>SO<sub>3</sub> weighing 6.24 g reacts with 1.38 L gaseous HBr, measured at 75°C and 0.953 atm pressure. The solid RbBr, extracted from the reaction mixture and purified, has a mass of 7.32 g.<br>
+                (a) What is the limiting reactant?<br>
+                (b) What is the theoretical yield of RbBr, assuming complete reaction?<br>
+                (c) What is the actual percentage yield of product?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>

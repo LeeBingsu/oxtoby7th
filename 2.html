@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2 - Chemical Formulas, Equations, and Reaction Yields</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .data-table th,
+        .data-table td {
+            border: 1px solid var(--color-border);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .data-table th {
+            background: var(--color-bg-primary);
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 2 - Chemical Formulas, Equations, and Reaction Yields</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>The Mole: Weighing and Counting Molecules</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Compute the mass (in grams) of a single iodine atom if the relative atomic mass of iodine is 126.90447 on the accepted scale of atomic masses (based on 12 as the relative atomic mass of <sup>12</sup>C).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                Determine the mass (in grams) of exactly 100 million atoms of fluorine if the relative atomic mass of fluorine is 18.998403 on a scale on which exactly 12 is the relative atomic mass of <sup>12</sup>C.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                Compute the relative molecular masses of the following compounds on the <sup>12</sup>C scale:<br>
+                (a) P<sub>4</sub>O<sub>10</sub><br>
+                (b) BrCl<br>
+                (c) Ca(NO<sub>3</sub>)<sub>2</sub><br>
+                (d) KMnO<sub>4</sub><br>
+                (e) (NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                Compute the relative molecular masses of the following compounds on the <sup>12</sup>C scale:<br>
+                (a) [Ag(NH<sub>3</sub>)<sub>2</sub>]Cl<br>
+                (b) Ca<sub>3</sub>[Co(CO<sub>3</sub>)<sub>3</sub>]<sub>2</sub><br>
+                (c) OsO<sub>4</sub><br>
+                (d) H<sub>2</sub>SO<sub>4</sub><br>
+                (e) Ca<sub>3</sub>Al<sub>2</sub>(SiO<sub>4</sub>)<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                Suppose that a person counts out gold atoms at the rate of one each second for the entire span of an 80-year life. Has the person counted enough atoms to be detected with an ordinary balance? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                A gold atom has a diameter of 2.88 × 10<sup>-10</sup> m. Suppose the atoms in 1.00 mol of gold atoms are arranged just touching their neighbors in a single straight line. Determine the length of the line.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                The vitamin A molecule has the formula C<sub>20</sub>H<sub>30</sub>O, and a molecule of vitamin A<sub>2</sub> has the formula C<sub>20</sub>H<sub>28</sub>O. Determine how many moles of vitamin A<sub>2</sub> contain the same number of atoms as 1.000 mol vitamin A.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                Arrange the following in order of increasing mass: 1.06 mol SF<sub>4</sub>; 117 g CH<sub>4</sub>; 8.7 × 10<sup>23</sup> molecules of Cl<sub>2</sub>O<sub>7</sub>; and 4.17 × 10<sup>23</sup> atoms of argon (Ar).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Mercury is traded by the "flask," a unit that has a mass of 34.5 kg. Determine the volume of a flask of mercury if the density of mercury is 13.6 g cm<sup>-3</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                Gold costs $400 per troy ounce, and 1 troy ounce = 31.1035 g. Determine the cost of 10.0 cm<sup>3</sup> gold if the density of gold is 19.32 g cm<sup>-3</sup> at room conditions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Aluminum oxide (Al<sub>2</sub>O<sub>3</sub>) occurs in nature as a mineral called corundum, which is noted for its hardness and resistance to attack by acids. Its density is 3.97 g cm<sup>-3</sup>. Calculate the number of atoms of aluminum in 15.0 cm<sup>3</sup> corundum.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Calculate the number of atoms of silicon (Si) in 415 cm<sup>3</sup> of the colorless gas disilane at 0°C and atmospheric pressure, where its density is 0.00278 g cm<sup>-3</sup>. The molecular formula of disilane is Si<sub>2</sub>H<sub>6</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Chemical Formula and Percentage Composition</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                A newly synthesized compound has the molecular formula ClF<sub>2</sub>O<sub>2</sub>PtF<sub>6</sub>. Compute, to four significant figures, the mass percentage of each of the four elements in this compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                Acetaminophen is the generic name of the pain reliever in Tylenol and some other headache remedies. The compound has the molecular formula C<sub>8</sub>H<sub>9</sub>NO<sub>2</sub>. Compute, to four significant figures, the mass percentage of each of the four elements in acetaminophen.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                Arrange the following compounds from left to right in order of increasing percentage by mass of hydrogen: H<sub>2</sub>O, C<sub>12</sub>H<sub>26</sub>, N<sub>4</sub>H<sub>6</sub>, LiH.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                Arrange the following compounds from left to right in order of increasing percentage by mass of fluorine: HF, C<sub>6</sub>HF<sub>5</sub>, BrF, UF<sub>6</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                "Q-gas" is a mixture of 98.70% helium and 1.30% butane (C<sub>4</sub>H<sub>10</sub>) by mass. It is used as a filling for gas-flow Geiger counters. Compute the mass percentage of hydrogen in Q-gas.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                A pharmacist prepares an antiulcer medicine by mixing 286 g Na<sub>2</sub>CO<sub>3</sub> with water, adding 150 g glycine (C<sub>2</sub>H<sub>5</sub>NO<sub>2</sub>), and stirring continuously at 40°C until a firm mass results. The pharmacist heats the mass gently until all the water has been driven away. No other chemical changes occur in this step. Compute the mass percentage of carbon in the resulting white crystalline medicine.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                Zinc phosphate is used as a dental cement. A 50.00-mg sample is broken down into its constituent elements and gives 16.58 mg oxygen, 8.02 mg phosphorus, and 25.40 mg zinc. Determine the empirical formula of zinc phosphate.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                Bromoform is 94.85% bromine, 0.40% hydrogen, and 4.75% carbon by mass. Determine its empirical formula.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                Fulgurites are the products of the melting that occurs when lightning strikes the earth. Microscopic examination of a sand fulgurite shows that it is a globule with variable composition that contains some grains of the definite chemical composition Fe 46.01%, Si 53.99%. Determine the empirical formula of these grains.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                A sample of a "suboxide" of cesium gives up 1.6907% of its mass as gaseous oxygen when gently heated, leaving pure cesium behind. Determine the empirical formula of this binary compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                Barium and nitrogen form two binary compounds containing 90.745% and 93.634% barium, respectively. Determine the empirical formulas of these two compounds.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                Carbon and oxygen form no fewer than five different binary compounds. The mass percentages of carbon in the five compounds are as follows: A, 27.29; B, 42.88; C, 50.02; D, 52.97; and E, 65.24. Determine the empirical formulas of the five compounds.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                A sample of 1.000 g of a compound containing carbon and hydrogen reacts with oxygen at elevated temperature to yield 0.692 g H<sub>2</sub>O and 3.381 g CO<sub>2</sub>.<br>
+                (a) Calculate the masses of C and H in the sample.<br>
+                (b) Does the compound contain any other elements?<br>
+                (c) What are the mass percentages of C and H in the compound?<br>
+                (d) What is the empirical formula of the compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                Burning a compound of calcium, carbon, and nitrogen in oxygen in a combustion train generates calcium oxide (CaO), carbon dioxide (CO<sub>2</sub>), nitrogen dioxide (NO<sub>2</sub>), and no other substances. A small sample gives 2.389 g CaO, 1.876 g CO<sub>2</sub>, and 3.921 g NO<sub>2</sub>. Determine the empirical formula of the compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                The empirical formula of a gaseous fluorocarbon is CF<sub>2</sub>. At a certain temperature and pressure, a 1-L volume holds 8.93 g of this fluorocarbon, whereas under the same conditions, the 1-L volume holds only 1.70 g gaseous fluorine (F<sub>2</sub>). Determine the molecular formula of this compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                At its boiling point (280°C) and at atmospheric pressure, phosphorus has a gas density of 2.7 g L<sup>-1</sup>. Under the same conditions, nitrogen has a gas density of 0.62 g L<sup>-1</sup>. How many atoms of phosphorus are there in one phosphorus molecule under these conditions?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                A gaseous binary compound has a vapor density that is 1.94 times that of oxygen at the same temperature and pressure. When 1.39 g of the gas is burned in an excess of oxygen, 1.21 g water is formed, removing all the hydrogen originally present.<br>
+                (a) Estimate the molecular mass of the gaseous compound.<br>
+                (b) How many hydrogen atoms are there in a molecule of the compound?<br>
+                (c) What is the maximum possible value of the atomic mass of the second element in the compound?<br>
+                (d) Are other values possible for the atomic mass of the second element? Use a table of atomic masses to identify the element that best fits the data.<br>
+                (e) What is the molecular formula of the compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                A gaseous binary compound has a vapor density that is 2.53 times that of nitrogen at 100°C and atmospheric pressure. When 8.21 g of the gas reacts with AlCl<sub>3</sub> at 100°C, 1.62 g gaseous nitrogen is produced, removing all of the nitrogen originally present.<br>
+                (a) Estimate the molecular mass of the gaseous compound.<br>
+                (b) How many nitrogen atoms are there in a molecule of the compound?<br>
+                (c) What is the maximum possible value of the atomic mass of the second element?<br>
+                (d) Are other values possible for the atomic mass of the second element? Use a table of atomic masses to identify the element that best fits the data.<br>
+                (e) What is the molecular formula of the compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Writing Balanced Chemical Equations</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Balance the following chemical equations:<br>
+                (a) H<sub>2</sub> + N<sub>2</sub> → NH<sub>3</sub><br>
+                (b) K + O<sub>2</sub> → K<sub>2</sub>O<sub>2</sub><br>
+                (c) PbO<sub>2</sub> + Pb + H<sub>2</sub>SO<sub>4</sub> → PbSO<sub>4</sub> + H<sub>2</sub>O<br>
+                (d) BF<sub>3</sub> + H<sub>2</sub>O → B<sub>2</sub>O<sub>3</sub> + HF<br>
+                (e) KClO<sub>3</sub> → KCl + O<sub>2</sub><br>
+                (f) CH<sub>3</sub>COOH + O<sub>2</sub> → CO<sub>2</sub> + H<sub>2</sub>O<br>
+                (g) K<sub>2</sub>O<sub>2</sub> + H<sub>2</sub>O → KOH + O<sub>2</sub><br>
+                (h) PCl<sub>5</sub> + AsF<sub>3</sub> → PF<sub>5</sub> + AsCl<sub>3</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                Balance the following chemical equations:<br>
+                (a) Al + HCl → AlCl<sub>3</sub> + H<sub>2</sub><br>
+                (b) NH<sub>3</sub> + O<sub>2</sub> → NO + H<sub>2</sub>O<br>
+                (c) Fe + O<sub>2</sub> + H<sub>2</sub>O → Fe(OH)<sub>2</sub><br>
+                (d) HSbCl<sub>4</sub> + H<sub>2</sub>S → Sb<sub>2</sub>S<sub>3</sub> + HCl<br>
+                (e) Al + Cr<sub>2</sub>O<sub>3</sub> → Al<sub>2</sub>O<sub>3</sub> + Cr<br>
+                (f) XeF<sub>4</sub> + H<sub>2</sub>O → Xe + O<sub>2</sub> + HF<br>
+                (g) (NH<sub>4</sub>)<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> → N<sub>2</sub> + Cr<sub>2</sub>O<sub>3</sub> + H<sub>2</sub>O<br>
+                (h) NaBH<sub>4</sub> + H<sub>2</sub>O → NaBO<sub>2</sub> + H<sub>2</sub>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Mass Relationships in Chemical Reactions</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                For each of the following chemical reactions, calculate the mass of the underlined reactant that is required to produce 1.000 g of the underlined product.<br>
+                (a) <u>Mg</u> + 2 HCl → <u>H<sub>2</sub></u> + MgCl<sub>2</sub><br>
+                (b) 2 <u>CuSO<sub>4</sub></u> + 4 KI → 2 CuI + <u>I<sub>2</sub></u> + 2 K<sub>2</sub>SO<sub>4</sub><br>
+                (c) <u>NaBH<sub>4</sub></u> + 2 H<sub>2</sub>O → NaBO<sub>2</sub> + 4 <u>H<sub>2</sub></u>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                For each of the following chemical reactions, calculate the mass of the underlined product that is produced from 1.000 g of the underlined reactant.<br>
+                (a) <u>CaCO<sub>3</sub></u> + H<sub>2</sub>O → <u>Ca(OH)<sub>2</sub></u> + CO<sub>2</sub><br>
+                (b) <u>C<sub>3</sub>H<sub>8</sub></u> + 5 O<sub>2</sub> → 3 <u>CO<sub>2</sub></u> + 4 H<sub>2</sub>O<br>
+                (c) 2 <u>MgNH<sub>4</sub>PO<sub>4</sub></u> → <u>Mg<sub>2</sub>P<sub>2</sub>O<sub>7</sub></u> + 2 NH<sub>3</sub> + H<sub>2</sub>O
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                An 18.6-g sample of K<sub>2</sub>CO<sub>3</sub> was treated in such a way that all of its carbon was captured in the compound K<sub>2</sub>Zn<sub>3</sub>[Fe(CN)<sub>6</sub>]<sub>2</sub>. Compute the mass (in grams) of this product.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                A chemist dissolves 1.406 g pure platinum (Pt) in an excess of a mixture of hydrochloric and nitric acids and then, after a series of subsequent steps involving several other chemicals, isolates a compound of molecular formula Pt<sub>2</sub>C<sub>10</sub>H<sub>18</sub>N<sub>2</sub>S<sub>2</sub>O<sub>6</sub>. Determine the maximum possible yield of this compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                Disilane (Si<sub>2</sub>H<sub>6</sub>) is a gas that reacts with oxygen to give silica (SiO<sub>2</sub>) and water. Calculate the mass of silica that would form if 25.0 cm<sup>3</sup> disilane (with a density of 2.78 × 10<sup>-3</sup> g cm<sup>-3</sup>) reacted with excess oxygen.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                Tetrasilane (Si<sub>4</sub>H<sub>10</sub>) is a liquid with a density of 0.825 g cm<sup>-3</sup>. It reacts with oxygen to give silica (SiO<sub>2</sub>) and water. Calculate the mass of silica that would form if 25.0 cm<sup>3</sup> tetrasilane reacted completely with excess oxygen.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                Cryolite (Na<sub>3</sub>AlF<sub>6</sub>) is used in the production of aluminum from its ores. It is made by the reaction<br>
+                6 NaOH + Al<sub>2</sub>O<sub>3</sub> + 12 HF → 2 Na<sub>3</sub>AlF<sub>6</sub> + 9 H<sub>2</sub>O<br><br>
+                Calculate the mass of cryolite that can be prepared by the complete reaction of 287 g Al<sub>2</sub>O<sub>3</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                Carbon disulfide (CS<sub>2</sub>) is a liquid that is used in the production of rayon and cellophane. It is manufactured from methane and elemental sulfur via the reaction<br>
+                CH<sub>4</sub> + 4 S → CS<sub>2</sub> + 2 H<sub>2</sub>S<br><br>
+                Calculate the mass of CS<sub>2</sub> that can be prepared by the complete reaction of 67.2 g sulfur.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                Potassium nitrate (KNO<sub>3</sub>) is used as a fertilizer for certain crops. It is produced through the reaction<br>
+                4 KCl + 4 HNO<sub>3</sub> + O<sub>2</sub> → 4 KNO<sub>3</sub> + 2 Cl<sub>2</sub> + 2 H<sub>2</sub>O<br><br>
+                Calculate the minimum mass of KCl required to produce 567 g KNO<sub>3</sub>. What mass of Cl<sub>2</sub> will be generated as well?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                Elemental phosphorus can be prepared from calcium phosphate via the overall reaction<br>
+                2 Ca<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub> + 6 SiO<sub>2</sub> + 10 C → 6 CaSiO<sub>3</sub> + P<sub>4</sub> + 10 CO<br><br>
+                Calculate the minimum mass of Ca<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub> required to produce 69.8 g P<sub>4</sub>. What mass of CaSiO<sub>3</sub> is generated as a by-product?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                An element X has a dibromide with the empirical formula XBr<sub>2</sub> and a dichloride with the empirical formula XCl<sub>2</sub>. The dibromide is completely converted to the dichloride when it is heated in a stream of chlorine according to the reaction<br>
+                XBr<sub>2</sub> + Cl<sub>2</sub> → XCl<sub>2</sub> + Br<sub>2</sub><br><br>
+                When 1.500 g XBr<sub>2</sub> is treated, 0.890 g XCl<sub>2</sub> results.<br>
+                (a) Calculate the atomic mass of the element X.<br>
+                (b) By reference to a list of the atomic masses of the elements, identify the element X.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                An element A has a triiodide with the formula AI<sub>3</sub> and a trichloride with the formula ACl<sub>3</sub>. The triiodide is quantitatively converted to the trichloride when it is heated in a stream of chlorine, according to the reaction<br>
+                AI<sub>3</sub> + <sup>3</sup>⁄<sub>2</sub> Cl<sub>2</sub> → ACl<sub>3</sub> + <sup>3</sup>⁄<sub>2</sub> I<sub>2</sub><br><br>
+                If 0.8000 g AI<sub>3</sub> is treated, 0.3776 g ACl<sub>3</sub> is obtained.<br>
+                (a) Calculate the atomic mass of the element A.<br>
+                (b) Identify the element A.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                A mixture consisting of only sodium chloride (NaCl) and potassium chloride (KCl) weighs 1.0000 g. When the mixture is dissolved in water and an excess of silver nitrate is added, all the chloride ions associated with the original mixture are precipitated as insoluble silver chloride (AgCl). The mass of the silver chloride is found to be 2.1476 g. Calculate the mass percentages of sodium chloride and potassium chloride in the original mixture.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                A mixture of aluminum and iron weighing 9.62 g reacts with hydrogen chloride in aqueous solution according to the parallel reactions<br>
+                2 Al + 6 HCl → 2 AlCl<sub>3</sub> + 3 H<sub>2</sub><br>
+                Fe + 2 HCl → FeCl<sub>2</sub> + H<sub>2</sub><br><br>
+                A 0.738-g quantity of hydrogen is evolved when the metals react completely. Calculate the mass of iron in the original mixture.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Limiting Reactant and Percentage Yield</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                When ammonia is mixed with hydrogen chloride (HCl), the white solid ammonium chloride (NH<sub>4</sub>Cl) is produced. Suppose 10.0 g ammonia is mixed with the same mass of hydrogen chloride. What substances will be present after the reaction has gone to completion, and what will their masses be?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                The poisonous gas hydrogen cyanide (HCN) is produced by the high-temperature reaction of ammonia with methane (CH<sub>4</sub>). Hydrogen is also produced in this reaction.<br>
+                (a) Write a balanced chemical equation for the reaction that occurs.<br>
+                (b) Suppose 500.0 g methane is mixed with 200.0 g ammonia. Calculate the masses of the substances present after the reaction is allowed to proceed to completion.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                The iron oxide Fe<sub>2</sub>O<sub>3</sub> reacts with carbon monoxide (CO) to give iron and carbon dioxide:<br>
+                Fe<sub>2</sub>O<sub>3</sub> + 3 CO → 2 Fe + 3 CO<sub>2</sub><br><br>
+                The reaction of 433.2 g Fe<sub>2</sub>O<sub>3</sub> with excess CO yields 254.3 g iron. Calculate the theoretical yield of iron (assuming complete reaction) and its percentage yield.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                Titanium dioxide, TiO<sub>2</sub>, reacts with carbon and chlorine to give gaseous TiCl<sub>4</sub>:<br>
+                TiO<sub>2</sub> + 2 C + 2 Cl<sub>2</sub> → TiCl<sub>4</sub> + 2 CO<br><br>
+                The reaction of 7.39 kg titanium dioxide with excess C and Cl<sub>2</sub> gives 14.24 kg titanium tetrachloride. Calculate the theoretical yield of TiCl<sub>4</sub> (assuming complete reaction) and its percentage yield.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                Human parathormone has the impressive molecular formula C<sub>691</sub>H<sub>898</sub>N<sub>125</sub>O<sub>164</sub>S<sub>11</sub>. Compute the mass percentages of all the elements in this compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                A white oxide of tungsten is 79.2976% tungsten by mass. A blue tungsten oxide also contains exclusively tungsten and oxygen, but it is 80.8473% tungsten by mass. Determine the empirical formulas of white tungsten oxide and blue tungsten oxide.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                A dark brown binary compound contains oxygen and a metal. It is 13.38% oxygen by mass. Heating it moderately drives off some of the oxygen and gives a red binary compound that is 9.334% oxygen by mass. Strong heating drives off more oxygen and gives still another binary compound, which is only 7.168% oxygen by mass.<br>
+                (a) Compute the mass of oxygen that is combined with 1.000 g of the metal in each of these three oxides.<br>
+                (b) Assume that the empirical formula of the first compound is MO<sub>2</sub> (where M represents the metal). Give the empirical formulas of the second and third compounds.<br>
+                (c) Name the metal.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                A binary compound of nickel and oxygen contains 78.06% nickel by mass. Is this a stoichiometric or a nonstoichiometric compound? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                Two binary oxides of the element manganese contain, respectively, 30.40% and 36.81% oxygen by mass. Calculate the empirical formulas of the two oxides.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                A sample of a gaseous binary compound of boron and chlorine weighing 2.842 g occupies 0.153 L. This sample is decomposed to give 0.664 g solid boron and enough gaseous chlorine (Cl<sub>2</sub>) to occupy 0.688 L at the same temperature and pressure. Determine the molecular formula of the compound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                A possible practical way to eliminate oxides of nitrogen (such as NO<sub>2</sub>) from automobile exhaust gases uses cyanuric acid, C<sub>3</sub>N<sub>3</sub>(OH)<sub>3</sub>. When heated to the relatively low temperature of 625°F, cyanuric acid converts to gaseous isocyanic acid (HNCO). Isocyanic acid reacts with NO<sub>2</sub> in the exhaust to form nitrogen, carbon dioxide, and water, all of which are normal constituents of the air.<br>
+                (a) Write balanced equations for these two reactions.<br>
+                (b) If the process described earlier became practical, how much cyanuric acid (in kilograms) would be required to absorb the 1.7 × 10<sup>10</sup> kg NO<sub>2</sub> generated annually in auto exhaust in the United States?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                Aspartame (molecular formula C<sub>14</sub>H<sub>18</sub>N<sub>2</sub>O<sub>5</sub>) is a sugar substitute in soft drinks. Under certain conditions, 1 mol of aspartame reacts with 2 mol of water to give 1 mol of aspartic acid (molecular formula C<sub>4</sub>H<sub>7</sub>NO<sub>4</sub>), 1 mol of methanol (molecular formula CH<sub>3</sub>OH), and 1 mol of phenylalanine. Determine the molecular formula of phenylalanine.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                3′-Methylphthalanilic acid is used commercially as a "fruit set" to prevent premature drop of apples, pears, cherries, and peaches from the tree. It is 70.58% carbon, 5.13% hydrogen, 5.49% nitrogen, and 18.80% oxygen. If eaten, the fruit set reacts with water in the body to produce an innocuous product, which contains carbon, hydrogen, and oxygen only, and m-toluidine (NH<sub>2</sub>C<sub>6</sub>H<sub>4</sub>CH<sub>3</sub>), which causes anemia and kidney damage. Compute the mass of the fruit set that would produce 5.23 g m-toluidine.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                Aluminum carbide (Al<sub>4</sub>C<sub>3</sub>) reacts with water to produce gaseous methane (CH<sub>4</sub>). Calculate the mass of methane formed from 63.2 g Al<sub>4</sub>C<sub>3</sub>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">
+                Citric acid (C<sub>6</sub>H<sub>8</sub>O<sub>7</sub>) is made by fermentation of sugars such as sucrose (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>) in air. Oxygen is consumed and water generated as a by-product.<br>
+                (a) Write a balanced equation for the overall reaction that occurs in the manufacture of citric acid from sucrose.<br>
+                (b) What mass of citric acid is made from 15.0 kg sucrose?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">
+                A sample that contains only SrCO<sub>3</sub> and BaCO<sub>3</sub> weighs 0.800 g. When it is dissolved in excess acid, 0.211 g carbon dioxide is liberated. What percentage of SrCO<sub>3</sub> did the sample contain? Assume all the carbon originally present is converted to carbon dioxide.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">
+                A sample of a substance with the empirical formula XBr<sub>2</sub> weighs 0.5000 g. When it is dissolved in water and all its bromine is converted to insoluble AgBr by addition of an excess of silver nitrate, the mass of the resulting AgBr is found to be 1.0198 g. The chemical reaction is<br>
+                XBr<sub>2</sub> + 2 AgNO<sub>3</sub> → 2 AgBr + X(NO<sub>3</sub>)<sub>2</sub><br>
+                (a) Calculate the molecular mass (that is, formula mass) of XBr<sub>2</sub>.<br>
+                (b) Calculate the atomic mass of X and give its name and symbol.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">
+                A newspaper article about the danger of global warming from the accumulation of greenhouse gases such as carbon dioxide states that "reducing driving your car by 20 miles a week would prevent release of over 1000 pounds of CO<sub>2</sub> per year into the atmosphere." Is this a reasonable statement? Assume that gasoline is octane (molecular formula C<sub>8</sub>H<sub>18</sub>) and that it is burned completely to CO<sub>2</sub> and H<sub>2</sub>O in the engine of your car. Facts (or reasonable guesses) about your car's gas mileage, the density of octane, and other factors will also be needed.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">
+                In the Solvay process for producing sodium carbonate (Na<sub>2</sub>CO<sub>3</sub>), the following reactions occur in sequence:<br>
+                NH<sub>3</sub> + CO<sub>2</sub> + H<sub>2</sub>O → NH<sub>4</sub>HCO<sub>3</sub><br>
+                NH<sub>4</sub>HCO<sub>3</sub> + NaCl → NaHCO<sub>3</sub> + NH<sub>4</sub>Cl<br>
+                2 NaHCO<sub>3</sub> → Na<sub>2</sub>CO<sub>3</sub> + H<sub>2</sub>O + CO<sub>2</sub> (heat)<br><br>
+                How many metric tons of sodium carbonate would be produced per metric ton of NH<sub>3</sub> if the process were 100% efficient (1 metric ton = 1000 kg)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">
+                A yield of 3.00 g KClO<sub>4</sub> is obtained from the (unbalanced) reaction<br>
+                KClO<sub>3</sub> → KClO<sub>4</sub> + KCl<br><br>
+                when 4.00 g of the reactant is used. What is the percentage yield of the reaction?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">
+                An industrial-scale process for making acetylene consists of the following sequence of operations:<br>
+                CaCO<sub>3</sub> → CaO + CO<sub>2</sub> (limestone → lime + carbon dioxide)<br>
+                CaO + 3 C → CaC<sub>2</sub> + CO (→ calcium carbide + carbon monoxide)<br>
+                CaC<sub>2</sub> + 2 H<sub>2</sub>O → Ca(OH)<sub>2</sub> + C<sub>2</sub>H<sub>2</sub> (→ calcium hydroxide + acetylene)<br><br>
+                What is the percentage yield of the overall process if 2.32 metric tons C<sub>2</sub>H<sub>2</sub> is produced from 10.0 metric tons limestone (1 metric ton = 1000 kg)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">
+                Silicon nitride (Si<sub>3</sub>N<sub>4</sub>), a valuable ceramic, is made by the direct combination of silicon and nitrogen at high temperature. How much silicon must react with excess nitrogen to prepare 125 g silicon nitride if the yield of the reaction is 95.0%?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>
