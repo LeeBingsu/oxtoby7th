@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4 - Introduction to Quantum Mechanics</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        h3 {
+            color: var(--color-text-primary);
+            font-size: 1.2rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 4 - Introduction to Quantum Mechanics</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Section 1: Preliminaries - Wave Motion and Light</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Some water waves reach the beach at a rate of one every 3.2 s, and the distance between their crests is 2.1 m. Calculate the speed of these waves.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                The spacing between bands of color in a chemical wave from an oscillating reaction is measured to be 1.2 cm, and a new wave appears every 42 s. Calculate the speed of propagation of the chemical waves.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                An FM radio station broadcasts at a frequency of 9.86 × 10⁷ s⁻¹ (98.6 MHz). Calculate the wavelength of the radio waves.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                The gamma rays emitted by ⁶⁰Co are used in radiation treatment of cancer. They have a frequency of 2.83 × 10²⁰ s⁻¹. Calculate their wavelength, expressing your answer in meters and in angstroms.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                Radio waves of wavelength 6.00 × 10² m can be used to communicate with spacecraft over large distances.<br>
+                (a) Calculate the frequency of these radio waves.<br>
+                (b) Suppose a radio message is sent home by astronauts in a spaceship approaching Mars at a distance of 8.0 × 10¹⁰ m from Earth. How long (in minutes) will it take for the message to travel from the spaceship to Earth?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                An argon ion laser emits light of wavelength of 488 nm.<br>
+                (a) Calculate the frequency of the light.<br>
+                (b) Suppose a pulse of light from this laser is sent from Earth, is reflected from a mirror on the moon, and returns to its starting point. Calculate the time elapsed for the round trip, taking the distance from Earth to the moon to be 3.8 × 10⁵ km.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                The speed of sound in dry air at 20°C is 343.5 m s⁻¹, and the frequency of the sound from the middle C note on a piano is 261.6 s⁻¹ (according to the American standard pitch scale). Calculate the wavelength of this sound and the time it will take to travel 30.0 m across a concert hall.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                Ultrasonic waves have frequencies too high to be detected by the human ear, but they can be produced and detected by vibrating crystals. Calculate the wavelength of an ultrasonic wave of frequency 5.0 × 10⁴ s⁻¹ that is propagating through a sample of water at a speed of 1.5 × 10³ m s⁻¹. Explain why ultrasound can be used to probe the size and position of the fetus inside the mother's abdomen. Could audible sound with a frequency of 8000 s⁻¹ be used for this purpose?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 2: Evidence for Energy Quantization in Atoms</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                The maximum in the blackbody radiation intensity curve moves to shorter wavelength as temperature increases. The German physicist Wilhelm Wien demonstrated the relation to be λ<sub>max</sub> = 1/T. Later, Planck's equation showed the maximum to be λ<sub>max</sub> = 0.20 hc/kT. In 1965, scientists researching problems in telecommunication discovered "background radiation" with maximum wavelength 1.05 mm (microwave region of the EM spectrum) throughout space. Estimate the temperature of space.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                Use the data in Figure 4.8 to estimate the ratio of radiation intensity at 10,000 Å (infrared) to that at 5000 Å (visible) from a blackbody at 5000 K. How will this ratio change with increasing temperature? Explain how this change occurs.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Excited lithium atoms emit light strongly at a wavelength of 671 nm. This emission predominates when lithium atoms are excited in a flame. Predict the color of the flame.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Excited mercury atoms emit light strongly at a wavelength of 454 nm. This emission predominates when mercury atoms are excited in a flame. Predict the color of the flame.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                Barium atoms in a flame emit light as they undergo transitions from one energy level to another that is 3.6 × 10⁻¹⁹ J lower in energy. Calculate the wavelength of light emitted and, by referring to Figure 4.3, predict the color visible in the flame.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                Potassium atoms in a flame emit light as they undergo transitions from one energy level to another that is 4.9 × 10⁻¹⁹ J lower in energy. Calculate the wavelength of light emitted and, by referring to Figure 4.3, predict the color visible in the flame.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                The sodium d-line is actually a pair of closely spaced spectroscopic lines seen in the emission spectrum of sodium atoms. The wavelengths are centered at 589.3 nm. The intensity of this emission makes it the major source of light (and causes the yellow color) in the sodium arc light.<br>
+                (a) Calculate the energy change per sodium atom emitting a photon at the d-line wavelength.<br>
+                (b) Calculate the energy change per mole of sodium atoms emitting photons at the d-line wavelength.<br>
+                (c) If a sodium arc light is to produce 1.000 kilowatt (1000 J s⁻¹) of radiant energy at this wavelength, how many moles of sodium atoms must emit photons per second?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                The power output of a laser is measured by its wattage, that is, the number of joules of energy it radiates per second (1 W = 1 J s⁻¹). A 10-W laser produces a beam of green light with a wavelength of 520 nm (5.2 × 10⁻⁷ m).<br>
+                (a) Calculate the energy carried by each photon.<br>
+                (b) Calculate the number of photons emitted by the laser per second.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                In a Franck–Hertz experiment on sodium atoms, the first excitation threshold occurs at 2.103 eV. Calculate the wavelength of emitted light expected just above this threshold. (Note: Sodium vapor lamps used in street lighting emit spectral lines with wavelengths 5891.8 and 5889.9 Å.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                In a Franck–Hertz experiment on hydrogen atoms, the first two excitation thresholds occur at 10.1 and 11.9 eV. Three optical emission lines are associated with these levels. Sketch an energy-level diagram for hydrogen atoms based on this information. Identify the three transitions associated with these emission lines. Calculate the wavelength of each emitted line.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 3: The Bohr Model - Predicting Discrete Energy Levels</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                Use the Bohr model to calculate the radius and the energy of the B⁴⁺ ion in the n = 3 state. How much energy would be required to remove the electrons from 1 mol of B⁴⁺ in this state? What frequency and wavelength of light would be emitted in a transition from the n = 3 to the n = 2 state of this ion? Express all results in SI units.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                He⁺ ions are observed in stellar atmospheres. Use the Bohr model to calculate the radius and the energy of He⁺ in the n = 5 state. How much energy would be required to remove the electrons from 1 mol of He⁺ in this state? What frequency and wavelength of light would be emitted in a transition from the n = 5 to the n = 3 state of this ion? Express all results in SI units.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                The radiation emitted in the transition from n = 3 to n = 2 in a neutral hydrogen atom has a wavelength of 656.1 nm. What would be the wavelength of radiation emitted from a doubly ionized lithium atom (Li²⁺) if a transition occurred from n = 3 to n = 2? In what region of the spectrum does this radiation lie?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                Be³⁺ has a single electron. Calculate the frequencies and wavelengths of light in the emission spectrum of the ion for the first three lines of each of the series that are analogous to the Lyman and the Balmer series of neutral hydrogen. In what region of the spectrum does this radiation lie?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 4: Evidence for Wave-Particle Duality</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                Both blue and green light eject electrons from the surface of potassium. In which case do the ejected electrons have the higher average kinetic energy?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                When an intense beam of green light is directed onto a copper surface, no electrons are ejected. What will happen if the green light is replaced with red light?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                Cesium frequently is used in photocells because its work function (3.43 × 10⁻¹⁹ J) is the lowest of all the elements. Such photocells are efficient because the broadest range of wavelengths of light can eject electrons. What colors of light will eject electrons from cesium? What colors of light will eject electrons from selenium, which has a work function of 9.5 × 10⁻¹⁹ J?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                Alarm systems use the photoelectric effect. A beam of light strikes a piece of metal in the photocell, ejecting electrons continuously and causing a small electric current to flow. When someone steps into the light beam, the current is interrupted and the alarm is triggered. What is the maximum wavelength of light that can be used in such an alarm system if the photocell metal is sodium, with a work function of 4.41 × 10⁻¹⁹ J?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                Light with a wavelength of 2.50 × 10⁻⁷ m falls on the surface of a piece of chromium in an evacuated glass tube. If the work function of chromium is 7.21 × 10⁻¹⁹ J, determine (a) the maximum kinetic energy of the emitted photoelectrons and (b) the speed of photoelectrons that have this maximum kinetic energy.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                Calculate the maximum wavelength of electromagnetic radiation if it is to cause detachment of electrons from the surface of metallic tungsten, which has a work function of 7.29 × 10⁻¹⁹ J. If the maximum speed of the emitted photoelectrons is to be 2.00 × 10⁶ m s⁻¹, what should the wavelength of the radiation be?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                A guitar string with fixed ends has a length of 50 cm.<br>
+                (a) Calculate the wavelengths of its fundamental mode of vibration (that is, its first harmonic) and its third harmonic.<br>
+                (b) How many nodes does the third harmonic have?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                Suppose we picture an electron in a chemical bond as being a wave with fixed ends. Take the length of the bond to be 1.0 Å.<br>
+                (a) Calculate the wavelength of the electron wave in its ground state and in its first excited state.<br>
+                (b) How many nodes does the first excited state have?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Calculate the de Broglie wavelength of the following:<br>
+                (a) an electron moving at a speed of 1.00 × 10³ m s⁻¹<br>
+                (b) a proton moving at a speed of 1.00 × 10³ m s⁻¹<br>
+                (c) a baseball with a mass of 145 g, moving at a speed of 75 km hr⁻¹
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                Calculate the de Broglie wavelength of the following:<br>
+                (a) electrons that have been accelerated to a kinetic energy of 1.20 × 10⁷ J mol⁻¹<br>
+                (b) a helium atom moving at a speed of 353 m s⁻¹ (the root-mean-square speed of helium atoms at 20 K)<br>
+                (c) a krypton atom moving at a speed of 299 m s⁻¹ (the root-mean-square speed of krypton atoms at 300 K)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                In a particular Low Energy Electron Diffraction (LEED) study of a solid surface, electrons at 45 eV were diffracted at θ = 53°.<br>
+                (a) Calculate the crystal spacing a.<br>
+                (b) Calculate the diffraction angle for 90 eV electrons on this same surface.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                What electron energy is required to obtain the diffraction pattern for a surface with crystal spacing of 4.0 Å?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                (a) The position of an electron is known to be within 10 Å (1.0 × 10⁻⁹ m). What is the minimum uncertainty in its velocity?<br>
+                (b) Repeat the calculation of part (a) for a helium atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                No object can travel faster than the speed of light, so it would appear evident that the uncertainty in the speed of any object is at most 3 × 10⁸ m s⁻¹.<br>
+                (a) What is the minimum uncertainty in the position of an electron, given that we know nothing about its speed except that it is slower than the speed of light?<br>
+                (b) Repeat the calculation of part (a) for the position of a helium atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 5: Quantum Mechanics of Particle-in-a-Box Models</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                Chapter 3 introduced the concept of a double bond between carbon atoms, represented by C=C, with a length near 1.34 Å. The motion of an electron in such a bond can be treated crudely as motion in a one-dimensional box. Calculate the energy of an electron in each of its three lowest allowed states if it is confined to move in a one-dimensional box of length 1.34 Å. Calculate the wavelength of light necessary to excite the electron from its ground state to the first excited state.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                When metallic sodium is dissolved in liquid sodium chloride, electrons are released into the liquid. These dissolved electrons absorb light with a wavelength near 800 nm. Suppose we treat the positive ions surrounding an electron crudely as defining a three-dimensional cubic box of edge L, and we assume that the absorbed light excites the electron from its ground state to the first excited state. Calculate the edge length L in this simple model.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 6: Wave Functions for Particles in Two- and Three-Dimensional Boxes</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                Write the wave function ψ̃<sub>12</sub>(x̃, ỹ) for a particle in a square box.<br>
+                (a) Convince yourself it is degenerate with ψ̃<sub>21</sub>(x̃, ỹ).<br>
+                (b) Convince yourself that its plots are the same as those of ψ̃<sub>21</sub>(x̃, ỹ) rotated by 90 degrees in the x-y plane.<br>
+                (c) Give a physical explanation why the two sets of plots are related in this way.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                Write the wave function for the highly excited state ψ̃<sub>100,100</sub>(x̃, ỹ) for a particle in a square box.<br>
+                (a) Determine the number of nodal lines and the number of local probability maxima for this state.<br>
+                (b) Describe the motion of the particle in this state.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                Consider the wave function ψ̃<sub>222</sub>(x̃, ỹ, z̃) for a particle in a cubic box. Figure 4.33a shows a contour plot in a cut plane at z̃ = 0.75.<br>
+                (a) Convince yourself that the contour plot in a cut at z̃ = 0.25 would have the same pattern, but each positive peak would become negative, and vice versa.<br>
+                (b) Describe the shape of this wave function in a plane cut at ỹ = 0.5.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                Consider the wave function ψ̃<sub>222</sub>(x̃, ỹ, z̃) for a particle in a cubic box. Figure 4.33a shows a contour plot in a cut plane at z̃ = 0.75.<br>
+                (a) Describe the shape of this wave function in a cut plane at x̃ = 0.5.<br>
+                (b) Describe the shape of this wave function in a cut plane at ỹ = 0.5.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 7: Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                A piano tuner uses a tuning fork that emits sound with a frequency of 440 s⁻¹. Calculate the wavelength of the sound from this tuning fork and the time the sound takes to travel 10.0 m across a large room. Take the speed of sound in air to be 343 m s⁻¹.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                The distant galaxy called Cygnus A is one of the strongest sources of radio waves reaching Earth. The distance of this galaxy from Earth is 3 × 10²⁴ m. How long (in years) does it take a radio wave of wavelength 10 m to reach Earth? What is the frequency of this radio wave?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                Hot objects can emit blackbody radiation that appears red, orange, white, or bluish white, but never green. Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                Compare the energy (in joules) carried by an X-ray photon (wavelength λ = 0.20 nm) with that carried by an AM radio wave photon (λ = 200 m). Calculate the energy of 1.00 mol of each type of photon. What effect do you expect each type of radiation to have for inducing chemical reactions in the substances through which it passes?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                The maximum in Planck's formula for the emission of blackbody radiation can be shown to occur at a wavelength λ<sub>max</sub> = 0.20 hc/kT. The radiation from the surface of the sun approximates that of a blackbody with λ<sub>max</sub> = 465 nm. What is the approximate surface temperature of the sun?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                Photons of wavelength 315 nm or less are needed to eject electrons from a surface of electrically neutral cadmium.<br>
+                (a) What is the energy barrier that electrons must overcome to leave an uncharged piece of cadmium?<br>
+                (b) What is the maximum kinetic energy of electrons ejected from a piece of cadmium by photons of wavelength 200 nm?<br>
+                (c) Suppose the electrons described in (b) were used in a diffraction experiment. What would be their wavelength?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                When ultraviolet light of wavelength 131 nm strikes a polished nickel surface, the maximum kinetic energy of ejected electrons is measured to be 7.04 × 10⁻¹⁹ J. Calculate the work function of nickel.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                Express the velocity of the electron in the Bohr model for fundamental constants (m<sub>e</sub>, e, h, ε₀), the nuclear charge Z, and the quantum number n. Evaluate the velocity of an electron in the ground states of He⁺ ion and U⁹¹⁺. Compare these velocities with the speed of light c. As the velocity of an object approaches the speed of light, relativistic effects become important. In which kinds of atoms do you expect relativistic effects to be greatest?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                Photons are emitted in the Lyman series as hydrogen atoms undergo transitions from various excited states to the ground state. If ground-state He⁺ are present in the same gas (near stars, for example), can they absorb these photons? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                Name a transition in C⁵⁺ that will lead to the absorption of green light.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                The energies of macroscopic objects, as well as those of microscopic objects, are quantized, but the effects of the quantization are not seen because the difference in energy between adjacent states is so small. Apply Bohr's quantization of angular momentum to the revolution of Earth (mass 6.0 × 10²⁴ kg), which moves with a velocity of 3.0 × 10⁴ m s⁻¹ in a circular orbit (radius 1.5 × 10¹¹ m) about the sun. The sun can be treated as fixed. Calculate the value of the quantum number n for the present state of the Earth–sun system. What would be the effect of an increase in n by 1?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                Sound waves, like light waves, can interfere with each other, giving maximum and minimum levels of sound. Suppose a listener standing directly between two loudspeakers hears the same tone being emitted from both. This listener observes that when one of the speakers is moved 0.16 m farther away, the perceived intensity of the tone decreases from a maximum to a minimum.<br>
+                (a) Calculate the wavelength of the sound.<br>
+                (b) Calculate its frequency, using 343 m s⁻¹ as the speed of sound.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                (a) If the kinetic energy of an electron is known to lie between 1.59 × 10⁻¹⁹ J and 1.61 × 10⁻¹⁹ J, what is the smallest distance within which it can be known to lie?<br>
+                (b) Repeat the calculation of part (a) for a helium atom instead of an electron.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                By analyzing how the energy of a system is measured, Heisenberg and Bohr discovered that the uncertainty in the energy, ΔE, is related to the time, Δt, required to make the measurement by the relation (ΔE)(Δt) ≥ h/4π. The excited state of an atom responsible for the emission of a photon typically has an average life of 10⁻¹⁰ s. What energy uncertainty corresponds to this value? What is the corresponding uncertainty in the frequency associated with the photon?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                It has been suggested that spacecraft could be powered by the pressure exerted by sunlight striking a sail. The force exerted on a surface is the momentum p transferred to the surface per second. Assume that photons of 6000 Å light strike the sail perpendicularly. How many must be reflected per second by 1 cm² of surface to produce a pressure of 10⁻⁶ atm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                It is interesting to speculate on the properties of a universe with different values for the fundamental constants.<br>
+                (a) In a universe in which Planck's constant had the value h = 1 J s, what would be the de Broglie wavelength of a 145-g baseball moving at a speed of 20 m s⁻¹?<br>
+                (b) Suppose the velocity of the ball from part (a) is known to lie between 19 and 21 m s⁻¹. What is the smallest distance within which it can be known to lie?<br>
+                (c) Suppose that in this universe the mass of the electron is 1 g and the charge on the electron is 1 C. Calculate the Bohr radius of the hydrogen atom in this universe.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                The normalized wave function for a particle in a one-dimensional box in which the potential energy is zero is ψ(x) = √(2/L) sin(nπx/L), where L is the length of the box. What is the probability that the particle will lie between x = 0 and x = L/4 if the particle is in its n = 2 state?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                A particle of mass m is placed in a three-dimensional rectangular box with edge lengths 2L, L, and L. Inside the box the potential energy is zero, and outside it is infinite; therefore, the wave function goes smoothly to zero at the sides of the box. Calculate the energies and give the quantum numbers of the ground state and the first five excited states (or sets of states of equal energy) for the particle in the box.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>

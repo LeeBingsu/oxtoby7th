@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 - The Atom in Modern Chemistry</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .data-table th,
+        .data-table td {
+            border: 1px solid var(--color-border);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .data-table th {
+            background: var(--color-bg-primary);
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 1 - The Atom in Modern Chemistry</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Macroscopic Methods for Classifying Matter</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Classify the following materials as substances or mixtures: table salt, wood, mercury, air, water, seawater, sodium chloride, and mayonnaise. If they are mixtures, subclassify them as homogeneous or heterogeneous; if they are substances, subclassify them as compounds or elements.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                Classify the following materials as substances or mixtures: absolute (pure) alcohol, milk (as purchased in a store), copper wire, rust, barium bromide, concrete, baking soda, and baking powder. If they are mixtures, subclassify them as homogeneous or heterogeneous; if they are substances, subclassify them as compounds or elements.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                A 17th-century chemist wrote of the "simple bodies which enter originally into the composition of mixtures and into which these mixtures resolve themselves or may be finally resolved." What is being discussed?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                Since 1800, almost 200 sincere but erroneous reports of the discovery of new chemical elements have been made. Why have mistaken reports of new elements been so numerous? Why is it relatively easy to prove that a material is not a chemical element, but difficult to prove absolutely that a material is an element?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Indirect Evidence for the Existence of Atoms: Laws of Chemical Combination</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                A sample of ascorbic acid (vitamin C) is synthesized in the laboratory. It contains 30.0 g carbon and 40.0 g oxygen. Another sample of ascorbic acid, isolated from lemons (an excellent source of the vitamin), contains 12.7 g carbon. Compute the mass of oxygen (in grams) in the second sample.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                A sample of a compound synthesized and purified in the laboratory contains 25.0 g hafnium and 31.5 g tellurium. The identical compound is discovered in a rock formation. A sample from the rock formation contains 0.125 g hafnium. Determine how much tellurium is in the sample from the rock formation.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                Nitrogen (N) and silicon (Si) form two binary compounds with the following compositions:<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Compound</th>
+                        <th>Mass % N</th>
+                        <th>Mass % Si</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>33.28</td>
+                        <td>66.72</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>39.94</td>
+                        <td>60.06</td>
+                    </tr>
+                </table>
+                (a) Compute the mass of silicon that combines with 1.0000 g of nitrogen in each case.<br>
+                (b) Show that these compounds satisfy the law of multiple proportions. If the second compound has the formula Si<sub>3</sub>N<sub>4</sub>, what is the formula of the first compound?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                Iodine (I) and fluorine (F) form a series of binary compounds with the following compositions:<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Compound</th>
+                        <th>Mass % I</th>
+                        <th>Mass % F</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>86.979</td>
+                        <td>13.021</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>69.007</td>
+                        <td>30.993</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>57.191</td>
+                        <td>42.809</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>48.829</td>
+                        <td>51.171</td>
+                    </tr>
+                </table>
+                (a) Compute in each case the mass of fluorine that combines with 1.0000 g iodine.<br>
+                (b) By figuring out small whole-number ratios among the four answers in part (a), show that these compounds satisfy the law of multiple proportions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Vanadium (V) and oxygen (O) form a series of compounds with the following compositions:<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Mass % V</th>
+                        <th>Mass % O</th>
+                    </tr>
+                    <tr>
+                        <td>76.10</td>
+                        <td>23.90</td>
+                    </tr>
+                    <tr>
+                        <td>67.98</td>
+                        <td>32.02</td>
+                    </tr>
+                    <tr>
+                        <td>61.42</td>
+                        <td>38.58</td>
+                    </tr>
+                    <tr>
+                        <td>56.02</td>
+                        <td>43.98</td>
+                    </tr>
+                </table>
+                What are the relative numbers of atoms of oxygen in the compounds for a given mass of vanadium?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                Tungsten (W) and chlorine (Cl) form a series of compounds with the following compositions:<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Mass % W</th>
+                        <th>Mass % Cl</th>
+                    </tr>
+                    <tr>
+                        <td>72.17</td>
+                        <td>27.83</td>
+                    </tr>
+                    <tr>
+                        <td>56.45</td>
+                        <td>43.55</td>
+                    </tr>
+                    <tr>
+                        <td>50.91</td>
+                        <td>49.09</td>
+                    </tr>
+                    <tr>
+                        <td>46.36</td>
+                        <td>53.64</td>
+                    </tr>
+                </table>
+                If a molecule of each compound contains only one tungsten atom, what are the formulas for the four compounds?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                A liquid compound containing only hydrogen and oxygen is placed in a flask. Two electrodes are dipped into the liquid and an electric current is passed between them. Gaseous hydrogen forms at one electrode and gaseous oxygen at the other. After a time, 14.4 mL hydrogen has evolved at the negative terminal, and 14.4 mL oxygen has evolved at the positive terminal.<br>
+                (a) Assign a chemical formula to the compound in the cell.<br>
+                (b) Explain why more than one formula is possible as the answer to part (a).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                A sample of liquid N<sub>2</sub>H<sub>4</sub> is decomposed to give gaseous N<sub>2</sub> and gaseous H<sub>2</sub>. The two gases are separated, and the nitrogen occupies 13.7 mL at room conditions of pressure and temperature. Determine the volume of the hydrogen under the same conditions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                Pure nitrogen dioxide (NO<sub>2</sub>) forms when dinitrogen oxide (N<sub>2</sub>O) and oxygen (O<sub>2</sub>) are mixed in the presence of a certain catalyst. What volumes of N<sub>2</sub>O and oxygen are needed to produce 4.0 L NO<sub>2</sub> if all gases are held at the same conditions of temperature and pressure?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                Gaseous methanol (CH<sub>3</sub>OH) reacts with oxygen (O<sub>2</sub>) to produce water vapor and carbon dioxide. What volumes of water vapor and carbon dioxide will be produced from 2.0 L methanol if all gases are held at the same temperature and pressure conditions?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>The Physical Structure of Atoms</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                The natural abundances and isotopic masses of the element silicon (Si) relative to <sup>12</sup>C = 12.00000 are<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Isotope</th>
+                        <th>% Abundance</th>
+                        <th>Isotopic Mass</th>
+                    </tr>
+                    <tr>
+                        <td><sup>28</sup>Si</td>
+                        <td>92.21</td>
+                        <td>27.97693</td>
+                    </tr>
+                    <tr>
+                        <td><sup>29</sup>Si</td>
+                        <td>4.70</td>
+                        <td>28.97649</td>
+                    </tr>
+                    <tr>
+                        <td><sup>30</sup>Si</td>
+                        <td>3.09</td>
+                        <td>29.97376</td>
+                    </tr>
+                </table>
+                Calculate the atomic mass of naturally occurring silicon.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                The natural abundances and isotopic masses of the element neon (Ne) are<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Isotope</th>
+                        <th>% Abundance</th>
+                        <th>Isotopic Mass</th>
+                    </tr>
+                    <tr>
+                        <td><sup>20</sup>Ne</td>
+                        <td>90.00</td>
+                        <td>19.99212</td>
+                    </tr>
+                    <tr>
+                        <td><sup>21</sup>Ne</td>
+                        <td>0.27</td>
+                        <td>20.99316</td>
+                    </tr>
+                    <tr>
+                        <td><sup>22</sup>Ne</td>
+                        <td>9.73</td>
+                        <td>21.99132</td>
+                    </tr>
+                </table>
+                Calculate the atomic mass of naturally occurring neon.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                Only two isotopes of boron (B) occur in nature; their atomic masses and abundances are given in the following table. Complete the table by computing the relative atomic mass of <sup>11</sup>B to four significant figures, taking the tabulated relative atomic mass of natural boron as 10.811.<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Isotope</th>
+                        <th>% Abundance</th>
+                        <th>Atomic Mass</th>
+                    </tr>
+                    <tr>
+                        <td><sup>10</sup>B</td>
+                        <td>19.61</td>
+                        <td>10.013</td>
+                    </tr>
+                    <tr>
+                        <td><sup>11</sup>B</td>
+                        <td>80.39</td>
+                        <td>?</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                More than half of all the atoms in naturally occurring zirconium are <sup>90</sup>Zr. The other four stable isotopes of zirconium have the following relative atomic masses and abundances:<br><br>
+                <table class="data-table">
+                    <tr>
+                        <th>Isotope</th>
+                        <th>% Abundance</th>
+                        <th>Atomic Mass</th>
+                    </tr>
+                    <tr>
+                        <td><sup>91</sup>Zr</td>
+                        <td>11.27</td>
+                        <td>90.9056</td>
+                    </tr>
+                    <tr>
+                        <td><sup>92</sup>Zr</td>
+                        <td>17.17</td>
+                        <td>91.9050</td>
+                    </tr>
+                    <tr>
+                        <td><sup>94</sup>Zr</td>
+                        <td>17.33</td>
+                        <td>93.9063</td>
+                    </tr>
+                    <tr>
+                        <td><sup>96</sup>Zr</td>
+                        <td>2.78</td>
+                        <td>95.9083</td>
+                    </tr>
+                </table>
+                Compute the relative atomic mass of <sup>90</sup>Zr to four significant digits, using the tabulated relative atomic mass 91.224 for natural zirconium.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                The isotope of plutonium used for nuclear fission is <sup>239</sup>Pu. Determine (a) the ratio of the number of neutrons in a <sup>239</sup>Pu nucleus to the number of protons, and (b) the number of electrons in a single plutonium atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                The last "missing" element from the first six periods was promethium, which was finally discovered in 1947 among the fission products of uranium. Determine (a) the ratio of the number of neutrons in a <sup>145</sup>Pm nucleus to the number of protons, and (b) the number of electrons in a single promethium atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                The americium isotope <sup>241</sup>Am is used in smoke detectors. Describe the composition of a neutral atom of this isotope for protons, neutrons, and electrons.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                In 1982, the production of a single atom of <sup>266</sup>Mt (meitnerium-266) was reported. Describe the composition of a neutral atom of this isotope for protons, neutrons, and electrons.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                Soft wood chips weighing 17.2 kg are placed in an iron vessel and mixed with 150.1 kg water and 22.43 kg sodium hydroxide. A steel lid seals the vessel, which is then placed in an oven at 250°C for 6 hours. Much of the wood fiber decomposes under these conditions; the vessel and lid do not react.<br>
+                (a) Classify each of the materials mentioned as a substance or mixture. Subclassify the substances as elements or compounds.<br>
+                (b) Determine the mass of the contents of the iron vessel after the reaction.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                In a reproduction of the Millikan oil-drop experiment, a student obtains the following values for the charges on nine different oil droplets.<br><br>
+                <table class="data-table">
+                    <tr>
+                        <td>6.563 × 10<sup>-19</sup> C</td>
+                        <td>13.13 × 10<sup>-19</sup> C</td>
+                        <td>19.71 × 10<sup>-19</sup> C</td>
+                    </tr>
+                    <tr>
+                        <td>8.204 × 10<sup>-19</sup> C</td>
+                        <td>16.48 × 10<sup>-19</sup> C</td>
+                        <td>22.89 × 10<sup>-19</sup> C</td>
+                    </tr>
+                    <tr>
+                        <td>11.50 × 10<sup>-19</sup> C</td>
+                        <td>18.08 × 10<sup>-19</sup> C</td>
+                        <td>26.18 × 10<sup>-19</sup> C</td>
+                    </tr>
+                </table>
+                (a) Based on these data alone, what is your best estimate of the number of electrons on each of the above droplets? (Hint: Begin by considering differences in charges between adjacent data points, and see into what groups these are categorized.)<br>
+                (b) Based on these data alone, what is your best estimate of the charge on the electron?<br>
+                (c) Is it conceivable that the actual charge is half the charge you calculated in (b)? What evidence would help you decide one way or the other?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                A rough estimate of the radius of a nucleus is provided by the formula r = kA<sup>1/3</sup>, where k is approximately 1.3 × 10<sup>-13</sup> cm and A is the mass number of the nucleus. Estimate the density of the nucleus of <sup>127</sup>I (which has a nuclear mass of 2.1 × 10<sup>-22</sup> g) in grams per cubic centimeter. Compare with the density of solid iodine, 4.93 g cm<sup>-3</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                In a neutron star, gravity causes the electrons to combine with protons to form neutrons. A typical neutron star has a mass half that of the sun, compressed into a sphere of radius 20 km. If such a neutron star contains 6.0 × 10<sup>56</sup> neutrons, calculate its density in grams per cubic centimeter. Compare this with the density inside a <sup>232</sup>Th nucleus, in which 142 neutrons and 90 protons occupy a sphere of radius 9.1 × 10<sup>-13</sup> cm. Take the mass of a neutron to be 1.675 × 10<sup>-24</sup> g and that of a proton to be 1.673 × 10<sup>-24</sup> g.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                Dalton's 1808 version of the atomic theory of matter included five general statements (see Section 1.3). According to modern understanding, four of those statements require amendment or extension. List the modifications that have been made to four of the five original postulates.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                Naturally occurring rubidium (Rb) consists of two isotopes: <sup>85</sup>Rb (atomic mass 84.9117) and <sup>87</sup>Rb (atomic mass 86.9092). The atomic mass of the isotope mixture found in nature is 85.4678. Calculate the percentage abundances of the two isotopes in rubidium.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>

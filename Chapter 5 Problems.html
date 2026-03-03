@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5 - Quantum Mechanics and Atomic Structure</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        h3 {
+            color: var(--color-text-primary);
+            font-size: 1.2rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 5 - Quantum Mechanics and Atomic Structure</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Section 1: The Hydrogen Atom</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                Which of the following combinations of quantum numbers are allowed for an electron in a one-electron atom? Which are not?<br>
+                (a) n = 2, ℓ = 2, m = 1, m<sub>s</sub> = ½<br>
+                (b) n = 3, ℓ = 1, m = 0, m<sub>s</sub> = -½<br>
+                (c) n = 5, ℓ = 1, m = 2, m<sub>s</sub> = ½<br>
+                (d) n = 4, ℓ = -1, m = 0, m<sub>s</sub> = ½
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                Which of the following combinations of quantum numbers are allowed for an electron in a one-electron atom? Which are not?<br>
+                (a) n = 3, ℓ = 2, m = 1, m<sub>s</sub> = 0<br>
+                (b) n = 2, ℓ = 0, m = 0, m<sub>s</sub> = -½<br>
+                (c) n = 7, ℓ = 2, m = -2, m<sub>s</sub> = ½<br>
+                (d) n = 3, ℓ = -3, m<sub>s</sub> = -½
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                Label the orbitals described by each of the following sets of quantum numbers:<br>
+                (a) n = 4, ℓ = 1<br>
+                (b) n = 2, ℓ = 0<br>
+                (c) n = 6, ℓ = 3
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                Label the orbitals described by each of the following sets of quantum numbers:<br>
+                (a) n = 3, ℓ = 2<br>
+                (b) n = 7, ℓ = 4<br>
+                (c) n = 5, ℓ = 1
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                How many radial nodes and how many angular nodes does each of the orbitals in Problem 3 have?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                How many radial nodes and how many angular nodes does each of the orbitals in Problem 4 have?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                Use the mathematical expression for the 2p<sub>z</sub> wave function of a one-electron atom (see Table 5.2) to show that the probability of finding an electron in that orbital anywhere in the x-y plane is 0. What are the nodal planes for a d<sub>xz</sub> orbital and for a d<sub>x²-y²</sub> orbital?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                (a) Use the radial wave function for the 3p orbital of a hydrogen atom (see Table 5.2) to calculate the value of r for which a node exists.<br>
+                (b) Find the values of r for which nodes exist for the 3s wave function of the hydrogen atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 2: Shell Model for Many-Electron Atoms</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Calculate the average distance of the electron from the nucleus in a hydrogen atom when the electron is in the 2s orbital. Repeat the calculation for an electron in the 2p orbital.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                The helium ion He⁺ is a one-electron system whose wave functions and energy levels are obtained from those for H by changing the atomic number to Z = 2. Calculate the average distance of the electron from the nucleus in the 2s orbital and in the 2p orbital. Compare your results with those in Problem 9 and explain the difference.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Spectroscopic studies show that Li can have electrons in its 1s, 2s, and 2p Hartree orbitals, and that Z<sub>eff</sub>(2s) = 1.26. Estimate the energy of the 2s orbital of Li. Calculate the average distance of the electron from the nucleus in the 2s orbital of Li.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Spectroscopic studies of Li also show that Z<sub>eff</sub>(2p) = 1.02. Estimate the energy of the 2p orbital of Li. Calculate the average distance of the electron from the nucleus in the 2p orbital of Li. Comparing your results with those in Problem 11 shows that the energy values differ by about 50%, whereas the average distances are nearly equal. Explain this observation.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                Spectroscopic studies show that Na can have electrons in its 1s, 2s, 2p, and 3s Hartree orbitals, and that Z<sub>eff</sub>(3s) = 1.84. Using data from Problem 11, compare the energies of the Na 3s orbital, the Li 2s orbital, and the H 1s orbital.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                Using data from Problems 11 and 13, calculate the average distance of the electron from the nucleus in the Na 3s orbital, the Li 2s orbital, and the H 1s orbital. Explain the trend in your results.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 3: Aufbau Principle and Electron Configurations</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                Give the ground-state electron configurations of the following elements:<br>
+                (a) C<br>
+                (b) Se<br>
+                (c) Fe
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                Give the ground-state electron configurations of the following elements:<br>
+                (a) P<br>
+                (b) Tc<br>
+                (c) Ho
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                Write ground-state electron configurations for the ions Be⁺, C⁻, Ne²⁻, Mg⁺, P²⁻, Cl⁻, As⁻, and I⁻. Which do you expect will be paramagnetic due to the presence of unpaired electrons?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                Write ground-state electron configurations for the ions Li⁺, B⁻, F⁻, Al³⁺, S⁻, Ar⁻, Br⁻, and Te⁻. Which do you expect to be paramagnetic due to the presence of unpaired electrons?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                Identify the atom or ion corresponding to each of the following descriptions:<br>
+                (a) an atom with ground-state electron configuration [Kr]4d¹⁰5s²5p¹<br>
+                (b) an ion with charge -2 and ground-state electron configuration [Ne]3s²3p⁶<br>
+                (c) an ion with charge +4 and ground-state electron configuration [Ar]3d³
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                Identify the atom or ion corresponding to each of the following descriptions:<br>
+                (a) an atom with ground-state electron configuration [Xe]4f¹⁴5d⁶6s²<br>
+                (b) an ion with charge +1 and ground-state electron configuration [He]2s²2p⁶<br>
+                (c) an ion with charge +5 and ground-state electron configuration [Kr]4d⁶
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                Predict the atomic number of the (as yet undiscovered) element in the seventh period that is a halogen.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                (a) Predict the atomic number of the (as yet undiscovered) alkali-metal element in the eighth period.<br>
+                (b) Suppose the eighth-period alkali-metal atom turned out to have atomic number 137. What explanation would you give for such a high atomic number (recall that the atomic number of francium is only 87)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                Suppose that the spin quantum number did not exist, and therefore only one electron could occupy each orbital of a many-electron atom. Give the atomic numbers of the first three noble-gas atoms in this case.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                Suppose that the spin quantum number had three allowed values m<sub>s</sub> = (-½, 0, +½). Give the atomic numbers of the first three noble-gas atoms in this case.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 4: Shells and the Periodic Table: Photoelectron Spectroscopy</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                Photoelectron spectra of mercury (Hg) atoms acquired with radiation from a helium lamp at 584.4 Å show a peak in which the photoelectrons have kinetic energy of 11.7 eV. Calculate the ionization energy of electrons in that level.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                Quantum mechanics predicts that the energy of the ground state of the H atom is -13.6 eV. Insight into the magnitude of this quantity is gained by considering several methods by which it can be measured.<br>
+                (a) Calculate the longest wavelength of light that will ionize H atoms in their ground state.<br>
+                (b) Assume the atom is ionized by collision with an electron that transfers all its kinetic energy to the atom in the ionization process. Calculate the speed of the electron before the collision. Express your answer in meters per second (m s⁻¹) and miles per hour (miles h⁻¹).<br>
+                (c) Calculate the temperature required to ionize a H atom in its ground state by thermal excitation. (Hint: Recall the criterion for thermal excitation of an oscillator in Planck's theory of blackbody radiation is that hν ≈ k<sub>B</sub>T.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                Photoelectron spectroscopy studies of sodium atoms excited by X-rays with wavelength 9.890 × 10⁻¹⁰ m show four peaks in which the electrons have speeds 7.992 × 10⁶ m s⁻¹, 2.046 × 10⁷ m s⁻¹, 2.074 × 10⁷ m s⁻¹, and 2.009 × 10⁷ m s⁻¹. (Recall that 1 J = 1 kg m² s⁻².)<br>
+                (a) Calculate the ionization energy of the electrons in each peak.<br>
+                (b) Assign each peak to an orbital of the sodium atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                Photoelectron spectroscopy studies of silicon atoms excited by X-rays with wavelength 9.890 × 10⁻¹⁰ m show four peaks in which the electrons have speeds 2.097 × 10⁷ m s⁻¹, 2.093 × 10⁷ m s⁻¹, 2.014 × 10⁷ m s⁻¹, and 1.971 × 10⁷ m s⁻¹. (Recall that 1 J = 1 kg m² s⁻².)<br>
+                (a) Calculate the ionization energy of the electrons in each peak.<br>
+                (b) Assign each peak to an orbital of the silicon atom.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                Photoelectron spectroscopy studies have determined the orbital energies for fluorine atoms to be:<br>
+                1s: -689 eV<br>
+                2s: -34 eV<br>
+                2p: -12 eV<br><br>
+                Estimate the value of Z<sub>eff</sub> for F in each of these orbitals.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                Photoelectron spectroscopy studies have determined the orbital energies for chlorine atoms to be:<br>
+                1s: -2,835 eV<br>
+                2s: -273 eV<br>
+                2p: -205 eV<br>
+                3s: -21 eV<br>
+                3p: -10 eV<br><br>
+                Estimate the value of Z<sub>eff</sub> for Cl in each of these orbitals.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 5: Periodic Properties and Electronic Structure</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                For each of the following pairs of atoms or ions, state which you expect to have the larger radius.<br>
+                (a) Na or K<br>
+                (b) Cs or Cs⁺<br>
+                (c) Rb⁺ or Kr<br>
+                (d) K or Ca<br>
+                (e) Cl⁻ or Ar
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                For each of the following pairs of atoms or ions, state which you expect to have the larger radius.<br>
+                (a) Sm or Sm³⁺<br>
+                (b) Mg or Ca<br>
+                (c) I⁻ or Xe<br>
+                (d) Ge or As<br>
+                (e) Sr⁺ or Rb
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                Predict the larger ion in each of the following pairs. Give reasons for your answers.<br>
+                (a) O⁻, S²⁻<br>
+                (b) Co²⁺, Ti²⁺<br>
+                (c) Mn²⁺, Mn⁴⁺<br>
+                (d) Ca²⁺, Sr²⁺
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                Predict the larger ion in each of the following pairs. Give reasons for your answers.<br>
+                (a) S²⁻, Cl⁻<br>
+                (b) Tl⁺, Tl³⁺<br>
+                (c) Ce³⁺, Dy³⁺<br>
+                (d) S⁻, I⁻
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                The first ionization energy of helium is 2370 kJ mol⁻¹, the highest for any element.<br>
+                (a) Define ionization energy and discuss why for helium it should be so high.<br>
+                (b) Which element would you expect to have the highest second ionization energy? Why?<br>
+                (c) Suppose that you wished to ionize some helium by shining electromagnetic radiation on it. What is the maximum wavelength you could use?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                The energy needed to remove one electron from a gaseous potassium atom is only about two-thirds as much as that needed to remove one electron from a gaseous calcium atom, yet nearly three times as much energy as that needed to remove one electron from K⁺ as from Ca⁺. What explanation can you give for this contrast? What do you expect to be the relation between the ionization energy of Ca⁺ and that of neutral K?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                Without consulting any tables, arrange the following substances in order and explain your choice of order:<br>
+                (a) Mg²⁺, Ar, Br⁻, Ca²⁺ in order of increasing radius<br>
+                (b) Na, Na⁺, O, Ne in order of increasing ionization energy<br>
+                (c) H, F, Al, O in order of increasing electronegativity
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                Both the electron affinity and the ionization energy of chlorine are higher than the corresponding quantities for sulfur. Explain why in terms of the electronic structure of the atoms.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                The cesium atom has the lowest ionization energy, 375.7 kJ mol⁻¹, of all the neutral atoms in the periodic table. What is the longest wavelength of light that could ionize a cesium atom? In which region of the electromagnetic spectrum does this light fall?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                Until recently, it was thought that Ca⁻ was unstable, and that the Ca atom therefore had a negative electron affinity. Some new experiments have now measured an electron affinity of +2.0 kJ mol⁻¹ for calcium. What is the longest wavelength of light that could remove an electron from Ca⁻? In which region of the electromagnetic spectrum does this light fall?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 6: Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                In the hydrogen atom, the transition from the 2p state to the 1s state emits a photon with energy 16.2 × 10⁻¹⁹ J. In an iron atom, the same transition emits X-rays with wavelength 0.193 nm. Calculate the energy difference between these two states in iron. Explain the difference in the 2p-1s energy level spacing in these two atoms.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                The energy needed to ionize an atom of element X when it is in its most stable state is 500 kJ mol⁻¹. However, if an atom of X is in its lowest excited state, only 120 kJ mol⁻¹ is needed to ionize it. What is the wavelength of the radiation emitted when an atom of X undergoes a transition from the lowest excited state to the ground state?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                Suppose an atom in an excited state can return to the ground state in two steps. It first falls to an intermediate state, emitting radiation of wavelength λ₁, and then to the ground state, emitting radiation of wavelength λ₂. The same atom can also return to the ground state in one step, with the emission of radiation of wavelength λ. How are λ₁, λ₂, and λ related? How are the frequencies of the three radiations related?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                For the Li atom, the energy difference between the ground state and the first excited state, in which the outermost electron is in a 2p orbital, is 2.96 × 10⁻¹⁹ J. In the Li²⁺ ion, the energy difference between the 2s and 2p levels is less than 0.00002 of this value. Explain this observation.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                How does the 3d<sub>xy</sub> orbital of an electron in O⁷⁺ resemble the 3d<sub>xy</sub> orbital of an electron in a hydrogen atom? How does it differ?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                The wave function of an electron in the lowest (that is, ground) state of the hydrogen atom is<br>
+                ψ(r) = (1/πa₀³)^(1/2) exp(-r/a₀)<br>
+                where a₀ = 0.529 × 10⁻¹⁰ m<br><br>
+                (a) What is the probability of finding the electron inside a sphere of volume 1.0 pm³, centered at the nucleus (1 pm = 10⁻¹² m)?<br>
+                (b) What is the probability of finding the electron in a volume of 1.0 pm³ at a distance of 52.9 pm from the nucleus, in a fixed but arbitrary direction?<br>
+                (c) What is the probability of finding the electron in a spherical shell of 1.0 pm in thickness, at a distance of 52.9 pm from the nucleus?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                An atom of sodium has the electron configuration [Ne]6s¹. Explain how this is possible.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                (a) The nitrogen atom has one electron in each of the 2p<sub>x</sub>, 2p<sub>y</sub>, and 2p<sub>z</sub> orbitals. By using the form of the angular wave functions, show that the total electron density, ψ²(2p<sub>x</sub>) + ψ²(2p<sub>y</sub>) + ψ²(2p<sub>z</sub>), is spherically symmetric (that is, it is independent of the angles θ and φ). The neon atom, which has two electrons in each 2p orbital, is also spherically symmetric.<br>
+                (b) The same result as in part (a) applies to d orbitals, thus a filled or half-filled subshell of d orbitals is spherically symmetric. Identify the spherically symmetric atoms or ions among the following: F⁻, Na, Si, S²⁻, Ar⁺, Ni, Cu, Mo, Rh, Sb, W, Au.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                Chromium(IV) oxide is used in making magnetic recording tapes because it is paramagnetic. It can be described as a solid made up of Cr⁴⁺ and O²⁻. Give the electron configuration of Cr⁴⁺ in CrO₂, and determine the number of unpaired electrons on each chromium ion.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                Use the data from Appendix F to graph the variation of atomic radius with atomic number for the rare-earth elements from lanthanum to lutetium.<br>
+                (a) What is the general trend in these radii? How do you account for it?<br>
+                (b) Which two elements in the series present exceptions to the trend?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                Arrange the following seven atoms or ions in order of size, from smallest to largest: K, F⁻, Rb, Co²⁵⁺, Br, F, Rb⁺.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                Which is higher, the third ionization energy of lithium or the energy required to eject a 1s electron from a Li atom in a PES experiment? Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                The outermost electron in an alkali-metal atom is sometimes described as resembling an electron in the corresponding state of a one-electron atom. Compare the first ionization energy of lithium with the binding energy of a 2s electron in a one-electron atom that has nuclear charge Z<sub>eff</sub>, and determine the value of Z<sub>eff</sub> that is necessary for the two energies to agree. Repeat the calculation for the 3s electron of sodium and the 4s electron of potassium.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                In two-photon ionization spectroscopy, the combined energies carried by two different photons are used to remove an electron from an atom or molecule. In such an experiment, a K atom in the gas phase is to be ionized by two different light beams, one of which has a 650-nm wavelength. What is the maximum wavelength for the second beam that will cause two-photon ionization?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                For the H atom, the transition from the 2p state to the 1s state is accompanied by the emission of a photon with an energy of 16.2 × 10⁻¹⁹ J. In an iron atom, the same transition (2p to 1s) is accompanied by the emission of X-rays of 0.193-nm wavelengths. What is the energy difference between these two states in iron? Comment on the reason for the variation (if any) in the 2p-1s energy level spacing for these two atoms.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                (a) Give the complete electron configuration (1s²2s²2p...) of aluminum in the ground state.<br>
+                (b) The wavelength of the radiation emitted when the outermost electron of aluminum falls from the 4s state to the ground state is about 395 nm. Calculate the energy separation (in joules) between these two states in the Al atom.<br>
+                (c) When the outermost electron in aluminum falls from the 3d state to the ground state, the radiation emitted has a wavelength of about 310 nm. Draw an energy-level diagram of the states and transitions discussed here and in (b). Calculate the separation (in joules) between the 3d and 4s states in aluminum. Indicate clearly which has higher energy.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                What experimental evidence does the periodic table provide that an electron in a 5s orbital is slightly more stable than an electron in a 4d orbital for the elements with 37 and 38 electrons?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education.</em>
+        </p>
+    </div>
+</body>
+</html>

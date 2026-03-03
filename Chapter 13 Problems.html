@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 13 - Spontaneous Processes and Thermodynamic Equilibrium</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-bg-secondary: #fffffe;
+            --color-text-primary: #1f2121;
+            --color-text-secondary: #626c71;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-accent: #218085;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-bg-secondary: #262828;
+                --color-text-primary: #f5f5f5;
+                --color-text-secondary: #a7a9a9;
+                --color-border: rgba(119, 124, 124, 0.3);
+                --color-accent: #32b8c6;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .problem {
+            background: var(--color-bg-primary);
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .problem-number {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .solution-space {
+            background: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 10px;
+        }
+
+        .solution-label {
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 13 - Spontaneous Processes and Thermodynamic Equilibrium</h1>
+        <p class="subtitle"><strong>교육용 문제집 | High School Chemistry</strong></p>
+
+        <h2>Section 1: The Nature of Spontaneous Processes</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">
+                For each of the following processes, identify the system and the surroundings. Identify those processes that are spontaneous. For each spontaneous process, identify the constraint that has been removed to enable the process to occur:<br>
+                (a) Ammonium nitrate dissolves in water.<br>
+                (b) Hydrogen and oxygen explode in a closed bomb.<br>
+                (c) A rubber band is rapidly extended by a hanging weight.<br>
+                (d) The gas in a chamber is slowly compressed by a weighted piston.<br>
+                (e) A glass shatters on the floor.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">
+                For each of the following processes, identify the system and the surroundings. Identify those processes that are spontaneous. For each spontaneous process, identify the constraint that has been removed to enable the process to occur:<br>
+                (a) A solution of hydrochloric acid is titrated with a solution of sodium hydroxide.<br>
+                (b) Zinc pellets dissolve in aqueous hydrochloric acid.<br>
+                (c) A rubber band is slowly extended by a hanging weight.<br>
+                (d) The gas in a chamber is rapidly compressed by a weighted piston.<br>
+                (e) A tray of water freezes in the freezing compartment of an electric refrigerator.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 2: Entropy and Spontaneity - A Molecular Statistical Interpretation</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">
+                (a) How many "microstates" are there for the numbers that come up on a pair of dice?<br>
+                (b) What is the probability that a roll of a pair of dice will show two sixes?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">
+                (a) Suppose a volume is divided into three equal parts. How many microstates can be written for all possible ways of distributing four molecules among the three parts?<br>
+                (b) What is the probability that all four molecules are in the leftmost third of the volume at the same time?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">
+                When H<sub>2</sub>O(ℓ) and D<sub>2</sub>O(ℓ) are mixed, the following reaction occurs spontaneously:<br>
+                H<sub>2</sub>O(ℓ) + D<sub>2</sub>O(ℓ) → 2 HOD(ℓ)<br><br>
+                There is little difference between the enthalpy of an O-H bond and that of an O-D bond. What is the main driving force for this reaction?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">
+                The two gases BF<sub>3</sub>(g) and BCl<sub>3</sub>(g) are mixed in equal molar amounts. All B-F bonds have about the same bond enthalpy, as do all B-Cl bonds. Explain why the mixture tends to react to form BF<sub>2</sub>Cl(g) and BCl<sub>2</sub>F(g).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">
+                Two large glass bulbs of identical volume are connected by means of a stopcock. One bulb initially contains 1.00 mol H<sub>2</sub>; the other contains 1.00 mol helium (He). The stopcock is opened and the gases are allowed to mix and reach equilibrium. What is the probability that all the H<sub>2</sub> in the first bulb will diffuse into the second bulb and all the He gas in the second bulb will diffuse into the first bulb?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">
+                A mixture of 2.00 mol nitrogen and 1.00 mol oxygen is in thermal equilibrium in a 100-L container at 25°C. Calculate the probability that at a given time all the nitrogen will be found in the left half of the container and all the oxygen in the right half.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">
+                Predict the sign of the system's entropy change in each of the following processes.<br>
+                (a) Sodium chloride melts.<br>
+                (b) A building is demolished.<br>
+                (c) A volume of air is divided into three separate volumes of nitrogen, oxygen, and argon, each at the same pressure and temperature as the original air.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">
+                Predict the sign of the system's entropy change in each of the following processes.<br>
+                (a) A computer is constructed from iron, copper, carbon, silicon, gallium, and arsenic.<br>
+                (b) A container holding a compressed gas develops a leak and the gas enters the atmosphere.<br>
+                (c) Solid carbon dioxide (dry ice) sublimes to gaseous carbon dioxide.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 3: Entropy Changes in Reversible Processes</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">
+                Tungsten melts at 3410°C and has an enthalpy change of fusion of 35.4 kJ mol<sup>-1</sup>. Calculate the entropy of fusion of tungsten.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">
+                Tetraphenylgermane, (C<sub>6</sub>H<sub>5</sub>)<sub>4</sub>Ge, has a melting point of 232.5°C, and its enthalpy increases by 106.7 J g<sup>-1</sup> during fusion. Calculate the molar enthalpy of fusion and molar entropy of fusion of tetraphenylgermane.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">
+                The normal boiling point of acetone is 56.2°C. Use Trouton's rule to estimate its molar enthalpy of vaporization.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">
+                The molar enthalpy of vaporization of liquid hydrogen chloride is 16.15 kJ mol<sup>-1</sup>. Use Trouton's rule to estimate its normal boiling point.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">
+                If 4.00 mol hydrogen (c<sub>P</sub> = 28.8 J K<sup>-1</sup> mol<sup>-1</sup>) is expanded reversibly and isothermally at 400 K from an initial volume of 12.0 L to a final volume of 30.0 L, calculate ΔU, q, w, ΔH, and ΔS for the gas.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">
+                Suppose 60.0 g hydrogen bromide, HBr(g), is heated reversibly from 300 to 500 K at a constant volume of 50.0 L, and then allowed to expand isothermally and reversibly until the original pressure is reached. Using c<sub>P</sub>(HBr(g)) = 29.1 J K<sup>-1</sup> mol<sup>-1</sup>, calculate ΔU, q, w, ΔH, and ΔS for this process. Assume that HBr is an ideal gas under these conditions.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 4: Entropy Changes and Spontaneity</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">
+                Exactly 1 mol ice is heated reversibly at atmospheric pressure from -20°C to 0°C, melted reversibly at 0°C, and then heated reversibly at atmospheric pressure to 20°C. ΔH<sub>fus</sub> = 6007 J mol<sup>-1</sup>; c<sub>P</sub>(ice) = 38 J K<sup>-1</sup> mol<sup>-1</sup>; and c<sub>P</sub>(water) = 75 J K<sup>-1</sup> mol<sup>-1</sup>. Calculate ΔS for the system, the surroundings, and the thermodynamic universe for this process.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">
+                Suppose 1.00 mol water at 25°C is flash-evaporated by allowing it to fall into an iron crucible maintained at 150°C. Calculate ΔS for the water, ΔS for the iron crucible, and ΔS<sub>tot</sub>, if c<sub>P</sub>(H<sub>2</sub>O(ℓ)) = 75.4 J K<sup>-1</sup> mol<sup>-1</sup> and c<sub>P</sub>(H<sub>2</sub>O(g)) = 36.0 J K<sup>-1</sup> mol<sup>-1</sup>. Take ΔH<sub>vap</sub> = 40.68 kJ mol<sup>-1</sup> for water at its boiling point of 100°C.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">
+                In Example 12.3, a process was considered in which 72.4 g iron initially at 100.0°C was added to 100.0 g water initially at 10.0°C, and an equilibrium temperature of 16.5°C was reached. Take c<sub>P</sub>(Fe) to be 25.1 J K<sup>-1</sup> mol<sup>-1</sup> and c<sub>P</sub>(H<sub>2</sub>O) to be 75.3 J K<sup>-1</sup> mol<sup>-1</sup>, independent of temperature. Calculate ΔS for the iron, ΔS for the water, and ΔS<sub>tot</sub> in this process.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">
+                Iron has a heat capacity of 25.1 J K<sup>-1</sup> mol<sup>-1</sup>, approximately independent of temperature between 0°C and 100°C.<br>
+                (a) Calculate the enthalpy and entropy change of 1.00 mol iron as it is cooled at atmospheric pressure from 100°C to 0°C.<br>
+                (b) A piece of iron weighing 55.85 g and at 100°C is placed in a large reservoir of water held at 0°C. It cools irreversibly until its temperature equals that of the water. Assuming the water reservoir is large enough that its temperature remains close to 0°C, calculate the entropy changes for the iron and the water and the total entropy change in this process.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 5: The Third Law of Thermodynamics</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">
+                (a) Use data from Appendix D to calculate the standard entropy change at 25°C for the reaction<br>
+                N<sub>2</sub>H<sub>4</sub>(ℓ) + 3 O<sub>2</sub>(g) → 2 NO<sub>2</sub>(g) + 2 H<sub>2</sub>O(ℓ)<br>
+                (b) Suppose the hydrazine (N<sub>2</sub>H<sub>4</sub>) is in the gaseous, rather than liquid, state. Will the entropy change for its reaction with oxygen be higher or lower than that calculated in part (a)? (Hint: Entropies of reaction can be added when chemical equations are added, in the same way that Hess's law allows enthalpies to be added.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">
+                (a) Use data from Appendix D to calculate the standard entropy change at 25°C for the reaction<br>
+                CH<sub>3</sub>COOH(g) + NH<sub>3</sub>(g) → CH<sub>3</sub>CONH<sub>2</sub>(g) + H<sub>2</sub>O(g)<br>
+                (b) Suppose that 1.00 mol each of solid acetamide, CH<sub>3</sub>CONH<sub>2</sub>(s), and water, H<sub>2</sub>O(ℓ), react to give the same products. Will the standard entropy change be larger or smaller than that calculated for the reaction in part (a)?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">
+                The alkali metals react with chlorine to give salts:<br>
+                2 Li(s) + Cl<sub>2</sub>(g) → 2 LiCl(s)<br>
+                2 Na(s) + Cl<sub>2</sub>(g) → 2 NaCl(s)<br>
+                2 K(s) + Cl<sub>2</sub>(g) → 2 KCl(s)<br>
+                2 Rb(s) + Cl<sub>2</sub>(g) → 2 RbCl(s)<br>
+                2 Cs(s) + Cl<sub>2</sub>(g) → 2 CsCl(s)<br><br>
+                Using the data in Appendix D, compute ΔS° of each reaction and identify a periodic trend, if any.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">
+                All of the halogens react directly with H<sub>2</sub>(g) to give binary compounds. The reactions are<br>
+                F<sub>2</sub>(g) + H<sub>2</sub>(g) → 2 HF(g)<br>
+                Cl<sub>2</sub>(g) + H<sub>2</sub>(g) → 2 HCl(g)<br>
+                Br<sub>2</sub>(g) + H<sub>2</sub>(g) → 2 HBr(g)<br>
+                I<sub>2</sub>(g) + H<sub>2</sub>(g) → 2 HI(g)<br><br>
+                Using the data in Appendix D, compute ΔS° of each reaction and identify a periodic trend, if any.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">
+                The dissolution of calcium chloride in water<br>
+                CaCl<sub>2</sub>(s) → Ca<sup>2+</sup>(aq) + 2 Cl<sup>-</sup>(aq)<br>
+                is a spontaneous process at 25°C, even though the standard entropy change of the preceding reaction is negative (ΔS° = -44.7 J K<sup>-1</sup>). What conclusion can you draw about the change in entropy of the surroundings in this process?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">
+                Quartz, SiO<sub>2</sub>(s), does not spontaneously decompose to silicon and oxygen at 25°C in the reaction<br>
+                SiO<sub>2</sub>(s) → Si(s) + O<sub>2</sub>(g)<br>
+                even though the standard entropy change of the reaction is large and positive (ΔS° = 182.02 J K<sup>-1</sup>). Explain.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">
+                Use the microscopic interpretation of entropy from Section 13.2 to explain why the entropy change of the system in Problem 26 is positive.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">
+                (a) Why is the entropy change of the system negative for the reaction in Problem 25, when the ions become dispersed through a large volume of solution? (Hint: Think about the role of the solvent, water.)<br>
+                (b) Use Appendix D to calculate ΔS° for the corresponding dissolution of CaF<sub>2</sub>(s). Explain why this value is even more negative than that given in Problem 25.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 6: The Gibbs Free Energy</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">
+                The molar enthalpy of fusion of solid ammonia is 5.65 kJ mol<sup>-1</sup>, and the molar entropy of fusion is 28.9 J K<sup>-1</sup> mol<sup>-1</sup>.<br>
+                (a) Calculate the Gibbs free energy change for the melting of 1.00 mol ammonia at 170 K.<br>
+                (b) Calculate the Gibbs free energy change for the conversion of 3.60 mol solid ammonia to liquid ammonia at 170 K.<br>
+                (c) Will ammonia melt spontaneously at 170 K?<br>
+                (d) At what temperature are solid and liquid ammonia in equilibrium at a pressure of 1 atm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">
+                Solid tin exists in two forms: white and gray. For the transformation<br>
+                Sn(s, white) → Sn(s, gray)<br>
+                the enthalpy change is -2.1 kJ and the entropy change is -7.4 J K<sup>-1</sup>.<br>
+                (a) Calculate the Gibbs free energy change for the conversion of 1.00 mol white tin to gray tin at -30°C.<br>
+                (b) Calculate the Gibbs free energy change for the conversion of 2.50 mol white tin to gray tin at -30°C.<br>
+                (c) Will white tin convert spontaneously to gray tin at -30°C?<br>
+                (d) At what temperature are white and gray tin in equilibrium at a pressure of 1 atm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">
+                Ethanol's enthalpy of vaporization is 38.7 kJ mol<sup>-1</sup> at its normal boiling point, 78°C. Calculate q, w, ΔU, ΔS<sub>sys</sub>, and ΔG when 1.00 mol ethanol is vaporized reversibly at 78°C and 1 atm. Assume that the vapor is an ideal gas and neglect the volume of liquid ethanol relative to that of its vapor.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">
+                Suppose 1.00 mol superheated ice melts to liquid water at 25°C. Assume the specific heats of ice and liquid water have the same value and are independent of temperature. The enthalpy change for the melting of ice at 0°C is 6007 J mol<sup>-1</sup>. Calculate ΔH, ΔS<sub>sys</sub>, and ΔG for this process.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">
+                At 1200°C, the reduction of iron oxide to elemental iron and oxygen is not spontaneous:<br>
+                2 Fe<sub>2</sub>O<sub>3</sub>(s) → 4 Fe(s) + 3 O<sub>2</sub>(g)   ΔG = 840 kJ<br><br>
+                Show how this process can be made to proceed if all the oxygen generated reacts with carbon:<br>
+                C(s) + O<sub>2</sub>(g) → CO<sub>2</sub>(g)   ΔG = -400 kJ<br><br>
+                This observation is the basis for the smelting of iron ore with coke to extract metallic iron.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">
+                The primary medium for free energy storage in living cells is adenosine triphosphate (ATP). Its formation from adenosine diphosphate (ADP) is not spontaneous:<br>
+                ADP<sup>3-</sup>(aq) + HPO<sub>4</sub><sup>2-</sup>(aq) + H<sup>+</sup>(aq) → ATP<sup>4-</sup>(aq) + H<sub>2</sub>O(ℓ)   ΔG = 34.5 kJ<br><br>
+                Cells couple ATP production with the metabolism of glucose (a sugar):<br>
+                C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>(aq) + 6 O<sub>2</sub>(g) → 6 CO<sub>2</sub>(g) + 6 H<sub>2</sub>O(ℓ)   ΔG = -2872 kJ<br><br>
+                The reaction of 1 molecule of glucose leads to the formation of 38 molecules of ATP from ADP. Show how the coupling makes this reaction spontaneous. What fraction of the free energy released in the oxidation of glucose is stored in the ATP?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">
+                A process at constant T and P can be described as spontaneous if ΔG < 0 and nonspontaneous if ΔG > 0. Over what range of temperatures is each of the following processes spontaneous? Assume that all gases are at a pressure of 1 atm. (Hint: Use Appendix D to calculate ΔH and ΔS [assumed independent of temperature and equal to ΔH° and ΔS°, respectively], and then use the definition of ΔG.)<br>
+                (a) The rusting of iron, a complex reaction that can be approximated as<br>
+                4 Fe(s) + 3 O<sub>2</sub>(g) → 2 Fe<sub>2</sub>O<sub>3</sub>(s)<br>
+                (b) The preparation of SO<sub>3</sub>(g) from SO<sub>2</sub>(g), a step in the manufacture of sulfuric acid:<br>
+                SO<sub>2</sub>(g) + <sup>1</sup>⁄<sub>2</sub> O<sub>2</sub>(g) → SO<sub>3</sub>(g)<br>
+                (c) The production of the anesthetic dinitrogen oxide through the decomposition of ammonium nitrate:<br>
+                NH<sub>4</sub>NO<sub>3</sub>(s) → N<sub>2</sub>O(g) + 2 H<sub>2</sub>O(g)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">
+                Follow the same procedure used in Problem 35 to determine the range of temperatures over which each of the following processes is spontaneous.<br>
+                (a) The preparation of the poisonous gas phosgene:<br>
+                CO(g) + Cl<sub>2</sub>(g) → COCl<sub>2</sub>(g)<br>
+                (b) The laboratory-scale production of oxygen from the decomposition of potassium chlorate:<br>
+                2 KClO<sub>3</sub>(s) → 2 KCl(s) + 3 O<sub>2</sub>(g)<br>
+                (c) The reduction of iron(II) oxide (wüstite) by coke (carbon), a step in the production of iron in a blast furnace:<br>
+                FeO(s) + C(s, graphite) → Fe(s) + CO(g)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">
+                Explain how it is possible to reduce tungsten(VI) oxide (WO<sub>3</sub>) to metal with hydrogen at an elevated temperature. Over what temperature range is this reaction spontaneous? Use the data of Appendix D.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">
+                Tungsten(VI) oxide can also be reduced to tungsten by heating it with carbon in an electric furnace:<br>
+                2 WO<sub>3</sub>(s) + 3 C(s) → 2 W(s) + 3 CO<sub>2</sub>(g)<br>
+                (a) Calculate the standard free energy change (ΔG°) for this reaction, and comment on the feasibility of the process at room conditions.<br>
+                (b) What must be done to make the process thermodynamically feasible, assuming ΔH and ΔS are nearly independent of temperature?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 7: A Deeper Look - Carnot Cycles, Efficiency, and Entropy</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">
+                A thermodynamic engine operates cyclically and reversibly between two temperature reservoirs, absorbing heat from the high-temperature bath at 450 K and discharging heat to the low-temperature bath at 300 K.<br>
+                (a) What is the thermodynamic efficiency of the engine?<br>
+                (b) How much heat is discarded to the low-temperature bath if 1500 J of heat is absorbed from the high-temperature bath during each cycle?<br>
+                (c) How much work does the engine perform in one cycle of operation?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">
+                In each cycle of its operation, a thermal engine absorbs 1000 J of heat from a large heat reservoir at 400 K and discharges heat to another large heat sink at 300 K. Calculate:<br>
+                (a) The thermodynamic efficiency of the heat engine, operated reversibly<br>
+                (b) The quantity of heat discharged to the low-temperature sink each cycle<br>
+                (c) The maximum amount of work the engine can perform each cycle
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 8: Additional Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">
+                Ethanol (CH<sub>3</sub>CH<sub>2</sub>OH) has a normal boiling point of 78.4°C and a molar enthalpy of vaporization of 38.74 kJ mol<sup>-1</sup>. Calculate the molar entropy of vaporization of ethanol and compare it with the prediction of Trouton's rule.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">
+                A quantity of ice is mixed with a quantity of hot water in a sealed, rigid, insulated container. The insulation prevents heat exchange between the ice-water mixture and the surroundings. The contents of the container soon reach equilibrium. State whether the total internal energy of the contents decreases, remains the same, or increases in this process. Make a similar statement about the total entropy of the contents. Explain your answers.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">
+                (a) If 2.60 mol O<sub>2</sub>(g) (c<sub>P</sub> = 29.4 J K<sup>-1</sup> mol<sup>-1</sup>) is compressed reversibly and adiabatically from an initial pressure of 1.00 atm and 300 K to a final pressure of 8.00 atm, calculate ΔS for the gas.<br>
+                (b) Suppose a different path from that in part (a) is used. The gas is first heated at constant pressure to the same final temperature, and then compressed reversibly and isothermally to the same final pressure. Calculate ΔS for this path and show that it is equal to that found in part (a).
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">
+                One mole of a monatomic ideal gas begins in a state with P = 1.00 atm and T = 300 K. It is expanded reversibly and adiabatically until the volume has doubled; then it is expanded irreversibly and isothermally into a vacuum until the volume has doubled again; and then it is heated reversibly at constant volume to 400 K. Finally, it is compressed reversibly and isothermally until a final state with P = 1.00 atm and T = 400 K is reached. Calculate ΔS<sub>sys</sub> for this process. (Hint: There are two ways to solve this problem—an easy way and a hard way.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">
+                The motion of air masses through the atmosphere can be approximated as adiabatic (because air is a poor conductor of heat) and reversible (because pressure differences in the atmosphere are small). To a good approximation, air can be treated as an ideal gas with average molar mass 29 g mol<sup>-1</sup> and average heat capacity 29 J K<sup>-1</sup> mol<sup>-1</sup>.<br>
+                (a) Show that the displacement of the air masses occurs at constant entropy (ΔS = 0).<br>
+                (b) Suppose the average atmospheric pressure near the earth's surface is P<sub>0</sub> and the temperature is T<sub>0</sub>. The air is displaced upward until its temperature is T and its pressure is P. Determine the relation between P and T. (Hint: Consider the process as occurring in two steps: first a cooling from T<sub>0</sub> to T at constant pressure, and then an expansion from P<sub>0</sub> to P at constant temperature. Equate the sum of the two entropy changes to ΔS<sub>tot</sub> = 0.)<br>
+                (c) In the lower atmosphere, the dependence of pressure on height, h, above the earth's surface can be approximated as ln(P/P<sub>0</sub>) = -μgh/RT where μ is the molar mass (kg mol<sup>-1</sup>), g the acceleration due to gravity (9.8 m s<sup>-2</sup>), and R the gas constant. If the air temperature at sea level near the equator is 38°C (≈100°F), calculate the air temperature at the summit of Mount Kilimanjaro, 5.9 km above sea level.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">
+                Calculate the entropy change that results from mixing 54.0 g water at 273 K with 27.0 g water at 373 K in a vessel whose walls are perfectly insulated from the surroundings. Consider the specific heat of water to be constant over the temperature range from 273 to 373 K and to have the value 4.18 J K<sup>-1</sup> g<sup>-1</sup>.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">
+                Problem 20 asked for the entropy change when a piece of iron is cooled by immersion in a reservoir of water at 0°C.<br>
+                (a) Repeat Problem 20(b), supposing that the iron is cooled to 50°C in a large water reservoir held at that temperature before being placed in the 0°C reservoir.<br>
+                (b) Repeat the calculation supposing that four water reservoirs at 75°C, 50°C, 25°C, and 0°C are used.<br>
+                (c) As more reservoirs are used, what happens to ΔS for the iron, for the water, and for the universe? How would you attempt to conduct a reversible cooling of the iron?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">
+                Problem 42 in Chapter 9 described an optical atomic trap. In one experiment, a gas of 500 sodium atoms is confined in a volume of 1000 μm<sup>3</sup>. The temperature of the system is 0.00024 K. Compute the probability that, by chance, these 500 slowly moving sodium atoms will all congregate in the left half of the available volume. Express your answer in scientific notation.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">
+                Suppose we have several different ideal gases, i = 1, 2, 3, ..., N, each occupying its own volume V<sub>i</sub>, all at the same pressure and temperature. The boundaries between the volumes are removed so that the gases mix at constant temperature in the total volume V = ΣV<sub>i</sub>.<br>
+                (a) Using the microscopic interpretation of entropy, show that<br>
+                ΔS = -nR Σ X<sub>i</sub> ln X<sub>i</sub><br>
+                for this process, where n is the total number of moles of gas and X<sub>i</sub> is the mole fraction of gas i.<br>
+                (b) Calculate the entropy change when 50 g each of O<sub>2</sub>(g), N<sub>2</sub>(g), and Ar(g) are mixed at 1 atm and 0°C.<br>
+                (c) Using Table 9.1, calculate the entropy change when 100 L of air (assumed to be a mixture of ideal gases) at 1 atm and 25°C is separated into its component gases at the same pressure and temperature.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">
+                The N<sub>2</sub>O molecule has the structure N-N-O. In an ordered crystal of N<sub>2</sub>O, the molecules are lined up in a regular fashion, with the orientation of each determined by its position in the crystal. In a random crystal (formed on rapid freezing), each molecule has two equally likely orientations.<br>
+                (a) Calculate the number of microstates available to a random crystal of N<sub>A</sub> (Avogadro's number) of molecules.<br>
+                (b) Calculate the entropy change when 1.00 mol of a random crystal is converted to an ordered crystal.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">
+                By examining the following graphs, predict which element—copper or gold—has the higher absolute entropy at a temperature of 200 K. [Note: Graphs showing c<sub>P</sub>/T vs Temperature would be provided in the original text]
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">
+                Consider the process described in Problem 19 in Chapter 12. Use the results from that problem to do the following.<br>
+                (a) Calculate ΔS for the system, the surroundings, and the universe.<br>
+                (b) If the absolute entropy per mole of the gas before the expansion is 158.2 J K<sup>-1</sup> mol<sup>-1</sup>, calculate ΔG<sub>sys</sub> for the process.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">
+                Two different crystalline forms of sulfur are the rhombic form and the monoclinic form. At atmospheric pressure, rhombic sulfur undergoes a transition to monoclinic when it is heated above 368.5 K:<br>
+                S(s, rhombic) → S(s, monoclinic)<br>
+                (a) What is the sign of the entropy change (ΔS) for this transition?<br>
+                (b) ΔH for this transition is 400 J mol<sup>-1</sup>. Calculate ΔS for the transition.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">
+                Use data from Appendix D to estimate the temperature at which I<sub>2</sub>(g) and I<sub>2</sub>(s) are in equilibrium at a pressure of 1 atm. Can this equilibrium actually be achieved? Refer to Appendix F for data on iodine.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">
+                The molar enthalpy of fusion of ice at 0°C is 6.02 kJ mol<sup>-1</sup>; the molar heat capacity of undercooled water is 75.3 J mol<sup>-1</sup> K<sup>-1</sup>. (a) One mole of undercooled water at -10°C is induced to crystallize in a heat-insulated vessel. The result is a mixture of ice and water at 0°C. What fraction of this mixture is ice? (b) Calculate ΔS for the system.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">
+                A certain substance consists of two modifications A and B; ΔG° for the transition from A to B is positive. The two modifications produce the same vapor. Which has the higher vapor pressure? Which is the more soluble in a solvent common to both?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">
+                From the values in Appendix D, calculate the values of ΔG° and ΔH° for the reaction.<br>
+                6 Fe<sub>2</sub>O<sub>3</sub>(s) → 4 Fe<sub>3</sub>O<sub>4</sub>(s) + O<sub>2</sub>(g)<br>
+                at 25°C. Which of the two oxides is more stable at 25°C and P<sub>O2</sub> = 1 atm?
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">
+                The strongest known chemical bond is that in carbon monoxide, CO, with bond enthalpy of 1.05 × 10<sup>3</sup> kJ mol<sup>-1</sup>. Furthermore, the entropy increase in a gaseous dissociation of the kind AB → A + B is about 110 J mol<sup>-1</sup> K<sup>-1</sup>. These factors establish a temperature above which there is essentially no chemistry of molecules. Show why this is so, and find the temperature.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">
+                The ΔG<sub>f</sub>° of Si<sub>3</sub>N<sub>4</sub>(s) is -642.6 kJ mol<sup>-1</sup>. Use this fact and the data in Appendix D to compute ΔG° of the reaction.<br>
+                3 CO(g) + Si<sub>3</sub>N<sub>4</sub>(s) → 3 SiO<sub>2</sub>(s, quartz) + 2 N<sub>2</sub>(g) + 3 C(s, graphite)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">
+                The compound Pt(NH<sub>3</sub>)<sub>2</sub>I<sub>2</sub> comes in two forms, the cis and the trans, which differ in their molecular structure. The following data are available:<br><br>
+                <table style="border-collapse: collapse; margin: 10px 0;">
+                    <tr>
+                        <td style="padding: 5px;"></td>
+                        <td style="padding: 5px; border-bottom: 1px solid var(--color-text-secondary);">ΔH<sub>f</sub>° (kJ mol<sup>-1</sup>)</td>
+                        <td style="padding: 5px; border-bottom: 1px solid var(--color-text-secondary);">ΔG<sub>f</sub>° (kJ mol<sup>-1</sup>)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px;">cis</td>
+                        <td style="padding: 5px;">-286.56</td>
+                        <td style="padding: 5px;">-130.25</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px;">trans</td>
+                        <td style="padding: 5px;">-316.94</td>
+                        <td style="padding: 5px;">-161.50</td>
+                    </tr>
+                </table>
+                Combine these data with data from Appendix D to compute the standard entropies (S°) of both of these compounds at 25°C.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">
+                (a) Use data from Appendix D to calculate ΔH° and ΔS° at 25°C for the reaction<br>
+                2 CuCl(s) → CuCl<sub>2</sub>(s) + Cu(s)<br>
+                (b) Calculate ΔG at 590 K, assuming ΔH° and ΔS° are independent of temperature.<br>
+                (c) Careful high-temperature measurements show that when this reaction is performed at 590 K, ΔH<sub>590</sub> is 158.36 kJ and ΔS<sub>590</sub> is 177.74 J K<sup>-1</sup>. Use these facts to compute an improved value of ΔG<sub>590</sub> for this reaction. Determine the percentage error in ΔG<sub>590</sub> that comes from using the 298-K values in place of 590-K values in this case.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">
+                (a) The normal boiling point of carbon tetrachloride (CCl<sub>4</sub>) is 76.5°C. A student looks up the standard enthalpies of formation of CCl<sub>4</sub>(ℓ) and of CCl<sub>4</sub>(g) in Appendix D. They are listed as -135.44 and -102.9 kJ mol<sup>-1</sup>, respectively. By subtracting the first from the second, she computes ΔH° for the vaporization of CCl<sub>4</sub> to be 32.5 kJ mol<sup>-1</sup>. But Table 12.2 states that the ΔH<sub>vap</sub> of CCl<sub>4</sub> is 30.0 kJ mol<sup>-1</sup>. Explain the discrepancy.<br>
+                (b) Calculate the molar entropy change of vaporization (ΔS<sub>vap</sub>) of CCl<sub>4</sub> at 76.5°C.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">
+                The typical potassium ion concentration in the fluid outside a cell is 0.0050 M, whereas that inside a muscle cell is 0.15 M.<br>
+                (a) What is the spontaneous direction of motion of ions through the cell wall?<br>
+                (b) In active transport, cells use free energy stored in ATP (see Problem 34) to move ions in the direction opposite their spontaneous direction of flow. Calculate the cost in free energy to move 1.00 mol K<sup>+</sup> through the cell wall by active transport. Assume no change in K<sup>+</sup> concentrations during this process.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <h2>Section 9: Cumulative Problems</h2>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">
+                When a gas undergoes a reversible adiabatic expansion, its entropy remains constant even though the volume increases. Explain how this can be consistent with the microscopic interpretation of entropy developed in Section 13.2. (Hint: Consider what happens to the distribution of velocities in the gas.)
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">
+                The normal boiling point of liquid ammonia is 240 K; the enthalpy of vaporization at that temperature is 23.4 kJ mol<sup>-1</sup>. The heat capacity of gaseous ammonia at constant pressure is 38 J mol<sup>-1</sup> K<sup>-1</sup>.<br>
+                (a) Calculate q, w, ΔH, and ΔU for the following change in state:<br>
+                2.00 mol NH<sub>3</sub>(ℓ, 1 atm, 240 K) → 2.00 mol NH<sub>3</sub>(g, 1 atm, 298 K)<br>
+                Assume that the gas behaves ideally and that the volume occupied by the liquid is negligible.<br>
+                (b) Calculate the entropy of vaporization of NH<sub>3</sub> at 240 K.
+            </div>
+            <div class="solution-space">
+                <div class="solution-label">풀이:</div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p style="text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            <em>Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.</em>
+        </p>
+    </div>
+</body>
+</html>
+
