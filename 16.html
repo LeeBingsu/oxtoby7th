@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 16: Solubility and Precipitation Equilibria - 83 Problems</title>
+    <style>
+        :root {
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #ffffff;
+            --color-text-primary: #111827;
+            --color-text-secondary: #374151;
+            --color-border: rgba(17, 24, 39, 0.18);
+            --color-accent: #218085;
+
+            --work-lines: 5;
+            --work-line-height: 1.6em;
+            --work-pad-y: 10px;
+            --work-pad-x: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 36px;
+        }
+
+        header {
+            text-align: left;
+            padding: 0 0 18px 0;
+            border-bottom: 2px solid var(--color-accent);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--color-accent);
+            margin-bottom: 6px;
+            letter-spacing: 0.3px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            color: var(--color-accent);
+            margin: 34px 0 14px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .problem {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-left: 5px solid var(--color-accent);
+            padding: 18px 18px 16px 18px;
+            margin-bottom: 18px;
+            border-radius: 10px;
+        }
+
+        .problem::after {
+            content: "풀이:\A";
+            white-space: pre;
+            display: block;
+            margin-top: 12px;
+            padding: var(--work-pad-y) var(--work-pad-x);
+            min-height: calc(var(--work-lines) * var(--work-line-height) + (var(--work-pad-y) * 2) + 1.2em);
+            border: 1px dashed var(--color-border);
+            border-radius: 8px;
+            color: #6b7280;
+            font-weight: 600;
+            background:
+                repeating-linear-gradient(
+                    to bottom,
+                    transparent 0,
+                    transparent calc(var(--work-line-height) - 1px),
+                    rgba(17, 24, 39, 0.10) calc(var(--work-line-height) - 1px),
+                    rgba(17, 24, 39, 0.10) var(--work-line-height)
+                );
+            background-position: 0 1.9em;
+        }
+
+        .problem-number {
+            font-weight: 800;
+            color: var(--color-accent);
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 10px;
+        }
+
+        .sub-problem {
+            margin-left: 16px;
+            margin-top: 6px;
+            color: var(--color-text-primary);
+        }
+
+        .equation {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            background: rgba(33, 128, 133, 0.08);
+            border: 1px solid rgba(33, 128, 133, 0.25);
+            padding: 10px 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #0f172a;
+        }
+
+        .note {
+            font-style: italic;
+            color: #4b5563;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 22px; }
+            h1 { font-size: 1.6rem; }
+            .problem { padding: 14px; }
+        }
+
+        @media print {
+            body { padding: 0; }
+            .container {
+                border: none;
+                padding: 16px;
+            }
+            :root {
+                --work-lines: 6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHAPTER 16</h1>
+            <div class="subtitle">Solubility and Precipitation Equilibria | 교육용 문제집 | 83 Problems</div>
+        </header>
+
+        <div class="section-title">The Nature of Solubility Equilibria</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">Gypsum has the formula CaSO₄·2H₂O. Plaster of Paris has the chemical formula CaSO₄·½H₂O. In making wall plaster, water is added to plaster of Paris and the mixture then hardens into solid gypsum. How much water (in liters, at a density of 1.00 kg L⁻¹) should be added to 25.0 kg of plaster of Paris to turn it into gypsum, assuming no loss from evaporation?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">A 1.00-g sample of magnesium sulfate is dissolved in water, and the water is then evaporated away until the residue is bone dry. If the temperature of the water is kept between 48°C and 69°C, the solid that remains weighs 1.898 g. If the experiment is repeated with the temperature held between 69°C and 100°C, however, the solid has a mass of 1.150 g. Determine how many waters of crystallization per MgSO₄ there are in each of these two solids.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">The following graph shows the solubility of KBr in water in units of grams of KBr per 100 g of H₂O. If 80 g of KBr is added to 100 g of water at 10°C and the mixture is heated slowly, at what temperature will the last KBr dissolve?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">Figure 16.3 shows the solubility of AgNO₃ in water in units of moles of AgNO₃ per kilogram of H₂O. If 255 g of AgNO₃ is added to 100 g of water at 95°C and cooled slowly, at what temperature will the solution become saturated?</div>
+        </div>
+
+        <div class="section-title">Ionic Equilibria between Solids and Solutions</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">Iron(III) sulfate, Fe₂(SO₄)₃, is a yellow compound that is used as a coagulant in water treatment. Write a balanced chemical equation and a solubility product expression for its dissolution in water.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">Lead antimonate, Pb₃(SbO₄)₂, is used as an orange pigment in oil-based paints and in glazes. Write a balanced chemical equation and a solubility product expression for its dissolution in water.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">Thallium(I) iodate (TlIO₃) is only slightly soluble in water. Its Ksp at 25°C is 3.07 × 10⁻⁶. Estimate the solubility of thallium(I) iodate in water in units of grams per 100.0 mL of water.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">Thallium thiocyanate (TlSCN) is only slightly soluble in water. Its Ksp at 25°C is 1.82 × 10⁻⁴. Estimate the solubility of thallium thiocyanate in units of grams per 100.0 mL of water.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">Potassium perchlorate, KClO₄, has a Ksp at 25°C of 1.07 × 10⁻². Compute its solubility in grams per liter of solution.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">Ammonium hexachloroplatinate(IV), (NH₄)₂(PtCl₆), is one of the few sparingly soluble ammonium salts. Its Ksp at 20°C is 5.6 × 10⁻⁶. Compute its solubility in grams per liter of solution.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">The solubility product constant of mercury(I) iodide is 1.2 × 10⁻²⁸ at 25°C. Estimate the concentration of Hg₂²⁺ and I⁻ in equilibrium with solid Hg₂I₂.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">The solubility product constant of Hg₂Cl₂ is 2 × 10⁻¹⁸ at 25°C. Estimate the concentration of Hg₂²⁺ and Cl⁻ in equilibrium with solid Hg₂Cl₂ at 25°C.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">The solubility of silver chromate (Ag₂CrO₄) in 500 mL of water at 25°C is 0.0129 g. Calculate its solubility product constant.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">At 25°C, 400 mL of water can dissolve 0.00896 g of lead iodate, Pb(IO₃)₂. Calculate Ksp for lead iodate.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">At 100°C, water dissolves 1.8 × 10⁻² g of AgCl per liter. Compute the Ksp of AgCl at this temperature.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">A mass of 0.017 g of silver dichromate (Ag₂Cr₂O₇) will dissolve in 300 mL of water at 25°C. Calculate the solubility product constant Ksp of silver dichromate.</div>
+        </div>
+
+        <div class="section-title">Precipitation and the Solubility Product</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">A solution of barium chromate (BaCrO₄) is prepared by dissolving 6.3 × 10⁻³ g of this yellow solid in 1.00 L of hot water. Will solid barium chromate precipitate upon cooling to 25°C, according to the solubility product expression? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">A solution is prepared by dissolving 0.090 g of PbI₂ in 1.00 L of hot water and cooling the solution to 25°C. Will solid precipitate result from this process, according to the solubility product expression? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">A solution is prepared by mixing 250.0 mL of 2.0 × 10⁻³ M Ce(NO₃)₃ and 150.0 mL of 10 × 10⁻² M KIO₃ at 25°C. Determine whether Ce(IO₃)₃(s) (Ksp = 1.9 × 10⁻¹⁰) tends to precipitate from this mixture.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">Suppose 100.0 mL of a 0.0010 M CaCl₂ solution is added to 50.0 mL of a 6.0 × 10⁻⁵ M NaF solution at 25°C. Determine whether CaF₂(s) (Ksp = 3.9 × 10⁻¹¹) tends to precipitate from this mixture.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">Suppose 50.0 mL of a 0.0500 M solution of Pb(NO₃)₂ is mixed with 40.0 mL of a 0.200 M solution of NaIO₃ at 25°C. Calculate the [Pb²⁺] and [IO₃⁻] when the mixture comes to equilibrium. At this temperature, Ksp for Pb(IO₃)₂ is 2.6 × 10⁻¹³.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">Silver iodide (AgI) is used in place of silver chloride for the fastest photographic film because it is more sensitive to light and can therefore form an image in a very short exposure time. A silver iodide emulsion is prepared by adding 6.60 L of 0.10 M NaI solution to 1.50 L of 0.080 M AgNO₃ solution at 25°C. Calculate the concentration of silver ion remaining in solution when the mixture comes to equilibrium and its chemical amount relative to the amount present initially.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">When 50.0 mL of 0.100 M AgNO₃ and 30.0 mL of 0.0600 M Na₂CrO₄ are mixed, a precipitate of silver chromate (Ag₂CrO₄) is formed. The solubility product Ksp of silver chromate in water at 25°C is 1.9 × 10⁻¹². Calculate the [Ag⁺] and [CrO₄²⁻] remaining in solution at equilibrium.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">When 40.0 mL of 0.0800 M Sr(NO₃)₂ and 80.0 mL of 0.0500 M KF are mixed, a precipitate of strontium fluoride (SrF₂) is formed. The solubility product Ksp of strontium fluoride in water at 25°C is 2.8 × 10⁻⁹. Calculate the [Sr²⁺] and [F⁻] remaining in solution at equilibrium.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">Calculate the solubility (in mol L⁻¹) of CaF₂(s) at 25°C in a 0.040 M aqueous solution of NaF.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">Calculate the mass of AgCl that can dissolve in 100 mL of 0.150 M NaCl solution.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">The solubility product of nickel(II) hydroxide, Ni(OH)₂, at 25°C is Ksp = 1.6 × 10⁻¹⁶.</div>
+            <div class="sub-problem">(a) Calculate the molar solubility of Ni(OH)₂ in pure water at 25°C.</div>
+            <div class="sub-problem">(b) Calculate the molar solubility of Ni(OH)₂ in 0.100 M NaOH.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">Silver arsenate (Ag₃AsO₄) is a slightly soluble salt having a solubility product of Ksp = 1.0 × 10⁻²² at 25°C for the equilibrium Ag₃AsO₄(s) ⇌ 3Ag⁺(aq) + AsO₄³⁻(aq).</div>
+            <div class="sub-problem">(a) Calculate the molar solubility of silver arsenate in pure water at 25°C.</div>
+            <div class="sub-problem">(b) Calculate the molar solubility of silver arsenate in 0.10 M AgNO₃.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">A saturated solution of Mg(OH)₂ at 25°C is prepared by equilibrating solid Mg(OH)₂ with water. Concentrated NaOH is then added until the solubility of Mg(OH)₂ is 0.0010 times that in H₂O alone. (Ignore the change in volume resulting from the addition of NaOH.) The solubility product Ksp of Mg(OH)₂ is 1.2 × 10⁻¹¹ at 25°C. Calculate the concentration of hydroxide ion in the solution after the addition of the NaOH.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">A saturated solution of BaF₂ at 25°C is prepared by equilibrating solid BaF₂ with water. Powdered NaF is then dissolved in the solution until the solubility of BaF₂ is 1.0% of that in H₂O alone. The solubility product Ksp of BaF₂ is 1.7 × 10⁻⁶ at 25°C. Calculate the concentration of fluoride ion in the solution after addition of the powdered NaF.</div>
+        </div>
+
+        <div class="section-title">The Effects of pH on Solubility</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">Compare the molar solubility of AgOH in pure water with that in a solution buffered at pH 7.00. Note the difference between the two: When AgOH is dissolved in pure water, the pH does not remain at 7.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">Compare the molar solubility of Mg(OH)₂ in pure water with that in a solution buffered at pH 9.00.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">For each of the following ionic compounds, state whether the solubility will increase, decrease, or remain unchanged as a solution at pH 7 is made acidic.</div>
+            <div class="sub-problem">(a) PbI₂</div>
+            <div class="sub-problem">(b) AgOH</div>
+            <div class="sub-problem">(c) Ca₃(PO₄)₂</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">For each of the following ionic compounds, state whether the solubility will increase, decrease, or remain unchanged as a solution at pH 7 is made acidic.</div>
+            <div class="sub-problem">(a) SrCO₃</div>
+            <div class="sub-problem">(b) Hg₂Br₂</div>
+            <div class="sub-problem">(c) MnS</div>
+        </div>
+
+        <div class="section-title">Complex Ions and Solubility</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">Suppose 0.10 mol of Cu(NO₃)₂ and 1.50 mol of NH₃ are dissolved in water and diluted to a total volume of 1.00 L. Calculate the concentrations of Cu(NH₃)₄²⁺ and of Cu²⁺ at equilibrium.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">The formation constant of the TlCl₄⁻ complex ion is 1 × 10¹⁸. Suppose 0.15 mol of Tl(NO₃)₃ is dissolved in 1.00 L of a 0.50 M solution of NaCl. Calculate the concentration at equilibrium of TlCl₄⁻ and of Tl³⁺.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">The organic compound "18-crown-6" binds alkali metals in aqueous solution by wrapping around and enfolding the ion. It presents a niche that nicely accommodates the K⁺ ion but is too small for the Rb⁺ ion and too large for the Na⁺ ion. The values of the equilibrium constants show this: Na⁺(aq) + 18-crown-6(aq) ⇌ Na⁺{18-crown-6}(aq), K = 6.6; K⁺(aq) + 18-crown-6(aq) ⇌ K⁺{18-crown-6}(aq), K = 111.6; Rb⁺(aq) + 18-crown-6(aq) ⇌ Rb⁺{18-crown-6}(aq), K = 36. An aqueous solution is initially 0.0080 M in 18-crown-6(aq) and also 0.0080 M in K⁺(aq). Compute the equilibrium concentration of free K⁺. ("Free" means not tied up with the 18-crown-6.) Compute the concentration of free Na⁺ if the solution contains 0.0080 M Na⁺(aq) instead of K⁺(aq).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">The organic compound 18-crown-6 (see preceding problem) also binds strongly with the alkali metal ions in methanol. K⁺ + 18-crown-6 ⇌ [complex]. In methanol solution the equilibrium constant is 1.41 × 10⁶. A similar reaction with Cs⁺ has an equilibrium constant of only 2.75 × 10⁴. A solution is made (in methanol) containing 0.020 mol L⁻¹ each of K⁺ and Cs⁺. It also contains 0.30 mol L⁻¹ of 18-crown-6. Compute the equilibrium concentrations of both the uncomplexed K⁺ and the uncomplexed Cs⁺.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">Will silver chloride dissolve to a significantly greater extent in a 1.00 M NaCl solution than in pure water due to the possible formation of AgCl₂⁻ ions? Use data from Tables 16.2 and 16.3 to provide a quantitative answer to this question. What will happen in a 0.100 M NaCl solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">Calculate how many grams of silver chloride will dissolve in 1.0 L of a 1.0 M NH₃ solution through formation of the complex ion Ag(NH₃)₂⁺.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">The pH of a 0.2 M solution of CuSO₄ is 4.0. Write chemical equations to explain why a solution of this salt is neither basic [from the reaction of SO₄²⁻(aq) with water] nor neutral, but acidic.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">Will a 0.05 M solution of FeCl₃ be acidic, basic, or neutral? Explain your answer by writing chemical equations to describe any reactions taking place.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">The acid ionization constant for Co(H₂O)₆²⁺(aq) is 3 × 10⁻¹⁰. Calculate the pH of a 0.10 M solution of Co(NO₃)₂.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">The acid ionization constant for Fe(H₂O)₆²⁺(aq) is 3 × 10⁻⁶. Calculate the pH of a 0.10 M solution of Fe(NO₃)₂, and compare it with the pH of the corresponding iron(III) nitrate solution from Example 16.9.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">A 0.15 M aqueous solution of the chloride salt of the complex ion Pt(NH₃)₄²⁺ is found to be weakly acidic with a pH of 4.92. This is initially puzzling because the Cl⁻ ion in water is not acidic and NH₃ in water is basic, not acidic. Finally, it is suggested that the Pt(NH₃)₄²⁺ ion as a group donates hydrogen ions. Compute the Ka of this acid, assuming that just one hydrogen ion is donated.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">The pH of a 0.10 M solution of Ni(NO₃)₂ is 5.0. Calculate the acid ionization constant of Ni(H₂O)₆²⁺(aq).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">Ksp for Pb(OH)₂ is 4.2 × 10⁻¹⁵, and Kf for Pb(OH)₃⁻ is 4 × 10¹⁴. Suppose a solution whose initial concentration of Pb²⁺(aq) is 1.00 M is brought to pH 13.0 by addition of solid NaOH. Will solid Pb(OH)₂ precipitate, or will the lead be dissolved as Pb(OH)₃⁻(aq)? What will be [Pb²⁺] and [Pb(OH)₃⁻] at equilibrium? Repeat the calculation for an initial Pb²⁺ concentration of 0.050 M.</div>
+            <div class="note">Hint: One way to solve this problem is to assume that Pb(OH)₂(s) is present and calculate [Pb²⁺] and [Pb(OH)₃⁻] that would be in equilibrium with the solid. If the sum of these is less than the original [Pb²⁺], the remainder can be assumed to have precipitated. If not, there is a contradiction and we must assume that no Pb(OH)₂(s) is present. In this case we can calculate [Pb²⁺] and [Pb(OH)₃⁻] directly from Kf.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">Ksp for Zn(OH)₂ is 4.5 × 10⁻¹⁷, and Kf for Zn(OH)₄²⁻ is 5 × 10¹⁴. Suppose a solution whose initial concentration of Zn²⁺(aq) is 0.010 M is brought to pH 14.0 by addition of solid NaOH. Will solid Zn(OH)₂ precipitate, or will the zinc be dissolved as Zn(OH)₄²⁻(aq)? What will be [Zn²⁺] and [Zn(OH)₄²⁻] at equilibrium? Repeat the calculation at pH 13 for an initial Zn²⁺ concentration of 0.10 M. See the hint in problem 47.</div>
+        </div>
+
+        <div class="section-title">A Deeper Look: Selective Precipitation of Ions</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">An aqueous solution at 25°C is 0.10 M in both Mg²⁺ and Pb²⁺ ions. We wish to separate the two kinds of metal ions by taking advantage of the different solubilities of their oxalates, MgC₂O₄ and PbC₂O₄.</div>
+            <div class="sub-problem">(a) What is the highest possible oxalate ion concentration that allows only one solid oxalate salt to be present at equilibrium? Which ion is present in the solid—Mg²⁺ or Pb²⁺?</div>
+            <div class="sub-problem">(b) What fraction of the less soluble ion still remains in solution under the conditions of part (a)?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">An aqueous solution at 25°C is 0.10 M in Ba²⁺ and 0.50 M in Ca²⁺ ions. We wish to separate the two by taking advantage of the different solubilities of their fluorides, BaF₂ and CaF₂.</div>
+            <div class="sub-problem">(a) What is the highest possible fluoride ion concentration that allows only one solid fluoride salt to be present at equilibrium? Which ion is present in the solid—Ba²⁺ or Ca²⁺?</div>
+            <div class="sub-problem">(b) What fraction of the less soluble ion still remains in solution under the conditions of part (a)?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">The cations in an aqueous solution that contains 0.100 M Hg₂(NO₃)₂ and 0.0500 M Pb(NO₃)₂ are to be separated by taking advantage of the difference in the solubilities of their iodides. Ksp(PbI₂) = 1.4 × 10⁻⁸ and Ksp(Hg₂I₂) = 1.2 × 10⁻²⁸. What should be the concentration of iodide ion for the best separation? In the "best" separation, one of the cations should remain entirely in solution and the other should precipitate as fully as possible.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">The cations in an aqueous solution that contains 0.150 M Ba(NO₃)₂ and 0.0800 M Ca(NO₃)₂ are to be separated by taking advantage of the difference in the solubilities of their sulfates. Ksp(BaSO₄) = 1.1 × 10⁻¹⁰ and Ksp(CaSO₄) = 2.4 × 10⁻⁵. What should be the concentration of sulfate ion for the best separation?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">Calculate the [Zn²⁺] in a solution that is in equilibrium with ZnS(s) and in which [H₃O⁺] = 1.0 × 10⁻⁵ M and [H₂S] = 0.10 M.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">Calculate the [Cd²⁺] in a solution that is in equilibrium with CdS(s) and in which [H₃O⁺] = 1.0 × 10⁻³ M and [H₂S] = 0.10 M.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">What is the highest pH at which 0.10 M Fe²⁺ will remain entirely in a solution that is saturated with H₂S at a concentration of [H₂S] = 0.10 M? At this pH, what would be the concentration of Pb²⁺ in equilibrium with solid PbS in this solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">What is the highest pH at which 0.050 M Mn²⁺ will remain entirely in a solution that is saturated with H₂S at a concentration of [H₂S] = 0.10 M? At this pH, what would be the concentration of Cd²⁺ in equilibrium with solid CdS in this solution?</div>
+        </div>
+
+        <div class="section-title">Additional Problems</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">Write a chemical equation for the dissolution of mercury(I) chloride in water, and give its solubility product expression.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">Magnesium ammonium phosphate has the formula MgNH₄PO₄·6H₂O. It is only slightly soluble in water (its Ksp is 2.3 × 10⁻¹³). Write a chemical equation and the corresponding equilibrium law for the dissolution of this compound in water.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">Soluble barium compounds are poisonous, but barium sulfate is routinely ingested as a suspended solid in a "barium cocktail" to improve the contrast in X-ray images. Calculate the concentration of dissolved barium per liter of water in equilibrium with solid barium sulfate.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">A saturated aqueous solution of silver perchlorate (AgClO₄) contains 84.8% by mass AgClO₄, but a saturated solution of AgClO₄ in 60% aqueous perchloric acid contains only 5.63% by mass AgClO₄. Explain this large difference using chemical equations.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">Suppose 140 mL of 0.0010 M Sr(NO₃)₂ is mixed with enough 0.0050 M NaF to make 1.00 L of solution. Will SrF₂(s) (Ksp = 2.8 × 10⁻⁹) precipitate at equilibrium? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">The concentration of calcium ion in a town's supply of drinking water is 0.0020 M. (This water is referred to as hard water because it contains such a large concentration of Ca²⁺.) Suppose the water is to be fluoridated by the addition of NaF for the purpose of reducing tooth decay. What is the maximum concentration of fluoride ion that can be achieved in the water before precipitation of CaF₂ begins? Will the water supply attain the level of fluoride ion recommended by the U.S. Public Health Service, about 5 × 10⁻⁵ M (1 mg fluorine per liter)?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">Suppose that 150 mL of 0.200 M K₂CO₃ and 100 mL of 0.400 M Ca(NO₃)₂ are mixed together. Assume that the volumes are additive, that CaCO₃ is completely insoluble, and that all other substances that might be formed are soluble. Calculate the mass of CaCO₃ precipitated, and calculate the concentrations in the final solution of the four ions that were present initially.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">The solubility of CaCO₃ in water is about 7 mg L⁻¹. Show how one can calculate the solubility product of BaCO₃ from this information and from the fact that when sodium carbonate solution is added slowly to a solution containing equimolar concentrations of Ca²⁺ and Ba²⁺, no CaCO₃ is formed until about 90% of the Ba²⁺ has been precipitated as BaCO₃.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">It is sometimes asserted that carbonates are soluble in strong acids because a gas is formed that escapes (CO₂). Suppose that CO₂ were extremely soluble in water (as, for example, ammonia is) and therefore it did not leave the site of the reaction, but that otherwise, its chemistry was unchanged. Would calcium carbonate be soluble in strong acids? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">The solubility products of Fe(OH)₃ and Ni(OH)₂ are about 10⁻³⁶ and 6 × 10⁻¹⁸, respectively. Find the approximate pH range suitable for the separation of Fe³⁺ and Ni²⁺ by precipitation of Fe(OH)₃ from a solution initially 0.01 M in each ion, as follows:</div>
+            <div class="sub-problem">(a) Calculate the lowest pH at which all but 0.1% of the Fe³⁺ will be precipitated as Fe(OH)₃.</div>
+            <div class="sub-problem">(b) Calculate the highest pH possible without precipitation of Ni(OH)₂.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">The two solids CuBr(s) and AgBr(s) are only very slightly soluble in water: Ksp(CuBr) = 4.2 × 10⁻⁸ and Ksp(AgBr) = 7.7 × 10⁻¹³. Some CuBr(s) and AgBr(s) are both mixed into a quantity of water that is then stirred until it is saturated with respect to both solutes. Next, a small amount of KBr is added and dissolves completely. Compute the ratio of [Cu⁺] to [Ag⁺] after the system reestablishes equilibrium.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">The two salts BaCl₂ and Ag₂SO₄ are both far more soluble in water than either BaSO₄ (Ksp = 1.1 × 10⁻¹⁰) or AgCl (Ksp = 1.6 × 10⁻¹⁰) at 25°C. Suppose 50.0 mL of 0.040 M BaCl₂(aq) is added to 50.0 mL of 0.020 M Ag₂SO₄(aq). Calculate the concentrations of SO₄²⁻(aq), Cl⁻(aq), Ba²⁺(aq), and Ag⁺(aq) that remain in solution at equilibrium.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">The Mohr method is a technique for determining the amount of chloride ion in an unknown sample. It is based on the difference in solubility between silver chloride (AgCl; Ksp = 1.6 × 10⁻¹⁰) and silver chromate (Ag₂CrO₄; Ksp = 1.9 × 10⁻¹²). In using this method, one adds a small amount of chromate ion to a solution with unknown chloride concentration. By measuring the volume of AgNO₃ added before the appearance of the red silver chromate, one can determine the amount of Cl⁻ originally present. Suppose we have a solution that is 0.100 M in Cl⁻ and 0.00250 M in CrO₄²⁻. If we add 0.100 M AgNO₃ solution drop by drop, will AgCl or Ag₂CrO₄ precipitate first? When Ag₂CrO₄(s) first appears, what fraction of the Cl⁻ originally present remains in solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">Oxide ion, like sulfide ion, is a strong base. Write an equation for the dissolution of CaO in water and give its equilibrium constant expression. Write the corresponding equation for the dissolution of CaO in an aqueous solution of a strong acid, and relate its equilibrium constant to the previous one.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">Water that has been saturated with magnesia (MgO) at 25°C has a pH of 10.16. Write a balanced chemical equation for the equilibrium between MgO(s) and the ions it furnishes in aqueous solution, and calculate the equilibrium constant at 25°C. What is the solubility, in moles per liter, of MgO in water?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">To 1.00 L of a 0.100 M AgNO₃ solution is added an excess of sodium chloride. Then 1.00 L of 0.500 M NH₃(aq) is added. Finally, sufficient nitric acid is added until the pH of the resulting solution is 1.0. Write balanced equations for the reactions that take place (if any) at each of three steps in this process.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">Only about 0.16 mg of AgBr(s) will dissolve in 1.0 L of water (this volume of solid is smaller than the head of a pin). In a solution of ammonia that contains 0.10 mol ammonia per liter of water, there are about 555 water molecules for every molecule of ammonia. However, more than 400 times as much AgBr (68 mg) will dissolve in this solution as in plain water. Explain how such a tiny change in the composition of the solution can have such a large effect on the solubility of AgBr.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 74</div>
+            <div class="problem-text">(a) Calculate the solubility of calcium oxalate (CaC₂O₄) in 1.0 M oxalic acid (H₂C₂O₄) at 25°C, using the two acid ionization constants for oxalic acid from Table 15.2 and the solubility product Ksp = 2.6 × 10⁻⁹ for CaC₂O₄.</div>
+            <div class="sub-problem">(b) Calculate the solubility of calcium oxalate in pure water at 25°C.</div>
+            <div class="sub-problem">(c) Account for the difference between the results of (a) and (b).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 75</div>
+            <div class="problem-text">When 6 M HCl is added to solid CdS, some of the solid dissolves to give the complex ion CdCl₄²⁻(aq).</div>
+            <div class="sub-problem">(a) Write a balanced equation for the reaction that occurs.</div>
+            <div class="sub-problem">(b) Use data from Tables 15.2 and 16.5 and the formation constant of CdCl₄²⁻ (Kf = 8 × 10²) to calculate the equilibrium constant for the reaction of part (a).</div>
+            <div class="sub-problem">(c) What is the molar solubility of CdS per liter of 6 M HCl?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 76</div>
+            <div class="problem-text">Using data from Table 16.3, calculate the concentrations of Hg²⁺(aq), HgCl⁺(aq), and HgCl₂(aq) that result when 1.00 L of a 0.100 M Hg(NO₃)₂ solution is mixed with an equal volume of a 0.100 M HgCl₂ solution.</div>
+            <div class="note">Hint: Use the analogy with amphoteric equilibria discussed in Section 10.8.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 77</div>
+            <div class="problem-text">Calculate the concentration of Cu²⁺(aq) in a solution that contains 0.020 mol of CuCl₂ and 0.100 mol of NaCN in 1.0 L. Cu²⁺(aq) + 4CN⁻(aq) ⇌ Cu(CN)₄²⁻(aq), K = 2.0 × 10³⁰.</div>
+            <div class="note">Hint: Do not overlook the reaction of CN⁻ with water to give HCN.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 78</div>
+            <div class="problem-text">An aqueous solution of K₂[Pt(OH)₆] has a pH greater than 7. Explain this fact by writing an equation showing the Pt(OH)₆²⁻ ion acting as a Brønsted–Lowry base and accepting a hydrogen ion from water.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 79</div>
+            <div class="problem-text">In Example 16.9 we included only the first acid dissociation Ka1 of a 0.100 M aqueous solution of Fe(H₂O)₆³⁺. Subsequent dissociation can also occur, with Ka2 = 2.0 × 10⁻⁵, to give Fe(H₂O)₄(OH)₂⁺.</div>
+            <div class="sub-problem">(a) Calculate the concentration of Fe(H₂O)₄(OH)₂⁺ at equilibrium. Does the pH change significantly when this second dissociation is taken into account?</div>
+            <div class="sub-problem">(b) We can describe the same reaction as the dissociation of a complex ion Fe(OH)₂⁺ to Fe³⁺ and two OH⁻ ions. Calculate Kf, the formation constant for Fe(OH)₂⁺.</div>
+        </div>
+
+        <div class="section-title">Cumulative Problems</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 80</div>
+            <div class="problem-text">The volume of a certain saturated solution is greater than the sum of the volumes of the water and salt from which it is made. Predict the effect of increased pressure on the solubility of this salt.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 81</div>
+            <div class="problem-text">Codeine has the molecular formula C₁₈H₂₁NO₃. It is soluble in water to the extent of 1.00 g per 120 mL of water at room temperature and 1.00 g per 60 mL of water at 80°C. Compute the molal solubility (in mol kg⁻¹) at both temperatures, taking the density of water to be fixed at 1.00 g cm⁻³. Is the dissolution of codeine in water endothermic or exothermic?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 82</div>
+            <div class="problem-text">Suppose 1.44 L of a saturated solution of strontium carbonate (SrCO₃) in boiling water at 100°C is prepared. The solution is then strongly acidified and shaken to drive off all the gaseous CO₂ that forms. The volume of this gas (at a temperature of 100°C and a partial pressure of 0.972 atm) is measured to be 0.20 L (200 mL).</div>
+            <div class="sub-problem">(a) Calculate the molar solubility of SrCO₃ in water at 100°C.</div>
+            <div class="sub-problem">(b) Estimate the solubility product constant Ksp of SrCO₃ at this temperature.</div>
+            <div class="sub-problem">(c) Explain why the actual Ksp at this temperature may be lower than you predicted in part (b).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 83</div>
+            <div class="problem-text">A buffer is prepared by adding 50.0 mL of 0.15 M HNO₃(aq) to 100.0 mL of 0.12 M NaHCOO(aq) (sodium formate). Calculate the solubility of CaF₂(s) in this solution.</div>
+        </div>
+
+        <footer style="text-align: center; padding: 30px 20px; margin-top: 50px; border-top: 1px solid var(--color-border); color: var(--color-text-secondary); font-size: 0.9rem;">
+            <p><strong>End of Problems</strong></p>
+            <p>Note: This problem set is for educational purposes in high school chemistry education.</p>
+        </footer>
+    </div>
+</body>
+</html>
+

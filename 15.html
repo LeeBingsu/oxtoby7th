@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 15: Acid-Base Equilibria - 120 Problems</title>
+    <style>
+        :root {
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #ffffff;
+            --color-text-primary: #111827;
+            --color-text-secondary: #374151;
+            --color-border: rgba(17, 24, 39, 0.18);
+            --color-accent: #218085;
+
+            --work-lines: 5;
+            --work-line-height: 1.6em;
+            --work-pad-y: 10px;
+            --work-pad-x: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 36px;
+        }
+
+        header {
+            text-align: left;
+            padding: 0 0 18px 0;
+            border-bottom: 2px solid var(--color-accent);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--color-accent);
+            margin-bottom: 6px;
+            letter-spacing: 0.3px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            color: var(--color-accent);
+            margin: 34px 0 14px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .problem {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-left: 5px solid var(--color-accent);
+            padding: 18px 18px 16px 18px;
+            margin-bottom: 18px;
+            border-radius: 10px;
+        }
+
+        .problem::after {
+            content: "풀이:\A";
+            white-space: pre;
+            display: block;
+            margin-top: 12px;
+            padding: var(--work-pad-y) var(--work-pad-x);
+            min-height: calc(var(--work-lines) * var(--work-line-height) + (var(--work-pad-y) * 2) + 1.2em);
+            border: 1px dashed var(--color-border);
+            border-radius: 8px;
+            color: #6b7280;
+            font-weight: 600;
+            background:
+                repeating-linear-gradient(
+                    to bottom,
+                    transparent 0,
+                    transparent calc(var(--work-line-height) - 1px),
+                    rgba(17, 24, 39, 0.10) calc(var(--work-line-height) - 1px),
+                    rgba(17, 24, 39, 0.10) var(--work-line-height)
+                );
+            background-position: 0 1.9em;
+        }
+
+        .problem-number {
+            font-weight: 800;
+            color: var(--color-accent);
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 10px;
+        }
+
+        .sub-problem {
+            margin-left: 16px;
+            margin-top: 6px;
+            color: var(--color-text-primary);
+        }
+
+        .equation {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            background: rgba(33, 128, 133, 0.08);
+            border: 1px solid rgba(33, 128, 133, 0.25);
+            padding: 10px 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #0f172a;
+        }
+
+        .note {
+            font-style: italic;
+            color: #4b5563;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 22px; }
+            h1 { font-size: 1.6rem; }
+            .problem { padding: 14px; }
+        }
+
+        @media print {
+            body { padding: 0; }
+            .container {
+                border: none;
+                padding: 16px;
+            }
+            :root {
+                --work-lines: 6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHAPTER 15</h1>
+            <div class="subtitle">Acid-Base Equilibria | 교육용 문제집 | 120 Problems</div>
+        </header>
+
+        <div class="section-title">Classifications of Acids and Bases</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">Which of the following can act as Brønsted–Lowry acids? Give the formula of the conjugate Brønsted–Lowry base for each of them.</div>
+            <div class="sub-problem">(a) Cl⁻</div>
+            <div class="sub-problem">(b) HSO₄⁻</div>
+            <div class="sub-problem">(c) NH₄⁺</div>
+            <div class="sub-problem">(d) NH₃</div>
+            <div class="sub-problem">(e) H₂O</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">Which of the following can act as Brønsted–Lowry bases? Give the formula of the conjugate Brønsted–Lowry acid for each of them.</div>
+            <div class="sub-problem">(a) F⁻</div>
+            <div class="sub-problem">(b) SO₄²⁻</div>
+            <div class="sub-problem">(c) O²⁻</div>
+            <div class="sub-problem">(d) OH⁻</div>
+            <div class="sub-problem">(e) H₂O</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">Lemon juice contains citric acid (C₆H₈O₇). What species serves as a base when lemon juice is mixed with baking soda (sodium hydrogen carbonate) during the preparation of some lemon cookies?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">A treatment recommended in case of accidental swallowing of ammonia-containing cleanser is to drink large amounts of diluted vinegar. Write an equation for the chemical reaction on which this procedure depends.</div>
+        </div>
+
+        <div class="section-title">Lewis Acids and Bases</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">An important step in many industrial processes is the slaking of lime, in which water is added to calcium oxide to make calcium hydroxide.</div>
+            <div class="sub-problem">(a) Write the balanced equation for this process.</div>
+            <div class="sub-problem">(b) Can this be considered a Lewis acid–base reaction? If so, what is the Lewis acid and what is the Lewis base?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">Silica (SiO₂) is an impurity that must be removed from a metal oxide or sulfide ore when the ore is being reduced to elemental metal. To do this, lime (CaO) is added. It reacts with the silica to form a slag of calcium silicate (CaSiO₃), which can be separated and removed from the ore.</div>
+            <div class="sub-problem">(a) Write the balanced equation for this process.</div>
+            <div class="sub-problem">(b) Can this be considered a Lewis acid–base reaction? If so, what is the Lewis acid and what is the Lewis base?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">Chemists working with fluorine and its compounds sometimes find it helpful to think in terms of acid–base reactions in which the fluoride ion (F⁻) is donated and accepted.</div>
+            <div class="sub-problem">(a) Would the acid in this system be the fluoride donor or fluoride acceptor?</div>
+            <div class="sub-problem">(b) Identify the acid and base in each of these reactions: ClF₃ + BF₃ → ClF₂⁺·BF₄⁻ and TiF₄ + 2 KF → K₂[TiF₆]</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">Researchers working with glasses often think of acid–base reactions in terms of oxide donors and oxide acceptors. The oxide ion is O²⁻.</div>
+            <div class="sub-problem">(a) In this system, is the base the oxide donor or the oxide acceptor?</div>
+            <div class="sub-problem">(b) Identify the acid and base in each of these reactions: CaO + SiO₂ → Ca₂SiO₄, Ca₂SiO₄ + SiO₂ → 2 CaSiO₃, and Ca₂SiO₄ + CaO → Ca₃SiO₅</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">Identify each of the following oxides as an acid or base anhydride. Write the chemical formula and give the name of the acid or base formed upon reaction with water.</div>
+            <div class="sub-problem">(a) MgO</div>
+            <div class="sub-problem">(b) Cl₂O</div>
+            <div class="sub-problem">(c) SO₃</div>
+            <div class="sub-problem">(d) Cs₂O</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">Write the chemical formula and give the name of the anhydride corresponding to each of the following acids or bases, and identify it as an acid or base anhydride.</div>
+            <div class="sub-problem">(a) H₃AsO₄</div>
+            <div class="sub-problem">(b) H₂MoO₄</div>
+            <div class="sub-problem">(c) RbOH</div>
+            <div class="sub-problem">(d) H₂SO₃</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">Tin(II) oxide is amphoteric. Write balanced chemical equations for its reactions with an aqueous solution of hydrochloric acid and with an aqueous solution of sodium hydroxide. (Note: The hydroxide complex ion of tin(II) is [Sn(OH)₃]⁻.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">Zinc oxide is amphoteric. Write balanced chemical equations for its reactions with an aqueous solution of hydrochloric acid and with an aqueous solution of sodium hydroxide. (Note: The hydroxide complex ion of zinc is [Zn(OH)₄]²⁻.)</div>
+        </div>
+
+        <div class="section-title">Properties of Acids and Bases in Aqueous Solutions</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">The concentration of H₃O⁺ in a sample of wine is 2.0 × 10⁻⁴ M. Calculate the pH of the wine.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">The concentration of OH⁻ in a solution of household bleach is 3.6 × 10⁻² M. Calculate the pH of the bleach.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">The pH of normal human urine is in the range of 5.5 to 6.5. Compute the range of the H₃O⁺ concentration and the range of the OH⁻ concentration in normal urine.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">The pH of normal human blood is in the range of 7.35 to 7.45. Compute the range of the concentration of H₃O⁺ and the range of the OH⁻ concentration in normal blood.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">The pKw of seawater at 25°C is 13.776. This differs from the usual pKw of 14.00 at this temperature because dissolved salts make seawater a nonideal solution. If the pH in seawater is 8.00, what are the concentrations of H₃O⁺ and OH⁻ in seawater at 25°C?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">At body temperature (98.6°F = 37.0°C), Kw has the value 2.4 × 10⁻¹⁴. If the pH of blood is 7.4 under these conditions, what are the concentrations of H₃O⁺ and OH⁻?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">When placed in water, potassium starts to react instantly and continues to react with great vigor. On the basis of this information, select the better of the following two equations to represent the reaction: 2 K(s) + 2 H₂O(ℓ) → H₂(g) + 2 KOH(aq) or K(s) + H₂O(ℓ) → KOH(aq) + H₃O⁺(aq). State the reason for your choice.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">Molecules of t-butyl chloride, (CH₃)₃CCl, react very slowly when mixed with water at low pH to give t-butyl alcohol, (CH₃)₃COH. When the pH is raised, the reaction takes place rapidly. Write an equation or equations to explain these facts.</div>
+        </div>
+
+        <div class="section-title">Acid and Base Strength</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">Ephedrine (C₁₀H₁₅ON) is a base that is used in nasal sprays as a decongestant.</div>
+            <div class="sub-problem">(a) Write an equation for its equilibrium reaction with water.</div>
+            <div class="sub-problem">(b) The Kb for ephedrine is 1.4 × 10⁻⁴. Calculate the Ka for its conjugate acid.</div>
+            <div class="sub-problem">(c) Is ephedrine a weaker or a stronger base than ammonia?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">Niacin (C₅H₄NCOOH), one of the B vitamins, is an acid.</div>
+            <div class="sub-problem">(a) Write an equation for its equilibrium reaction with water.</div>
+            <div class="sub-problem">(b) The Ka for niacin is 1.5 × 10⁻⁵. Calculate the Kb for its conjugate base.</div>
+            <div class="sub-problem">(c) Is the conjugate base of niacin a stronger or a weaker base than pyridine, C₅H₅N?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">Use the data in Table 15.2 to determine the equilibrium constant for the reaction: HClO₂(aq) + NO₂⁻(aq) ⇌ HNO₂(aq) + ClO₂⁻(aq). Identify the stronger Brønsted–Lowry acid and the stronger Brønsted–Lowry base.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">Use the data in Table 15.2 to determine the equilibrium constant for the reaction: HPO₄²⁻ + HCO₃⁻ ⇌ PO₄³⁻ + H₂CO₃. Identify the stronger Brønsted–Lowry acid and the stronger Brønsted–Lowry base.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">(a) Which is the stronger acid—the acidic form of the indicator bromocresol green or the acidic form of methyl orange? (b) A solution is prepared in which bromocresol green is green and methyl orange is orange. Estimate the pH of this solution.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">(a) Which is the stronger base—the basic form of the indicator cresol red or the basic form of thymolphthalein? (b) A solution is prepared in which cresol red is red and thymolphthalein is colorless. Estimate the pH of this solution.</div>
+        </div>
+
+        <div class="section-title">Equilibria Involving Weak Acids and Bases</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">Aspirin is acetylsalicylic acid, HC₉H₇O₄, which has a Ka of 3.0 × 10⁻⁴. Calculate the pH of a solution made by dissolving 0.65 g of acetylsalicylic acid in water and diluting to 50.0 mL.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">Vitamin C is ascorbic acid (HC₆H₇O₆), for which Ka is 8.0 × 10⁻⁵. Calculate the pH of a solution made by dissolving a 500-mg tablet of pure vitamin C in water and diluting to 100 mL.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">(a) Calculate the pH of a 0.20 M solution of benzoic acid at 25°C. (b) How many moles of acetic acid must be dissolved per liter of water to obtain the same pH as that from part (a)?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">(a) Calculate the pH of a 0.35 M solution of propionic acid at 25°C. (b) How many moles of formic acid must be dissolved per liter of water to obtain the same pH as that from part (a)?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">Iodic acid (HIO₃) is fairly strong for a weak acid, having a Ka equal to 0.16 at 25°C. Compute the pH of a 0.100 M solution of HIO₃.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">At 25°C, the Ka of pentafluorobenzoic acid (C₆F₅COOH) is 0.033. Suppose 0.100 mol of pentafluorobenzoic acid is dissolved in 1.00 L of water. What is the pH of this solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">Papaverine hydrochloride (papH⁺Cl⁻) is a drug used as a muscle relaxant. It is a weak acid. At 25°C, a 0.205 M solution of papH⁺Cl⁻ has a pH of 3.31. Compute the Ka of the papH⁺ ion.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">The unstable weak acid 2-germaacetic acid (GeH₃COOH) is derived structurally from acetic acid (CH₃COOH) by having a germanium atom replace one of the carbon atoms. At 25°C, a 0.050 M solution of 2-germaacetic acid has a pH of 2.42. Compute the Ka of 2-germaacetic acid and compare it with that of acetic acid.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">Morphine is a weak base for which Kb is 8 × 10⁻⁷. Calculate the pH of a solution made by dissolving 0.0400 mol of morphine in water and diluting to 600.0 mL.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">Methylamine is a weak base for which Kb is 4.4 × 10⁻⁴. Calculate the pH of a solution made by dissolving 0.070 mol of methylamine in water and diluting to 800.0 mL.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">The pH at 25°C of an aqueous solution of hydrofluoric acid, HF, is 2.13. Calculate the concentration of HF in this solution, in moles per liter.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">The pH at 25°C of an aqueous solution of sodium cyanide (NaCN) is 11.50. Calculate the concentration of CN⁻ in this solution, in moles per liter.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">You have 50.00 mL of a solution that is 0.100 M in acetic acid, and you neutralize it by adding 50.00 mL of a solution that is 0.100 M in sodium hydroxide. The pH of the resulting solution is not 7.00. Explain why. Is the pH of the solution greater than or less than 7?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">A 75.00-mL portion of a solution that is 0.0460 M in HClO₄ is treated with 150.00 mL of 0.0230 M KOH(aq). Is the pH of the resulting mixture greater than, less than, or equal to 7.0? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">Suppose a 0.100 M solution of each of the following substances is prepared. Rank the pH of the resulting solutions from lowest to highest: NH₄Br, NaOH, KI, NaCH₃COO, HCl.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">Suppose a 0.100 M solution of each of the following substances is prepared. Rank the pH of the resulting solutions from lowest to highest: KF, NH₄I, HBr, NaCl, LiOH.</div>
+        </div>
+
+        <div class="section-title">Buffer Solutions</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">"Tris" is short for tris(hydroxymethyl)aminomethane. This weak base is widely used in biochemical research for the preparation of buffers. It offers low toxicity and a pKb (5.92 at 25°C) that is convenient for the control of pH in clinical applications. A buffer is prepared by mixing 0.050 mol of tris with 0.025 mol of HCl in a volume of 2.00 L. Compute the pH of the solution.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">"Bis" is short for bis(hydroxymethyl)aminomethane. It is a weak base that is closely related to tris (see problem 43) and has similar properties and uses. Its pKb is 8.8 at 25°C. A buffer is prepared by mixing 0.050 mol of bis with 0.025 mol of HCl in a volume of 2.00 L (the same proportions as in the preceding problem). Compute the pH of the solution.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">(a) Calculate the pH in a solution prepared by dissolving 0.050 mol of acetic acid and 0.020 mol of sodium acetate in water and adjusting the volume to 500 mL. (b) Suppose 0.010 mol of NaOH is added to the buffer from part (a). Calculate the pH of the solution that results.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">Sulfanilic acid (NH₂C₆H₄SO₃H) is used in manufacturing dyes. It ionizes in water according to the equilibrium equation NH₂C₆H₄SO₃H(aq) + H₂O(ℓ) ⇌ NH₂C₆H₄SO₃⁻(aq) + H₃O⁺(aq), Ka = 5.9 × 10⁻⁴. A buffer is prepared by dissolving 0.20 mol of sulfanilic acid and 0.13 mol of sodium sulfanilate (NaNH₂C₆H₄SO₃) in water and diluting to 1.00 L. (a) Compute the pH of the solution. (b) Suppose 0.040 mol of HCl is added to the buffer. Calculate the pH of the solution that results.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">A physician wishes to prepare a buffer solution at pH = 3.82 that efficiently resists changes in pH yet contains only small concentrations of the buffering agents. Determine which one of the following weak acids, together with its sodium salt, would probably be best to use: m-chlorobenzoic acid, Ka = 1.04 × 10⁻⁴; p-chlorocinnamic acid, Ka = 3.89 × 10⁻⁵; 2,5-dihydroxybenzoic acid, Ka = 1.08 × 10⁻³; or acetoacetic acid, Ka = 2.62 × 10⁻⁴. Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">Suppose you were designing a buffer system for imitation blood and wanted the buffer to maintain the blood at the realistic pH of 7.40. All other things being equal, which buffer system would be preferable: H₂CO₃/HCO₃⁻ or H₂PO₄⁻/HPO₄²⁻? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">You have at your disposal an ample quantity of a solution of 0.0500 M NaOH and 500 mL of a solution of 0.100 M formic acid (HCOOH). How much of the NaOH solution should be added to the acid solution to produce a buffer of pH 4.00?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">You have at your disposal an ample quantity of a solution of 0.100 M HCl and 400 mL of a solution of 0.0800 M NaCN. How much of the HCl solution should be added to the NaCN solution to produce a buffer of pH 9.60?</div>
+        </div>
+
+        <div class="section-title">Acid-Base Titration Curves</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">Suppose 100.0 mL of a 0.3750 M solution of the strong base Ba(OH)₂ is titrated with a 0.4540 M solution of the strong acid HClO₄. The neutralization reaction is Ba(OH)₂(aq) + 2 HClO₄(aq) → Ba(ClO₄)₂(aq) + 2 H₂O(ℓ). Compute the pH of the titration solution before any acid is added, when the titration is 1.00 mL short of the equivalence point, when the titration is at the equivalence point, and when the titration is 1.00 mL past the equivalence point. (Note: Each mole of Ba(OH)₂ gives two moles of OH⁻ in solution.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">A sample containing 26.38 mL of 0.1439 M HBr is titrated with a solution of NaOH having a molarity of 0.1219 M. Compute the pH of the titration solution before any base is added, when the titration is 1.00 mL short of the equivalence point, when the titration is at the equivalence point, and when the titration is 1.00 mL past the equivalence point.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">A sample containing 50.00 mL of 0.1000 M hydrazoic acid (HN₃) is being titrated with 0.1000 M sodium hydroxide. Compute the pH before any base is added, after the addition of 25.00 mL of the base, after the addition of 50.00 mL of the base, and after the addition of 51.00 mL of the base.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">A sample of 50.00 mL of 0.1000 M aqueous solution of chloroacetic acid, CH₂ClCOOH (Ka = 1.4 × 10⁻³), is titrated with a 0.1000 M NaOH solution. Calculate the pH at the following stages in the titration, and plot the titration curve: 0, 5.00, 25.00, 49.00, 49.90, 50.00, 50.10, and 55.00 mL NaOH.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">The base ionization constant of ethylamine (C₂H₅NH₂) in aqueous solution is Kb = 6.41 × 10⁻⁴ at 25°C. Calculate the pH for the titration of 40.00 mL of a 0.1000 M solution of ethylamine with 0.1000 M HCl at the following volumes of added HCl: 0, 5.00, 20.00, 39.90, 40.00, 40.10, and 50.00 mL.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">Ammonia is a weak base with a Kb of 1.8 × 10⁻⁵. A 140.0-mL sample of a 0.175 M solution of aqueous ammonia is titrated with a 0.106 M solution of the strong acid HCl. The reaction is NH₃(aq) + HCl(aq) → NH₄⁺(aq) + Cl⁻(aq). Compute the pH of the titration solution before any acid is added, when the titration is at the half-equivalence point, when the titration is at the equivalence point, and when the titration is 1.00 mL past the equivalence point.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">Sodium benzoate, the sodium salt of benzoic acid, is used as a food preservative. A sample containing solid sodium benzoate mixed with sodium chloride is dissolved in 50.0 mL of 0.500 M HCl, giving an acidic solution (benzoic acid mixed with HCl). This mixture is then titrated with 0.393 M NaOH. After the addition of 46.50 mL of the NaOH solution, the pH is found to be 8.2. At this point, the addition of one more drop (0.02 mL) of NaOH raises the pH to 9.3. Calculate the mass of sodium benzoate (NaC₆H₅COO) in the original sample. (Hint: At the equivalence point, the total number of moles of acid [here HCl] equals the total number of moles of base [here, both NaOH and NaC₆H₅COO].)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">An antacid tablet (such as Tums or Rolaids) weighs 1.3259 g. The only acid-neutralizing ingredient in this brand of antacid is CaCO₃. When placed in 12.07 mL of 1.070 M HCl, the tablet fizzes merrily as CO₂(g) is given off. After all of the CO₂ has left the solution, an indicator is added, followed by 11.74 mL of 0.5310 M NaOH. The indicator shows that at this point the solution is definitely basic. Addition of 5.12 mL of 1.070 M HCl makes the solution acidic again. Then 3.17 mL of the 0.5310 M NaOH brings the titration exactly to an endpoint, as signaled by the indicator. Compute the percentage by mass of CaCO₃ in the tablet.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">What is the mass of diethylamine, (C₂H₅)₂NH, in 100.0 mL of an aqueous solution if it requires 15.90 mL of 0.0750 M HCl to titrate it to the equivalence point? What is the pH at the equivalence point if Kb = 3.09 × 10⁻⁴? What would be a suitable indicator for the titration?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">A chemist who works in the process laboratory of the Athabasca Alkali Company makes frequent analyses of ammonia recovered from the Solvay process for making sodium carbonate. What is the pH at the equivalence point if she titrates the aqueous ammonia solution (approximately 0.10 M) with a strong acid of comparable concentration? Select an indicator that would be suitable for the titration.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">If 50.00 mL of a 0.200 M solution of the weak base N-ethylmorpholine (C₆H₁₃NO) is mixed with 8.00 mL of 1.00 M HCl and then diluted to a final volume of 100.0 mL with water, the result is a buffer with a pH of 7.0. Compute the Kb of N-ethylmorpholine.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">The sodium salt of cacodylic acid, a weak acid, has the formula NaO₂As(CH₃)₂·3H₂O. Its molar mass is 214.02 g mol⁻¹. A solution is prepared by mixing 21.40 g of this substance with enough water to make 1.000 L of solution. Then 50.00 mL of the sodium cacodylate solution is mixed with 29.55 mL of 0.100 M HCl and enough water to bring the volume to a total of 100.00 mL. The pH of the solution is 6.00. Determine the Ka of cacodylic acid.</div>
+        </div>
+
+        <div class="section-title">Polyprotic Acids</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">Arsenic acid (H₃AsO₄) is a weak triprotic acid. Given the three acid ionization constants from Table 15.2 and an initial concentration of arsenic acid (before ionization) of 0.1000 M, calculate the equilibrium concentrations of H₃AsO₄, H₂AsO₄⁻, HAsO₄²⁻, AsO₄³⁻, and H₃O⁺.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">Phthalic acid (H₂C₈H₄O₄, abbreviated H₂Ph) is a diprotic acid. Its ionization in water at 25°C takes place in two steps: H₂Ph(aq) + H₂O(ℓ) ⇌ H₃O⁺(aq) + HPh⁻(aq), Ka1 = 1.26 × 10⁻³ and HPh⁻(aq) + H₂O(ℓ) ⇌ H₃O⁺(aq) + Ph²⁻(aq), Ka2 = 3.10 × 10⁻⁶. If 0.0100 mol of phthalic acid is dissolved per liter of water, calculate the equilibrium concentrations of H₂Ph, HPh⁻, Ph²⁻, and H₃O⁺.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">A solution as initially prepared contains 0.050 mol L⁻¹ of phosphate ion (PO₄³⁻) at 25°C. Given the three acid ionization constants from Table 15.2, calculate the equilibrium concentrations of PO₄³⁻, HPO₄²⁻, H₂PO₄⁻, H₃PO₄, and OH⁻.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">Oxalic acid ionizes in two stages in aqueous solution: H₂C₂O₄(aq) + H₂O(ℓ) ⇌ H₃O⁺(aq) + HC₂O₄⁻(aq), Ka1 = 5.9 × 10⁻² and HC₂O₄⁻(aq) + H₂O(ℓ) ⇌ H₃O⁺(aq) + C₂O₄²⁻(aq), Ka2 = 6.4 × 10⁻⁵. Calculate the equilibrium concentrations of C₂O₄²⁻, HC₂O₄⁻, H₂C₂O₄, and OH⁻ in a 0.10 M solution of sodium oxalate (Na₂C₂O₄).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">The pH of a normal raindrop is 5.60. Compute the concentrations of H₂CO₃(aq), HCO₃⁻(aq), and CO₃²⁻(aq) in this raindrop if the total concentration of dissolved carbonates is 1.0 × 10⁻⁵ mol L⁻¹.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">The pH of a drop of acid rain is 4.00. Compute the concentrations of H₂CO₃(aq), HCO₃⁻(aq), and CO₃²⁻(aq) in the acid raindrop if the total concentration of dissolved carbonates is 3.6 × 10⁻⁵ mol L⁻¹.</div>
+        </div>
+
+        <div class="section-title">Organic Acids and Bases: Structure and Reactivity</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">Use data from Table 15.4 to estimate the stabilization (in kJ per mol) associated with substituting a phenyl (—C₆H₅) group for one of the hydrogen atoms in methane. Assume that the effect on the pKa enters entirely through the greater energetic stability of the conjugate base.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">Use data from Table 15.4 to estimate the stabilization (in kJ per mol) associated with substituting a nitro (—NO₂) group for one of the hydrogen atoms in methane. Assume that the effect on the pKa enters entirely through the greater energetic stability of the conjugate base.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">Propionic acid, CH₃CH₂COOH, has a pKa of 4.9. Compare this with the diprotic succinic acid, HOOCCH₂CH₂COOH. Will the pKa1 and pKa2 of succinic acid be larger than or smaller than 4.9?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">Predict the relative magnitudes of the pKa's for a carboxylic acid, RCOOH, a ketone, RCOCH₃, and an amide, RCONH₂.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">Which will be the stronger acid: benzene (C₆H₆) or cyclohexane (C₆H₁₂)? Explain by using resonance Lewis structures.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 74</div>
+            <div class="problem-text">Which will be the stronger acid: propene (CH₂=CHCH₃) or propane (C₃H₈)? Explain by using resonance Lewis structures.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 75</div>
+            <div class="problem-text">For each of the following pairs of molecules, predict which is the stronger acid.</div>
+            <div class="sub-problem">(a) CF₃COOH or CCl₃COOH</div>
+            <div class="sub-problem">(b) CH₂FCH₂CH₂COOH or CH₃CH₂CHFCOOH</div>
+            <div class="sub-problem">(c) C₆H₅COOH or (CH₃)₃C—C₆H₄—COOH</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 76</div>
+            <div class="problem-text">For each of the following pairs of molecules, predict which is the stronger acid.</div>
+            <div class="sub-problem">(a) (CH₃)₃C—C₆H₄—CH₃ or (CH₃)₃C—C₆H₄—COOH</div>
+            <div class="sub-problem">(b) CI₃COOH or CCl₃COOH</div>
+            <div class="sub-problem">(c) CH₃CHClCH₂COOH or CH₃CH₂CHClCOOH</div>
+        </div>
+
+        <div class="section-title">A Deeper Look: Exact Treatment of Acid-Base Equilibria</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 77</div>
+            <div class="problem-text">Thiamine hydrochloride (vitamin B₁ hydrochloride, HC₁₂H₁₇ON₄SCl₂) is a weak acid with Ka = 3.4 × 10⁻⁷. Suppose 3.0 × 10⁻⁵ g of thiamine hydrochloride is dissolved in 1.00 L of water. Calculate the pH of the resulting solution. (Hint: This is a sufficiently dilute solution that the autoionization of water cannot be neglected.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 78</div>
+            <div class="problem-text">A sample of vinegar contains 40.0 g of acetic acid (CH₃COOH) per liter of solution. Suppose 1.00 mL is removed and diluted to 1.00 L, and 1.00 mL of that solution is removed and diluted to 1.00 L. Calculate the pH of the resulting solution. (Hint: This is a sufficiently dilute solution that the autoionization of water cannot be neglected.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 79</div>
+            <div class="problem-text">At 25°C, 50.00 mL of a 0.1000 M solution of maleic acid, a diprotic acid whose ionization constants are Ka1 = 1.42 × 10⁻² and Ka2 = 8.57 × 10⁻⁷, is titrated with a 0.1000 M NaOH solution. Calculate the pH at the following volumes of added base: 0, 5.00, 25.00, 50.00, 75.00, 99.90, 100.00, and 105.00 mL.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 80</div>
+            <div class="problem-text">Quinine (C₂₀H₂₄O₂N₂) is a water-soluble base that ionizes in two stages, with Kb1 = 3.31 × 10⁻⁶ and Kb2 = 1.35 × 10⁻¹⁰, at 25°C. Calculate the pH during the titration of an aqueous solution of 1.622 g of quinine in 100.00 mL of water as a function of the volume of added 0.1000 M HCl solution at the following volumes: 0, 25.00, 50.00, 75.00, 99.90, 100.00, and 105.00 mL.</div>
+        </div>
+
+        <div class="section-title">Additional Problems</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 81</div>
+            <div class="problem-text">Although acetic acid is normally regarded as a weak acid, it is about 34% dissociated in a 10⁻⁴ M solution at 25°C. It is less than 1% dissociated in 1 M solution. Discuss this variation in degree of dissociation with dilution in terms of Le Châtelier's principle, and explain how it is consistent with the supposed constancy of equilibrium constants.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 82</div>
+            <div class="problem-text">Suppose that a 0.10 M aqueous solution of a monoprotic acid HX has just 11 times the conductivity of a 0.0010 M aqueous solution of HX. What is the approximate dissociation constant of HX? (Hint: In thinking about this problem, consider what the ratio of the conductivities would be if HX were a strong acid and if HX were extremely weak, as limiting cases.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 83</div>
+            <div class="problem-text">The ionization constant of chloroacetic acid (ClCH₂COOH) in water is 1.528 × 10⁻³ at 0°C and 1.230 × 10⁻³ at 40°C. Calculate the enthalpy of ionization of the acid in water, assuming that ΔH and ΔS are constant over this range of temperature.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 84</div>
+            <div class="problem-text">The autoionization constant of water (Kw) is 1.139 × 10⁻¹⁵ at 0°C and 9.614 × 10⁻¹⁴ at 60°C.</div>
+            <div class="sub-problem">(a) Calculate the enthalpy of autoionization of water: 2 H₂O(ℓ) ⇌ H₃O⁺(aq) + OH⁻(aq).</div>
+            <div class="sub-problem">(b) Calculate the entropy of autoionization of water.</div>
+            <div class="sub-problem">(c) At what temperature will the pH of pure water be 7.00, from these data?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 85</div>
+            <div class="problem-text">Calculate the concentrations of H₃O⁺ and OH⁻ at 25°C in the following:</div>
+            <div class="sub-problem">(a) Orange juice (pH 2.8)</div>
+            <div class="sub-problem">(b) Tomato juice (pH 3.9)</div>
+            <div class="sub-problem">(c) Milk (pH 4.1)</div>
+            <div class="sub-problem">(d) Borax solution (pH 8.5)</div>
+            <div class="sub-problem">(e) Household ammonia (pH 11.9)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 86</div>
+            <div class="problem-text">Try to choose which of the following is the pH of a 6.44 × 10⁻¹⁰ M Ca(OH)₂(aq) solution, without doing any written calculations: (a) 4.81, (b) 5.11, (c) 7.00, (d) 8.89, (e) 9.19.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 87</div>
+            <div class="problem-text">Cl₂(aq) reacts with H₂O(ℓ) as follows: Cl₂(aq) + H₂O(ℓ) ⇌ H₃O⁺(aq) + Cl⁻(aq) + HOCl(aq). For an experiment to succeed, Cl₂(aq) must be present, but the amount of Cl⁻(aq) in the solution must be minimized. For this purpose, should the pH of the solution be high, low, or neutral? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 88</div>
+            <div class="problem-text">Use the data in Table 15.2 to determine the equilibrium constant for the reaction: H₂PO₄⁻(aq) + CO₃²⁻(aq) ⇌ PO₄³⁻(aq) + HCO₃⁻(aq).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 89</div>
+            <div class="problem-text">The first acid ionization constant of the oxoacid H₃PO₂ is 8 × 10⁻². What molecular structure do you predict for H₃PO₂? Will this acid be monoprotic, diprotic, or triprotic in aqueous solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 90</div>
+            <div class="problem-text">Oxoacids can be formed that involve several central atoms of the same chemical element. An example is H₃P₃O₉, which can be written P₃O₆(OH)₃. (Sodium salts of these polyphosphoric acids are used as "builders" in detergents to improve their cleaning power.) In such a case, we would expect acid strength to correlate approximately with the ratio of the number of lone oxygen atoms to the number of central atoms (this ratio is 6/3 for H₃P₃O₉, for example). Rank the following in order of increasing acid strength: H₃PO₄, H₃P₃O₉, H₄P₂O₆, H₄P₂O₇, H₅P₃O₁₀. Assume that no hydrogen atoms are directly bonded to phosphorus in these compounds.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 91</div>
+            <div class="problem-text">Urea (NH₂CONH₂) is a component of urine. It is a very weak base, having an estimated pKb of 13.8 at room temperature.</div>
+            <div class="sub-problem">(a) Write the formula of the conjugate acid of urea.</div>
+            <div class="sub-problem">(b) Compute the equilibrium concentration of urea in a solution that contains no urea but starts out containing 0.15 mol L⁻¹ of the conjugate acid of urea.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 92</div>
+            <div class="problem-text">Exactly 1.0 L of solution of acetic acid gives the same color with methyl red as 1.0 L of a solution of hydrochloric acid. Which solution will neutralize the greater amount of 0.10 M NaOH(aq)? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 93</div>
+            <div class="problem-text">The Ka for acetic acid drops from 1.76 × 10⁻⁵ at 25°C to 1.63 × 10⁻⁵ at 50°C. Between the same two temperatures, Kw increases from 1.00 × 10⁻¹⁴ to 5.47 × 10⁻¹⁴. At 50°C the density of a 0.10 M solution of acetic acid is 98.81% of its density at 25°C. Will the pH of a 0.10 M solution of acetic acid in water increase, decrease, or remain the same when it is heated from 25°C to 50°C? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 94</div>
+            <div class="problem-text">Calculate the pH of a solution that is prepared by dissolving 0.23 mol of hydrofluoric acid (HF) and 0.57 mol of hypochlorous acid (HClO) in water and diluting to 3.60 L. Also, calculate the equilibrium concentrations of HF, F⁻, HClO, and ClO⁻. (Hint: The pH will be determined by the stronger acid of this pair.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 95</div>
+            <div class="problem-text">For each of the following compounds, indicate whether a 0.100 M aqueous solution is acidic (pH &lt; 7), basic (pH &gt; 7), or neutral (pH = 7): HCl, NH₄Cl, KNO₃, Na₃PO₄, NaCH₃COO.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 96</div>
+            <div class="problem-text">Calculate [H₃O⁺] in a solution that contains 0.100 mol of NH₄CN per liter. NH₄⁺(aq) + H₂O(ℓ) ⇌ H₃O⁺(aq) + NH₃(aq), Ka = 5.6 × 10⁻¹⁰ and HCN(aq) + H₂O(ℓ) ⇌ H₃O⁺(aq) + CN⁻(aq), Ka = 6.17 × 10⁻¹⁰.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 97</div>
+            <div class="problem-text">Discuss the justification for this statement: "Although one does not normally regard NH₄⁺ as an acid, it is actually only slightly weaker as an acid than hydrocyanic acid, HCN, in aqueous solution."</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 98</div>
+            <div class="problem-text">Imagine that you want to do physiological experiments at a pH of 6.0 and the organism with which you are working is sensitive to most available materials other than a certain weak acid, H₂Z, and its sodium salts. Ka1 and Ka2 for H₂Z are 3 × 10⁻¹ M and 5 × 10⁻⁷ M. You have available 1.0 M aqueous H₂Z and 1.0 M NaOH. How much of the NaOH solution should be added to 1.0 L of the acid solution to give a buffer at pH = 6.0?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 99</div>
+            <div class="problem-text">A buffer solution is prepared by mixing 1.00 L of 0.050 M pentafluorobenzoic acid (C₆F₅COOH) and 1.00 L of 0.060 M sodium pentafluorobenzoate (NaC₆F₅COO). The Ka of this weak acid is 0.033. Determine the pH of the buffer solution.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 100</div>
+            <div class="problem-text">A chemist needs to prepare a buffer solution with pH = 10.00 and has both Na₂CO₃ and NaHCO₃ in pure crystalline form. What mass of each should be dissolved in 1.00 L of solution if the combined mass of the two salts is to be 10.0 g?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 101</div>
+            <div class="problem-text">Which of these procedures would not make a pH = 4.75 buffer?</div>
+            <div class="sub-problem">(a) Mix 50.0 mL of 0.10 M acetic acid and 50.0 mL of 0.10 M sodium acetate.</div>
+            <div class="sub-problem">(b) Mix 50.0 mL of 0.20 M acetic acid and 50.0 mL of 0.10 M NaOH.</div>
+            <div class="sub-problem">(c) Start with 50.0 mL of 0.20 M acetic acid and add a solution of strong base until the pH equals 4.75.</div>
+            <div class="sub-problem">(d) Start with 50.0 mL of 0.20 M HCl and add a solution of strong base until the pH equals 4.75.</div>
+            <div class="sub-problem">(e) Start with 100.0 mL of 0.20 M sodium acetate and add 50.0 mL of 0.20 M HCl.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 102</div>
+            <div class="problem-text">It takes 4.71 mL of 0.0410 M NaOH to titrate a 50.00-mL sample of flat (no CO₂) GG's Cola to a pH of 4.9. At this point the addition of one more drop (0.02 mL) of NaOH raises the pH to 6.1. The only acid in GG's Cola is phosphoric acid. Compute the concentration of phosphoric acid in this cola. Assume that the 4.71 mL of base removes only the first hydrogen from the H₃PO₄; that is, assume that the reaction is H₃PO₄(aq) + OH⁻(aq) → H₂O(ℓ) + H₂PO₄⁻(aq).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 103</div>
+            <div class="problem-text">Sodium carbonate exists in various crystalline forms with different amounts of water of crystallization, including Na₂CO₃, Na₂CO₃·10H₂O, and others. The water of crystallization can be driven off by heating; the amount of water removed depends on the temperature and duration of heating. A sample of Na₂CO₃·10H₂O had been heated inadvertently, and it was not known how much water had been removed. A 0.200-g sample of the solid that remained after the heating was dissolved in water, 30.0 mL of 0.100 M NaOH was added, and the CO₂ formed was removed. The solution was acidic; 6.4 mL of 0.200 M NaOH was needed to neutralize the excess acid. What fraction of the water had been driven from the Na₂CO₃·10H₂O?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 104</div>
+            <div class="problem-text">An aqueous solution of sodium carbonate, Na₂CO₃, is titrated with strong acid to a point at which two H⁺ ions have reacted with each carbonate ion.</div>
+            <div class="sub-problem">(a) If 20.0 mL of the carbonate solution reacts with just 40.0 mL of 0.50 M acid, what is the molarity of the carbonate solution?</div>
+            <div class="sub-problem">(b) If the solution contains 5.0 percent by mass sodium carbonate, what is the density of the solution?</div>
+            <div class="sub-problem">(c) Suppose that you wanted to prepare a liter of an identical solution by starting with crystalline sodium carbonate decahydrate, Na₂CO₃·10H₂O, rather than with solid Na₂CO₃ itself. How much of this substance would you need?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 105</div>
+            <div class="problem-text">Three flasks, labeled A, B, and C, contained aqueous solutions of the same pH. It was known that one of the solutions was 1.0 × 10⁻³ M in nitric acid, one was 6 × 10⁻³ M in formic acid, and one was 4 × 10⁻² M in the salt formed by the weak organic base aniline with hydrochloric acid (C₆H₅NH₃Cl). (Formic acid is monoprotic.)</div>
+            <div class="sub-problem">(a) Describe a procedure for identifying the solutions.</div>
+            <div class="sub-problem">(b) Compare qualitatively (on the basis of the preceding information) the strengths of nitric and formic acids with each other and with the acid strength of the anilinium ion, C₆H₅NH₃⁺.</div>
+            <div class="sub-problem">(c) Show how the information given may be used to derive values for Ka for formic acid and Kb for aniline. Derive these values.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 106</div>
+            <div class="problem-text">Novocain, the commonly used local anaesthetic, is a weak base with Kb = 7 × 10⁻⁶ M.</div>
+            <div class="sub-problem">(a) If you had a 0.0200 M solution of Novocain in water, what would be the approximate concentration of OH⁻ and the pH?</div>
+            <div class="sub-problem">(b) Suppose that you wanted to determine the concentration of Novocain in a solution that is about 0.020 M by titration with 0.020 M HCl. Calculate the expected pH at the equivalence point.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 107</div>
+            <div class="problem-text">A 0.1000 M solution of a weak acid, HA, requires 50.00 mL of 0.1000 M NaOH to titrate it to its equivalence point. The pH of the solution is 4.50 when only 40.00 mL of the base has been added.</div>
+            <div class="sub-problem">(a) Calculate the ionization constant Ka of the acid.</div>
+            <div class="sub-problem">(b) Calculate the pH of the solution at the equivalence point.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 108</div>
+            <div class="problem-text">The chief chemist of Victory Vinegar Works, Ltd., interviews two chemists for employment. He states, "Quality control requires that our high-grade vinegar contain 5.00 ± 0.01% acetic acid by mass. How would you analyze our product to ensure that it meets this specification?" Anne Dalton says, "I would titrate a 50.00-mL sample of the vinegar with 1.000 M NaOH, using phenolphthalein to detect the equivalence point to within ±0.02 mL of base." Charlie Cannizzarro says, "I would use a pH meter to determine the pH to ±0.01 pH units and interface it with a computer to print out the mass percentage of acetic acid." Which candidate did the chief chemist hire? Why?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 109</div>
+            <div class="problem-text">Phosphonocarboxylic acid (chemical structure shown in text) effectively inhibits the replication of the herpes virus. Structurally, it is a combination of phosphoric acid and acetic acid. It can donate three protons. The equilibrium constant values are Ka1 = 1.0 × 10⁻², Ka2 = 7.8 × 10⁻⁶, and Ka3 = 2.0 × 10⁻⁹. Enough phosphonocarboxylic acid is added to blood (pH 7.40) to make its total concentration 1.0 × 10⁻⁵ M. The pH of the blood does not change. Determine the concentrations of all four forms of the acid in this mixture.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 110</div>
+            <div class="problem-text">Egg whites contain dissolved carbon dioxide and water, which react together to give carbonic acid (H₂CO₃). In the few days after an egg is laid, it loses carbon dioxide through its shell. Does the pH of the egg white increase or decrease during this period?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 111</div>
+            <div class="problem-text">If you breathe too rapidly (hyperventilate), the concentration of dissolved CO₂ in your blood drops. What effect does this have on the pH of the blood?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 112</div>
+            <div class="problem-text">A reference book states that a saturated aqueous solution of potassium hydrogen tartrate is a buffer with a pH of 3.56. Write two chemical equations that show the buffer action of this solution. (Tartaric acid is a diprotic acid with the formula H₂C₄H₄O₆. Potassium hydrogen tartrate is KHC₄H₄O₆.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 113</div>
+            <div class="problem-text">Glycine, the simplest amino acid, has both an acid group and a basic group in its structure (H₂N—CH₂—COOH). In aqueous solution it exists predominantly as a self-neutralized species called a zwitterion (⁺H₃N—CH₂—COO⁻). The zwitterion therefore behaves both as an acid and as a base, according to the equilibria at 25°C: ⁺H₃N—CH₂—COO⁻(aq) + H₂O(ℓ) ⇌ H₂N—CH₂—COO⁻(aq) + H₃O⁺(aq), Ka = 1.7 × 10⁻¹⁰ and ⁺H₃N—CH₂—COO⁻(aq) + H₂O(ℓ) ⇌ ⁺H₃N—CH₂—COOH(aq) + OH⁻(aq), Kb = 2.2 × 10⁻¹². Calculate the pH of a 0.10 M aqueous solution of glycine at 25°C. (Hint: You may need to take account of the autoionization of water.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 114</div>
+            <div class="problem-text">Use the effect of steric hindrance to predict whether a tertiary amine should be a stronger base than ammonia in aqueous solution. (Hint: Assume that the effect of solvation is greater for ions than for neutral species.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 115</div>
+            <div class="problem-text">Consider the two following nitrophenol structures: p-nitrophenol and m-nitrophenol. Predict which will be the stronger acid. (Hint: Consider possible resonance structures analogous to those given in the text for phenol.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 116</div>
+            <div class="problem-text">Use the data from Table 15.1, together with Le Châtelier's principle, to decide whether the autoionization of water is exothermic or endothermic.</div>
+        </div>
+
+        <div class="section-title">Cumulative Problems</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 117</div>
+            <div class="problem-text">Baking soda (sodium hydrogen carbonate, NaHCO₃) is used in baking because it reacts with acids in foods to form carbonic acid (H₂CO₃), which in turn decomposes to water and carbon dioxide. In a batter the carbon dioxide appears as gas bubbles that cause the bread or cake to rise.</div>
+            <div class="sub-problem">(a) A rule of thumb in cooking is that ½ teaspoon baking soda is neutralized by 1 cup of sour milk. The acid component of sour milk is lactic acid (HC₃H₅O₃). Write an equation for the neutralization reaction.</div>
+            <div class="sub-problem">(b) If the density of baking soda is 2.16 g cm⁻³, calculate the concentration of lactic acid in the sour milk, in moles per liter. Take 1 cup = 236.6 mL = 48 teaspoons.</div>
+            <div class="sub-problem">(c) Calculate the volume of carbon dioxide that is produced at 1 atm pressure and 350°F (177°C) from the reaction of ½ teaspoon of baking soda.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 118</div>
+            <div class="problem-text">Boric acid, B(OH)₃, is an acid that acts differently from the usual Brønsted–Lowry acids. It reacts with water according to B(OH)₃(aq) + H₂O(ℓ) ⇌ B(OH)₄⁻(aq) + H₃O⁺(aq), Ka = 5.8 × 10⁻¹⁰.</div>
+            <div class="sub-problem">(a) Draw Lewis structures for B(OH)₃ and B(OH)₄⁻. Can these be described as Lewis acids or Lewis bases?</div>
+            <div class="sub-problem">(b) Calculate the pH of a 0.20 M solution of B(OH)₃(aq).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 119</div>
+            <div class="problem-text">At 40°C and 1.00 atm pressure, a gaseous monoprotic acid has a density of 1.05 g L⁻¹. After 1.85 g of this gas is dissolved in water and diluted to 450 mL, the pH is measured to be 5.01. Determine the Ka of this acid and use Table 15.2 to identify it.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 120</div>
+            <div class="problem-text">At 25°C, the Henry's law constant for carbon dioxide dissolved in water is 1.8 × 10³ atm. Calculate the pH of water saturated with CO₂(g) at 25°C in Denver, where the barometric pressure is 0.833 atm.</div>
+        </div>
+
+        <footer style="text-align: center; padding: 30px 20px; margin-top: 50px; border-top: 1px solid var(--color-border); color: var(--color-text-secondary); font-size: 0.9rem;">
+            <p><strong>End of Problems</strong></p>
+            <p>Note: This problem set is for educational purposes in high school chemistry education.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
