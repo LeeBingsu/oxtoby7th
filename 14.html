@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 14 - Chemical Equilibrium Problems</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f5f5f0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .section-title {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            margin: 30px 0 20px 0;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .problem {
+            margin-bottom: 40px;
+            padding: 15px;
+            background-color: #fafafa;
+            border-left: 4px solid #3498db;
+        }
+
+        .problem-number {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .problem-text {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .solution-space {
+            border-top: 1px dashed #ccc;
+            margin-top: 15px;
+            padding-top: 10px;
+            min-height: 120px;
+            background-color: white;
+        }
+
+        .solution-space::before {
+            content: "풀이:";
+            color: #7f8c8d;
+            font-style: italic;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .equation {
+            margin: 10px 0;
+            padding: 5px 10px;
+            font-family: 'Courier New', monospace;
+            background-color: #ecf0f1;
+        }
+
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .solution-space {
+                min-height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHAPTER 14 ■ Chemical Equilibrium</h1>
+        
+        <div class="note">
+            <strong>Note:</strong> This problem set is for educational purposes in high school chemistry education, authorized by the instructor.
+        </div>
+
+        <div class="section-title">The Empirical Law of Mass Action</div>
+
+        <div class="problem">
+            <div class="problem-number">1.</div>
+            <div class="problem-text">
+                Write equilibrium expressions for the following gas-phase reactions.<br>
+                (a) 2 H₂(g) ⇌ O₂(g) → 2 H₂O(g)<br>
+                (b) Xe(g) + 3 F₂(g) ⇌ XeF₆(g)<br>
+                (c) 2 C₆H₆(g) + 15 O₂(g) ⇌ 12 CO₂(g) + 6 H₂O(g)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">2.</div>
+            <div class="problem-text">
+                Write equilibrium expressions for the following gas-phase reactions.<br>
+                (a) 2 Cl₂(g) + O₂(g) ⇌ 2 Cl₂O(g)<br>
+                (b) N₂(g) + O₂(g) + Br₂(g) ⇌ 2 NOBr(g)<br>
+                (c) C₃H₈(g) + 5 O₂(g) ⇌ 3 CO₂(g) + 4 H₂O(g)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">3.</div>
+            <div class="problem-text">
+                At a moderately elevated temperature, phosphoryl chloride (POCl₃) can be produced in the vapor phase from the gaseous elements. Write a balanced chemical equation and an equilibrium expression for this system. Note that gaseous phosphorus consists of P₄ molecules at moderate temperatures.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">4.</div>
+            <div class="problem-text">
+                If confined at high temperature, ammonia and oxygen quickly react and come to equilibrium with their products, water vapor and nitrogen oxide. Write a balanced chemical equation and an equilibrium expression for this system.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">5.</div>
+            <div class="problem-text">
+                An important step in the industrial production of hydrogen is the reaction of carbon monoxide with water:<br>
+                <div class="equation">CO(g) + H₂O(g) ⇌ CO₂(g) + H₂(g)</div>
+                (a) Use the law of mass action to write the equilibrium expression for this reaction.<br>
+                (b) At 500°C, the equilibrium constant for this reaction is 3.9. Suppose that the equilibrium partial pressures of CO and H₂O are both 0.10 atm and that of CO₂ is 0.70 atm. Calculate the equilibrium partial pressure of H₂(g).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">6.</div>
+            <div class="problem-text">
+                Phosgene (COCl₂) is an important intermediate in the manufacture of certain plastics. It is produced by the reaction<br>
+                <div class="equation">CO(g) + Cl₂(g) ⇌ COCl₂(g)</div>
+                (a) Use the law of mass action to write the equilibrium expression for this reaction.<br>
+                (b) At 600°C, the equilibrium constant for this reaction is 0.20. Calculate the partial pressure of phosgene in equilibrium with a mixture of CO (at 0.0020 atm) and Cl₂ (at 0.00030 atm).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">7.</div>
+            <div class="problem-text">
+                N₂O₄ is soluble in the solvent cyclohexane; however, dissolution does not prevent N₂O₄ from breaking down to give NO₂ according to the equation<br>
+                <div class="equation">N₂O₄(cyclohexane) ⇌ 2 NO₂(cyclohexane)</div>
+                An effort to compare this solution equilibrium with the similar equilibrium in the gas gave the following actual experimental data at 20°C:<br>
+                [N₂O₄] (mol L⁻¹): 0.190 × 10⁻³, 0.686 × 10⁻³, 1.54 × 10⁻³, 2.55 × 10⁻³, 3.75 × 10⁻³, 7.86 × 10⁻³, 11.9 × 10⁻³<br>
+                [NO₂] (mol L⁻¹): 2.80 × 10⁻³, 5.20 × 10⁻³, 7.26 × 10⁻³, 10.4 × 10⁻³, 11.7 × 10⁻³, 17.3 × 10⁻³, 21.0 × 10⁻³<br>
+                (a) Graph the square of the concentration of NO₂ versus the concentration of N₂O₄.<br>
+                (b) Compute the average equilibrium constant of this reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">8.</div>
+            <div class="problem-text">
+                NO₂ is soluble in carbon tetrachloride (CCl₄). As it dissolves, it dimerizes to give N₂O₄ according to the equation<br>
+                <div class="equation">2 NO₂(CCl₄) ⇌ N₂O₄(CCl₄)</div>
+                <div class="latex-equation">K = [N₂O₄] / [NO₂]²</div>
+                A study of this equilibrium gave the following experimental data at 20°C:
+                
+                <table class="data-table">
+                    <caption>Experimental Data for 2 NO₂ ⇌ N₂O₄ at 20°C</caption>
+                    <thead>
+                        <tr>
+                            <th>Trial</th>
+                            <th>[N₂O₄] (mol L⁻¹)</th>
+                            <th>[NO₂] (mol L⁻¹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>0.192 × 10⁻³</td>
+                            <td>2.68 × 10⁻³</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>0.721 × 10⁻³</td>
+                            <td>4.96 × 10⁻³</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1.61 × 10⁻³</td>
+                            <td>7.39 × 10⁻³</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2.67 × 10⁻³</td>
+                            <td>10.2 × 10⁻³</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>3.95 × 10⁻³</td>
+                            <td>11.0 × 10⁻³</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>7.90 × 10⁻³</td>
+                            <td>16.6 × 10⁻³</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>11.9 × 10⁻³</td>
+                            <td>21.4 × 10⁻³</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                (a) Graph the concentration of N₂O₄ versus the square of the concentration of NO₂.<br>
+                (b) Compute the average equilibrium constant of this reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">9.</div>
+            <div class="problem-text">
+                Using the law of mass action, write the equilibrium expression for each of the following reactions.<br>
+                (a) 8 H₂(g) + S₈(s) ⇌ 8 H₂S(g)<br>
+                (b) C(s) + H₂O(ℓ) + Cl₂(g) ⇌ COCl₂(g) + H₂(g)<br>
+                (c) CaCO₃(s) ⇌ CaO(s) + CO₂(g)<br>
+                (d) 3 C₂H₂(g) ⇌ C₆H₆(ℓ)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">10.</div>
+            <div class="problem-text">
+                Using the law of mass action, write the equilibrium expression for each of the following reactions.<br>
+                (a) 3 C₂H₂(g) + 3 H₂(g) ⇌ C₆H₁₂(ℓ)<br>
+                (b) CO₂(g) + C(s) ⇌ 2 CO(g)<br>
+                (c) CF₄(g) + 2 H₂O(ℓ) ⇌ CO₂(g) + 4 HF(g)<br>
+                (d) K₂NiF₆(s) + TiF₄(s) ⇌ K₂TiF₆(s) + NiF₂(s) + F₂(g)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">11.</div>
+            <div class="problem-text">
+                Using the law of mass action, write the equilibrium expression for each of the following reactions.<br>
+                (a) Zn(s) + 2 Ag⁺(aq) ⇌ Zn²⁺(aq) + 2 Ag(s)<br>
+                (b) VO₄³⁻(aq) + H₂O(ℓ) ⇌ VO₂(OH)₂⁻(aq) + OH⁻(aq)<br>
+                (c) 2 As(OH)₆³⁻(aq) + 6 CO₂(g) ⇌ As₂O₃(s) + 6 HCO₃⁻(aq) + 3 H₂O(ℓ)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">12.</div>
+            <div class="problem-text">
+                Using the law of mass action, write the equilibrium expression for each of the following reactions.<br>
+                (a) 6 I₂⁻(aq) + MnO₄⁻(aq) + 4 H₂O(ℓ) ⇌ 3 I₄²⁻(aq) + MnO₂(s) + 8 OH⁻(aq)<br>
+                (b) 2 Cu²⁺(aq) + 4 I⁻(aq) ⇌ 2 CuI(s) + I₂(aq)<br>
+                (c) ½ O₂(g) + Sn²⁺(aq) + H₂O(ℓ) ⇌ SnO₂(s) + 2 H₃O⁺(aq)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="section-title">Thermodynamic Description of the Equilibrium State</div>
+
+        <div class="problem">
+            <div class="problem-number">13.</div>
+            <div class="problem-text">
+                Calculate ΔG° and the equilibrium constant K at 25°C for the reaction<br>
+                <div class="equation">2 NH₃(g) + 7/2 O₂(g) ⇌ 2 NO₂(g) + 3 H₂O(g)</div>
+                using data in Appendix D.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">14.</div>
+            <div class="problem-text">
+                Write a reaction for the dehydrogenation of gaseous ethane (C₂H₆) to acetylene (C₂H₂). Calculate ΔG° and the equilibrium constant for this reaction at 25°C, using data from Appendix D.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">15.</div>
+            <div class="problem-text">
+                Use the thermodynamic data from Appendix D to calculate the equilibrium constant at 25°C for the following reactions:<br>
+                (a) SO₂(g) + ½ O₂(g) ⇌ SO₃(g)<br>
+                (b) 3 Fe₂O₃(s) ⇌ 2 Fe₃O₄(s) + ½ O₂(g)<br>
+                (c) CuCl₂(s) ⇌ Cu²⁺(aq) + 2 Cl⁻(aq)<br>
+                Write the equilibrium expression for each reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">16.</div>
+            <div class="problem-text">
+                Use the thermodynamic data from Appendix D to calculate equilibrium constants at 25°C for the following reactions.<br>
+                (a) H₂(g) + N₂(g) + 2 O₂(g) ⇌ 2 HNO₂(g)<br>
+                (b) Ca(OH)₂(s) ⇌ CaO(s) + H₂O(g)<br>
+                (c) Zn²⁺(aq) + 4 NH₃(aq) ⇌ Zn(NH₃)₄²⁺(aq)<br>
+                Write the equilibrium expression for each reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="section-title">The Law of Mass Action for Related and Simultaneous Equilibria</div>
+
+        <div class="problem">
+            <div class="problem-number">17.</div>
+            <div class="problem-text">
+                At a certain temperature, the value of the equilibrium constant for the reaction<br>
+                <div class="equation">CS₂(g) + 3 O₂(g) ⇌ CO₂(g) + 2 SO₂(g)</div>
+                is K₁. How is K₁ related to the equilibrium constant K₂ for the related equilibrium<br>
+                <div class="equation">1/3 CS₂(g) + O₂(g) ⇌ 1/3 CO₂(g) + 2/3 SO₂(g)</div>
+                at the same temperature?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">18.</div>
+            <div class="problem-text">
+                At 25°C, the equilibrium constant for the reaction<br>
+                <div class="equation">6 ClO₃F(g) ⇌ 2 ClF(g) + 4 ClO(g) + 7 O₂(g) + 2 F₂(g)</div>
+                is 32.6. Calculate the equilibrium constant at 25°C for the reaction<br>
+                <div class="equation">1/3 ClF(g) + 2/3 ClO(g) + 7/6 O₂(g) + 1/3 F₂(g) ⇌ ClO₃F(g)</div>
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">19.</div>
+            <div class="problem-text">
+                Suppose that K₁ and K₂ are the respective equilibrium constants for the two reactions<br>
+                <div class="equation">XeF₆(g) + H₂O(g) ⇌ XeOF₄(g) + 2 HF(g)</div>
+                <div class="equation">XeO₄(g) + XeF₆(g) ⇌ XeOF₄(g) + XeO₃F₂(g)</div>
+                Give the equilibrium constant for the reaction<br>
+                <div class="equation">XeO₄(g) + 2 HF(g) ⇌ XeO₃F₂(g) + H₂O(g)</div>
+                in terms of K₁ and K₂.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">20.</div>
+            <div class="problem-text">
+                At 1330 K, germanium(II) oxide (GeO) and tungsten(VI) oxide (W₂O₆) are both gases. The following two equilibria are established simultaneously:<br>
+                <div class="equation">2 GeO(g) + W₂O₆(g) ⇌ 2 GeWO₄(g)</div>
+                <div class="equation">GeO(g) + W₂O₆(g) ⇌ GeW₂O₇(g)</div>
+                The equilibrium constants for the two are respectively 7.0 × 10³ and 38 × 10³. Compute K for the reaction<br>
+                <div class="equation">GeO(g) + GeW₂O₇(g) ⇌ 2 GeWO₄(g)</div>
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="section-title">Equilibrium Calculations for Gas-Phase and Heterogeneous Reactions</div>
+
+        <div class="problem">
+            <div class="problem-number">21.</div>
+            <div class="problem-text">
+                At 454 K, Al₂Cl₆(g) reacts to form Al₃Cl₉(g) according to the equation<br>
+                <div class="equation">3 Al₂Cl₆(g) ⇌ 2 Al₃Cl₉(g)</div>
+                In an experiment at this temperature, the equilibrium partial pressure of Al₂Cl₆(g) is 1.00 atm and the equilibrium partial pressure of Al₃Cl₉(g) is 1.02 × 10⁻² atm. Compute the equilibrium constant of the preceding reaction at 454 K.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">22.</div>
+            <div class="problem-text">
+                At 298 K, F₃SSF(g) decomposes partially to SF₂(g). At equilibrium, the partial pressure of SF₂(g) is 1.1 × 10⁻⁴ atm and the partial pressure of F₃SSF is 0.0484 atm.<br>
+                (a) Write a balanced equilibrium equation to represent this reaction.<br>
+                (b) Compute the equilibrium constant corresponding to the equation you wrote.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">23.</div>
+            <div class="problem-text">
+                The compound 1,3-di-t-butylcyclohexane exists in two forms that are known as the chair and boat conformations because their molecular structures resemble those objects. Equilibrium exists between the two forms, represented by the equation<br>
+                <div class="equation">chair ⇌ boat</div>
+                At 580 K, 6.42% of the molecules are in the chair form. Calculate the equilibrium constant for the preceding reaction as written.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">24.</div>
+            <div class="problem-text">
+                At 248°C and a total pressure of 1.000 atm, the fractional dissociation of SbCl₅ is 0.718 for the reaction<br>
+                <div class="equation">SbCl₅(g) ⇌ SbCl₃(g) + Cl₂(g)</div>
+                This means that 718 of every 1000 molecules of SbCl₅ originally present have dissociated. Calculate the equilibrium constant.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">25.</div>
+            <div class="problem-text">
+                Sulfuryl chloride (SO₂Cl₂) is a colorless liquid that boils at 69°C. Above this temperature, the vapors dissociate into sulfur dioxide and chlorine:<br>
+                <div class="equation">SO₂Cl₂(g) ⇌ SO₂(g) + Cl₂(g)</div>
+                This reaction is slow at 100°C, but it is accelerated by the presence of some FeCl₃ (which does not affect the final position of the equilibrium). In an experiment, 3.174 g of SO₂Cl₂(ℓ) and a small amount of solid FeCl₃ are put into an evacuated 1.000-L flask, which is then sealed and heated to 100°C. The total pressure in the flask at that temperature is found to be 1.30 atm.<br>
+                (a) Calculate the partial pressure of each of the three gases present.<br>
+                (b) Calculate the equilibrium constant at this temperature.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">26.</div>
+            <div class="problem-text">
+                A certain amount of NOBr(g) is sealed in a flask, and the temperature is raised to 350 K. The following equilibrium is established:<br>
+                <div class="equation">NOBr(g) ⇌ NO(g) + ½ Br₂(g)</div>
+                The total pressure in the flask when equilibrium is reached at this temperature is 0.675 atm, and the vapor density is 2.219 g L⁻¹.<br>
+                (a) Calculate the partial pressure of each species.<br>
+                (b) Calculate the equilibrium constant at this temperature.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">27.</div>
+            <div class="problem-text">
+                The dehydrogenation of benzyl alcohol to make the flavoring agent benzaldehyde is an equilibrium process described by the equation<br>
+                <div class="equation">C₆H₅CH₂OH(g) ⇌ C₆H₅CHO(g) + H₂(g)</div>
+                At 523 K, the value of its equilibrium constant is K = 0.558.<br>
+                (a) Suppose 1.20 g of benzyl alcohol is placed in a 2.00-L vessel and heated to 523 K. What is the partial pressure of benzaldehyde when equilibrium is attained?<br>
+                (b) What fraction of benzyl alcohol is dissociated into products at equilibrium?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">28.</div>
+            <div class="problem-text">
+                Isopropyl alcohol can dissociate into acetone and hydrogen:<br>
+                <div class="equation">(CH₃)₂CHOH(g) ⇌ (CH₃)₂CO(g) + H₂(g)</div>
+                At 179°C, the equilibrium constant for this dehydrogenation reaction is 0.444.<br>
+                (a) If 10.00 g of isopropyl alcohol is placed in a 10.00-L vessel and heated to 179°C, what is the partial pressure of acetone when equilibrium is attained?<br>
+                (b) What fraction of isopropyl alcohol is dissociated at equilibrium?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">29.</div>
+            <div class="problem-text">
+                A weighed quantity of PCl₅(s) is sealed in a 100.0-cm³ glass bulb to which a pressure gauge is attached. The bulb is heated to 250°C, and the gauge shows that the pressure in the bulb rises to 0.895 atm. At this temperature, the solid PCl₅ is all vaporized and also partially dissociated into Cl₂(g) and PCl₃(g) according to the equation<br>
+                <div class="equation">PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)</div>
+                At 250°C, K = 2.15 for this reaction. Assume that the contents of the bulb are at equilibrium and calculate the partial pressure of the three different chemical species in the vessel.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">30.</div>
+            <div class="problem-text">
+                Suppose 93.0 g of HI(g) is placed in a glass vessel and heated to 1107 K. At this temperature, equilibrium is quickly established between HI(g) and its decomposition products, H₂(g) and I₂(g):<br>
+                <div class="equation">2 HI(g) ⇌ H₂(g) + I₂(g)</div>
+                The equilibrium constant at 1107 K is 0.0259, and the total pressure at equilibrium is observed to equal 6.45 atm. Calculate the equilibrium partial pressures of HI(g), H₂(g), and I₂(g).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">31.</div>
+            <div class="problem-text">
+                The equilibrium constant at 350 K for the reaction<br>
+                <div class="equation">Br₂(g) + I₂(g) ⇌ 2 IBr(g)</div>
+                has a value of 322. Bromine at an initial partial pressure of 0.0500 atm is mixed with iodine at an initial partial pressure of 0.0400 atm and held at 350 K until equilibrium is reached. Calculate the equilibrium partial pressure of each of the gases.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">32.</div>
+            <div class="problem-text">
+                The equilibrium constant for the reaction of fluorine and oxygen to form oxygen difluoride (OF₂) is 40.1 at 298 K:<br>
+                <div class="equation">F₂(g) + ½ O₂(g) ⇌ OF₂(g)</div>
+                Suppose some OF₂ is introduced into an evacuated container at 298 K and allowed to dissociate until its partial pressure reaches an equilibrium value of 1.00 atm. Calculate the equilibrium partial pressures of F₂ and O₂ in the container.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">33.</div>
+            <div class="problem-text">
+                At 25°C, the equilibrium constant for the reaction<br>
+                <div class="equation">N₂(g) + O₂(g) ⇌ 2 NO(g)</div>
+                is 4.2 × 10⁻³¹. Suppose a container is filled with nitrogen (at an initial partial pressure of 0.41 atm), oxygen (at an initial partial pressure of 0.59 atm), and nitrogen oxide (at an initial partial pressure of 0.22 atm). Calculate the partial pressures of all three gases after equilibrium is reached at this temperature.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">34.</div>
+            <div class="problem-text">
+                At 25°C, the equilibrium constant for the reaction<br>
+                <div class="equation">2 NO₂(g) ⇌ 2 NO(g) + O₂(g)</div>
+                is 5.9 × 10⁻¹³. Suppose a container is filled with nitrogen dioxide at an initial partial pressure of 0.89 atm. Calculate the partial pressures of all three gases after equilibrium is reached at this temperature.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">35.</div>
+            <div class="problem-text">
+                The equilibrium constant for the synthesis of ammonia<br>
+                <div class="equation">N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g)</div>
+                has the value K = 6.78 × 10⁵ at 25°C. Calculate the equilibrium partial pressures of N₂(g), H₂(g), and NH₃(g) at 25°C if the total pressure is 1.00 atm and the H:N atom ratio in the system is 3:1. (Hint: Try the approximation that P<sub>N₂</sub> and P<sub>H₂</sub> ≪ P<sub>NH₃</sub> and see if the resulting equations are simplified.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">36.</div>
+            <div class="problem-text">
+                At 400°C, K = 3.19 × 10⁻⁴ for the reaction in problem 35. Repeat the calculation for P<sub>N₂</sub>, P<sub>H₂</sub>, and P<sub>NH₃</sub> assuming the same total pressure and composition. (Hint: Try the approximation that P<sub>NH₃</sub> ≪ P<sub>N₂</sub> and P<sub>H₂</sub> and see if the resulting equations are simplified.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">37.</div>
+            <div class="problem-text">
+                Calculate the concentration of phosgene (COCl₂) that will be present at 600°C in equilibrium with carbon monoxide (at a concentration of 2.3 × 10⁻⁴ mol L⁻¹) and chlorine (at a concentration of 1.7 × 10⁻² mol L⁻¹). (Use the data of problem 6.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">38.</div>
+            <div class="problem-text">
+                The reaction<br>
+                <div class="equation">SO₂Cl₂(g) ⇌ SO₂(g) + Cl₂(g)</div>
+                has an equilibrium constant at 100°C of 2.40. Calculate the concentration of SO₂ that will be present at 100°C in equilibrium with SO₂Cl₂ (at a concentration of 3.6 × 10⁻⁴ mol L⁻¹) and chlorine (at a concentration of 6.9 × 10⁻³ mol L⁻¹).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">39.</div>
+            <div class="problem-text">
+                At 298 K, the equilibrium constant for the reaction<br>
+                <div class="equation">Fe₂O₃(s) + 3 H₂(g) ⇌ 2 Fe(s) + 3 H₂O(ℓ)</div>
+                is 4.0 × 10⁻⁶, and that for<br>
+                <div class="equation">CO₂(g) + H₂(g) ⇌ CO(g) + H₂O(ℓ)</div>
+                is 3.2 × 10⁻⁴. Suppose some solid Fe₂O₃, solid Fe, and liquid H₂O are brought into equilibrium with CO(g) and CO₂(g) in a closed container at 298 K. Calculate the ratio of the partial pressure of CO(g) to that of CO₂(g) at equilibrium.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">40.</div>
+            <div class="problem-text">
+                A sample of ammonium carbamate placed in a glass vessel at 25°C undergoes the reaction<br>
+                <div class="equation">NH₄OCONH₂(s) ⇌ 2 NH₃(g) + CO₂(g)</div>
+                The total pressure of gases in equilibrium with the solid is found to be 0.115 atm.<br>
+                (a) Calculate the partial pressures of NH₃ and CO₂.<br>
+                (b) Calculate the equilibrium constant at 25°C.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">41.</div>
+            <div class="problem-text">
+                The equilibrium constant for the reaction<br>
+                <div class="equation">NH₃(g) + HCl(g) ⇌ NH₄Cl(s)</div>
+                at 340°C is K = 4.0.<br>
+                (a) If the partial pressure of ammonia is P<sub>NH₃</sub> = 0.80 atm and solid ammonium chloride is present, what is the equilibrium partial pressure of hydrogen chloride at 340°C?<br>
+                (b) An excess of solid NH₄Cl is added to a container filled with ammonia at 340°C and a pressure of 1.50 atm. Calculate the pressures of NH₃(g) and HCl(g) reached at equilibrium.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">42.</div>
+            <div class="problem-text">
+                The equilibrium constant for the reaction<br>
+                <div class="equation">H₂(g) + I₂(s) ⇌ 2 HI(g)</div>
+                at 25°C is K = 0.345.<br>
+                (a) If the partial pressure of hydrogen is P<sub>H₂</sub> = 1.00 atm and solid iodine is present, what is the equilibrium partial pressure of hydrogen iodide, P<sub>HI</sub>, at 25°C?<br>
+                (b) An excess of solid I₂ is added to a container filled with hydrogen at 25°C and a pressure of 4.00 atm. Calculate the pressures of H₂(g) and HI(g) reached at equilibrium.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">43.</div>
+            <div class="problem-text">
+                Pure solid NH₄HSe is placed in an evacuated container at 24.8°C. Eventually, the pressure above the solid reaches the equilibrium pressure 0.0184 atm due to the reaction<br>
+                <div class="equation">NH₄HSe(s) ⇌ NH₃(g) + H₂Se(g)</div>
+                (a) Calculate the equilibrium constant of this reaction at 24.8°C.<br>
+                (b) In a different container, the partial pressure of NH₃(g) in equilibrium with NH₄HSe(s) at 24.8°C is 0.0252 atm. What is the partial pressure of H₂Se(g)?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">44.</div>
+            <div class="problem-text">
+                The total pressure of the gases in equilibrium with solid sodium hydrogen carbonate at 110°C is 1.648 atm, corresponding to the reaction<br>
+                <div class="equation">2 NaHCO₃(s) ⇌ Na₂CO₃(s) + H₂O(g) + CO₂(g)</div>
+                (NaHCO₃ is used in dry chemical fire extinguishers because the products of this decomposition reaction smother the fire.)<br>
+                (a) Calculate the equilibrium constant at 110°C.<br>
+                (b) What is the partial pressure of water vapor in equilibrium with NaHCO₃(s) at 110°C if the partial pressure of CO₂(g) is 0.800 atm?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="section-title">The Direction of Change in Chemical Reactions: Empirical Description</div>
+
+        <div class="problem">
+            <div class="problem-number">45.</div>
+            <div class="problem-text">
+                Some Al₂Cl₆ (at a partial pressure of 0.473 atm) is placed in a closed container at 454 K with some Al₃Cl₉ (at a partial pressure of 1.02 × 10⁻² atm). Enough argon is added to raise the total pressure to 1.00 atm.<br>
+                (a) Calculate the initial reaction quotient for the reaction<br>
+                <div class="equation">3 Al₂Cl₆(g) ⇌ 2 Al₃Cl₉(g)</div>
+                (b) As the gas mixture reaches equilibrium, will there be net production or consumption of Al₃Cl₉? (Use the data given in problem 21.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">46.</div>
+            <div class="problem-text">
+                Some SF₂ (at a partial pressure of 2.3 × 10⁻⁴ atm) is placed in a closed container at 298 K with some F₃SSF (at a partial pressure of 0.0484 atm). Enough argon is added to raise the total pressure to 1.000 atm.<br>
+                (a) Calculate the initial reaction quotient for the decomposition of F₃SSF to SF₂.<br>
+                (b) As the gas mixture reaches equilibrium, will there be net formation or dissociation of F₃SSF? (Use the data given in problem 22.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">47.</div>
+            <div class="problem-text">
+                The progress of the reaction<br>
+                <div class="equation">H₂(g) + Br₂(g) ⇌ 2 HBr(g)</div>
+                can be monitored visually by following changes in the color of the reaction mixture (Br₂ is reddish brown, and H₂ and HBr are colorless). A gas mixture is prepared at 700 K, in which 0.40 atm is the initial partial pressure of both H₂ and Br₂ and 0.90 atm is the initial partial pressure of HBr. The color of this mixture then fades as the reaction progresses toward equilibrium. Give a condition that must be satisfied by the equilibrium constant K (for example, it must be greater than or smaller than a given number).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">48.</div>
+            <div class="problem-text">
+                Recall from our discussion of the NO₂–N₂O₄ equilibrium that NO₂ has a brownish color. At elevated temperatures, NO₂ reacts with CO according to<br>
+                <div class="equation">NO₂(g) + CO(g) ⇌ NO(g) + CO₂(g)</div>
+                The other three gases taking part in this reaction are colorless. When a gas mixture is prepared at 500 K, in which 3.4 atm is the initial partial pressure of both NO₂ and CO, and 1.4 atm is the partial pressure of both NO and CO₂, the brown color of the mixture is observed to fade as the reaction progresses toward equilibrium. Give a condition that must be satisfied by the equilibrium constant K (for example, it must be greater than or smaller than a given number).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">49.</div>
+            <div class="problem-text">
+                The equilibrium constant for the "water gas" reaction<br>
+                <div class="equation">C(s) + H₂O(g) ⇌ CO(g) + H₂(g)</div>
+                is K = 2.6 at a temperature of 1000 K. Calculate the reaction quotient Q for each of the following conditions, and state which direction the reaction shifts in coming to equilibrium.<br>
+                (a) P<sub>H₂O</sub> = 0.600 atm; P<sub>CO</sub> = 1.525 atm; P<sub>H₂</sub> = 0.805 atm<br>
+                (b) P<sub>H₂O</sub> = 0.724 atm; P<sub>CO</sub> = 1.714 atm; P<sub>H₂</sub> = 1.383 atm
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">50.</div>
+            <div class="problem-text">
+                The equilibrium constant for the reaction<br>
+                <div class="equation">H₂S(g) + I₂(g) ⇌ 2 HI(g) + S(s)</div>
+                at 110°C is equal to 0.0023. Calculate the reaction quotient Q for each of the following conditions and determine whether solid sulfur is consumed or produced as the reaction comes to equilibrium.<br>
+                (a) P<sub>I₂</sub> = 0.461 atm; P<sub>H₂S</sub> = 0.050 atm; P<sub>HI</sub> = 0.0 atm<br>
+                (b) P<sub>I₂</sub> = 0.461 atm; P<sub>H₂S</sub> = 0.050 atm; P<sub>HI</sub> = 9.0 atm
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">51.</div>
+            <div class="problem-text">
+                At T = 1200°C the reaction<br>
+                <div class="equation">P₄(g) ⇌ 2 P₂(g)</div>
+                has an equilibrium constant K = 0.612.<br>
+                (a) Suppose the initial partial pressure of P₄ is 5.00 atm and that of P₂ is 2.00 atm. Calculate the reaction quotient Q and state whether the reaction proceeds to the right or to the left as equilibrium is approached.<br>
+                (b) Calculate the partial pressures at equilibrium.<br>
+                (c) If the volume of the system is then increased, will there be net formation or net dissociation of P₄?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">52.</div>
+            <div class="problem-text">
+                At T = 100°C the reaction<br>
+                <div class="equation">SO₂Cl₂(g) ⇌ SO₂(g) + Cl₂(g)</div>
+                has an equilibrium constant K = 2.4.<br>
+                (a) Suppose the initial partial pressure of SO₂Cl₂ is 1.20 atm, and P<sub>SO₂</sub> = P<sub>Cl₂</sub> = 0. Calculate the reaction quotient Q and state whether the reaction proceeds to the right or to the left as equilibrium is approached.<br>
+                (b) Calculate the partial pressures at equilibrium.<br>
+                (c) If the volume of the system is then decreased, will there be net formation or net dissociation of SO₂Cl₂?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">53.</div>
+            <div class="problem-text">
+                Explain the effect of each of the following stresses on the position of the following equilibrium:<br>
+                <div class="equation">3 NO(g) ⇌ N₂O(g) + NO₂(g)</div>
+                The reaction as written is exothermic.<br>
+                (a) N₂O(g) is added to the equilibrium mixture without change of volume or temperature.<br>
+                (b) The volume of the equilibrium mixture is reduced at constant temperature.<br>
+                (c) The equilibrium mixture is cooled.<br>
+                (d) Gaseous argon (which does not react) is added to the equilibrium mixture while both the total gas pressure and the temperature are kept constant.<br>
+                (e) Gaseous argon is added to the equilibrium mixture without changing the volume.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">54.</div>
+            <div class="problem-text">
+                Explain the effect of each of the following stresses on the position of the equilibrium<br>
+                <div class="equation">SO₃(g) ⇌ SO₂(g) + ½ O₂(g)</div>
+                The reaction as written is endothermic.<br>
+                (a) O₂(g) is added to the equilibrium mixture without changing volume or temperature.<br>
+                (b) The mixture is compressed at constant temperature.<br>
+                (c) The equilibrium mixture is cooled.<br>
+                (d) An inert gas is pumped into the equilibrium mixture while the total gas pressure and the temperature are kept constant.<br>
+                (e) An inert gas is added to the equilibrium mixture without changing the volume.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">55.</div>
+            <div class="problem-text">
+                In a gas-phase reaction, it is observed that the equilibrium yield of products is increased by lowering the temperature and by reducing the volume.<br>
+                (a) Is the reaction exothermic or endothermic?<br>
+                (b) Is there a net increase or a net decrease in the number of gas molecules in the reaction?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">56.</div>
+            <div class="problem-text">
+                The equilibrium constant of a gas-phase reaction increases as temperature is increased. When the nonreacting gas neon is admitted to a mixture of reacting gases (holding the temperature and the total pressure fixed and increasing the volume of the reaction vessel), the product yield is observed to decrease.<br>
+                (a) Is the reaction exothermic or endothermic?<br>
+                (b) Is there a net increase or a net decrease in the number of gas molecules in the reaction?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">57.</div>
+            <div class="problem-text">
+                The most extensively used organic compound in the chemical industry is ethylene (C₂H₄). The two equations<br>
+                <div class="equation">C₂H₄(g) + Cl₂(g) ⇌ C₂H₄Cl₂(g)</div>
+                <div class="equation">C₂H₄Cl₂(g) ⇌ C₂H₃Cl(g) + HCl(g)</div>
+                represent the way in which vinyl chloride (C₂H₃Cl) is synthesized for eventual use in polymeric plastics (polyvinyl chloride, PVC). The byproduct of the reaction, HCl, is now most cheaply made by this and similar reactions, rather than by direct combination of H₂ and Cl₂. Heat is given off in the first reaction and taken up in the second. Describe how you would design an industrial process to maximize the yield of vinyl chloride.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">58.</div>
+            <div class="problem-text">
+                Methanol is made via the exothermic reaction<br>
+                <div class="equation">CO(g) + 2 H₂(g) ⟶ CH₃OH(g)</div>
+                Describe how you would control the temperature and pressure to maximize the yield of methanol.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="section-title">The Direction of Change in Chemical Reactions: Thermodynamic Explanation</div>
+
+        <div class="problem">
+            <div class="problem-number">59.</div>
+            <div class="problem-text">
+                One way to manufacture ethanol is by the reaction<br>
+                <div class="equation">C₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)</div>
+                The ΔH<sub>f</sub>° of C₂H₄(g) is 52.3 kJ mol⁻¹; of H₂O(g), -241.8 kJ mol⁻¹; and of C₂H₅OH(g), -235.3 kJ mol⁻¹. Without doing detailed calculations, suggest the conditions of pressure and temperature that will maximize the yield of ethanol at equilibrium.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">60.</div>
+            <div class="problem-text">
+                Dimethyl ether (CH₃OCH₃) is a good substitute for environmentally harmful propellants in aerosol spray cans. It is produced by the dehydration of methanol:<br>
+                <div class="equation">2 CH₃OH(g) ⇌ CH₃OCH₃(g) + H₂O(g)</div>
+                Describe reaction conditions that favor the equilibrium production of this valuable chemical. As a basis for your answer, compute ΔH° and ΔS° of the reaction from the data in Appendix D.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">61.</div>
+            <div class="problem-text">
+                The equilibrium constant at 25°C for the reaction<br>
+                <div class="equation">2 NO₂(g) ⇌ N₂O₄(g)</div>
+                is 6.8. At 200°C the equilibrium constant is 1.21 × 10⁻³. Calculate the enthalpy change (ΔH) for this reaction, assuming that ΔH and ΔS of the reaction are constant over the temperature range from 25°C to 200°C.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">62.</div>
+            <div class="problem-text">
+                Stearic acid dimerizes when dissolved in hexane:<br>
+                <div class="equation">2 C₁₇H₃₅COOH(hexane) ⇌ (C₁₇H₃₅COOH)₂(hexane)</div>
+                The equilibrium constant for this reaction is 2900 at 28°C, but it drops to 40 at 48°C. Estimate ΔH° and ΔS° for the reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">63.</div>
+            <div class="problem-text">
+                The equilibrium constant for the reaction<br>
+                <div class="equation">½ Cl₂(g) + ½ F₂(g) ⇌ ClF(g)</div>
+                is measured to be 9.3 × 10⁹ at 298 K and 3.3 × 10⁷ at 398 K.<br>
+                (a) Calculate ΔG° at 298 K for the reaction.<br>
+                (b) Calculate ΔH° and ΔS°, assuming the enthalpy and entropy changes to be independent of temperature between 298 and 398 K.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">64.</div>
+            <div class="problem-text">
+                Stearic acid also dimerizes when dissolved in carbon tetrachloride:<br>
+                <div class="equation">2 C₁₇H₃₅COOH(CCl₄) ⇌ (C₁₇H₃₅COOH)₂(CCl₄)</div>
+                The equilibrium constant for this reaction is 2780 at 22°C, but it drops to 93.1 at 42°C. Estimate ΔH° and ΔS° for the reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">65.</div>
+            <div class="problem-text">
+                For the synthesis of ammonia from its elements,<br>
+                <div class="equation">3 H₂(g) + N₂(g) ⇌ 2 NH₃(g)</div>
+                the equilibrium constant K = 5.9 × 10⁵ at 298 K, and ΔH° = -92.2 kJ mol⁻¹. Calculate the equilibrium constant for the reaction at 600 K, assuming no change in ΔH° and ΔS° between 298 K and 600 K.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">66.</div>
+            <div class="problem-text">
+                The cumulative exercise at the end of Chapter 14 explored reaction steps in the manufacture of sulfuric acid, including the oxidation of sulfur dioxide to sulfur trioxide:<br>
+                <div class="equation">SO₂(g) + ½ O₂(g) ⇌ SO₃(g)</div>
+                At 25°C the equilibrium constant for this reaction is 2.6 × 10¹², but the reaction occurs very slowly. Calculate K for this reaction at 550°C, assuming ΔH° and ΔS° are independent of temperature in the range from 25°C to 550°C.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">67.</div>
+            <div class="problem-text">
+                The vapor pressure of ammonia at -50°C is 0.4034 atm; at 0°C, it is 4.2380 atm.<br>
+                (a) Calculate the molar enthalpy of vaporization (ΔH<sub>vap</sub>) of ammonia.<br>
+                (b) Calculate the normal boiling temperature of NH₃(ℓ).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">68.</div>
+            <div class="problem-text">
+                The vapor pressure of butyl alcohol (C₄H₉OH) at 70.1°C is 0.1316 atm; at 100.8°C, it is 0.5263 atm.<br>
+                (a) Calculate the molar enthalpy of vaporization (ΔH<sub>vap</sub>) of butyl alcohol.<br>
+                (b) Calculate the normal boiling point of butyl alcohol.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">69.</div>
+            <div class="problem-text">
+                Although iodine is not very soluble in pure water, it dissolves readily in water that contains I⁻(aq) ion, thanks to the reaction<br>
+                <div class="equation">I₂(aq) + I⁻(aq) ⇌ I₃⁻(aq)</div>
+                <div class="latex-equation">ln K = -ΔH°/R × (1/T) + ΔS°/R</div>
+                The equilibrium constant of this reaction was measured as a function of temperature with these results:
+                
+                <table class="data-table">
+                    <caption>Temperature Dependence of Equilibrium Constant</caption>
+                    <thead>
+                        <tr>
+                            <th>T (°C)</th>
+                            <th>T (K)</th>
+                            <th>K</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3.8</td>
+                            <td>276.95</td>
+                            <td>1160</td>
+                        </tr>
+                        <tr>
+                            <td>15.3</td>
+                            <td>288.45</td>
+                            <td>841</td>
+                        </tr>
+                        <tr>
+                            <td>25.0</td>
+                            <td>298.15</td>
+                            <td>689</td>
+                        </tr>
+                        <tr>
+                            <td>35.0</td>
+                            <td>308.15</td>
+                            <td>533</td>
+                        </tr>
+                        <tr>
+                            <td>50.2</td>
+                            <td>323.35</td>
+                            <td>409</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                (a) Plot ln K on the y axis as a function of 1/T, the reciprocal of the absolute temperature.<br>
+                (b) Estimate the ΔH° of this reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">70.</div>
+            <div class="problem-text">
+                Barium nitride vaporizes slightly at high temperature as it undergoes the dissociation<br>
+                <div class="equation">Ba₃N₂(s) ⇌ 3 Ba(g) + N₂(g)</div>
+                At 1000 K the equilibrium constant is 4.5 × 10⁻¹⁹. At 1200 K the equilibrium constant is 6.2 × 10⁻¹².<br>
+                (a) Estimate ΔH° for this reaction.<br>
+                (b) The equation is rewritten as<br>
+                <div class="equation">2 Ba₃N₂(s) ⇌ 6 Ba(g) + 2 N₂(g)</div>
+                Now the equilibrium constant is 2.0 × 10⁻³⁷ at 1000 K and 3.8 × 10⁻²³ at 1200 K. Estimate ΔH° of this reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="section-title">Distribution of a Single Species between Immiscible Phases: Extraction and Separation Processes</div>
+
+        <div class="problem">
+            <div class="problem-number">71.</div>
+            <div class="problem-text">
+                An aqueous solution, initially 1.00 × 10⁻² m in iodine (I₂), is shaken with an equal volume of an immiscible organic solvent, CCl₄. The iodine distributes itself between the aqueous and CCl₄ layers, and when equilibrium is reached at 27°C, the concentration of I₂ in the aqueous layer is 1.30 × 10⁻⁴ m. Calculate the partition coefficient K at 27°C for the reaction<br>
+                <div class="equation">I₂(aq) ⇌ I₂(CCl₄)</div>
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">72.</div>
+            <div class="problem-text">
+                An aqueous solution, initially 2.50 × 10⁻² m in iodine (I₂), is shaken with an equal volume of an immiscible organic solvent, CS₂. The iodine distributes itself between the aqueous and CS₂ layers, and when equilibrium is reached at 25°C, the concentration of I₂ in the aqueous layer is 4.16 × 10⁻⁵ m. Calculate the partition coefficient K at 25°C for the reaction<br>
+                <div class="equation">I₂(aq) ⇌ I₂(CS₂)</div>
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">73.</div>
+            <div class="problem-text">
+                Benzoic acid (C₆H₅COOH) dissolves in water to the extent of 2.00 g L⁻¹ at 15°C and in diethyl ether to the extent of 6.6 × 10² g L⁻¹ at the same temperature.<br>
+                (a) Calculate the equilibrium constants at 15°C for the two reactions<br>
+                <div class="equation">C₆H₅COOH(s) ⇌ C₆H₅COOH(aq)</div>
+                and<br>
+                <div class="equation">C₆H₅COOH(s) ⇌ C₆H₅COOH(ether)</div>
+                (b) From your answers to part (a), calculate the partition coefficient K for the reaction<br>
+                <div class="equation">C₆H₅COOH(aq) ⇌ C₆H₅COOH(ether)</div>
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">74.</div>
+            <div class="problem-text">
+                Citric acid (C₆H₈O₇) dissolves in water to the extent of 1300 g L⁻¹ at 15°C and in diethyl ether to the extent of 22 g L⁻¹ at the same temperature.<br>
+                (a) Calculate the equilibrium constants at 15°C for the two reactions<br>
+                <div class="equation">C₆H₈O₇(s) ⇌ C₆H₈O₇(aq)</div>
+                and<br>
+                <div class="equation">C₆H₈O₇(s) ⇌ C₆H₈O₇(ether)</div>
+                (b) From your answers to part (a), calculate the partition coefficient K for the reaction<br>
+                <div class="equation">C₆H₈O₇(aq) ⇌ C₆H₈O₇(ether)</div>
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="section-title">Additional Problems</div>
+
+        <div class="problem">
+            <div class="problem-number">75.</div>
+            <div class="problem-text">
+                At 298 K, unequal amounts of BCl₃(g) and BF₃(g) were mixed in a container. The gases reacted to form BFCl₂(g) and BClF₂(g). When equilibrium was finally reached, the four gases were present in these relative chemical amounts: BCl₃(90), BF₃(470), BClF₂(200), BFCl₂(45).<br>
+                (a) Determine the equilibrium constants at 298 K of the two reactions<br>
+                <div class="equation">2 BCl₃(g) + BF₃(g) ⇌ 3 BFCl₂(g)</div>
+                <div class="equation">BCl₃(g) + 2 BF₃(g) ⇌ 3 BClF₂(g)</div>
+                (b) Determine the equilibrium constant of the reaction<br>
+                <div class="equation">BCl₃(g) + BF₃(g) ⇌ BFCl₂ + BClF₂(g)</div>
+                and explain why knowing this equilibrium constant really adds nothing to what you knew in part (a).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">76.</div>
+            <div class="problem-text">
+                Methanol can be synthesized by means of the equilibrium reaction<br>
+                <div class="equation">CO(g) + 2 H₂(g) ⇌ CH₃OH(g)</div>
+                for which the equilibrium constant at 225°C is 6.08 × 10⁻³. Assume that the ratio of the pressures of CO(g) and H₂(g) is 1:2. What values should they have if the partial pressure of methanol is to be 0.500 atm?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">77.</div>
+            <div class="problem-text">
+                At equilibrium at 425.6°C, a sample of cis-1-methyl-2-ethylcyclopropane is 73.6% converted into the trans form:<br>
+                <div class="equation">cis ⇌ trans</div>
+                (a) Compute the equilibrium constant K for this reaction.<br>
+                (b) Suppose that 0.525 mol of the cis compound is placed in a 15.00-L vessel and heated to 425.6°C. Compute the equilibrium partial pressure of the trans compound.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">78.</div>
+            <div class="problem-text">
+                The equilibrium constant for the reaction<br>
+                <div class="equation">(CH₃)₃COH(g) ⇌ (CH₃)₂CCH₂(g) + H₂O(g)</div>
+                is 2.42 at 450 K.<br>
+                (a) A pure sample of the reactant, which is named "t-butanol," is confined in a container of fixed volume at a temperature of 450 K and at an original pressure of 0.100 atm. Calculate the fraction of this starting material that is converted to products at equilibrium.<br>
+                (b) A second sample of the reactant is confined, this time at an original pressure of 5.00 atm. Again, calculate the fraction of the starting material that is converted to products at equilibrium.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">79.</div>
+            <div class="problem-text">
+                At 627°C and 1 atm, SO₃ is partly dissociated into SO₂ and O₂:<br>
+                <div class="equation">SO₃(g) ⇌ SO₂(g) + ½ O₂(g)</div>
+                The density of the equilibrium mixture is 0.925 g L⁻¹. What is the degree of dissociation of SO₃ under these circumstances?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">80.</div>
+            <div class="problem-text">
+                Acetic acid in the vapor phase consists of both monomeric and dimeric forms in equilibrium:<br>
+                <div class="equation">2 CH₃COOH(g) ⇌ (CH₃COOH)₂(g)</div>
+                At 110°C the equilibrium constant for this reaction is 3.72.<br>
+                (a) Calculate the partial pressure of the dimer when the total pressure is 0.725 atm at equilibrium.<br>
+                (b) What percentage of the acetic acid is dimerized under these conditions?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">81.</div>
+            <div class="problem-text">
+                Repeat the calculation of problem 36 with a total pressure of 100 atm. (Note: Here it is necessary to solve the equation by successive approximations. See Appendix C.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">82.</div>
+            <div class="problem-text">
+                At 900 K the equilibrium constant for the reaction<br>
+                <div class="equation">½ O₂(g) + SO₂(g) ⇌ SO₃(g)</div>
+                has the value K = 0.587. What will be the equilibrium partial pressure of O₂(g) if a sample of SO₃ weighing 0.800 g is heated to 900 K in a quartz-glass vessel whose volume is 100.0 cm³? (Note: Here it is necessary to solve the equation by successive approximations. See Appendix C.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">83.</div>
+            <div class="problem-text">
+                At 298 K chlorine is only slightly soluble in water. Thus, under a pressure of 1.00 atm of Cl₂(g), 1.00 L of water at equilibrium dissolves just 0.091 mol of Cl₂.<br>
+                <div class="equation">Cl₂(g) ⇌ Cl₂(aq)</div>
+                In such solutions the Cl₂(aq) concentration is 0.061 m and the concentrations of Cl⁻(aq) and HOCl(aq) are both 0.030 m. These two additional species are formed by the equilibrium<br>
+                <div class="equation">Cl₂(aq) + H₂O(ℓ) ⇌ H⁺(aq) + Cl⁻(aq) + HOCl(aq)</div>
+                There are no other Cl-containing species. Compute the equilibrium constants K₁ and K₂ for the two reactions.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">84.</div>
+            <div class="problem-text">
+                At 400°C the reaction<br>
+                <div class="equation">BaO₂(s) + 4 HCl(g) ⇌ BaCl₂(s) + 2 H₂O(g) + Cl₂(g)</div>
+                has an equilibrium constant equal to K₁. How is K₁ related to the equilibrium constant K₂ of the reaction<br>
+                <div class="equation">2 Cl₂(g) + 4 H₂O(g) + 2 BaCl₂(s) ⇌ 8 HCl(g) + 2 BaO₂(s)</div>
+                at 400°C?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">85.</div>
+            <div class="problem-text">
+                Ammonium hydrogen sulfide, a solid, decomposes to give NH₃(g) and H₂S(g). At 25°C, some NH₄HS(s) is placed in an evacuated container. A portion of it decomposes, and the total pressure at equilibrium is 0.659 atm. Extra NH₃(g) is then injected into the container, and when equilibrium is reestablished, the partial pressure of NH₃(g) is 0.750 atm.<br>
+                (a) Compute the equilibrium constant for the decomposition of ammonium hydrogen sulfide.<br>
+                (b) Determine the final partial pressure of H₂S(g) in the container.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">86.</div>
+            <div class="problem-text">
+                The equilibrium constant for the reaction<br>
+                <div class="equation">KOH(s) + CO₂(g) ⇌ KHCO₃(s)</div>
+                is 6 × 10¹⁵ at 25°C. Suppose 7.32 g of KOH and 9.41 g of KHCO₃ are placed in a closed evacuated container and allowed to reach equilibrium. Calculate the pressure of CO₂(g) at equilibrium.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">87.</div>
+            <div class="problem-text">
+                The equilibrium constant for the reduction of nickel(II) oxide to nickel at 754°C is 255.4, corresponding to the reaction<br>
+                <div class="equation">NiO(s) + CO(g) ⇌ Ni(s) + CO₂(g)</div>
+                If the total pressure of the system at 754°C is 2.50 atm, calculate the partial pressures of CO(g) and CO₂(g).
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">88.</div>
+            <div class="problem-text">
+                Both glucose (corn sugar) and fructose (fruit sugar) taste sweet, but fructose tastes sweeter. Each year in the United States, tons of corn syrup destined to sweeten food are treated to convert glucose as fully as possible to the sweeter fructose. The reaction is an equilibrium:<br>
+                <div class="equation">glucose ⇌ fructose</div>
+                (a) A 0.2564 m solution of pure glucose is treated at 25°C with an enzyme (catalyst) that causes the preceding equilibrium to be reached quickly. The final concentration of fructose is 0.1175 m. In another experiment at the same temperature, a 0.2666 m solution of pure fructose is treated with the same enzyme and the final concentration of glucose is 0.1415 m. Compute an average equilibrium constant for the preceding reaction.<br>
+                (b) At equilibrium under these conditions, what percentage of glucose is converted to fructose?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">89.</div>
+            <div class="problem-text">
+                At 300°C the equilibrium constant for the reaction<br>
+                <div class="equation">PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)</div>
+                is K = 11.5.<br>
+                (a) Calculate the reaction quotient Q if initially P<sub>PCl₃</sub> = 2.0 atm, P<sub>Cl₂</sub> = 6.0 atm, and P<sub>PCl₅</sub> = 0.10 atm. State whether the reaction proceeds to the right or to the left as equilibrium is approached.<br>
+                (b) Calculate P<sub>PCl₃</sub>, P<sub>Cl₂</sub>, and P<sub>PCl₅</sub> at equilibrium.<br>
+                (c) If the volume of the system is then increased, will the amount of PCl₅ present increase or decrease?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">90.</div>
+            <div class="problem-text">
+                Although the process of dissolution of helium gas in water is favored in terms of energy, helium is only very slightly soluble in water. What keeps this gas from dissolving in great quantities in water?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">91.</div>
+            <div class="problem-text">
+                The hydrogenation of pyridine to piperidine<br>
+                <div class="equation">C₅H₅N(g) + 3 H₂(g) ⇌ C₅H₁₁N(g)</div>
+                is an equilibrium process whose equilibrium constant is given by the equation<br>
+                <div class="equation">log₁₀ K = -20.281 + 10.560/T (K)</div>
+                (a) Calculate the value of K at T = 500 K.<br>
+                (b) If the partial pressure of hydrogen is 1.00 atm, what fraction of the nitrogen is in the form of pyridine molecules at T = 500 K?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">92.</div>
+            <div class="problem-text">
+                The breaking of the O-O bond in peroxydisulfuryl difluoride (FO₂SOOSO₂F) gives FO₂SO:<br>
+                <div class="equation">(FO₂SO)₂ ⇌ 2 FO₂SO</div>
+                The compound on the left of this equation is a colorless liquid that boils at 67.1°C. Its vapor, when heated to about 100°C, turns brown as the product of the reaction forms. Suppose that, in a sample of the vapor, the intensity of the brown color doubles between 100°C and 110°C and that the total pressure increases only by the 2.7% predicted for an ideal gas. Estimate ΔH° for the preceding reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">93.</div>
+            <div class="problem-text">
+                Polychlorinated biphenyls (PCBs) are a major environmental problem. These oily substances have many uses, but they resist breakdown by bacterial action when spilled in the environment and, being fat-soluble, can accumulate to dangerous concentrations in the fatty tissues of fish and animals. One little-appreciated complication in controlling the problem is that there are 209 different PCBs, all now in the environment. They are generally similar, but their solubilities in fats differ considerably. The best measure of this is K<sub>ow</sub>, the equilibrium constant for the partition of a PCB between the fat-like solvent octanol and water.<br>
+                <div class="equation">PCB(aq) ⇌ PCB(octanol)</div>
+                An equimolar mixture of PCB-2 and PCB-11 in water is treated with an equal volume of octanol. Determine the ratio between the amounts of PCB-2 and PCB-11 in the water at equilibrium. At room temperature, K<sub>ow</sub> is 3.98 × 10⁴ for PCB-2 and 1.26 × 10⁵ for PCB-11.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">94.</div>
+            <div class="problem-text">
+                Refer to the data in problems 73 and 74. Suppose 2.00 g of a solid consisting of 50.0% benzoic acid and 50.0% citric acid by mass is added to 100.0 mL of water and 100.0 mL of diethyl ether and the whole assemblage is shaken. When the immiscible layers are separated and the solvents are removed by evaporation, two solids result. Calculate the percentage (by mass) of the major component in each solid.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">95.</div>
+            <div class="problem-text">
+                At 25°C the partition coefficient for the equilibrium<br>
+                <div class="equation">I₂(aq) ⇌ I₂(CCl₄)</div>
+                has the value K = 85. To 0.100 L of an aqueous solution, which is initially 2 × 10⁻³ m in I₂, we add 0.025 L of CCl₄. The mixture is shaken in a separatory funnel and allowed to separate into two phases, and the CCl₄ phase is withdrawn.<br>
+                (a) Calculate the fraction of the I₂ remaining in the aqueous phase.<br>
+                (b) Suppose the remaining aqueous phase is shaken with another 0.025 L of CCl₄ and again separated. What fraction of the I₂ from the original aqueous solution is now in the aqueous phase?<br>
+                (c) Compare your answer with that of Example 14.18, in which the same total amount of CCl₄ (0.050 L) was used in a single extraction. For a given total amount of extracting solvent, which is the more efficient way to remove iodine from water?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">96.</div>
+            <div class="problem-text">
+                From the data in Appendix D calculate ΔH°, ΔG°, and K, for the following reaction at 298 K:<br>
+                <div class="equation">6 CH₄(g) + 9/2 O₂(g) ⇌ C₆H₆(ℓ) + 9 H₂O(ℓ)</div>
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">97.</div>
+            <div class="problem-text">
+                The reaction<br>
+                <div class="equation">P₄(g) ⇌ 2 P₂(g)</div>
+                is endothermic and begins to occur at moderate temperatures.<br>
+                (a) In which direction do you expect deviations to occur from Boyle's law, P ∝ 1/V (constant T), for gaseous P₄?<br>
+                (b) In which direction do you expect deviations to occur from Charles's law, V ∝ T (constant P), for gaseous P₄?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">98.</div>
+            <div class="problem-text">
+                A 4.72-g mass of methanol, CH₃OH, is placed in an evacuated 1.00-L flask and heated to 250°C. It vaporizes and then reaches the following equilibrium:<br>
+                <div class="equation">CH₃OH(g) ⇌ CO(g) + 2 H₂(g)</div>
+                A tiny hole forms in the side of the container, allowing a small amount of gas to effuse out. Analysis of the escaping gases shows that the rate of escape of the hydrogen is 33 times the rate of escape of the methanol. Calculate the equilibrium constant for the preceding reaction at 250°C.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">99.</div>
+            <div class="problem-text">
+                The triple bond in the N₂ molecule is very strong, but at high enough temperatures even it breaks down. At 5000 K, when the total pressure exerted by a sample of nitrogen is 1.00 atm, N₂(g) is 0.65% dissociated at equilibrium:<br>
+                <div class="equation">N₂(g) ⇌ 2 N(g)</div>
+                At 6000 K with the same total pressure, the proportion of N₂(g) dissociated at equilibrium rises to 11.6%. Use the van't Hoff equation to estimate the ΔH of this reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">100.</div>
+            <div class="problem-text">
+                At 25°C the equilibrium constant for the reaction<br>
+                <div class="equation">CaSO₄(s) + 2 H₂O(g) ⇌ CaSO₄·2H₂O(s)</div>
+                is 1.6 × 10³. Over what range of relative humidities do you expect CaSO₄(s) to be converted to CaSO₄·2H₂O? (Note: The relative humidity is the partial pressure of water vapor divided by its equilibrium vapor pressure and multiplied by 100%. Use Table 10.3.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">101.</div>
+            <div class="problem-text">
+                Calculate the equilibrium pressure (in atmospheres) of O₂(g) over a sample of pure NiO(s) in contact with pure Ni(s) at 25°C. The NiO(s) decomposes according to the equation<br>
+                <div class="equation">NiO(s) ⟶ Ni(s) + ½ O₂(g)</div>
+                Use data from Appendix D.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">102.</div>
+            <div class="problem-text">
+                (a) From the values in Appendix D, find the enthalpy change and the Gibbs free energy change when one mole of benzene C₆H₆ is vaporized at 25°C.<br>
+                (b) Calculate the vapor pressure of benzene at 25°C.<br>
+                (c) Assuming that the enthalpy and entropy of vaporization are constant, estimate the normal boiling point of benzene.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">103.</div>
+            <div class="problem-text">
+                Snow and ice sublime spontaneously when the partial pressure of water vapor is below the equilibrium vapor pressure of ice. At 0°C the vapor pressure of ice is 0.0060 atm (the triple-point pressure of water). Taking the enthalpy of sublimation of ice to be 50.0 kJ mol⁻¹, calculate the partial pressure of water vapor below which ice will sublime spontaneously at -15°C.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="section-title">Cumulative Problems</div>
+
+        <div class="problem">
+            <div class="problem-number">104.</div>
+            <div class="problem-text">
+                The sublimation pressure of solid NbI₅ is the pressure of gaseous NbI₅ present in equilibrium with the solid. It is given by the empirical equation<br>
+                <div class="equation">log P = -6762/T + 8.566</div>
+                The vapor pressure of liquid NbI₅, on the other hand, is given by<br>
+                <div class="equation">log P = -4653/T + 5.43</div>
+                In these two equations, T is the absolute temperature in kelvins and P is the pressure in atmospheres.<br>
+                (a) Determine the enthalpy and entropy of sublimation of NbI₅(s).<br>
+                (b) Determine the enthalpy and entropy of vaporization of NbI₅(ℓ).<br>
+                (c) Calculate the normal boiling point of NbI₅(ℓ).<br>
+                (d) Calculate the triple-point temperature and pressure of NbI₅. (Hint: At the triple point of a substance, the liquid and solid are in equilibrium and must have the same vapor pressure. If they did not, vapor would continually escape from the phase with the higher vapor pressure and collect in the phase with the lower vapor pressure.)
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">105.</div>
+            <div class="problem-text">
+                In an extraction process, a solute species is partitioned between two immiscible solvents. Suppose the two solvents are water and carbon tetrachloride. State which phase will have the higher concentration of each of the following solutes: (a) CH₃OH, (b) C₂Cl₆, (c) Br₂, (d) NaCl. Explain your reasoning.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">106.</div>
+            <div class="problem-text">
+                The gaseous compounds allene and propyne are isomers with formula C₃H₄. Calculate the equilibrium constant and the standard enthalpy change at 25°C for the isomerization reaction<br>
+                <div class="equation">allene(g) ⇌ propyne(g)</div>
+                from the following data, all of which apply to 298 K:<br>
+                ΔH<sub>f</sub>° (kJ mol⁻¹): Allene 192, Propyne 185<br>
+                ΔG<sub>f</sub>° (kJ mol⁻¹): Allene 202, Propyne 194
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">107.</div>
+            <div class="problem-text">
+                (a) Calculate the standard free-energy change and the equilibrium constant for the dimerization of NO₂ to N₂O₄ at 25°C (see Appendix D).<br>
+                (b) Calculate ΔG for this reaction at 25°C when the pressures of NO₂ and N₂O₄ are each held at 0.010 atm. Which way will the reaction tend to proceed?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">108.</div>
+            <div class="problem-text">
+                There are two isomeric hydrocarbons with formula C₄H₁₀, butane and isobutane, which we denote here B and I. The standard enthalpies of formation for the gaseous species are -124.7 kJ mol⁻¹ for B, -131.3 kJ mol⁻¹ for I; the standard free energies of formation are -15.9 kJ mol⁻¹ for B, -18.0 kJ mol⁻¹ for I.<br>
+                (a) Which is the more stable under standard conditions, and which has the higher entropy?<br>
+                (b) The reaction B ⇌ I can occur in the presence of a catalyst. Calculate the equilibrium constant at 298 K for the conversion of B to I, and calculate the percentage of B in the equilibrium mixture.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">109.</div>
+            <div class="problem-text">
+                At 3500 K the equilibrium constant for the reaction CO₂(g) + H₂(g) ⇌ CO(g) + H₂O(g) is 8.28.<br>
+                (a) What is ΔG°(3500) for this reaction?<br>
+                (b) What is ΔG at 3500 K for transforming 1 mol CO₂ and 1 mol H₂, both held at 0.1 atm, to 1 mol CO and 1 mol H₂O, both held at 2 atm?<br>
+                (c) In which direction would this last reaction run spontaneously?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">110.</div>
+            <div class="problem-text">
+                At 1200 K in the presence of solid carbon, an equilibrium mixture of CO and CO₂ (called "producer gas") contains 98.3 mol percent CO and 1.69 mol percent of CO₂ when the total pressure is 1 atm. The reaction is<br>
+                <div class="equation">CO₂(g) + C(graphite) ⇌ 2 CO(g)</div>
+                (a) Calculate P<sub>CO</sub> and P<sub>CO₂</sub>.<br>
+                (b) Calculate the equilibrium constant.<br>
+                (c) Calculate ΔG° for this reaction.
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">111.</div>
+            <div class="problem-text">
+                (a) Formulate the equilibrium expression for the endothermic reaction<br>
+                <div class="equation">AgCl·NH₃(s) ⇌ AgCl(s) + NH₃(g)</div>
+                (b) What is the effect on P<sub>NH₃</sub> at equilibrium if additional AgCl(s) is added?<br>
+                (c) What is the effect on P<sub>NH₃</sub> at equilibrium if additional NH₃(g) is pumped into or out of the system, provided that neither of the two solid phases shown in the chemical equation is completely used up?<br>
+                (d) What is the effect on P<sub>NH₃</sub> of lowering the temperature?
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">112.</div>
+            <div class="problem-text">
+                Solid ammonium carbonate decomposes according to the equation<br>
+                <div class="equation">(NH₄)₂CO₃(s) ⇌ 2 NH₃(g) + CO₂(g) + H₂O(g)</div>
+                
+                <p style="margin-top: 10px;">At a certain elevated temperature the total pressure of the gases NH₃, CO₂, and H₂O generated by the decomposition of, and at equilibrium with, pure solid ammonium carbonate is 0.400 atm.</p>
+                
+                <p style="margin-top: 10px;"><strong>Questions:</strong></p>
+                <p style="margin-left: 20px;">(a) Calculate the equilibrium constant for the reaction.</p>
+                <p style="margin-left: 20px;">(b) What would happen to P<sub>NH₃</sub> and P<sub>CO₂</sub> if P<sub>H₂O</sub> were adjusted by external means to be 0.200 atm without changing the relative amounts of NH₃(g) and CO₂(g) and with (NH₄)₂CO₃(s) still being present?</p>
+                
+                <div style="margin-top: 15px; padding: 10px; background-color: #e8f4f8; border-left: 4px solid #2196F3;">
+                    <strong>Key Concepts:</strong>
+                    <ul style="margin: 5px 0 0 20px;">
+                        <li>Heterogeneous equilibrium (solid-gas system)</li>
+                        <li>Stoichiometric relationships in gas decomposition</li>
+                        <li>Le Chatelier's principle application</li>
+                        <li>Equilibrium constant expression: K = P<sub>NH₃</sub>² · P<sub>CO₂</sub> · P<sub>H₂O</sub></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-space"></div>
+        </div>
+
+        <div class="note" style="margin-top: 40px;">
+            <strong>End of Problems</strong><br>
+            Note: This problem set is for educational purposes in high school chemistry education, authorized by the instructor.
+        </div>
+    </div>
+</body>
+</html>
+
