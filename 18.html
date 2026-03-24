@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 18: Chemical Kinetics - All 78 Problems</title>
+    <style>
+        :root {
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #ffffff;
+            --color-text-primary: #111827;
+            --color-text-secondary: #374151;
+            --color-border: rgba(17, 24, 39, 0.18);
+            --color-accent: #1f2937;
+            --color-accent-light: #3b82f6;
+
+            --work-lines: 3;
+            --work-line-height: 1.6em;
+            --work-pad-y: 10px;
+            --work-pad-x: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 36px;
+        }
+
+        header {
+            text-align: left;
+            padding: 0 0 18px 0;
+            border-bottom: 2px solid var(--color-accent-light);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--color-accent-light);
+            margin-bottom: 6px;
+            letter-spacing: 0.3px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            color: var(--color-accent-light);
+            margin: 28px 0 18px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--color-accent-light);
+        }
+
+        .problem {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-left: 5px solid var(--color-accent-light);
+            padding: 16px 18px 14px 18px;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            page-break-inside: avoid;
+        }
+
+        .problem::after {
+            content: "풀이:\A";
+            white-space: pre;
+            display: block;
+            margin-top: 10px;
+            padding: var(--work-pad-y) var(--work-pad-x);
+            min-height: calc(var(--work-lines) * var(--work-line-height) + (var(--work-pad-y) * 2) + 1.2em);
+            border: 1px dashed var(--color-border);
+            border-radius: 8px;
+            color: #6b7280;
+            font-weight: 600;
+            background:
+                repeating-linear-gradient(
+                    to bottom,
+                    transparent 0,
+                    transparent calc(var(--work-line-height) - 1px),
+                    rgba(17, 24, 39, 0.10) calc(var(--work-line-height) - 1px),
+                    rgba(17, 24, 39, 0.10) var(--work-line-height)
+                );
+            background-position: 0 1.9em;
+        }
+
+        .problem-number {
+            font-weight: 800;
+            color: var(--color-accent-light);
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+            line-height: 1.65;
+            font-size: 0.95rem;
+        }
+
+        .sub-problem {
+            margin-left: 14px;
+            margin-top: 8px;
+            color: var(--color-text-primary);
+            padding: 7px;
+            background: rgba(59, 130, 246, 0.05);
+            border-left: 3px solid var(--color-accent-light);
+            border-radius: 4px;
+            font-size: 0.93rem;
+        }
+
+        .sub-problem strong {
+            color: var(--color-accent-light);
+        }
+
+        .equation {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            padding: 10px 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            overflow-x: auto;
+            color: #1f2937;
+            font-size: 0.9em;
+        }
+
+        .data-box {
+            background: #f9fafb;
+            border: 1px solid var(--color-border);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-size: 0.93em;
+        }
+
+        .toc {
+            background: #f3f4f6;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            color: var(--color-accent);
+            margin-bottom: 12px;
+        }
+
+        .toc-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .toc-item {
+            padding: 8px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .toc-item:hover {
+            background: #f0f9ff;
+            border-color: var(--color-accent-light);
+        }
+
+        .toc-item.active {
+            background: var(--color-accent-light);
+            color: white;
+        }
+
+        .controls {
+            position: sticky;
+            top: 0;
+            background: white;
+            border-bottom: 1px solid var(--color-border);
+            padding: 12px;
+            margin: -36px -36px 20px -36px;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+
+        button {
+            padding: 8px 14px;
+            background: var(--color-accent-light);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 18px; }
+            h1 { font-size: 1.5rem; }
+            .problem { padding: 12px; }
+            .controls { flex-wrap: wrap; }
+            .toc-list { grid-template-columns: 1fr; }
+            :root { --work-lines: 2; }
+        }
+
+        @media print {
+            body { padding: 0; }
+            .container { border: none; padding: 12px; }
+            .controls { display: none; }
+            .toc { display: none; }
+            :root { --work-lines: 6; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-top: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHAPTER 18 | Chemical Kinetics</h1>
+            <div class="subtitle">화학반응속도론 | Complete Problem Set - All 78 Problems</div>
+        </header>
+
+        <div class="controls">
+            <button onclick="window.print()">프린트 📄</button>
+            <button onclick="toggleTOC()">목차 보기 📑</button>
+            <button onclick="document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) * 1.1) + 'px'">글자크기↑</button>
+            <button onclick="document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) / 1.1) + 'px'">글자크기↓</button>
+        </div>
+
+        <div id="toc" class="toc" style="display:none;">
+            <h2>단원별 목차 (Sections)</h2>
+            <div class="toc-list">
+                <div class="toc-item" onclick="scrollToSection('rates')">1. Rates of Reactions (1-4)</div>
+                <div class="toc-item" onclick="scrollToSection('laws')">2. Rate Laws (5-18)</div>
+                <div class="toc-item" onclick="scrollToSection('mechanics')">3. Reaction Mechanisms (19-34)</div>
+                <div class="toc-item" onclick="scrollToSection('temperature')">4. Temperature Effects (35-42)</div>
+                <div class="toc-item" onclick="scrollToSection('molecular')">5. Molecular Theories (43-46)</div>
+                <div class="toc-item" onclick="scrollToSection('solution')">6. Reactions in Solution (45-46)</div>
+                <div class="toc-item" onclick="scrollToSection('catalyst')">7. Catalysis (47-74)</div>
+                <div class="toc-item" onclick="scrollToSection('cumulative')">8. Cumulative (75-78)</div>
+            </div>
+        </div>
+
+        <div id="rates" class="section-title">Section 1: Rates of Chemical Reactions (Problems 1-4)</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">Use Figure 18.3 to estimate graphically the instantaneous rate of production of NO at t = 200 s.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">Use Figure 18.3 to estimate graphically the instantaneous rate of production of NO at t = 100 s.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">Give three related expressions for the rate of the reaction NH₂(g) + NH₃(g) → N₂H₄(g) + H₂(g), assuming that the concentrations of any intermediates are constant and that the volume of the reaction vessel does not change.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">Give four related expressions for the rate of the reaction H₂CO(g) + O₂(g) → CO₂(g) + H₂O(g), assuming that the concentrations of any intermediates are constant and that the volume of the reaction vessel does not change.</div>
+        </div>
+
+        <div id="laws" class="section-title">Section 2: Rate Laws (Problems 5-18)</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">Nitrogen oxide reacts with hydrogen at elevated temperatures according to: 2NO(g) + H₂(g) → N₂(g) + H₂O(g)
+            
+When the concentration of H₂ is cut in half, the rate is cut in half. When NO is multiplied by 10, the rate increases by 100.</div>
+            <div class="sub-problem"><strong>(a)</strong> Write the rate expression and give units of k</div>
+            <div class="sub-problem"><strong>(b)</strong> If [NO] is multiplied by 3 and [H₂] by 2, what change in rate is observed?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">In the presence of vanadium oxide, SO₂(g) reacts with oxygen to give SO₃(g). Tripling SO₂ increases rate by 3. Tripling SO₃ decreases rate by 1.7 × 3. The rate is insensitive to O₂ concentration.</div>
+            <div class="sub-problem"><strong>(a)</strong> Write the rate expression and give units of k</div>
+            <div class="sub-problem"><strong>(b)</strong> If [SO₂] is multiplied by 2 and [SO₃] by 4, what change in rate is observed?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">In a study of the reaction of pyridine (C₅H₅N) with methyl iodide (CH₃I) at 25°C:
+            
+[C₅H₅N] (mol/L) | [CH₃I] (mol/L) | Rate (mol/L·s)
+1.00 × 10⁻⁴ | 1.00 × 10⁻⁴ | 7.5 × 10⁻⁷
+2.00 × 10⁻⁴ | 2.00 × 10⁻⁴ | 3.0 × 10⁻⁶
+2.00 × 10⁻⁴ | 4.00 × 10⁻⁴ | 6.0 × 10⁻⁶</div>
+            <div class="sub-problem"><strong>(a)</strong> Write the rate expression</div>
+            <div class="sub-problem"><strong>(b)</strong> Calculate k and give its units</div>
+            <div class="sub-problem"><strong>(c)</strong> Predict initial rate when [C₅H₅N] = 5.0 × 10⁻⁵ M and [CH₃I] = 2.0 × 10⁻⁵ M</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">The rate for oxidation of Fe²⁺ by Ce⁴⁺: Ce⁴⁺(aq) + Fe²⁺(aq) → Ce³⁺(aq) + Fe³⁺(aq)
+
+[Ce⁴⁺] (mol/L) | [Fe²⁺] (mol/L) | Rate (mol/L·s)
+1.1 × 10⁻⁵ | 1.8 × 10⁻⁵ | 2.0 × 10⁻⁷
+1.1 × 10⁻⁵ | 2.8 × 10⁻⁵ | 3.1 × 10⁻⁷
+3.4 × 10⁻⁵ | 2.8 × 10⁻⁵ | 9.5 × 10⁻⁷</div>
+            <div class="sub-problem"><strong>(a)</strong> Write the rate expression</div>
+            <div class="sub-problem"><strong>(b)</strong> Calculate k and give its units</div>
+            <div class="sub-problem"><strong>(c)</strong> Predict initial rate when [Ce⁴⁺] = 2.6 × 10⁻⁵ M and [Fe²⁺] = 1.3 × 10⁻⁵ M</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">The reaction SO₂Cl₂(g) ⇌ SO₂(g) + Cl₂(g) is first order with k = 2.2 × 10⁻⁵ s⁻¹ at 320°C. Initial partial pressure of SO₂Cl₂ is 1.0 atm. How long will it take for the pressure to fall to 0.50 atm?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">The reaction FClO₂(g) ⇌ FClO(g) + O(g) is first order with k = 6.76 × 10⁻⁴ s⁻¹ at 322°C.</div>
+            <div class="sub-problem"><strong>(a)</strong> Calculate the half-life at 322°C</div>
+            <div class="sub-problem"><strong>(b)</strong> Initial pressure of FClO₂ is 0.040 atm. How long to fall to 0.010 atm?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">The decomposition of benzene diazonium chloride C₆H₅N₂Cl → C₆H₅Cl + N₂ follows first-order kinetics with k = 4.3 × 10⁻⁵ s⁻¹ at 20°C. Initial partial pressure of C₆H₅N₂Cl is 0.0088 atm. Calculate its partial pressure after 10.0 hours.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">At 600 K, the rate constant for first-order decomposition of nitroethane CH₃CH₂NO₂(g) ⇌ C₂H₄(g) + HNO₂(g) is 1.9 × 10⁻⁴ s⁻¹. Initial partial pressure is 0.078 atm. Calculate partial pressure after 3.0 hours.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">Chloroethane decomposes at 800 K: C₂H₅Cl(g) ⇌ C₂H₄(g) + HCl(g) following first-order kinetics. After 340 s, [C₂H₅Cl] decreases from 0.0098 M to 0.0016 M. Calculate k at 800 K.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">The isomerization CH₃NC ⇌ CH₃CN obeys first-order rate law rate = 2k[CH₃NC] in presence of excess argon at 500 K. In 520 s, concentration decreases to 71% of its original value. Calculate k at 500 K.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">At 25°C in CCl₄ solvent, the reaction I + I ⇌ I₂ is second order in I with k = 8.2 × 10⁹ L·mol⁻¹·s⁻¹. Initial [I] = 1.00 × 10⁻⁴ M. Calculate [I] after 2.0 × 10⁻⁶ s.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">The rate for HO₂(g) + HO₂(g) ⇌ H₂O₂(g) + O₂(g) is second order in [HO₂] with k = 1.4 × 10⁹ L·mol⁻¹·s⁻¹ at 25°C. Initial [HO₂] = 2.0 × 10⁻⁸ M. Calculate concentration after 1.0 s.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">The rate for OH⁻(aq) + NH₄⁺(aq) ⇌ H₂O(l) + NH₃(aq) is first order in both [OH⁻] and [NH₄⁺] with k = 3.4 × 10¹⁰ L·mol⁻¹·s⁻¹ at 20°C. 1.00 L of 0.0010 M NaOH is mixed with 1.00 L of 0.0010 M NH₄Cl. Calculate time (s) for [OH⁻] to decrease to 1.0 × 10⁻⁵ M.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">The rate for OH⁻(aq) + HCN(aq) ⇌ H₂O(l) + CN⁻(aq) is first order in both [OH⁻] and [HCN] with k = 3.7 × 10⁹ L·mol⁻¹·s⁻¹ at 25°C. 0.500 L of 0.0020 M NaOH is mixed with 0.500 L of 0.0020 M HCN. Calculate time (s) for [OH⁻] to decrease to 1.0 × 10⁻⁴ M.</div>
+        </div>
+
+        <div id="mechanics" class="section-title">Section 3: Reaction Mechanisms (Problems 19-34)</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">Identify each elementary reaction as unimolecular, bimolecular, or termolecular, and write the rate expression:
+            
+<strong>(a)</strong> HCO(g) + O₂(g) ⇌ HO₂(g) + CO(g)
+<strong>(b)</strong> CH₃(g) + O₂(g) + N₂(g) ⇌ CH₃O₂(g) + N₂(g)
+<strong>(c)</strong> HO₂(g) + NO₂(g) ⇌ HO(g) + NO₂(g)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">Identify each elementary reaction as unimolecular, bimolecular, or termolecular, and write the rate expression:
+            
+<strong>(a)</strong> BrONO(g) ⇌ BrO(g) + NO₂(g)
+<strong>(b)</strong> HO₂(g) + NO(g) + Ar(g) ⇌ HNO₃(g) + Ar(g)
+<strong>(c)</strong> O(g) + H₂S(g) ⇌ HO(g) + HS(g)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">Consider the reaction mechanism:
+H₂O₂ + O₂ ⇌ O₂ + O (fast equilibrium)
+O + CF₂Cl₂ ⇌ ClO + CF₂Cl (fast equilibrium)
+ClO + O₂ ⇌ Cl + O₂ (slow)
+Cl + CF₂Cl₂ ⇌ CF₂Cl + Cl (fast)
+
+<strong>(a)</strong> What is the molecularity of each elementary step?
+<strong>(b)</strong> Write the overall equation
+<strong>(c)</strong> Identify the reaction intermediate(s)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">Consider the reaction mechanism:
+NO₂Cl(g) ⇌ NO(g) + Cl₂(g) (slow)
+Cl(g) + HCl(g) ⇌ H(g) + Cl₂(g) (fast)
+H(g) + NO₂Cl(g) ⇌ OH(g) + Cl(g) (fast)
+OH(g) + NO(g) ⇌ N(g) + HNO₃(g) (fast)
+
+<strong>(a)</strong> What is the molecularity of each elementary step?
+<strong>(b)</strong> Write the overall equation
+<strong>(c)</strong> Identify the reaction intermediate(s)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">The rate constant for BrO(g) + NO(g) ⇌ Br(g) + NO₂(g) is 1.3 × 10¹⁰ L·mol⁻¹·s⁻¹ at 25°C with K = 5.0 × 10¹⁰. Calculate the rate constant at 25°C for the reverse reaction Br(g) + NO₂(g) ⇌ BrO(g) + NO(g).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">The compound IrH₃(CO)(P(C₆H₅)₃)₂ exists in meridional ("mer") and facial ("fac") forms. At 25°C, the reaction mer ⇌ fac has k = 2.33 s⁻¹, and fac ⇌ mer has k = 2.10 s⁻¹. What is the equilibrium constant for the mer-to-fac reaction at 25°C?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">Write the overall reaction and rate laws for these mechanisms (eliminate intermediates):
+
+<strong>(a)</strong> A + B ⇌ C + D (fast equilibrium, k₁/k₋₁)
+      C + E ⇌ F (slow, k₂)
+
+<strong>(b)</strong> A + B ⇌ C (fast equilibrium, k₁/k₋₁)
+      C + D ⇌ E (fast equilibrium, k₂/k₋₂)
+      E ⇌ F (slow, k₃)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">Write the overall reaction and rate laws for these mechanisms (eliminate intermediates):
+
+<strong>(a)</strong> 2A + B ⇌ D (fast equilibrium, k₁/k₋₁)
+      D + B ⇌ E + F (slow, k₂)
+      F ⇌ G (fast, k₃)
+
+<strong>(b)</strong> A + B ⇌ C (fast equilibrium, k₁/k₋₁)
+      C + D ⇌ F (fast equilibrium, k₂/k₋₂)
+      F ⇌ G (slow, k₃)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">HCl reacts with propene: HCl + CH₃CHCH₂ ⇌ CH₃CHClCH₃
+Rate expression: rate = k[HCl][CH₃CHCH₂]
+
+Which mechanisms are consistent?
+<strong>(a)</strong> HCl + HCl ⇌ H⁺ + HCl₂⁻ (fast), then H⁺ + CH₃CHCH₂ → CH₃⁺CH₂CH₃ (slow)
+<strong>(b)</strong> HCl + HCl ⇌ H₂Cl⁺ (fast), then CH₃CHCH₂ + H₂Cl⁺ ⇌ product (fast equilibrium)
+<strong>(c)</strong> HCl + CH₃CHCH₂ ⇌ H⁺ + product (fast), H⁺ + HCl ⇌ H₂Cl (fast equilibrium)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">Chlorine reacts with H₂S in aqueous solution: Cl₂(aq) + H₂S(aq) ⇌ S(s) + H⁺(aq) + Cl⁻(aq)
+Rate: rate = k[Cl₂][H₂S]
+
+Which mechanisms are consistent?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">Nitryl chloride decomposition: 2NO₂Cl ⇌ 2NO₂ + Cl₂
+Rate: rate = k[NO₂Cl]²
+
+Which mechanisms are consistent?
+<strong>(a)</strong> NO₂Cl ⇌ NO₂ + Cl (slow), Cl + NO₂Cl ⇌ NO₂ + Cl₂ (fast)
+<strong>(b)</strong> 2NO₂Cl ⇌ N₂O₄ + Cl₂ (fast equilibrium), N₂O₄ ⇌ 2NO₂ (slow)
+<strong>(c)</strong> 2NO₂Cl + ClO⁻ ⇌ N₂O₂ + ClO⁻ (fast equilibrium), etc.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">Ozone decomposition by NO: O₃ + NO ⇌ O₂ + NO₂
+Rate: rate = k[O₃][NO]
+
+Which mechanisms are consistent?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">For the mechanism of problem 25(a), without assuming relative rates, use steady-state approximation for [C] to express rate of F production in terms of [A], [B], [D], and [E]. In what limit does this reduce to problem 25(a)?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">For the mechanism of problem 25(b), use steady-state approximation for [C] and [E] to express rate of F production in terms of [A], [B], and [D]. In what limit does this reduce to problem 25(b)?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">For the NO₂Cl decomposition mechanism:
+NO₂Cl ⇌ NO₂ + Cl (fast equilibrium, k₁/k₋₁)
+NO₂Cl + Cl ⇌ NO₂ + Cl₂ (slow, k₂)
+
+Use steady-state approximation for [Cl] to express the rate of Cl₂ appearance in terms of [NO₂Cl] and [NO₂].</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">Oxidation of HSO₃⁻ by H₂O₂: HSO₃⁻(aq) + H₂O₂(aq) ⇌ HSO₄⁻(aq) + H₂O(l)
+
+Mechanism involving SO₂OOH⁻:
+HSO₃⁻ + H₂O₂ ⇌ SO₂OOH⁻ + H₂O (fast equilibrium)
+SO₂OOH⁻ + H₃O⁺ ⇌ HSO₄⁻ + H₂O (slow)
+
+Use steady-state for [SO₂OOH⁻] to express rate of HSO₄⁻ formation in terms of [HSO₃⁻], [H₂O₂], and [H₃O⁺].</div>
+        </div>
+
+        <div id="temperature" class="section-title">Section 4: Effect of Temperature on Reaction Rates (Problems 35-42)</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">For the elementary reaction Ar + O₂ → Ar + O + O, temperature-dependence data:
+
+T (K) | k (L·mol⁻¹·s⁻¹)
+5,000 | 5.49 × 10⁶
+10,000 | 9.86 × 10⁸
+15,000 | 5.09 × 10⁹
+18,000 | 8.60 × 10⁹
+
+<strong>(a)</strong> Calculate the activation energy
+<strong>(b)</strong> Calculate the factor A in the Arrhenius equation</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">For the gas-phase H + D₂ ⇌ HD + D exchange reaction:
+
+T (K) | k (L·mol⁻¹·s⁻¹)
+299 | 1.56 × 10⁴
+327 | 3.77 × 10⁴
+346 | 7.6 × 10⁴
+440 | 10⁶
+549 | 1.07 × 10⁶
+745 | 8.7 × 10⁷
+
+<strong>(a)</strong> Calculate the activation energy
+<strong>(b)</strong> Calculate factor A in the Arrhenius equation</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">For BH₄⁻(aq) + NH₄⁺(aq) ⇌ BH₃NH₃(aq) + H₂(g):
+k = 1.94 × 10⁻⁴ L·mol⁻¹·s⁻¹ at 30.0°C
+Ea = 161 kJ·mol⁻¹
+
+<strong>(a)</strong> Compute k at 40.0°C
+<strong>(b)</strong> At 30°C, 1.00 × 10⁴ s is required to consume half of reactants. How long at 40°C?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">N₂O₄(g) ⇌ 2NO₂(g)
+Rate law: -d[N₂O₄]/dt = 2k[N₂O₄]
+At 30°C: k = 5.1 × 10⁶ s⁻¹, Ea = 54.0 kJ·mol⁻¹
+
+<strong>(a)</strong> Calculate time (s) for pressure to decrease from 0.10 to 0.010 atm at 30°C
+<strong>(b)</strong> Repeat at 300°C</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">For CH₃NC isomerization (Problem 14):
+Ea = 161 kJ·mol⁻¹
+k = 0.41 s⁻¹ at 600 K
+
+<strong>(a)</strong> Calculate Arrhenius factor A
+<strong>(b)</strong> Calculate k at 1000 K</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">Cyclopropane isomerizes to propylene (first-order):
+Ea = 272 kJ·mol⁻¹
+At 500°C, k = 6.1 × 10⁻⁴ s⁻¹
+
+<strong>(a)</strong> Calculate Arrhenius factor A
+<strong>(b)</strong> Calculate k at 25°C</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">For OH(g) + HCl(g) ⇌ H₂O(g) + Cl(g):
+Ea = 3.5 kJ·mol⁻¹
+ΔU = -66.8 kJ·mol⁻¹
+
+Calculate Ea for the reverse reaction H₂O(g) + Cl(g) ⇌ OH(g) + HCl(g).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">For HOCl ⇌ HClO:
+Ea(forward) = 311 kJ·mol⁻¹
+Ea(reverse) = 31 kJ·mol⁻¹
+
+Estimate ΔU for the reaction.</div>
+        </div>
+
+        <div id="molecular" class="section-title">Section 5: Molecular Theories of Elementary Reactions (Problems 43-44)</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 43</div>
+            <div class="problem-text">Use collision theory to estimate the preexponential factor in the rate constant for:
+NOCl + NOCl ⇌ 2NO + Cl₂ at 25°C
+
+Average diameter of NOCl = 3.0 × 10⁻¹⁰ m. Use steric factor P from Table 18.1.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 44</div>
+            <div class="problem-text">Use collision theory to estimate the preexponential factor in the rate constant for:
+NO₂ + NO₂ ⇌ NO₂ + O₂ at 500 K
+
+Average diameter of NO₂ = 2.6 × 10⁻¹⁰ m. Use steric factor P from Table 18.1.</div>
+        </div>
+
+        <div id="solution" class="section-title">Section 6: Reactions in Solution (Problems 45-46)</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 45</div>
+            <div class="problem-text">The rate constant for CH₃Br + Cl⁻ ⇌ CH₃Cl + Br⁻ in acetone is 5.9 × 10⁻³ L·mol⁻¹·s⁻¹.
+
+Is this reaction diffusion-controlled or limited by a large activation energy?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 46</div>
+            <div class="problem-text">The rate constant for H⁺ + HS⁻ ⇌ H₂S in aqueous solution is 7.5 × 10¹⁰ L·mol⁻¹·s⁻¹.
+
+Is this reaction diffusion-controlled or limited by a large activation energy?</div>
+        </div>
+
+        <div id="catalyst" class="section-title">Section 7: Catalysis (Problems 47-74)</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 47</div>
+            <div class="problem-text">Enzyme penicillinase: Km = 5 × 10⁻⁵ mol·L⁻¹, k₂ = 2 × 10³ s⁻¹
+
+<strong>(a)</strong> Maximum rate of decomposition if [E] = 6 × 10⁻⁷ M?
+<strong>(b)</strong> At what substrate concentration is rate half of maximum?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 48</div>
+            <div class="problem-text">Enzyme carbonic anhydrase: Km = 8 × 10⁻⁵ mol·L⁻¹, k₂ = 6 × 10⁵ s⁻¹
+
+<strong>(a)</strong> Maximum rate if [E] = 5 × 10⁻⁶ M?
+<strong>(b)</strong> At what CO₂ concentration is rate 30% of maximum?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 49</div>
+            <div class="problem-text">Hemoglobin binding oxygen: Hb(aq) + O₂(aq) ⇌ HbO₂(aq)
+First order in both, k = 4 × 10⁷ L·mol⁻¹·s⁻¹
+
+Calculate initial rate when [Hb] = 2 × 10⁻⁹ M and [O₂] = 5 × 10⁻⁵ M.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 50</div>
+            <div class="problem-text">1.00 L of 9.95 × 10⁻³ M S₂O₃²⁻ mixed with 1.00 L of 2.52 × 10⁻³ M H₂O₂ at pH 7.0, 25°C.
+
+Two competing pathways with observed rates for S₂O₃²⁻ disappearing at 7.9 × 10⁻⁷ mol·L⁻¹·s⁻¹ and H₂O₂ at 8.8 × 10⁻⁷ mol·L⁻¹·s⁻¹.
+
+<strong>(a)</strong> Percentage of S₂O₃²⁻ reacting by first equation?
+<strong>(b)</strong> How many mL/min of 0.100 M H₃O⁺ needed to maintain pH 7.0?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">8.23 × 10⁻³ mol InCl(s) in 1.00 L of 0.010 M HCl at 75°C undergoes:
+3In⁺(aq) ⇌ 2In(s) + In³⁺(aq)
+
+Time (s) | [In⁺] (mol/L)
+0 | 8.23 × 10⁻³
+240 | 6.41 × 10⁻³
+480 | 5.00 × 10⁻³
+720 | 3.89 × 10⁻³
+1000 | 3.03 × 10⁻³
+1200 | 3.03 × 10⁻³
+10,000 | 3.03 × 10⁻³
+
+<strong>(a)</strong> Plot ln[In⁺] vs time and determine apparent k for first-order
+<strong>(b)</strong> Determine half-life
+<strong>(c)</strong> Determine K at these conditions</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">Di-t-butyl peroxide (DTBP) decomposes: (CH₃)₃COOC(CH₃)₃ ⇌ (CH₃)₂CO + C₂H₆
+
+Pressure data at 147.2°C:
+(Extensive table of Ptot vs time)
+
+<strong>(a)</strong> Calculate partial pressure of DTBP at each time
+<strong>(b)</strong> Better described by first-order or second-order kinetics?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">Reaction of OH⁻ with HCN: kf = 3.7 × 10⁹ L·mol⁻¹·s⁻¹
+
+For: H₂O(l) + CN⁻(aq) ⇌ OH⁻(aq) + HCN(aq)
+
+Using Ka of HCN from Table 15.2, calculate kr in rate = kr[CN⁻].</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">CO₂ + NH₃ ⇌ NH₄⁺ + OCONH⁻
+
+Forward: first order in CO₂, second order in NH₃, k = 0.238 atm⁻² s⁻¹ at 0°C
+Reverse: zero order, k = 1.60 × 10⁻⁷ atm s⁻¹
+
+Net rate = forward - reverse. Calculate K at 0°C.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">For reactions:
+I + I + M ⇌ I₂ + M
+Br + Br + M ⇌ Br₂ + M
+
+Rate laws: -d[I]/dt = 2kᵢ[I]²[M], -d[Br]/dt = 2kᵦ[Br]²[M]
+
+At 500°C: kᵢ/kᵦ = 3.0, [I]₀ = 2[Br]₀, [M] same and much greater than [I]₀
+
+Calculate ratio of time for [I] to decrease to half vs same for [Br].</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">Kinetic vs thermodynamic control. Compound A undergoes:
+A ⇌ B (k₁ = 1 × 10⁸ s⁻¹, k₋₁ = 1 × 10² s⁻¹)
+A ⇌ C (k₂ = 1 × 10⁹ s⁻¹, k₋₂ = 1 × 10⁴ s⁻¹)
+
+<strong>(a)</strong> Calculate K for B ⇌ C, ratio [B]/[C] at equilibrium (thermodynamic control)
+<strong>(b)</strong> Ignoring back reactions, calculate [B]/[C] ratio (kinetic control)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">Compare and contrast the mechanisms for:
+H₂ + Br₂ ⇌ 2HBr
+H₂ + I₂ ⇌ 2HI</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">For N₂O₅(g) decomposition at 300 K with excess N₂:
+Rate: keff[M][N₂O₅]/[M]
+
+P (atm) | keff (s⁻¹)
+9.21 | 0.265
+5.13 | 0.247
+3.16 | 0.248
+3.03 | 0.223
+0.625 | 0.116
+0.579 | 0.108
+0.526 | 0.104
+0.439 | 0.092
+0.395 | 0.086
+
+Estimate keff at very high pressure and k₁ in L·mol⁻¹·s⁻¹.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">Ozone decomposition by light:
+O₃ + light ⇌ O₂ + O (k₁)
+O + O₂ + M ⇌ O₃ + M (k₂)
+O + O₃ ⇌ 2O₂ (k₃)
+
+Using steady-state for [O], express rate of O₂ formation. Show that only k₃/k₂ ratio, not individual values, affects the rate.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">Br₂ + H₂ reaction mechanism:
+Br₂ + M ⇌ 2Br + M (fast equilibrium)
+Br + H₂ ⇌ HBr + H (slow)
+H + Br₂ ⇌ HBr + Br (fast)
+
+With additional: HBr + H ⇌ H₂ + Br (k₄)
+
+<strong>(a)</strong> Expression for d[H]/dt
+<strong>(b)</strong> Expression for d[Br]/dt
+<strong>(c)</strong> Steady-state for [H] and [Br]
+<strong>(d)</strong> Rate of HBr production</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">Observations: A + B + C → D and E (D about 10× E at neutral pH)
+At acidic pH: D much smaller (about 1% of E)
+
+Proposed mechanism:
+(1) A + B ⇌ F (rapid equilibrium)
+(2) C + F → D (negligible reverse)
+(3) C + F → E (negligible reverse)
+
+<strong>(a)</strong> What does scheme imply about rate dependence on [A], [B], [C]?
+<strong>(b)</strong> What about relative magnitudes of k₂ and k₃?
+<strong>(c)</strong> Explanation for observation at acidic pH?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">Fe²⁺ oxidized by Cl₂: 2Fe²⁺ + Cl₂ ⇌ 2Fe³⁺ + 2Cl⁻
+
+Observation: Rate decreases when [Fe³⁺] or [Cl⁻] increases.
+
+Which mechanism is consistent?
+<strong>(a)</strong> Fe²⁺ + Cl₂ ⇌ Fe³⁺ + Cl₂⁻ (fast), then Fe²⁺ + Cl₂⁻ → Fe³⁺ + Cl (slow)
+<strong>(b)</strong> Fe²⁺ + Cl₂ ⇌ Fe(IV) + Cl⁻ (fast), then Fe(IV) + Fe²⁺ → 2Fe³⁺ + Cl (slow)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">Manfred Eigen's temperature-jump method studies:
+Proton transfer H₂O → NH₃: k = 2 × 10⁵ s⁻¹
+Kb for NH₃ + H₂O = 1.8 × 10⁻⁵ M
+
+What can be deduced about proton transfer from NH₄⁺ to OH⁻? Write equations for relevant reactions.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">Reaction A + B ⇌ C + D with equilibrium constant K.
+
+<strong>(a)</strong> Assume elementary steps match stoichiometry with kf and kr. Derive relation between kf, kr, and K. Comment on validity of assumptions and K.
+
+<strong>(b)</strong> Reaction is exothermic. Explain implications for K vs temperature and relation of Ea values.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">Acetaldehyde decomposition: CH₃CHO ⇌ CH₄ + CO
+
+Proposed mechanism shows this is a chain reaction.
+
+Identify the initiation, propagation, and termination steps.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">Lanthanum(III) phosphate: 2LaPO₄·½H₂O(s) ⇌ 2LaPO₄(s) + H₂O(g)
+First order in LaPO₄·½H₂O
+
+T (°C) | k (s⁻¹)
+205 | 2.3 × 10⁻⁴
+219 | 3.69 × 10⁻⁴
+246 | 7.75 × 10⁻⁴
+260 | 12.3 × 10⁻⁴
+
+Compute activation energy.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">Pressure cooker cooking:
+5 min at 112°C for full cooking
+10 min at 100°C for full cooking
+
+<strong>(a)</strong> Calculate average Ea for cooking reactions
+<strong>(b)</strong> Time to cook in Denver where Pₐₜₘ = 0.818 atm, boiling point = 94.4°C?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">First-order reaction with Ea = 53 kJ·mol⁻¹
+
+<strong>(a)</strong> Show that doubling temperature from 298 K to 308 K doubles the reaction rate
+<strong>(b)</strong> Show that rate increases by factor of 1.5 from 398 K to 408 K</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">Gas-phase H₂ + I₂ ⇌ 2HI:
+kf = 240 L·mol⁻¹·s⁻¹ at 1000 K
+Ea = 165 kJ·mol⁻¹
+
+Using data from Appendix D, calculate Ea for reverse reaction and kr at 1000 K.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">Proposed mechanism:
+(1) A + A ⇌ A₂ (fast equilibrium)
+(2) A₂ + B ⇌ AB (fast equilibrium)
+(3) AB + CD ⇌ AC + BD (slow)
+
+<strong>(a)</strong> Write balanced overall equation
+<strong>(b)</strong> Write rate expression in terms of A, B, and CD
+<strong>(c)</strong> If steps 1-2 endothermic and step 3 exothermic, will temperature increase k?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">In Problem 21, describe the role of CF₂Cl₂ in the reaction mechanism.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">Silver ions catalyze the reaction Tl⁺ + Ce⁴⁺ with Ag²⁺ as reactive intermediate.
+
+Determine the rate law by making steady-state approximation for [Ag²⁺].</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">Enzyme inhibition: Inhibitor I binds to active site:
+E + I ⇌ EI (fast equilibrium)
+
+Determine the effect of inhibitor at total concentration [I]₀ = [I] + [EI] on the Michaelis-Menten rate expression.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 74</div>
+            <div class="problem-text">Enzyme lysozyme attacks N-acetylglucosamine (NAG):
+[E] = 2 × 10⁻⁶ M
+Maximum rate at high [S] = 1 × 10⁻⁶ mol·L⁻¹·s⁻¹
+Rate halved when [S] = 6 × 10⁻⁶ M
+
+Determine Michaelis-Menten constants Km and k₂.</div>
+        </div>
+
+        <div id="cumulative" class="section-title">Section 8: Cumulative Problems (Problems 75-78)</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 75</div>
+            <div class="problem-text">For H₂ + I₂ ⇌ 2HI:
+Rate = k[I₂][H₂]² with k = 0.0242 L·mol⁻¹·s⁻¹ at 400°C
+
+Initial: [H₂] = 0.081 M, [I₂] = 0.036 M
+
+Calculate initial rate at which heat is absorbed or emitted (ΔH at 400°C ≈ ΔH at 25°C).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 76</div>
+            <div class="problem-text">Reaction: 2ClO₂⁻(aq) + OH⁻(aq) ⇌ ClO₃⁻(aq) + ClO⁻(aq) + H₂O(l)
+
+Rate = k[ClO₂⁻]²[OH⁻] with k = 230 L²·mol⁻²·s⁻¹ at 25°C
+
+Solution: [ClO₂⁻] = 0.020 M, [HCN] = 0.095 M, [CN⁻] = 0.17 M
+
+Calculate initial rate.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 77</div>
+            <div class="problem-text">Gas mixture at 500 K, Ptotal = 3.26 atm:
+χNO = 0.00057, χO₃ = 0.00026
+
+Elementary reaction: NO + O₃ ⇌ NO₂ + O₂
+Second-order k = 7.6 × 10⁷ L·mol⁻¹·s⁻¹
+
+Calculate initial reaction rate.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 78</div>
+            <div class="problem-text">For 2NO₂ ⇌ 2NO + O₂:
+Ea = 111 kJ·mol⁻¹
+
+Calculate the root-mean-square velocity of NO₂ at 400 K and compare it to the velocity of NO₂ with kinetic energy = Ea/NA.</div>
+        </div>
+
+        <footer>
+            <p><strong>Chapter 18: Chemical Kinetics - Complete Problem Set</strong></p>
+            <p>All 78 Problems | Rates, Rate Laws, Mechanisms, Temperature Effects, Catalysis</p>
+            <p style="font-size: 0.9em; margin-top: 12px;">For printable worksheets: Use browser print function (Ctrl+P or Cmd+P)</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTOC() {
+            const toc = document.getElementById('toc');
+            toc.style.display = toc.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('toc').style.display = 'none';
+            }
+        }
+
+        // Auto-collapse TOC on section click
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.toc-item');
+            items.forEach(item => {
+                item.addEventListener('click', function() {
+                    document.getElementById('toc').style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

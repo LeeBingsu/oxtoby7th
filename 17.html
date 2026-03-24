@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17: Electrochemistry - 106 Problems</title>
+    <style>
+        :root {
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #ffffff;
+            --color-text-primary: #111827;
+            --color-text-secondary: #374151;
+            --color-border: rgba(17, 24, 39, 0.18);
+            --color-accent: #218085;
+
+            --work-lines: 5;
+            --work-line-height: 1.6em;
+            --work-pad-y: 10px;
+            --work-pad-x: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 36px;
+        }
+
+        header {
+            text-align: left;
+            padding: 0 0 18px 0;
+            border-bottom: 2px solid var(--color-accent);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--color-accent);
+            margin-bottom: 6px;
+            letter-spacing: 0.3px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            color: var(--color-accent);
+            margin: 34px 0 14px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .problem {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-left: 5px solid var(--color-accent);
+            padding: 18px 18px 16px 18px;
+            margin-bottom: 18px;
+            border-radius: 10px;
+        }
+
+        .problem::after {
+            content: "풀이:\A";
+            white-space: pre;
+            display: block;
+            margin-top: 12px;
+            padding: var(--work-pad-y) var(--work-pad-x);
+            min-height: calc(var(--work-lines) * var(--work-line-height) + (var(--work-pad-y) * 2) + 1.2em);
+            border: 1px dashed var(--color-border);
+            border-radius: 8px;
+            color: #6b7280;
+            font-weight: 600;
+            background:
+                repeating-linear-gradient(
+                    to bottom,
+                    transparent 0,
+                    transparent calc(var(--work-line-height) - 1px),
+                    rgba(17, 24, 39, 0.10) calc(var(--work-line-height) - 1px),
+                    rgba(17, 24, 39, 0.10) var(--work-line-height)
+                );
+            background-position: 0 1.9em;
+        }
+
+        .problem-number {
+            font-weight: 800;
+            color: var(--color-accent);
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .problem-text {
+            color: var(--color-text-primary);
+            margin-bottom: 10px;
+        }
+
+        .sub-problem {
+            margin-left: 16px;
+            margin-top: 6px;
+            color: var(--color-text-primary);
+        }
+
+        .equation {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            background: rgba(33, 128, 133, 0.08);
+            border: 1px solid rgba(33, 128, 133, 0.25);
+            padding: 10px 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #0f172a;
+        }
+
+        .note {
+            font-style: italic;
+            color: #4b5563;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 22px; }
+            h1 { font-size: 1.6rem; }
+            .problem { padding: 14px; }
+        }
+
+        @media print {
+            body { padding: 0; }
+            .container {
+                border: none;
+                padding: 16px;
+            }
+            :root {
+                --work-lines: 6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHAPTER 17</h1>
+            <div class="subtitle">Electrochemistry | 교육용 문제집 | 106 Problems</div>
+        </header>
+
+        <div class="section-title">Electrochemical Cells</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 1</div>
+            <div class="problem-text">Diagram the following galvanic cell, indicating the direction of flow of electrons in the external circuit and the motion of ions in the salt bridge. Pt | Cr(s), Cr³⁺(aq) ‖ Cu²⁺(aq), Cu(s). Write a balanced equation for the overall reaction in this cell.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 2</div>
+            <div class="problem-text">Diagram the following galvanic cell, indicating the direction of flow of electrons in the external circuit and the motion of ions in the salt bridge. Ni(s) | Ni²⁺(aq) ‖ HCl(aq), H₂(g) | Pt(s). Write a balanced equation for the overall reaction in this cell.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 3</div>
+            <div class="problem-text">A quantity of electricity equal to 6.95 × 10⁴ C passes through an electrolytic cell that contains a solution of Sn⁴⁺(aq) ions. Compute the maximum chemical amount, in moles, of Sn(s) that can be deposited at the cathode.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 4</div>
+            <div class="problem-text">A quantity of electricity equal to 9.263 × 10⁴ C passes through a galvanic cell that has an Ni(s) anode. Compute the maximum chemical amount, in moles, of Ni²⁺(aq) that can be released into solution.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 5</div>
+            <div class="problem-text">A galvanic cell is constructed that has a zinc anode immersed in a Zn(NO₃)₂ solution and a platinum cathode immersed in an NaCl solution equilibrated with Cl₂(g) at 1 atm and 25°C. A salt bridge connects the two half-cells.</div>
+            <div class="sub-problem">(a) Write a balanced equation for the cell reaction.</div>
+            <div class="sub-problem">(b) A steady current of 0.800 A is observed to flow for a period of 25.0 minutes. How much charge passes through the circuit during this time? How many moles of electrons is this charge equivalent to?</div>
+            <div class="sub-problem">(c) Calculate the change in mass of the zinc electrode.</div>
+            <div class="sub-problem">(d) Calculate the volume of gaseous chlorine generated or consumed as a result of the reaction.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 6</div>
+            <div class="problem-text">A galvanic cell consists of a cadmium cathode immersed in a CdSO₄ solution and a zinc anode immersed in a ZnSO₄ solution. A salt bridge connects the two half-cells.</div>
+            <div class="sub-problem">(a) Write a balanced equation for the cell reaction.</div>
+            <div class="sub-problem">(b) A current of 1.45 A is observed to flow for a period of 2.60 hours. How much charge passes through the circuit during this time? How many moles of electrons is this charge equivalent to?</div>
+            <div class="sub-problem">(c) Calculate the change in mass of the zinc electrode.</div>
+            <div class="sub-problem">(d) Calculate the change in mass of the cadmium electrode.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 7</div>
+            <div class="problem-text">An acidic solution containing copper ions is electrolyzed, producing gaseous oxygen (from water) at the anode and copper at the cathode. For every 16.0 g of oxygen generated, 63.5 g of copper plates out. What is the oxidation state of the copper in the solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 8</div>
+            <div class="problem-text">Michael Faraday reported that passing electricity through one solution liberated 1 mass of hydrogen at the cathode and 8 masses of oxygen at the anode. The same quantity of electricity liberated 36 masses of chlorine at the anode and 58 masses of tin at the cathode from a second solution. What were the oxidation states of hydrogen, oxygen, chlorine, and tin in these solutions?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 9</div>
+            <div class="problem-text">Liquid potassium chloride, KCl(ℓ), is decomposed in an electrolytic cell to form potassium and chlorine. Liquid KCl consists of K⁺ and Cl⁻ ions.</div>
+            <div class="sub-problem">(a) Write balanced equations for the half-cell reactions at the anode and at the cathode, and for the overall cell reaction.</div>
+            <div class="sub-problem">(b) If a current of 2.00 A is passed through the cell for a period of 5.00 hours, calculate the mass of metal deposited and of gas liberated.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 10</div>
+            <div class="problem-text">In the Hall–Héroult process for the electrolytic production of aluminum, Al³⁺ ions from Al₂O₃ dissolved in molten cryolite (Na₃AlF₆) are reduced to Al(l) while carbon (graphite) is oxidized to CO₂ by reaction with oxide ions.</div>
+            <div class="sub-problem">(a) Write balanced equations for the half-reactions at the anode and at the cathode, and for the overall cell reaction.</div>
+            <div class="sub-problem">(b) If a current of 50,000 A is passed through the cell for a period of 24 hours, what mass of aluminum will be recovered?</div>
+        </div>
+
+        <div class="section-title">Cell Potentials and the Gibbs Free Energy</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 11</div>
+            <div class="problem-text">A Ni²⁺|Ni ‖ Ag⁺|Ag galvanic cell is constructed in which the standard cell potential is 1.03 V. Calculate the free energy change at 25°C when 1.00 g of silver plates out, if all concentrations remain at their standard value of 1 M throughout the process. What is the maximum electrical work done by the cell on its surroundings during this experiment?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 12</div>
+            <div class="problem-text">A Zn²⁺|Zn ‖ Co²⁺|Co galvanic cell is constructed in which the standard cell potential is 0.48 V. Calculate the free energy change at 25°C per gram of zinc lost at the anode, if all concentrations remain at their standard value of 1 M throughout the process. What is the maximum electrical work done by the cell on its surroundings during this experiment?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 13</div>
+            <div class="problem-text">A galvanic cell is constructed in which a Br₂|Br⁻ half-cell is connected to a Co²⁺|Co half-cell.</div>
+            <div class="sub-problem">(a) By referring to Appendix E, write balanced chemical equations for the half-reactions at the anode and the cathode and for the overall cell reaction.</div>
+            <div class="sub-problem">(b) Calculate the cell potential, assuming that all reactants and products are in their standard states.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 14</div>
+            <div class="problem-text">A galvanic cell is constructed in which a Pt|Fe²⁺, Fe³⁺ half-cell is connected to a Cd²⁺|Cd half-cell.</div>
+            <div class="sub-problem">(a) Referring to Appendix E, write balanced chemical equations for the half-reactions at the anode and the cathode and for the overall cell reaction.</div>
+            <div class="sub-problem">(b) Calculate the cell potential, assuming that all reactants and products are in their standard states.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 15</div>
+            <div class="problem-text">In a galvanic cell, one half-cell consists of a zinc strip dipped into a 1.00 M solution of Zn(NO₃)₂. In the second half-cell, solid indium adsorbed on graphite is in contact with a 1.00 M solution of In(NO₃)₃. Indium is observed to plate out as the galvanic cell operates, and the initial cell potential is measured to be 0.425 V at 25°C.</div>
+            <div class="sub-problem">(a) Write balanced equations for the half-reactions at the anode and the cathode.</div>
+            <div class="sub-problem">(b) Calculate the standard reduction potential of an In³⁺|In half-cell. Consult Appendix E for the reduction potential of the Zn²⁺|Zn electrode.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 16</div>
+            <div class="problem-text">In a galvanic cell, one half-cell consists of gaseous chlorine bubbled over a platinum electrode at a pressure of 1.00 atm into a 1.00 M solution of NaCl. The second half-cell has a strip of solid gallium immersed in a 1.00 M Ga(NO₃)₃ solution. The initial cell potential is measured to be 1.918 V at 25°C, and as the cell operates, the concentration of chloride ion is observed to increase.</div>
+            <div class="sub-problem">(a) Write balanced equations for the half-reactions at the anode and the cathode.</div>
+            <div class="sub-problem">(b) Calculate the standard reduction potential of a Ga³⁺|Ga half-cell. Consult Appendix E for the reduction potential of the Cl₂|Cl⁻ electrode.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 17</div>
+            <div class="problem-text">Would you expect powdered solid aluminum to act as an oxidizing agent or as a reducing agent?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 18</div>
+            <div class="problem-text">Would you expect potassium perchlorate, KClO₄(aq), in a concentrated acidic solution to act as an oxidizing agent or as a reducing agent?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 19</div>
+            <div class="problem-text">Bromine is sometimes used in place of chlorine as a disinfectant in swimming pools. If the effectiveness of a chemical as a disinfectant depends solely on its strength as an oxidizing agent, do you expect bromine to be better or worse than chlorine as a disinfectant, at a given concentration?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 20</div>
+            <div class="problem-text">Many bleaches, including chlorine and its oxides, oxidize dye compounds in cloth. Predict which of the following will be the strongest bleach at a given concentration and pH 0: NaClO₃(aq), NaClO(aq), Cl₂(aq). How does the strongest chlorine-containing bleach compare in strength with ozone, O₃(g)?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 21</div>
+            <div class="problem-text">Suppose you have the following reagents available at pH 0, atmospheric pressure, and 1 M concentration: Co(s), Ag⁺(aq), Cl₂(aq), Cr(s), BrO₃⁻(aq), I₂(s).</div>
+            <div class="sub-problem">(a) Which is the strongest oxidizing agent?</div>
+            <div class="sub-problem">(b) Which is the strongest reducing agent?</div>
+            <div class="sub-problem">(c) Which reagent will reduce Pb²⁺(aq) while leaving Cd²⁺(aq) unreacted?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 22</div>
+            <div class="problem-text">Suppose you have the following reagents available at pH 0, atmospheric pressure, and 1 M concentration: Sc(s), Hg²⁺(aq), Cr₂O₇²⁻(aq), H₂O₂(aq), Sn²⁺(aq), Ni(s).</div>
+            <div class="sub-problem">(a) Which is the strongest oxidizing agent?</div>
+            <div class="sub-problem">(b) Which is the strongest reducing agent?</div>
+            <div class="sub-problem">(c) Which reagent will oxidize Fe(s) while leaving Cu(s) unreacted?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 23</div>
+            <div class="problem-text">(a) Use the data from Appendix E to calculate the half-cell potential E° for the half-reaction Mn³⁺(aq) + e⁻ ⇌ Mn(s).</div>
+            <div class="sub-problem">(b) Consider the disproportionation reaction 3 Mn²⁺(aq) ⇌ 2 Mn(s) + Mn³⁺(aq). Will Mn²⁺ disproportionate in aqueous solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 24</div>
+            <div class="problem-text">The following standard reduction potentials have been measured in aqueous solution at 25°C: Tl³⁺(aq) + e⁻ ⇌ Tl²⁺(aq), E° = -0.37 V; Tl²⁺(aq) + e⁻ ⇌ Tl⁺(aq), E° = 1.25 V.</div>
+            <div class="sub-problem">(a) Calculate the half-cell potential for the half-reaction Tl³⁺(aq) + 2e⁻ ⇌ Tl⁺(aq).</div>
+            <div class="sub-problem">(b) Consider the disproportionation reaction 2 Tl²⁺(aq) ⇌ Tl³⁺(aq) + Tl⁺(aq). Will Tl²⁺ disproportionate in aqueous solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 25</div>
+            <div class="problem-text">The following reduction potentials are measured at pH 0: BrO₃⁻(aq) + 6 H⁺(aq) + 5e⁻ ⇌ ½ Br₂(ℓ) + 9 H₂O, E° = 1.52 V; Br₂(ℓ) + 2e⁻ ⇌ 2 Br⁻(aq), E° = 1.065 V.</div>
+            <div class="sub-problem">(a) Will bromine disproportionate spontaneously in acidic solution?</div>
+            <div class="sub-problem">(b) Which is the stronger reducing agent at pH 0: Br₂(ℓ) or Br⁻?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 26</div>
+            <div class="problem-text">The following reduction potentials are measured at pH 14: ClO⁻(aq) + H₂O + 2e⁻ ⇌ Cl⁻(aq) + 2 OH⁻(aq), E° = 0.90 V; ClO⁻(aq) + H₂O + 2e⁻ ⇌ ClO⁻(aq) + 2 OH⁻(aq), E° = 0.59 V.</div>
+            <div class="sub-problem">(a) Will ClO⁻ disproportionate spontaneously in basic solution?</div>
+            <div class="sub-problem">(b) Which is the stronger reducing agent at pH 14: ClO⁻ or Cl⁻?</div>
+        </div>
+
+        <div class="section-title">Concentration Effects and the Nernst Equation</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 27</div>
+            <div class="problem-text">A galvanic cell is constructed that carries out the reaction Pb(s) + 2 Cr³⁺(aq) ⇌ Pb²⁺(aq) + 2 Cr(s). If the initial concentration of Pb²⁺(aq) is 0.15 M, that of Cr²⁺(aq) is 0.20 M, and that of Cr³⁺(aq) is 0.0030 M, calculate the initial voltage generated by the cell at 25°C.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 28</div>
+            <div class="problem-text">A galvanic cell is constructed that carries out the reaction 2 Ag⁺(aq) + Cl₂(g) ⇌ 2 Ag(s) + 2 Cl⁻(aq). If the partial pressure of Cl₂(g) is 1.00 atm, the initial concentration of Ag⁺(aq) is 0.25 M, and that of Cl⁻(aq) is 0.016 M, calculate the initial voltage generated by the cell at 25°C.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 29</div>
+            <div class="problem-text">Calculate the reduction potential for a Pt|Cr³⁺, Cr²⁺ half-cell in which [Cr³⁺] is 0.15 M and [Cr²⁺] is 0.0019 M.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 30</div>
+            <div class="problem-text">Calculate the reduction potential for an I₂(s)|I⁻ half-cell in which [I⁻] is 1.5 × 10⁻⁶ M.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 31</div>
+            <div class="problem-text">An I₂(s)|I⁻ (1.00 M) half-cell is connected to an H₃O⁺|H₂ (1 atm) half-cell in which the concentration of the hydronium ion is unknown. The measured cell potential is 0.841 V, and the I₂|I⁻ half-cell is the cathode. What is the pH in the H₃O⁺|H₂ half-cell?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 32</div>
+            <div class="problem-text">A Cu²⁺(1.00 M)|Cu half-cell is connected to a Br₂(ℓ)|Br⁻ half-cell in which the concentration of bromide ion is unknown. The measured cell potential is 0.963 V, and the Cu²⁺|Cu half-cell is the anode. What is the bromide ion concentration in the Br₂(ℓ)|Br⁻ half-cell?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 33</div>
+            <div class="problem-text">The following reaction occurs in an electrochemical cell: 3 HClO₂(aq) + 2 Cr²⁺(aq) + 12 H₂O(ℓ) ⇌ 3 HClO₂(aq) + Cr₂O₇²⁻(aq) + 8 H₂O(aq).</div>
+            <div class="sub-problem">(a) Calculate E° for this cell.</div>
+            <div class="sub-problem">(b) At pH 0, with [Cr₂O₇²⁻] = 0.80 M, [HClO₂] = 0.15 M, and [HClO] = 0.20 M, the cell potential is found to be 0.15 V. Calculate the concentration of Cr³⁺(aq) in the cell.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 34</div>
+            <div class="problem-text">A galvanic cell is constructed in which the overall reaction is Cr₂O₇²⁻(aq) + 14 H⁺(aq) + 6 I⁻(aq) ⇌ 2 Cr³⁺(aq) + 3 I₂(s) + 21 H₂O(ℓ).</div>
+            <div class="sub-problem">(a) Calculate E° for this cell.</div>
+            <div class="sub-problem">(b) At pH 0, with [Cr₂O₇²⁻] = 1.5 M and [I⁻] = 0.40 M, the cell potential is found to equal 0.87 V. Calculate the concentration of Cr³⁺(aq) in the cell.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 35</div>
+            <div class="problem-text">By using the half-cell potentials in Appendix E, calculate the equilibrium constant at 25°C for the reaction in problem 33. Dichromate ion (Cr₂O₇²⁻) is orange, and Cr³⁺ is light green in aqueous solution. If 2.00 L of 1.00 M HClO₂ solution is added to 2.00 L of 0.50 M Cr(NO₃)₃ solution, what color will the resulting solution have?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 36</div>
+            <div class="problem-text">By using the half-cell potentials in Appendix E, calculate the equilibrium constant at 25°C for the reaction 6 Hg²⁺(aq) + 2 Au(s) ⇌ 3 Hg₂²⁺(aq) + 2 Au³⁺(aq). If 1.00 L of a 1.00 M Au(NO₃)₃ solution is added to 1.00 L of a 1.00 M Hg₂(NO₃)₂ solution, calculate the concentrations of Hg²⁺, Hg₂²⁺, and Au³⁺ at equilibrium.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 37</div>
+            <div class="problem-text">The following standard reduction potentials have been determined for the aqueous chemistry of indium: In³⁺(aq) + e⁻ ⇌ In²⁺(aq), E° = -0.40 V; In²⁺(aq) + e⁻ ⇌ In(s), E° = -0.21 V. Calculate the equilibrium constant (K) for the disproportionation of In⁺(aq) at 25°C: 3 In⁺(aq) ⇌ 2 In(s) + In³⁺(aq).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 38</div>
+            <div class="problem-text">Use data from Appendix E to compute the equilibrium constant for the reaction Hg₂²⁺(aq) ⇌ Hg²⁺(aq) + Hg(ℓ).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 39</div>
+            <div class="problem-text">A galvanic cell consists of a Pt|H₃O⁺(1.00 M)|H₂(g) cathode connected to a Pt|H₃O⁺(aq)|H₂(g) anode in which the concentration of H₃O⁺ is unknown but is kept constant by the action of a buffer consisting of a weak acid, HA(0.10 M), mixed with its conjugate base, A⁻(0.10 M). The measured cell potential is Ecell = 0.150 V at 25°C, with a hydrogen pressure of 1.00 atm at both electrodes. Calculate the pH in the buffer solution, and from it determine the Ka of the weak acid.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 40</div>
+            <div class="problem-text">In a galvanic cell, the cathode consists of an Ag⁺(1.00 M)|Ag half-cell. The anode is a platinum wire, with hydrogen bubbling over it at 1.00-atm pressure, which is immersed in a buffer solution containing benzoic acid and sodium benzoate. The concentration of benzoic acid (C₆H₅COOH) is 0.10 M, and that of benzoate ion (C₆H₅COO⁻) is 0.050 M. The overall cell reaction is then Ag⁺(aq) + ½ H₂(g) ⇌ Ag(s) + H₃O⁺(aq), and the measured cell potential is 1.030 V. Calculate the pH in the buffer solution and determine the Ka of benzoic acid.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 41</div>
+            <div class="problem-text">A galvanic cell is constructed in which the overall reaction is Br₂(ℓ) + H₂O ⇌ 2 H₂O(aq) + Br⁻(aq) + H₃O⁺(aq).</div>
+            <div class="sub-problem">(a) Calculate E° for this cell.</div>
+            <div class="sub-problem">(b) Silver ions are added until AgBr precipitates at the cathode and [Ag⁺] reaches 0.060 M. The cell potential is then measured to be 1.710 V at pH = 0 and P = 1.0 atm. Calculate [Br⁻] under these conditions.</div>
+            <div class="sub-problem">(c) Calculate the solubility product constant Ksp for AgBr.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 42</div>
+            <div class="problem-text">A galvanic cell is constructed in which the overall reaction is Pb(s) + H₂O ⇌ Pb²⁺(aq) + H₂(g) + 2 H₂O(aq).</div>
+            <div class="sub-problem">(a) Calculate E° for this cell.</div>
+            <div class="sub-problem">(b) Chloride ions are added until PbCl₂ precipitates at the anode and [Cl⁻] reaches 0.15 M. The cell potential is then measured to be 0.22 V at pH = 0 and PH₂ = 1.0 atm. Calculate [Pb²⁺] under these conditions.</div>
+            <div class="sub-problem">(c) Calculate the solubility product constant Ksp of PbCl₂.</div>
+        </div>
+
+        <div class="section-title">Batteries and Fuel Cells</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 51</div>
+            <div class="problem-text">Calculate the potential E° of a lead–acid cell if all reactants and products are in their standard states. What will be the voltage if six such cells are connected in a series?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 52</div>
+            <div class="problem-text">Calculate the standard potential of the zinc–mercuric oxide cell shown in Figure 17.22. (Hint: The easiest way to proceed is to calculate ΔG° for the corresponding overall reaction, and then find E° from it.) Take ΔG°f [Zn(OH)₂(s)] = -553.5 kJ mol⁻¹.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 53</div>
+            <div class="problem-text">(a) What quantity of charge (in coulombs) is a fully charged 12-V lead–acid storage battery theoretically capable of furnishing if the spongy lead available for reaction at the anodes weighs 10 kg and there is excess PbO₂?</div>
+            <div class="sub-problem">(b) What is the theoretical maximum amount of work (in joules) that can be obtained from this battery?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 54</div>
+            <div class="problem-text">(a) What quantity of charge (in coulombs) is a fully charged 1.34-V zinc–mercuric oxide watch battery theoretically capable of furnishing if the mass of HgO in the battery is 0.50 g?</div>
+            <div class="sub-problem">(b) What is the theoretical maximum amount of work (in joules) that can be obtained from this battery?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 55</div>
+            <div class="problem-text">The concentration of the electrolyte, sulfuric acid, in a lead–acid storage battery diminishes as the battery is discharged. Is a discharged battery recharged by replacing the dilute H₂SO₄ with fresh, concentrated H₂SO₄? Explain.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 56</div>
+            <div class="problem-text">One cold winter morning the temperature is well below 0°F. In trying to start your car, you run the battery down completely. Several hours later, you return to replace your fouled spark plugs and find that the liquid in the battery has now frozen even though the air temperature is actually a bit higher than it was in the morning. Explain how this can happen.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 57</div>
+            <div class="problem-text">Consider the fuel cell that accomplishes the overall reaction 2 H₂(g) + O₂(g) ⇌ 2 H₂O(ℓ). If the fuel cell operates with 60% efficiency, calculate the amount of electrical work generated per gram of water produced. The gas pressures are constant at 1 atm, and the temperature is 25°C.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 58</div>
+            <div class="problem-text">Consider the fuel cell that accomplishes the overall reaction CO(g) + ½ O₂(g) ⇌ CO₂(g). Calculate the maximum electrical work that could be obtained from the conversion of 1.00 mol of CO(g) to CO₂(g) in such a fuel cell operated with 100% efficiency at 25°C and with the pressure of each gas equal to 1 atm.</div>
+        </div>
+
+        <div class="section-title">Corrosion and Corrosion Prevention</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 59</div>
+            <div class="problem-text">Two half-reactions proposed for the corrosion of iron in the absence of oxygen are Fe(s) ⇌ Fe²⁺(aq) + 2e⁻ and 2 H₂O(ℓ) + 2e⁻ ⇌ H₂(g) + 2 OH⁻(aq). Calculate the standard cell potential generated by a galvanic cell running this pair of half-reactions. Is the overall reaction spontaneous under standard conditions? As the pH falls from 14, will the reaction become spontaneous?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 60</div>
+            <div class="problem-text">In the presence of oxygen, the cathode half-reaction written in the preceding problem is replaced by ½ O₂(g) + 2 H₂O(ℓ) + 4e⁻ ⇌ 4 OH⁻(aq), but the anode half-reaction is unchanged. Calculate the standard cell potential for this pair of reactions operating as a galvanic cell. Is the overall reaction spontaneous under standard conditions? As the water becomes more acidic, does the driving force for the rusting of iron increase or decrease?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 61</div>
+            <div class="problem-text">Could sodium be used as a sacrificial anode to protect the iron hull of a ship?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 62</div>
+            <div class="problem-text">If it is shown that titanium can be used as a sacrificial anode to protect iron, what conclusion can be drawn about the standard reduction potential of its half-reaction? Ti³⁺(aq) + 3e⁻ ⇌ Ti(s).</div>
+        </div>
+
+        <div class="section-title">Electrometallurgy</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 63</div>
+            <div class="problem-text">In the Downs process, molten sodium chloride is electrolyzed to produce sodium. A valuable byproduct is chlorine. Write equations representing the processes taking place at the anode and at the cathode in the Downs process.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 64</div>
+            <div class="problem-text">The first element to be prepared by electrolysis was potassium. In 1807, Humphry Davy, then 29 years old, passed an electric current through molten potassium hydroxide (KOH), obtaining liquid potassium at one electrode and water and oxygen at the other. Write equations to represent the processes taking place at the anode and at the cathode.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 65</div>
+            <div class="problem-text">A current of 55,000 A is passed through a series of 100 Hall–Héroult cells for 24 hours. Calculate the maximum theoretical mass of aluminum that can be recovered.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 66</div>
+            <div class="problem-text">A current of 75,000 A is passed through an electrolysis cell containing molten MgCl₂ for 7.0 days. Calculate the maximum theoretical mass of magnesium that can be recovered.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 67</div>
+            <div class="problem-text">An important use for magnesium is to make titanium. In the Kroll process, magnesium reduces titanium(IV) chloride to elemental titanium in a sealed vessel at 800°C. Write a balanced chemical equation for this reaction. What mass of magnesium is needed, in theory, to produce 100 kg of titanium from titanium(IV) chloride?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 68</div>
+            <div class="problem-text">Calcium is used to reduce vanadium(V) oxide to elemental vanadium in a sealed steel vessel. Vanadium is used in vanadium steel alloys for jet engines, high-quality knives, and tools. Write a balanced chemical equation for this process. What mass of calcium is needed, in theory, to produce 20.0 kg of vanadium from vanadium(V) oxide?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 69</div>
+            <div class="problem-text">Galvanized steel consists of steel with a thin coating of zinc to reduce corrosion. The zinc can be deposited electrolytically, by making the steel object the cathode and a block of zinc the anode in an electrochemical cell containing a dissolved zinc salt. Suppose a steel garbage can is to be galvanized and requires that a total mass of 7.32 g of zinc be coated to the required thickness. How long should a current of 8.50 A be passed through the cell to achieve this?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 70</div>
+            <div class="problem-text">In the electroplating of a silver spoon, the spoon acts as the cathode and a piece of pure silver as the anode. Both dip into a solution of silver cyanide (AgCN). Suppose that a current of 1.5 A is passed through such a cell for 22 minutes and that the spoon has a surface area of 16 cm². Calculate the average thickness of the silver layer deposited on the spoon, taking the density of silver to be 10.5 g cm⁻³.</div>
+        </div>
+
+        <div class="section-title">Electrolysis of Water and Aqueous Solutions</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 71</div>
+            <div class="problem-text">An electrolytic cell consists of a pair of inert metallic electrodes in a solution buffered to pH = 5.0 and containing nickel sulfate (NiSO₄) at a concentration of 1.00 M. A current of 2.00 A is passed through the cell for 10.0 hours.</div>
+            <div class="sub-problem">(a) What product is formed at the cathode?</div>
+            <div class="sub-problem">(b) What is the mass of this product?</div>
+            <div class="sub-problem">(c) If the pH is changed to pH = 1.0, what product will form at the cathode?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 72</div>
+            <div class="problem-text">A 0.100 M neutral aqueous CaCl₂ solution is electrolyzed using platinum electrodes. A current of 1.50 A passes through the solution for 50.0 hours.</div>
+            <div class="sub-problem">(a) What product is formed at the cathode?</div>
+            <div class="sub-problem">(b) What is the mass of this product?</div>
+            <div class="sub-problem">(c) If the pH is changed to pH = 1.0, what product will form at the cathode?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 73</div>
+            <div class="problem-text">The drain cleaner Drano consists of aluminum turnings mixed with sodium hydroxide. When it is added to water, the sodium hydroxide dissolves and releases heat. The aluminum reacts with water to generate bubbles of hydrogen and aqueous ions. Write a balanced net ionic equation for this reaction.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 74</div>
+            <div class="problem-text">Sulfur-containing compounds in the air tarnish silver, giving black Ag₂S. A practical method of cleaning tarnished silverware is to place the tarnished item in electrical contact with a piece of zinc and dip both into water containing a small amount of salt. Write balanced half-equations to represent what takes place.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 75</div>
+            <div class="problem-text">A current passed through inert electrodes immersed in an aqueous solution of sodium chloride produces chlorate ion, ClO₃⁻(aq), at the anode and gaseous hydrogen at the cathode. Given this fact, write a balanced equation for the chemical reaction if gaseous hydrogen and aqueous sodium chlorate are mixed and allowed to react spontaneously until they reach equilibrium.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 76</div>
+            <div class="problem-text">A galvanic cell is constructed by linking a Co²⁺|Co(s) half-cell to an Ag⁺|Ag(s) half-cell through a salt bridge and then connecting the cobalt and silver electrodes through an external circuit. When the circuit is closed, the cell potential is measured to be 1.08 V, and silver is seen to plate out while cobalt dissolves.</div>
+            <div class="sub-problem">(a) Write the half-reactions that occur at the anode and at the cathode and the balanced overall cell reaction.</div>
+            <div class="sub-problem">(b) The cobalt electrode is weighed after 150 minutes of operation and is found to have decreased in mass by 0.36 g. By what amount has the silver electrode increased in mass?</div>
+            <div class="sub-problem">(c) What is the average current drawn from the cell during this period?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 77</div>
+            <div class="problem-text">The galvanic cell Zn(s)|Zn²⁺(aq) ‖ Ni²⁺(aq)|Ni(s) is constructed using a completely immersed zinc electrode that weighs 32.68 g and a nickel electrode immersed in 575 mL of 1.00 M Ni²⁺(aq) solution. A steady current of 0.0715 A is drawn from the cell as the electrons move from the zinc electrode to the nickel electrode.</div>
+            <div class="sub-problem">(a) Which reactant is the limiting reactant in this cell?</div>
+            <div class="sub-problem">(b) How long does it take for the cell to be completely discharged?</div>
+            <div class="sub-problem">(c) How much mass has the nickel electrode gained when the cell is completely discharged?</div>
+            <div class="sub-problem">(d) What is the concentration of the Ni²⁺(aq) when the cell is completely discharged?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 78</div>
+            <div class="problem-text">A newly discovered bacterium can reduce selenate ion, SeO₄²⁻(aq), to elemental selenium, Se(s), in reservoirs. This is significant because the soluble selenate ion is potentially toxic, but elemental selenium is insoluble and harmless. Assume that water is oxidized to oxygen as the selenate ion is reduced. Compute the mass of oxygen produced if all the selenate in a 10¹²-L reservoir contaminated with 100 mg L⁻¹ of selenate ion is reduced to selenium.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 79</div>
+            <div class="problem-text">Thomas Edison invented an electric meter that was nothing more than a simple coulometer, a device to measure the amount of electricity passing through a circuit. In this meter, a small, fixed fraction of the total current supplied to a household was passed through an electrolytic cell, plating out zinc at the cathode. Each month the cathode could then be removed and weighed to determine the amount of electricity used. If 0.25% of a household's electricity passed through such a coulometer and the cathode increased in mass by 1.83 g in a month, how many coulombs of electricity were used during that month?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 80</div>
+            <div class="problem-text">The chief chemist of the Brite-Metal Electroplating Co. is required to certify that the rinse solutions that are discharged from the company's tin-plating process into the municipal sewer system contain no more than 10 ppm (parts per million) by mass of Sn²⁺. The chemist devises the following analytical procedure to determine the concentration. At regular intervals, a 100-mL (100-g) sample is withdrawn from the waste stream and acidified to pH = 1.0. A starch solution and 10 mL of 0.10 M potassium iodide are added, and a 25.0-mA current is passed through the solution between platinum electrodes. Iodine appears as a product of electrolysis at the anode when the oxidation of Sn²⁺ to Sn⁴⁺ is practically complete and signals its presence with the deep blue color of a complex formed with starch. What is the maximum duration of electrolysis to the appearance of the blue color that ensures that the concentration of Sn²⁺ does not exceed 10 ppm?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 81</div>
+            <div class="problem-text">Estimate the cost of the electrical energy needed to produce 1.5 × 10¹⁰ kg (a year's supply for the world) of aluminum from Al₂O₃(s) if electrical energy costs 10 cents per kilowatt-hour (1 kWh = 3.6 MJ = 3.6 × 10⁶ J) and if the cell potential is 5.0 V.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 82</div>
+            <div class="problem-text">Titanium can be produced by electrolytic reduction from an anhydrous molten salt electrolyte that contains titanium(IV) chloride and a spectator salt that furnishes ions to make the electrolyte conduct electricity. The standard enthalpy of formation of TiCl₄(l) is -750 kJ mol⁻¹, and the standard entropies of TiCl₄(l), Ti(s), and Cl₂(g) are 253, 30, and 223 J K⁻¹ mol⁻¹, respectively. What minimum applied voltage will be necessary at 100°C?</div>
+        </div>
+
+        <div class="section-title">Additional Problems</div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 83</div>
+            <div class="problem-text">A half-cell has a graphite electrode immersed in an acidic solution (pH 0) of Mn²⁺ (concentration 1.00 M) in contact with solid MnO₂. A second half-cell has an acidic solution (pH 0) of H₂O₂ (concentration 1.00 M) in contact with a platinum electrode past which gaseous oxygen at a pressure of 1.00 atm is bubbled. The two half-cells are connected to form a galvanic cell.</div>
+            <div class="sub-problem">(a) Referring to Appendix E, write balanced chemical equations for the half-reactions at the anode and the cathode and for the overall cell reaction.</div>
+            <div class="sub-problem">(b) Calculate the cell potential.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 84</div>
+            <div class="problem-text">By considering these half-reactions and their standard reduction potentials: Pt²⁺(aq) + 2e⁻ ⇌ Pt(s), E° = 1.2 V; NO₃⁻(aq) + 4 H⁺(aq) + 3e⁻ ⇌ NO(g) + 2 H₂O, E° = 0.96 V; PtCl₄²⁻(aq) + 2e⁻ ⇌ Pt(s) + 4 Cl⁻(aq), E° = 0.73 V, account for the fact that platinum will dissolve in a mixture of hydrochloric acid and nitric acid (aqua regia) but will not dissolve in either acid alone.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 85</div>
+            <div class="problem-text">(a) One method to reduce the concentration of unwanted Fe³⁺(aq) in a solution of Fe²⁺(aq) is to drop a piece of metallic iron into the storage container. Write the reaction that removes the Fe³⁺, and compute its standard cell potential.</div>
+            <div class="sub-problem">(b) Referring to problem 23, suggest a way to remove unwanted Mn³⁺(aq) from solutions of Mn²⁺(aq).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 86</div>
+            <div class="problem-text">(a) Based only on the standard reduction potentials for the Cu²⁺|Cu⁺ and I₂(s)|I⁻ the half-reactions, would you expect Cu²⁺(aq) to be reduced to Cu⁺(aq) by I⁻(aq)?</div>
+            <div class="sub-problem">(b) The formation of solid CuI plays a role in the interaction between Cu²⁺(aq) and I⁻(aq). Cu²⁺(aq) + I⁻(aq) + e⁻ ⇌ CuI(s), E° = -0.86 V. Taking into account this added information, do you expect Cu²⁺ to be reduced by iodide ion?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 87</div>
+            <div class="problem-text">In some old European churches, the stained-glass windows have so darkened from corrosion and age that hardly any light comes through. Microprobe analysis showed that tiny cracks and defects on the glass surface were enriched in insoluble Mn(III) and Mn(IV) compounds. From Appendix E, suggest a reducing agent and conditions that might successfully convert these compounds to soluble Mn(II) without simultaneously reducing Fe(III) (which gives the glass its colors) to Fe(II). Take MnO₂ as representative of the insoluble Mn(III) and Mn(IV) compounds.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 88</div>
+            <div class="problem-text">(a) Calculate the half-cell potential for the reaction O₂(g) + 2 H₂O(ℓ) + 4e⁻ ⇌ 4 H₂O(aq) at pH 7 with the oxygen pressure at 1 atm.</div>
+            <div class="sub-problem">(b) Explain why aeration of solutions of I⁻ leads to their decomposition. Write a balanced equation for the redox reaction that occurs.</div>
+            <div class="sub-problem">(c) Will the same problem arise with solutions containing Br⁻ or Cl⁻? Explain.</div>
+            <div class="sub-problem">(d) Will decomposition be favored or opposed by increasing acidity?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 89</div>
+            <div class="problem-text">An engineer needs to prepare a galvanic cell that uses the reaction 2 Ag⁺(aq) + Zn(s) ⇌ Zn²⁺(aq) + 2 Ag(s) and generates an initial voltage of 1.50 V. She has 0.010 M AgNO₃(aq) and 0.100 M Zn(NO₃)₂(aq) solutions, as well as electrodes of metallic copper and silver, wires, containers, water, and a KNO₃ salt bridge. Sketch the cell. Clearly indicate the concentrations of all solutions.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 90</div>
+            <div class="problem-text">Consider a galvanic cell for which the anode reaction is Pb(s) ⇌ Pb²⁺(aq, 1.0 × 10⁻² M) + 2e⁻ and the cathode reaction is VO₂⁺(aq, 0.10 M) + 2 H⁺(aq, 0.10 M) + e⁻ ⇌ V³⁺(aq, 1.0 × 10⁻² M) + H₂O(ℓ). The measured cell potential is 0.640 V.</div>
+            <div class="sub-problem">(a) Calculate E° for the VO₂⁺|V³⁺ half-reaction, using E°(Pb²⁺|Pb) from Appendix E.</div>
+            <div class="sub-problem">(b) Calculate the equilibrium constant (K) at 25°C for the reaction Pb(s) + VO₂⁺(aq) + 2 H⁺(aq) ⇌ Pb²⁺(aq) + V³⁺(aq) + H₂O(ℓ).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 91</div>
+            <div class="problem-text">Suppose we construct a pressure cell in which the gas pressures differ in the two half-cells. Suppose such a cell consists of a Cl₂(0.010 atm)|Cl⁻(1 M) half-cell connected to a Cl₂(0.50 atm)|Cl⁻(1 M) half-cell. Determine which half-cell will be the anode, write the overall equation for the reaction, and calculate the cell potential.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 92</div>
+            <div class="problem-text">A student decides to measure the solubility of lead sulfate in water and sets up the electrochemical cell Pb | PbSO₄(s), SO₄²⁻(aq, 0.0500 M) ‖ Cl⁻(aq, 1.00 M) | AgCl(s), Ag(s). At 25°C the student finds the cell potential to be 0.546 V, and from Appendix E the student finds AgCl(s) + e⁻ ⇌ Ag(s) + Cl⁻(aq), E° = 0.222 V. What does he find for the Ksp of PbSO₄?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 93</div>
+            <div class="problem-text">A wire is fastened across the terminals of the Leclanché cell in Figure 17.21. Indicate the direction of electron flow in the wire.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 94</div>
+            <div class="problem-text">Overcharging a lead–acid storage battery can generate hydrogen. Write a balanced equation to represent the reaction taking place.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 95</div>
+            <div class="problem-text">An ambitious chemist discovers an alloy electrode that is capable of catalytically converting ethanol reversibly to carbon dioxide at 25°C according to the half-reaction C₂H₅OH(ℓ) + 15 H₂O(ℓ) ⇌ 2 CO₃²⁻(aq) + 12 H₃O⁺(aq) + 12e⁻. The chemist patents its composition and designs a fuel cell: Alloy | C₂H₅OH(ℓ) + CO₃²⁻(aq), H₃O⁺(aq, 1 M) | H₂O(ℓ, 1 M) | O₂(g) + Ni.</div>
+            <div class="sub-problem">(a) Write the half-reaction occurring at the cathode.</div>
+            <div class="sub-problem">(b) Using data from Appendix D, calculate E° for the cell at 25°C.</div>
+            <div class="sub-problem">(c) What is the E° value for the ethanol half-cell?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 96</div>
+            <div class="problem-text">Iron or steel is often covered by a thin layer of a second metal to prevent rusting: Tin cans consist of steel covered with tin, and galvanized iron is made by coating iron with a layer of zinc. If the protective layer is broken, however, iron will rust more readily in a tin can than in galvanized iron. Explain this observation by comparing the half-cell potentials of iron, tin, and zinc.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 97</div>
+            <div class="problem-text">An electrolysis cell contains a solution of 0.10 M NiSO₄. The anode and cathode are both strips of Pt foil. Another electrolysis cell contains the same solution, but the electrodes are strips of Ni foil. In each case a current of 0.10 A flows through the cell for 10 hours.</div>
+            <div class="sub-problem">(a) Write a balanced equation for the chemical reaction that occurs at the anode in each cell.</div>
+            <div class="sub-problem">(b) Calculate the mass, in grams, of the product formed at the anode in each cell. (The product may be a gas, a solid, or an ionic species in solution.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 98</div>
+            <div class="problem-text">A potential difference of 2.0 V is impressed across a pair of inert electrodes (e.g., platinum) that are immersed in a 0.050 M aqueous KBr solution. What are the products that form at the anode and the cathode?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 99</div>
+            <div class="problem-text">An aqueous solution is simultaneously 0.10 M in SnCl₂ and in CoCl₂.</div>
+            <div class="sub-problem">(a) If the solution is electrolyzed, which metal will appear first?</div>
+            <div class="sub-problem">(b) At what decomposition potential will that metal first appear?</div>
+            <div class="sub-problem">(c) As the electrolysis proceeds, the concentration of the metal being reduced will drop and the potential will change. How complete a separation of the metals using electrolysis is theoretically possible? In other words, at the point where the second metal begins to form, what fraction of the first metal is left in solution?</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 100</div>
+            <div class="problem-text">A 55.5-kg slab of crude copper from a smelter has a copper content of 98.3%. Estimate the time required to purify it electrochemically if it is used as the anode in a cell that has acidic copper(II) sulfate as its electrolyte and a current of 2.00 × 10³ A is passed through the cell.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 101</div>
+            <div class="problem-text">Sheet iron can be galvanized by passing a direct current through a cell containing a solution of zinc sulfate between a graphite anode and the iron sheet. Zinc plates out on the iron. The process can be made continuous if the iron sheet is a coil that unwinds as it passes through the electrolysis cell and coils up again after it emerges from a rinse bath. Calculate the cost of the electricity required to deposit a 0.250-mm-thick layer of zinc on both sides of an iron sheet that is 1.00 m wide and 100 m long, if a current of 25 A at a voltage of 3.5 V is used and the energy efficiency of the process is 90%. The cost of electricity is 10 cents per kilowatt–hour (1 kWh = 3.6 MJ). Consult Appendix F for data on zinc.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 102</div>
+            <div class="problem-text">A 1.0 M solution of NaOH is electrolyzed, generating O₂(g) at the anode. A current of 0.15 A is passed through the cell for 75 minutes. Calculate the volume of (wet) oxygen generated in this period if the temperature is held at 25°C and the total pressure is 0.985 atm. (Hint: Use the vapor pressure of water at this temperature from Table 10.3.)</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 103</div>
+            <div class="problem-text">Use standard entropies from Appendix D to predict whether the standard potential of the Cu²⁺|Cu ‖ Ag⁺|Ag cell (diagrammed in Figure 17.2) will increase or decrease if the temperature is raised above 25°C.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 104</div>
+            <div class="problem-text">About 50,000 kJ of electrical energy is required to produce 1.0 kg of Al from its Al(OH)₃ ore. The major energy cost in recycling aluminum cans is the melting of the aluminum. The enthalpy of fusion of Al(s) is 10.7 kJ mol⁻¹. Compare the energy cost for making new aluminum with that for recycling.</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 105</div>
+            <div class="problem-text">(a) Use the following half-reactions and their reduction potentials to calculate the Ksp of AgBr: Ag⁺(aq) + e⁻ ⇌ Ag(s), E° = 0.7996 V; AgBr(s) + e⁻ ⇌ Ag(s) + Br⁻(aq), E° = 0.0713 V.</div>
+            <div class="sub-problem">(b) Estimate the solubility of AgBr in 0.10 M NaBr(aq).</div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-number">Problem 106</div>
+            <div class="problem-text">Amounts of iodine dissolved in aqueous solution, I₂(aq), can be determined by titration with thiosulfate ion (S₂O₃²⁻). The thiosulfate ion is oxidized to S₄O₆²⁻ while the iodine is reduced to iodide ion. Starch is used as an indicator because it has a strong blue color in the presence of dissolved iodine.</div>
+            <div class="sub-problem">(a) Write a balanced equation for this reaction.</div>
+            <div class="sub-problem">(b) If 56.40 mL of 0.100 M S₂O₃²⁻ solution is used to reach the endpoint of a titration of an unknown amount of iodine, calculate the number of moles of iodine originally present.</div>
+            <div class="sub-problem">(c) Combine the appropriate half-cell potentials from Appendix E with thermodynamic data from Appendix D for the equilibrium I₂(s) ⇌ I₂(aq) to calculate the equilibrium constant at 25°C for the reaction in part (a).</div>
+        </div>
+
+        <footer style="text-align: center; padding: 30px 20px; margin-top: 50px; border-top: 1px solid var(--color-border); color: var(--color-text-secondary); font-size: 0.9rem;">
+            <p><strong>End of Problems</strong></p>
+            <p>Note: This problem set is for educational purposes in high school chemistry education.</p>
+        </footer>
+    </div>
+</body>
+</html>
